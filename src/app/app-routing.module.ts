@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 import { GameOverComponent } from './game-over/game-over.component';
 
 const routes: Routes = [
-   {path: 'game-over', component: GameOverComponent}
+  {path: 'home', component: HomeComponent},
+  {path: 'game-over', component: GameOverComponent}
 ];
 
 @NgModule({
