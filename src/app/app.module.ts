@@ -14,11 +14,8 @@ import { HomeComponent } from './home/home.component';
   declarations: [
     AppComponent,
     CoursesComponent,
-<<<<<<< HEAD
+    HomeComponent,
     GameOverComponent
-=======
-    HomeComponent
->>>>>>> 562ddaa3e851c9e85ee377ca748dfaa128607932
   ],
   imports: [
     BrowserModule,
