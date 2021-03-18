@@ -9,6 +9,12 @@ import { GameOverComponent } from './game-over/game-over.component';
 import { GameWinComponent } from './game-win/game-win.component';
 import { FoodQuizComponent } from './food-quiz/food-quiz.component';
 import { GenericErrorComponent } from './generic-error/generic-error.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatListModule} from '@angular/material/list';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +28,13 @@ import { GenericErrorComponent } from './generic-error/generic-error.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatDividerModule,
+    MatButtonModule,
+    MatProgressBarModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
