@@ -12,7 +12,7 @@
 | Olivia | insert photo here | etc. | 
 | Angela | insert photo here | etc. | 
 
- 
+ [View out team notes!](https://1drv.ms/u/s!ArK70JvM660kiJU316Riv8bJ639P4A)
 
 ## Introduction [10] 
 
