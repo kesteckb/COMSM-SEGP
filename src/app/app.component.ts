@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { ModalComponent } from './modal/modal.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sugarRush';
+  @ViewChild('modal', {static: false}) modal!: ModalComponent
+  openModal() {
+    this.modal.open();
+  }
 }
