@@ -17,6 +17,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatListModule} from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalComponent } from './modal/modal.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ModalComponent } from './modal/modal.component';
     GameWinComponent,
     FoodQuizComponent,
     GenericErrorComponent,
-    ModalComponent
+    ModalComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
