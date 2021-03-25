@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sugarRush": {
+    "hello-world": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/sugarRush",
+            "outputPath": "dist/hello-world",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,7 +31,6 @@
               "src/assets"
             ],
             "styles": [
-              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": []
@@ -69,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "sugarRush:build"
+            "browserTarget": "hello-world:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "sugarRush:build:production"
+              "browserTarget": "hello-world:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sugarRush:build"
+            "browserTarget": "hello-world:build"
           }
         },
         "test": {
@@ -117,16 +116,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "sugarRush:serve"
+            "devServerTarget": "hello-world:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "sugarRush:serve:production"
+              "devServerTarget": "hello-world:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "sugarRush"
+  "defaultProject": "hello-world"
 }
