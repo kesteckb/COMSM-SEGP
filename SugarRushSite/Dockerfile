@@ -14,7 +14,7 @@ USER node
 
 # Run the command inside your image filesystem.
 RUN npm install
-COPY --chown=node:node . ..
+COPY --chown=node:node . .
 
 # Building the website
 RUN ./node_modules/.bin/ng build
