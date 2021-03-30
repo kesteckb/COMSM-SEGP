@@ -1,6 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
+/SugarRushSite/dist
 /dist
 /tmp
 /out-tsc
@@ -40,6 +41,7 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+/SugarRushSite/.env
 
 # System Files
 .DS_Store
