@@ -2,12 +2,13 @@
    <p>What do you think has more sugar? </p>
    <div class="food-quiz">
       <mat-selection-list #foods [multiple]="false">
-         <mat-list-option *ngFor="let food of typesOfFood" [value]="food">
-            {{food}}
+         <mat-list-option *ngFor="let food of foodData" [value]="food">
+            {{food.name}}
          </mat-list-option>
       </mat-selection-list>
       <p>
-         Meal selected: {{foods.selectedOptions.selected[0]?.value}}
+         Meal selected: {{foods.selectedOptions.selected[0]?.value.name}} 
+         has {{foods.selectedOptions.selected[0]?.value.sugar}}g of sugar per 100g
       </p>
    </div>
    <div class="game-result-buttons">
