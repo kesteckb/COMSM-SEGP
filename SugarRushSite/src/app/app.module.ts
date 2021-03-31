@@ -21,6 +21,8 @@ import {MatListModule} from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalComponent } from './modal/modal.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { VillageComponent } from './village/village.component';
+import { LockedVillageComponent } from './village/locked-village/locked-village.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     FoodQuizComponent,
     GenericErrorComponent,
     ModalComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    VillageComponent,
+    LockedVillageComponent,
   ],
   imports: [
     BrowserModule,
