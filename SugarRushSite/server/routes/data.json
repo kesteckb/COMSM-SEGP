@@ -1,0 +1,4 @@
+{
+	"foodItems":["brocolli", "croissant", "bagel", "protein shake"],
+	"foodData":[{"name": "brocolli","sugar": 1.7},{"name": "croissant", "sugar": 11.0},{"name": "bagel", "sugar": 6.0},{"name": "protein shake", "sugar": 23.0}]
+}
