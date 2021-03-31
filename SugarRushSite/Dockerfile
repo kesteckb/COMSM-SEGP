@@ -15,6 +15,7 @@ USER node
 # Run the command inside your image filesystem.
 RUN npm install
 COPY --chown=node:node . .
+RUN wget -O wait-for.sh https://raw.githubusercontent.com/eficode/wait-for/master/wait-for && chmod +x wait-for.sh
 
 # Building the website
 RUN ./node_modules/.bin/ng build
