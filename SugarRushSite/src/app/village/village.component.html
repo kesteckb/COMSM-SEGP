@@ -1,4 +1,9 @@
 <hr class="my-4">
 <div class="center">
-  <app-locked-village [count]="villageCount"></app-locked-village>
+    <div *ngFor="let currentCount of villageCount">
+      <div class = "px-2" >
+        <app-locked-village input [count]="currentCount">
+        </app-locked-village>
+        </div>
+    </div>
 </div>

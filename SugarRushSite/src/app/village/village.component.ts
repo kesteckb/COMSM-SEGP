@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VillageComponent implements OnInit {
 
-  villageCount = 1;
+  villageCount = [1, 2, 3];
 
   constructor() { }
 
