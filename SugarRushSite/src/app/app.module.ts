@@ -25,6 +25,7 @@ import { VillageComponent } from './village/village.component';
 import { LockedVillageComponent } from './village/locked-village/locked-village.component'
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ModalConfigComponent } from './village/modal-config/modal-config.component';
+import { UnlockedVillageComponent } from './village/unlocked-village/unlocked-village.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { ModalConfigComponent } from './village/modal-config/modal-config.compon
     VillageComponent,
     LockedVillageComponent,
     ModalConfigComponent,
+    UnlockedVillageComponent,
   ],
   imports: [
     BrowserModule,
