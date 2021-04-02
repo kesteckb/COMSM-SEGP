@@ -1,0 +1,29 @@
+<app-modal #modal></app-modal>
+    <button (click)="openModal()">*Help button*</button>
+
+<div class="container">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/village">Village</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/food-quiz">Sugar Quiz</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/game-win">You win!</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/generic-error">Generic Error</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/game-over">Game Over</a>
+        </li>
+    </ul>
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+</div>
+<router-outlet></router-outlet>

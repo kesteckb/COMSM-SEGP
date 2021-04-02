@@ -1,0 +1,19 @@
+.jumbotron{
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.btn-circle.btn-md {
+  width: 100px;
+  height: 100px;
+  padding: 30px 10px;
+  border-radius: 50px;
+  font-size: 26px;
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}

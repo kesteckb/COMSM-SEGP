@@ -1,0 +1,16 @@
+<p></p>
+<div class="center">
+  <app-unlocked-village input [count]=1></app-unlocked-village>
+  &nbsp;&nbsp;
+  <div *ngFor="let currentCount of villageCount">
+    <div class = "px-2" >
+      <app-locked-village input [count]="currentCount"></app-locked-village>
+      </div>
+    </div>
+</div>
+
+
+<p></p>
+<div class="center">
+  <ngbd-modal-config></ngbd-modal-config>
+</div>
