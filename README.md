@@ -14,16 +14,16 @@
 
  [View our team notes!](https://1drv.ms/u/s!ArK70JvM660kiJU316Riv8bJ639P4A)
 
-## [Introduction](https://github.com/kesteckb/COMSM-SEGP/tree/develop/BackgroundAndMotivation)
+## [Introduction](BackgroundAndMotivation)
 
-## [Background and Motivation](https://github.com/kesteckb/COMSM-SEGP/tree/develop/BackgroundAndMotivation)
+## [Background and Motivation](BackgroundAndMotivation)
 
-## [System Implementation](https://github.com/kesteckb/COMSM-SEGP/tree/develop/SystemImplementation)
+## [System Implementation](SystemImplementation)
 
-## [UX Design](https://github.com/kesteckb/COMSM-SEGP/tree/develop/UXDesign)
+## [UX Design](UXDesign)
 
-## [Sprints & Project Management](https://github.com/kesteckb/COMSM-SEGP/tree/develop/SprintsAndProjectManagement)
+## [Sprints & Project Management](SprintsAndProjectManagement)
 
-## [Evaluation](https://github.com/kesteckb/COMSM-SEGP/tree/develop/Evaluation)
+## [Evaluation](Evaluation)
 
-## [Conclusion](https://github.com/kesteckb/COMSM-SEGP/tree/develop/Conclusion)
+## [Conclusion](Conclusion)
