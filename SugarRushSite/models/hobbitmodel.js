@@ -1,9 +1,9 @@
 var mongoose = require('mongoose')
-var assert = require('assert')
+//var assert = require('assert')
 
 var Schema = mongoose.Schema;
 
-var HobbitSchema = Schema({
+var HobbitSchema = new Schema({
    name: {type: String, required: true },
    sugarTolerance: { type: Number, min: 0, required: true },
    house: { type: Schema.Types.ObjectId, ref: 'House', required: true }//,

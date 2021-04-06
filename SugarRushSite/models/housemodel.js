@@ -1,9 +1,12 @@
+//Require Mongoose
 var mongoose = require('mongoose');
+
+//Define a schema
 var Schema = mongoose.Schema;
 
-var houseSchema = Schema({
-   name: {type: String, required: yes },
-   resident: {type: Scheme.Type.ObjectId, ref: 'Hobbit', required: true }
+var HouseSchema = new Schema({
+   name: {type: String, required: true }
 });
 
-var House = mongoose.model('House', houseSchema);
+//Export model
+module.exports = mongoose.model('House', HouseSchema);

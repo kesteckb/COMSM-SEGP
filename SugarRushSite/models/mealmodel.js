@@ -6,7 +6,7 @@ var Schema = mongoose.Schema;
 
 var MealSchema = new Schema({
   name: { type: String, required: true },
-  possibleFoods: [{ type: Schema.Types.ObjectId, ref: 'FoodItem' }]
+  foodChoices: [{ type: Schema.Types.ObjectId, ref: 'FoodItem' }]
 });
 
-module.exports = mongoose.model('FoodItem', FoodItemSchema );
+module.exports = mongoose.model('Meal', MealSchema );
