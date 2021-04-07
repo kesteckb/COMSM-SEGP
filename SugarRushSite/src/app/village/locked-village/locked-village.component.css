@@ -8,3 +8,8 @@
   background-color: rgba(245, 245, 245, 1);
   opacity: .35;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+}
