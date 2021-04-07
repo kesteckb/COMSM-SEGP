@@ -1,0 +1,16 @@
+.wrapper{
+   display: grid;
+   grid-template-rows: 1fr;
+   grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+   border: 2px solid;
+   grid-gap: 10px;
+   text-align: center;
+}
+
+.wrapper > section{
+   flex: 1;
+}
+
+.closeButton{
+   text-align: center;
+}

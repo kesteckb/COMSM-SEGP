@@ -1,0 +1,29 @@
+.shareMain{
+   text-align: center;
+   border: 2px solid;
+}
+
+.shareMain > h3{
+   text-align: center;
+   border: 2px solid;
+}
+
+.shareMain > section{
+   text-align: center;
+   border: 2px solid;
+}
+
+.shareIcons{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 10px;
+   border: 2px solid;
+}
+
+.shareIcons > div{
+   border: 2px solid;
+}
+
+.closeButton{
+   text-align: center;
+}
