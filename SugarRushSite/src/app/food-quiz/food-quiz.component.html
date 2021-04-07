@@ -1,15 +1,17 @@
 <div>
-   <p>What do you think has more sugar? </p>
+   <p>Current Meal = {{meals[currentMeal].name}}</p>
    <div class="food-quiz">
       <mat-selection-list #foods [multiple]="false">
-         <mat-list-option *ngFor="let food of foodData" [value]="food">
+         <mat-list-option *ngFor="let food of currentFoodChoices" [value]="food">
             {{food.name}}
          </mat-list-option>
       </mat-selection-list>
-      <p>
-         Meal selected: {{foods.selectedOptions.selected[0]?.value.name}} 
-         has {{foods.selectedOptions.selected[0]?.value.sugar}}g of sugar per 100g
-      </p>
+      <p>Meal selected: {{foods.selectedOptions.selected[0]?.value.name}}</p>
+      <p>Sugar Amount: {{foods.selectedOptions.selected[0]?.value.sugarContent}}</p>
+   </div>
+   <div class = "next-buttons">
+       <button mat-flat-button (click)="selectAnswer(foods.selectedOptions.selected[0]?.value)" title="select">Select</button>
+       <button mat-flat-button (click)="nextMeal()" title="nextmeal">Next Meal</button>
    </div>
    <div class="game-result-buttons">
          <button mat-flat-button color="primary" routerLink="/game-win">Game Win!</button>
@@ -17,6 +19,10 @@
    </div>
    <p>
       Progress:
-      <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+      <mat-progress-bar mode="determinate" value="{{totalSugar}}"></mat-progress-bar>
    </p>
+   <p>Selected Answers</p>
+   <div *ngFor="let answer of answers">
+       {{answer.name}} has {{answer.sugarContent}}g of sugar per 100g.
+   </div>
 </div>
