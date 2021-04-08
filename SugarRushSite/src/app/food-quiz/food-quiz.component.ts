@@ -4,7 +4,7 @@ import { DataService } from '../data.service';
 @Component({
   selector: 'app-food-quiz',
   templateUrl: './food-quiz.component.html',
-  styleUrls: ['./food-quiz.component.css']
+  styleUrls: ['./food-quiz.component.css'],
 })
 export class FoodQuizComponent implements OnInit {
 

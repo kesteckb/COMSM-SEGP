@@ -1,0 +1,29 @@
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.jumbotron{
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  left: 1500px;
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
+:host /deep/ .mat-list-option {
+  height: 200px!important;
+  margin-top: 80px!important;
+  margin-bottom: 100px!important;
+  margin-left: 15px!important;
+  margin-right: 15px!important;
+  max-width: 195px!important;
+  mix-blend-mode: darken!important;
+}
+.center-image {
+  width: 111%;
+}
