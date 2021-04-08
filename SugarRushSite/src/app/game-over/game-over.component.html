@@ -1,8 +1,32 @@
-<p>
-   You lost! Try again. See recommended sugar intake information from the NHS
-   <a href="https://www.nhs.uk/live-well/eat-well/how-does-sugar-in-our-diet-affect-our-health/">
-      here
-   </a>
-   <app-meal-summary></app-meal-summary><app-share-results></app-share-results>
-   <a mat-button href="./village">Play Again</a>
-</p>
+<body>
+   <article class="wrapper">
+      <section class="imageBox">
+         Hobbit Image
+      </section>
+      <section class="summaryInfo">
+         <h3>
+            Game over!
+         </h3>
+         <div>
+            Your score: XX
+         </div>
+         <div class="summaryText">
+            <p>
+               You lost! Try again. See recommended sugar intake information from the NHS
+               <a href="https://www.nhs.uk/live-well/eat-well/how-does-sugar-in-our-diet-affect-our-health/">here</a>.
+            </p>
+         </div>
+         <div class="mealSummary">
+            <app-meal-summary></app-meal-summary>
+         </div>
+         <div class="buttonRow">
+            <div>
+               <button mat-button routerLink="/village">Play Again</button>
+            </div>
+            <div>
+               <app-share-results></app-share-results>
+            </div>
+         </div>
+      </section>
+   </article>
+</body>
