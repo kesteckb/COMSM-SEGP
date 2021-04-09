@@ -14,7 +14,7 @@
 
  [View our team notes!](https://1drv.ms/u/s!ArK70JvM660kiJU316Riv8bJ639P4A)
 
-## [Introduction](BackgroundAndMotivation)
+## [Introduction](Introduction)
 
 ## [Background and Motivation](BackgroundAndMotivation)
 
