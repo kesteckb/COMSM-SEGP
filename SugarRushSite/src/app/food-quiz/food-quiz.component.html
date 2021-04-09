@@ -7,11 +7,18 @@
         <mat-list-option *ngFor="let food of currentFoodChoices" [value]="food">
           <img class="center-image" width="150" height="150" src="./assets/foodItemPlaceholder.png" >
           <div class = "center">
-            {{food.name}}
+            <h6>{{food.name}}</h6>
           </div>
         </mat-list-option>
       </mat-list-item>
     </mat-selection-list>
+  </div>
+
+  <div *ngIf="foods.selectedOptions.selected[0]?.value.sugarContent != null">
+    <div *ngIf="answerIsCorrect(foods.selectedOptions.selected[0]?.value.sugarContent); else elseBlock">
+      CORRECT
+    </div>
+  <ng-template #elseBlock>INCORRECT</ng-template>
   </div>
 
       <hr class="my-4">
@@ -25,10 +32,10 @@
          <button mat-flat-button color="primary" routerLink="/game-win">Game Win!</button>
          <button mat-flat-button color="warn" routerLink="/game-over">Game Over!</button>
    </div>
-   <p>
+   <p></p>
       Progress:
       <mat-progress-bar mode="determinate" value="{{totalSugar}}"></mat-progress-bar>
-   </p>
+   <p></p>
    <p>Selected Answers</p>
    <div *ngFor="let answer of answers">
        {{answer.name}} has {{answer.sugarContent}}g of sugar per 100g.

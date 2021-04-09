@@ -63,6 +63,15 @@ export class FoodQuizComponent implements OnInit {
       this.totalSugar = this.totalSugar + selectedFood.sugarContent;
   }
 
+  answerIsCorrect(selectedSugarContent: number): boolean{
+    let minSugarContent: number = Math.min(this.foodItems[0].sugarContent,
+    this.foodItems[1].sugarContent, this.foodItems[2].sugarContent);
+    if(selectedSugarContent == minSugarContent){
+      return true;
+    }
+    return false;
+  }
+
   nextMeal() {
       if (this.currentMeal < 7) {
           this.currentMeal = this.currentMeal + 1;
