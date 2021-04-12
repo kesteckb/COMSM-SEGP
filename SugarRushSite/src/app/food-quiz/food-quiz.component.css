@@ -27,3 +27,10 @@
 .center-image {
   width: 111%;
 }
+
+.topright {
+  position:absolute;
+  top: 87px;
+  right: 16px;
+  margin: 5px;
+}
