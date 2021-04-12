@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HobbitService, IHobbit } from '../hobbit.service';
 import { ActivatedRoute } from '@angular/router';
+//import { Observable } from 'rxjs';
 
 
 @Component({
@@ -22,7 +23,7 @@ export class GameOverComponent implements OnInit {
    getHobbits() {
       this.hobbitService
          .get()
-         .subscribe((hobbits: any[]) => {
+         .subscribe((hobbits: IHobbit[]) => {
             this.hobbits = hobbits;
          });
    }

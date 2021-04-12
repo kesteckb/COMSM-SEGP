@@ -21,6 +21,6 @@ export class HobbitService {
    constructor(private httpClient: HttpClient) { }
 
    get(params = {}) {
-      return this.httpClient.get(API, { params });
+      return this.httpClient.get<IHobbit[]>(API, { params });
    }
 }
