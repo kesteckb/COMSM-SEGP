@@ -1,9 +1,26 @@
-<hr class="my-4">
+<p></p>
+
+  <div class="container center">
+    <p class="box1">
+      <app-unlocked-village input [count]=1></app-unlocked-village>
+    </p>
+    <p class="box2">
+      <app-locked-village input [count]="2"></app-locked-village>
+    </p>
+    <p class="box3">
+      <app-locked-village input [count]="3"></app-locked-village>
+    </p>
+    <p class="box4">
+      <app-locked-village input [count]="4"></app-locked-village>
+    </p>
+    <p class="box5">
+      <app-locked-village input [count]="5"></app-locked-village>
+    </p>
+    <p class="box6">
+      <app-locked-village input [count]="6"></app-locked-village>
+    </p>
+  </div>
+
 <div class="center">
-    <div *ngFor="let currentCount of villageCount">
-      <div class = "px-2" >
-        <app-locked-village input [count]="currentCount">
-        </app-locked-village>
-        </div>
-    </div>
+  <ngbd-modal-config></ngbd-modal-config>
 </div>
