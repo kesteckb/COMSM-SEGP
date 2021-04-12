@@ -1,7 +1,7 @@
 <div class="jumbotron">
    <h1 class="display-4 center">{{meals[currentMeal].name}}</h1>
    <div class = "topright">
-     <button mat-flat-button (click)="nextMeal()" title="nextmeal" color="primary">Next Meal</button>
+     <button mat-flat-button (click)="nextMeal()" title="nextmeal" color="primary" [disabled]="foods.selectedOptions.selected[0]?.value.sugarContent == null">Next Meal</button>
      &nbsp;
      <button mat-flat-button title="help">Help</button>
    </div>
