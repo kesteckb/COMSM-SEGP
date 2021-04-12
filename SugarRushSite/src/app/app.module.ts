@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import {DataService} from './data.service';
+import { DataService } from './data.service';
+import { HobbitService } from './hobbit.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
@@ -69,7 +70,10 @@ import { ShareModalComponent } from './share-modal/share-modal.component';
     HttpClientModule,
     MatDialogModule
   ],
-  providers: [DataService],
+  providers: [
+     DataService,
+     HobbitService
+ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
