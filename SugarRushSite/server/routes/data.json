@@ -1,4 +1,44 @@
 {
-	"foodItems":["brocolli", "croissant", "bagel", "protein shake"],
-	"foodData":[{"name": "brocolli","sugar": 1.7},{"name": "croissant", "sugar": 11.0},{"name": "bagel", "sugar": 6.0},{"name": "protein shake", "sugar": 23.0}]
+	"foodItems" :[
+		{ "name":"Banana", "sugarContent":12.0 },
+		{ "name":"Apple", "sugarContent":10.0 },
+		{ "name":"Protein Shake", "sugarContent":23.0 },
+		{ "name":"Bagel", "sugarContent":6.0 },
+		{ "name":"Croissant", "sugarContent":11.0 },
+		{ "name":"Butter Cookie", "sugarContent":20.0 },
+		{ "name":"Orange Juice", "sugarContent":8.0 },
+		{ "name":"Peanut Butter", "sugarContent":9.0 },
+		{ "name":"Hummus", "sugarContent":0.3 },
+		{ "name":"Pizza", "sugarContent":3.6 },
+		{ "name":"White Bread", "sugarContent":5.0 },
+		{ "name":"Wholewheat Bread", "sugarContent":6.0 },
+		{ "name":"Milk Chocolate", "sugarContent":52.0 },
+		{ "name":"Oats Porridge", "sugarContent":0.0 },
+		{ "name":"Jam", "sugarContent":49.0 },
+		{ "name":"Chicken", "sugarContent":0.0 },
+		{ "name":"Salmon", "sugarContent":0.0 },
+		{ "name":"Egg", "sugarContent":1.1 },
+		{ "name":"Crisp", "sugarContent":0.2 },
+		{ "name":"Granola Bars", "sugarContent":29.0 },
+		{ "name":"Decaffinated Cola", "sugarContent":11.0 }
+	],
+	"houses":[
+		{ "name":"House 1" },
+		{ "name":"House 2" },
+		{ "name":"House 3" }
+	],
+	"hobbits":[
+		{ "name":"Quinzor Autumndance", "sugarTolerance":30.0, "house":0, "preferredFood":[] },
+		{ "name":"Milo Greenbottle", "sugarTolerance":80.0, "house":1, "preferredFood":[] },
+		{ "name":"Cora Tealeaf", "sugarTolerance":60.0, "house":2, "preferredFood":[] }
+	],
+	"meals":[
+		{ "name":"Breakfast", "foodChoices":[0, 1, 2] },
+		{ "name":"Second Breakfast", "foodChoices":[3, 4, 5] },
+		{ "name":"Elevenses", "foodChoices":[6, 7, 8] },
+		{ "name":"Luncheon", "foodChoices":[9, 10, 11] },
+		{ "name":"Afternoon Tea", "foodChoices":[12, 13, 14] },
+		{ "name":"Dinner", "foodChoices":[15, 16, 17] },
+		{ "name":"Supper", "foodChoices":[18, 19 , 20] }
+	]
 }
