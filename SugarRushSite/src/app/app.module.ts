@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { DataService } from './data.service';
 import { HobbitService } from './hobbit.service';
+import { HouseService } from './house.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
@@ -72,7 +73,8 @@ import { ShareModalComponent } from './share-modal/share-modal.component';
   ],
   providers: [
      DataService,
-     HobbitService
+     HobbitService,
+     HouseService
  ],
   bootstrap: [AppComponent]
 })

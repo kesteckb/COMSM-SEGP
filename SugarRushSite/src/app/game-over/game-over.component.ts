@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HobbitService, IHobbit } from '../hobbit.service';
 import { ActivatedRoute } from '@angular/router';
-//import { Observable } from 'rxjs';
-
 
 @Component({
   selector: 'app-game-over',
