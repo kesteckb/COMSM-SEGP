@@ -1,15 +1,21 @@
 <div class="jumbotron">
    <h1 class="display-4 center">{{meals[currentMeal].name}}</h1>
    <div class = "topright">
-     <button mat-flat-button (click)="nextMeal()" title="nextmeal" color="primary" [disabled]="foods.selectedOptions.selected[0]?.value.sugarContent == null">Next Meal</button>
+     <button mat-flat-button [routerLink]="cond_vall ? ['/game-over'] : []"
+     (click)="nextMeal()" color="primary"
+     [disabled]="foods.selectedOptions.selected[0]?.value.sugarContent == null">
+       {{ cond_vall == false ? 'Next Meal' : 'End Game' }}
+     </button>
      &nbsp;
-     <button mat-flat-button title="help">Help</button>
+     <button mat-flat-button>Help</button>
    </div>
 
   <div class="container center">
-    <mat-selection-list #foods [multiple]="false" [disabled]="foods.selectedOptions.selected[0]?.value.sugarContent != null">
+    <mat-selection-list #foods [multiple]="false"
+    [disabled]="foods.selectedOptions.selected[0]?.value.sugarContent != null">
       <mat-list-item>
-        <mat-list-option *ngFor="let food of currentFoodChoices" [value]="food" (click)="selectAnswer(foods.selectedOptions.selected[0]?.value)">
+        <mat-list-option *ngFor="let food of currentFoodChoices" [value]="food"
+        (click)="selectAnswer(foods.selectedOptions.selected[0]?.value)">
           <img class="center-image" width="150" height="150" src="./assets/foodItemPlaceholder.png" >
           <div class = "center">
             <h6>{{food.name}}</h6>
@@ -24,10 +30,12 @@
   <mat-progress-bar mode="determinate" value="{{totalSugar}}"></mat-progress-bar>
 
     <hr class="my-4">
-    <div *ngIf="answerIsCorrect(foods.selectedOptions.selected[0]?.value.sugarContent); else elseBlock">
-      CORRECT
+    <div *ngIf="foods.selectedOptions.selected[0]?.value.sugarContent != null">
+      <div *ngIf="answerIsCorrect(foods.selectedOptions.selected[0]?.value.sugarContent); else elseBlock">
+        CORRECT
+      </div>
+      <ng-template #elseBlock>INCORRECT</ng-template>
     </div>
-    <ng-template #elseBlock>INCORRECT</ng-template>
     <p></p>
 
     <p>Meal selected: {{foods.selectedOptions.selected[0]?.value.name}}</p>

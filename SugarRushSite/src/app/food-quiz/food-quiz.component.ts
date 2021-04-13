@@ -8,6 +8,7 @@ import { DataService } from '../data.service';
 })
 export class FoodQuizComponent implements OnInit {
 
+  public cond_vall: boolean = false;
   public totalSugar: number = 0;
   public answers: any = [];
   currentMeal: number = 0;
@@ -42,6 +43,9 @@ export class FoodQuizComponent implements OnInit {
       for (let index of this.meals[this.currentMeal].foodChoices) {
           this.currentFoodChoices.push(this.foodItems[index]);
       }
+      if(this.currentMeal == 6){
+        this.cond_vall = true;
+      }
   }
 
   retrieveData() {
@@ -64,8 +68,9 @@ export class FoodQuizComponent implements OnInit {
   }
 
   answerIsCorrect(selectedSugarContent: number): boolean{
-    let minSugarContent: number = Math.min(this.foodItems[0].sugarContent,
-    this.foodItems[1].sugarContent, this.foodItems[2].sugarContent);
+    let index: number = this.meals[this.currentMeal].foodChoices[0];
+    let minSugarContent: number = Math.min(this.foodItems[index].sugarContent,
+    this.foodItems[index + 1].sugarContent, this.foodItems[index + 2].sugarContent);
     if(selectedSugarContent == minSugarContent){
       return true;
     }
