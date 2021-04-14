@@ -49,4 +49,12 @@
     <div *ngFor="let answer of answers">
        {{answer.name}} has {{answer.sugarAmount}}g of sugar per 100g.
     </div>
+    <div class="bottomright">
+      <div *ngIf="belowMaxSugar(); else sickHobbit">
+        <img src="/assets/hobbit_1.png" height="225" width="150">
+      </div>
+      <ng-template #sickHobbit>
+        <img src="/assets/sick_hobbit_1.png" height="225" width="150">
+      </ng-template>
+    </div>
   </div>

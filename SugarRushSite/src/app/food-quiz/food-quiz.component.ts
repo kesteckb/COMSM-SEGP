@@ -108,10 +108,17 @@ export class FoodQuizComponent implements OnInit {
     return false;
   }
 
+  belowMaxSugar(): boolean{
+    if(this.totalSugar < 100){
+      return true;
+    }
+    return false;
+  }
+
   nextMeal() {
-      if (this.currentMeal < 7) {
-          this.currentMeal = this.currentMeal + 1;
-          this.populateFoodChoices();
-      }
+    if (this.currentMeal < 7) {
+        this.currentMeal = this.currentMeal + 1;
+        this.populateFoodChoices();
+    }
   }
 }
