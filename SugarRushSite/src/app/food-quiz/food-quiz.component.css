@@ -30,13 +30,29 @@
 
 .topright {
   position:absolute;
-  top: 87px;
-  right: 16px;
+  top: 120px;
+  left: 70%;
   margin: 5px;
 }
 
 .bottomright {
   position: absolute;
-  bottom: 190px;
-  right: 50px;
+  left: 65%;
+  margin-right: auto;
+  top: 540px;
+
+}
+
+.list-width {
+  width: 60%;
+}
+
+.list-spacing {
+   margin-bottom: 10px;
+}
+
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:1000px;
 }
