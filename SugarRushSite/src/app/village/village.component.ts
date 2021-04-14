@@ -6,7 +6,6 @@ import { ActivatedRoute } from '@angular/router';
   selector: 'app-village',
   templateUrl: './village.component.html',
   styleUrls: ['./village.component.css'],
-  providers: [HouseService]
 })
 export class VillageComponent implements OnInit {
    public houses: IHouse[];

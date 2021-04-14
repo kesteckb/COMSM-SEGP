@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HobbitService } from '../hobbit.service';
 import { DataService } from '../data.service';
 
 @Component({
@@ -31,10 +32,11 @@ export class FoodQuizComponent implements OnInit {
   currentIndex = -1;
   title = '';
 
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService, private hobbitService: HobbitService) { }
 
   ngOnInit() {
     this.retrieveData();
+    this.hobbitService.clearAnswers();
     //populate food choices of first meal
   }
 
@@ -64,6 +66,7 @@ export class FoodQuizComponent implements OnInit {
 
   selectAnswer(selectedFood: {name: string, sugarContent: number}) {
       this.answers.push(selectedFood);
+      this.hobbitService.addToAnswers(selectedFood);
       this.totalSugar = this.totalSugar + selectedFood.sugarContent;
   }
 
