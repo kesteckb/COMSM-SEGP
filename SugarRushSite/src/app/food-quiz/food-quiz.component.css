@@ -34,3 +34,9 @@
   right: 16px;
   margin: 5px;
 }
+
+.bottomright {
+  position: absolute;
+  bottom: 190px;
+  right: 50px;
+}
