@@ -1,12 +1,12 @@
 import { Component, ViewChild } from '@angular/core';
 import { ModalComponent } from './modal/modal.component';
-import { FoodItemService } from './fooditem.service';
+import { HobbitService } from './hobbit.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [FoodItemService]
+  providers: [HobbitService]
 })
 export class AppComponent {
   title = 'sugarRush';
