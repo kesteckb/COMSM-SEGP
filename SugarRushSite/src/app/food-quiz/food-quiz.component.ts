@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 //import { DataService } from '../data.service';
 import { FoodItemService, IFoodItem } from '../fooditem.service';
 import { ActivatedRoute } from '@angular/router';
+import { HobbitService } from '../hobbit.service';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-food-quiz',
@@ -38,12 +40,12 @@ export class FoodQuizComponent implements OnInit {
   // currentIndex = -1;
   // title = '';
 
-  // constructor(private dataService: DataService) { }
-  constructor(private foodItemService: FoodItemService, private route: ActivatedRoute) { }
+  constructor(private dataService: DataService, private hobbitService: HobbitService) { }
 
   ngOnInit() {
-    //this.retrieveData();
     this.getFoodItems();
+    this.hobbitService.clearAnswers();
+    //populate food choices of first meal
   }
 
   populateFoodChoices() {
@@ -92,7 +94,8 @@ export class FoodQuizComponent implements OnInit {
   selectAnswer(//selectedFood: {name: string, sugarAmount: number}
         selectedFood: any) {
       this.answers.push(selectedFood);
-      this.totalSugar = this.totalSugar + selectedFood.sugarAmount;
+      this.hobbitService.addToAnswers(selectedFood);
+      this.totalSugar = this.totalSugar + selectedFood.sugarContent;
   }
 
   answerIsCorrect(selectedSugarContent: number): boolean{
