@@ -25,4 +25,7 @@ export class GameOverComponent implements OnInit {
             this.hobbits = hobbits;
          });
    }
+   getMeals() {
+
+   }
 }
