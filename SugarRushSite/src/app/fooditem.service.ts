@@ -8,6 +8,7 @@ export interface IFoodItem {
       _id ?: string;
       name : string;
       sugarAmount : number;
+      meals : number[];
 }
 
 const API = '/fooditems';
