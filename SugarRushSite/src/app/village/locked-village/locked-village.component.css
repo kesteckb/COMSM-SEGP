@@ -1,10 +1,9 @@
 .special-card {
-/* create a custom class so you
-   do not run into specificity issues
-   against bootstraps styles
-   which tends to work better than using !important
-   (future you will thank you later)*/
-
   background-color: rgba(245, 245, 245, 1);
-  opacity: .35;
+  opacity: .40;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }

@@ -1,0 +1,39 @@
+.wrapper{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 2%;
+   width: 80%;
+   margin: auto;
+   border: 2px solid;
+}
+
+.wrapper > section{
+   border: 2px solid;
+   text-align: center;
+}
+
+.imageBox{
+   margin: auto;
+}
+
+.summaryInfo > div{
+   border: 2px solid;
+}
+
+.summaryInfo > h3{
+   border: 2px solid;
+}
+
+.summaryText{
+   text-align: left;
+}
+
+.buttonRow{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 2%;
+}
+
+.buttonRow > div{
+   border: 2px solid;
+}

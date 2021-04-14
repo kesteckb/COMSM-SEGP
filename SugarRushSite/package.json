@@ -23,6 +23,7 @@
     "@angular/platform-browser": "~11.1.2",
     "@angular/platform-browser-dynamic": "~11.1.2",
     "@angular/router": "~11.1.2",
+    "async": "^2.6.3",
     "@ng-bootstrap/ng-bootstrap": "^9.1.0",
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
@@ -31,9 +32,9 @@
     "express": "^4.17.1",
     "mongoose": "^5.4.10",
     "ngx-bootstrap": "^6.2.0",
-    "npm": "^7.6.2",
+    "npm": "^7.8.0",
     "rxjs": "~6.6.0",
-    "tslib": "^2.0.0",
+    "tslib": "^2.2.0",
     "zone.js": "~0.11.3"
   },
   "devDependencies": {

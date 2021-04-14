@@ -1,1 +1,32 @@
-<p>Wow! You actually won... I'm impressed. Congratulations, I guess :P </p>
+<body>
+   <article class="wrapper">
+      <section class="imageBox">
+         Hobbit Image
+      </section>
+      <section class="summaryInfo">
+         <h3>
+            You win!
+         </h3>
+         <div>
+            Your score: XX
+         </div>
+         <div class="summaryText">
+            <p>
+                  Wow! You actually made it through the quiz in one piece.
+                  Congratulations, I guess.
+            </p>
+         </div>
+         <div class="mealSummary">
+            <app-meal-summary></app-meal-summary>
+         </div>
+         <div class="buttonRow">
+            <div>
+               <button mat-button routerLink="/village">Play Again</button>
+            </div>
+            <div>
+               <app-share-results></app-share-results>
+            </div>
+         </div>
+      </section>
+   </article>
+</body>

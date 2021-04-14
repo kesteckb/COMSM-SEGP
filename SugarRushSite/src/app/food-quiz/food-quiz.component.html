@@ -1,22 +1,56 @@
-<div>
-   <p>What do you think has more sugar? </p>
-   <div class="food-quiz">
-      <mat-selection-list #foods [multiple]="false">
-         <mat-list-option *ngFor="let food of foodData" [value]="food">
-            {{food.name}}
-         </mat-list-option>
-      </mat-selection-list>
-      <p>
-         Meal selected: {{foods.selectedOptions.selected[0]?.value.name}} 
-         has {{foods.selectedOptions.selected[0]?.value.sugar}}g of sugar per 100g
-      </p>
+<div class="jumbotron">
+   <h1 class="display-4 center">{{meals[currentMeal].name}}</h1>
+   <div class = "topright">
+     <button mat-flat-button [routerLink]="cond_vall ? ['/game-over'] : []"
+     (click)="nextMeal()" color="primary"
+     [disabled]="foods.selectedOptions.selected[0]?.value.sugarAmount == null">
+       {{ cond_vall == false ? 'Next Meal' : 'End Game' }}
+     </button>
+     &nbsp;
+     <button mat-flat-button>Help</button>
    </div>
-   <div class="game-result-buttons">
-         <button mat-flat-button color="primary" routerLink="/game-win">Game Win!</button>
-         <button mat-flat-button color="warn" routerLink="/game-over">Game Over!</button>
-   </div>
-   <p>
-      Progress:
-      <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
-   </p>
+
+  <div class="container center">
+    <mat-selection-list #foods [multiple]="false"
+    [disabled]="foods.selectedOptions.selected[0]?.value.sugarAmount != null">
+      <mat-list-item>
+        <mat-list-option *ngFor="let food of currentFoodChoices" [value]="food"
+        (click)="selectAnswer(foods.selectedOptions.selected[0]?.value)">
+          <img class="center-image" width="150" height="150" src="./assets/foodItemPlaceholder.png" >
+          <div class = "center">
+            <h6>{{food.name}}</h6>
+          </div>
+        </mat-list-option>
+      </mat-list-item>
+    </mat-selection-list>
+  </div>
+
+  <p></p>
+  <div id="wrapper">
+
+  Sugar level:
+  <mat-progress-bar mode="determinate" value="{{totalSugar}}"></mat-progress-bar>
+
+    <hr class="my-4">
+    <ul class="list-group list-width" *ngFor="let answer of answers">
+      <li class="bg-dark list-group-item d-flex justify-content-between
+      align-items-center list-spacing" style= "height: 3rem">
+        <p class="h6 mt-2 text-light">{{answer.name}}</p>
+        <span class="badge bg-light rounded-pill w-50" style="height: 2rem;">
+          <p class="font-weight-light text-center mt-2">
+            {{answer.sugarAmount}}g of sugar per 100g
+          </p>
+        </span>
+      </li>
+    </ul>
+
+    <div class="bottomright">
+      <div *ngIf="belowMaxSugar(); else sickHobbit">
+        <img src="/assets/hobbit_1.png" height="400" width="280">
+      </div>
+      <ng-template #sickHobbit>
+        <img src="/assets/sick_hobbit_1.png" height="400" width="280">
+      </ng-template>
+    </div>
+  </div>
 </div>
