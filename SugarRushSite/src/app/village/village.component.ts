@@ -16,7 +16,6 @@ export class VillageComponent implements OnInit {
 
    ngOnInit(): void {
       this.getHouses();
-      this.getMeals();
    }
 
    getHouses() {
