@@ -75,7 +75,7 @@ import { ShareModalComponent } from './share-modal/share-modal.component';
   providers: [
      DataService,
      HobbitService,
-     HouseService
+     HouseService,
      FoodItemService
  ],
   bootstrap: [AppComponent]
