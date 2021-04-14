@@ -35,8 +35,8 @@ var houses = []
 var hobbits = []
 var meals = []
 
-function foodCreate(name, sugarAmount, cb) {
-  foodDetail = {name:name, sugarAmount:sugarAmount};
+function foodCreate(name, sugarAmount, meals, cb) {
+  foodDetail = {name:name, sugarAmount:sugarAmount, meals:meals};
   var food = new FoodItem(foodDetail);
 
   food.save(function (err) {
@@ -98,74 +98,74 @@ function mealCreate(name, foodChoices, cb) {
 function createFoods(cb) {
     async.parallel([
         function(callback) {
-            foodCreate('Banana', 12.0, callback);
+            foodCreate('Banana', 12.0, [0], callback);
         },
         function(callback) {
-            foodCreate('Apple', 10.0, callback);
+            foodCreate('Apple', 10.0, [0], callback);
         },
         function(callback) {
-            foodCreate('Protein Shake', 23.0, callback);
+            foodCreate('Protein Shake', 23.0, [0], callback);
         },
         function(callback) {
-            foodCreate('Bagel', 6.0, callback);
+            foodCreate('Bagel', 6.0, [1], callback);
         },
         function(callback) {
-            foodCreate('Croissant', 11.0, callback);
+            foodCreate('Croissant', 11.0, [1], callback);
         },
         function(callback) {
-            foodCreate('Butter Cookie', 20.0, callback);
+            foodCreate('Butter Cookie', 20.0, [1], callback);
         },
         function(callback) {
-            foodCreate('Orange Juice', 8.0, callback);
+            foodCreate('Orange Juice', 8.0, [2], callback);
         },
         function(callback) {
-            foodCreate('Peanut Butter', 9.0, callback);
+            foodCreate('Peanut Butter', 9.0, [2], callback);
         },
         function(callback) {
-            foodCreate('Hummus', 0.3, callback);
+            foodCreate('Hummus', 0.3, [2], callback);
         },
         function(callback) {
-            foodCreate('Pizza', 3.6, callback);
+            foodCreate('Pizza', 3.6, [3], callback);
         },
         function(callback) {
-            foodCreate('White Bread', 5.0, callback);
+            foodCreate('White Bread', 5.0, [3], callback);
         },
         function(callback) {
-            foodCreate('Wholewheat Bread', 6.0, callback);
+            foodCreate('Wholewheat Bread', 6.0, [3], callback);
         },
         function(callback) {
-            foodCreate('Milk Chocolate', 52.0, callback);
+            foodCreate('Milk Chocolate', 52.0, [4], callback);
         },
         function(callback) {
-            foodCreate('Oats Porridge', 0.0, callback);
+            foodCreate('Oats Porridge', 0.0, [4], callback);
         },
         function(callback) {
-            foodCreate('Jam', 49.0, callback);
+            foodCreate('Jam', 49.0, [4], callback);
         },
         function(callback) {
-            foodCreate('Chicken', 0.0, callback);
+            foodCreate('Chicken', 0.0, [5], callback);
         },
         function(callback) {
-            foodCreate('Salmon', 0.0, callback);
+            foodCreate('Salmon', 0.0, [5], callback);
         },
         function(callback) {
-            foodCreate('Egg', 1.1, callback);
+            foodCreate('Egg', 1.1, [5], callback);
         },
         function(callback) {
-            foodCreate('Crisps', 0.2, callback);
+            foodCreate('Crisps', 0.2, [6], callback);
         },
         function(callback) {
-            foodCreate('Granola Bars', 29.0, callback);
+            foodCreate('Granola Bars', 29.0, [6], callback);
         },
         function(callback) {
-            foodCreate('Decaffinated cola', 11.0, callback);
+            foodCreate('Decaffinated cola', 11.0, [6], callback);
         }
         ],
         cb);
 }
 
 function createHouses(cb) {
-    async.parallel([
+    async.series([
         function(callback) {
             houseCreate('House 1', callback);
         },
@@ -180,7 +180,7 @@ function createHouses(cb) {
 }
 
 function createHobbits(cb) {
-    async.parallel([
+    async.series([
         function(callback) {
             hobbitCreate('Quinzor Autumndance', 30.0, houses[0], callback);
         },
@@ -195,7 +195,7 @@ function createHobbits(cb) {
 }
 
 function createMeals(cb) {
-    async.parallel([
+    async.series([
         function(callback) {
             mealCreate('Breakfast', [foods[0], foods[1], foods[2]]);
         },
@@ -238,7 +238,7 @@ async.series([
     createFoods,
     createHouses,
     createHobbits,
-    createMeals
+    createMeals,
 ],
 // Optional callback
 function(err, results) {
