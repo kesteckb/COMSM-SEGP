@@ -1,18 +1,18 @@
 <div class="jumbotron">
-  <h1 class="display-4 center">{{meals[currentMeal].name}}</h1>
-  <div class = "topright">
-    <button mat-flat-button [routerLink]="cond_vall ? ['/game-over'] : []"
-      (click)="nextMeal()" color="primary"
-      [disabled]="foods.selectedOptions.selected[0]?.value.sugarContent == null">
-      {{ cond_vall == false ? 'Next Meal' : 'End Game' }}
-    </button>
-    &nbsp;
-    <button mat-flat-button>Help</button>
-  </div>
+   <h1 class="display-4 center">{{meals[currentMeal].name}}</h1>
+   <div class = "topright">
+     <button mat-flat-button [routerLink]="cond_vall ? ['/game-over'] : []"
+     (click)="nextMeal()" color="primary"
+     [disabled]="foods.selectedOptions.selected[0]?.value.sugarAmount == null">
+       {{ cond_vall == false ? 'Next Meal' : 'End Game' }}
+     </button>
+     &nbsp;
+     <button mat-flat-button>Help</button>
+   </div>
 
   <div class="container center">
     <mat-selection-list #foods [multiple]="false"
-    [disabled]="foods.selectedOptions.selected[0]?.value.sugarContent != null">
+    [disabled]="foods.selectedOptions.selected[0]?.value.sugarAmount != null">
       <mat-list-item>
         <mat-list-option *ngFor="let food of currentFoodChoices" [value]="food"
         (click)="selectAnswer(foods.selectedOptions.selected[0]?.value)">
