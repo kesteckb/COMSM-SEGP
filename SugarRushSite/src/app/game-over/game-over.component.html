@@ -15,6 +15,9 @@
                You lost! Try again. See recommended sugar intake information from the NHS
                <a href="https://www.nhs.uk/live-well/eat-well/how-does-sugar-in-our-diet-affect-our-health/">here</a>.
             </p>
+            <div *ngFor="let hobbit of hobbits">
+               {{hobbit.name}}
+            </div>
          </div>
          <div class="mealSummary">
             <app-meal-summary></app-meal-summary>
