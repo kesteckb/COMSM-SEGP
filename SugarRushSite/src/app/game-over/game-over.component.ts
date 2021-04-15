@@ -11,15 +11,13 @@ import { ActivatedRoute } from '@angular/router';
 export class GameOverComponent implements OnInit {
    public hobbits: IHobbit[];
    public items: IFoodItem[] = [];
-   //constructor(private hobbitService: HobbitService, private route: ActivatedRoute) { }
 
    constructor(private hobbitService: HobbitService, private route: ActivatedRoute) { }
 
    ngOnInit(): void {
       this.getHobbits();
-      console.error("Items is array? " + Array.isArray(this.items));
-      console.error("Answers is array? " + Array.isArray(this.hobbitService.getAnswers()));
-      this.items = this.hobbitService.getAnswers();
+      this.getMeals();
+      // this.items = this.hobbitService.getAnswers();
      }
 
    getHobbits() {
@@ -28,5 +26,9 @@ export class GameOverComponent implements OnInit {
          .subscribe((hobbits: IHobbit[]) => {
             this.hobbits = hobbits;
          });
+   }
+
+   getMeals() {
+      this.items = this.hobbitService.getAnswers();
    }
 }

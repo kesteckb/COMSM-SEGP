@@ -5,16 +5,16 @@ import { ActivatedRoute } from '@angular/router';
 import { HobbitService } from '../hobbit.service';
 
 @Component({
-  selector: 'app-food-quiz',
-  templateUrl: './food-quiz.component.html',
-  styleUrls: ['./food-quiz.component.css'],
+   selector: 'app-food-quiz',
+   templateUrl: './food-quiz.component.html',
+   styleUrls: ['./food-quiz.component.css'],
 })
 export class FoodQuizComponent implements OnInit {
 
-  public cond_vall: boolean = false;
-  public totalSugar: number = 0;
-  public answers: any = [];
-  currentMeal: number = 0;
+   public cond_vall: boolean = false;
+   public totalSugar: number = 0;
+   public answers: any = [];
+   currentMeal: number = 0;
 
   // public foodItems = [
   //   {name: 'Banana', sugarAmount: 12.0},
@@ -22,7 +22,7 @@ export class FoodQuizComponent implements OnInit {
   //   {name: 'Protein Shake', sugarAmount: 23.0},
   // ];
 
-  public meals = [
+   public meals = [
       {name: 'Breakfast', foodChoices: [0, 1, 2]},
       {name: 'Second Breakfast', foodChoices: [3, 4, 5]},
       {name: 'Elevenses', foodChoices: []},
@@ -30,21 +30,21 @@ export class FoodQuizComponent implements OnInit {
       {name: 'Afternoon Tea', foodChoices: []},
       {name: 'Dinner', foodChoices: []},
       {name: 'Supper', foodChoices: []}
-  ];
-  public foodItems: IFoodItem[];
-  public currentFoodChoices: any = [];
+   ];
+   public foodItems: IFoodItem[];
+   public currentFoodChoices: any = [];
 
   // stats: any = [];
   // currentdata = null;
   // currentIndex = -1;
   // title = '';
 
-  constructor(private foodItemService: FoodItemService, private hobbitService: HobbitService, private route: ActivatedRoute) { }
+   constructor(private foodItemService: FoodItemService, private hobbitService: HobbitService, private route: ActivatedRoute) { }
 
-  ngOnInit() {
-    this.getFoodItems();
-    this.hobbitService.clearAnswers();
-  }
+   ngOnInit() {
+      this.getFoodItems();
+      this.hobbitService.clearAnswers();
+   }
 
   populateFoodChoices() {
       this.currentFoodChoices.length = 0;
