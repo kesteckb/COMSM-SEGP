@@ -43,6 +43,7 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+.env
 /SugarRushSite/.env
 /SugarRushSite/npm-debug.log
 

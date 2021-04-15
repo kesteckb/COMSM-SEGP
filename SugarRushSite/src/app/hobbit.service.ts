@@ -29,11 +29,9 @@ export class HobbitService {
 
    addToAnswers(foodItem) {
       this.quizAnswers.push(foodItem);
-      console.error("tried to add foodItem " + this.quizAnswers.length);
    }
 
    getAnswers() {
-      console.error("tried to retrieve array " + this.quizAnswers.length);
       return this.quizAnswers;
    }
 
