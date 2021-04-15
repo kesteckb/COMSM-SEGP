@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
 import {HttpClientModule} from '@angular/common/http';
-import {DataService} from './data.service';
-
+import { DataService } from './data.service';
+import { HobbitService } from './hobbit.service';
+import { FoodItemService } from './fooditem.service';
+import { HouseService } from './house.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
@@ -26,6 +27,12 @@ import { LockedVillageComponent } from './village/locked-village/locked-village.
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ModalConfigComponent } from './village/modal-config/modal-config.component';
 import { UnlockedVillageComponent } from './village/unlocked-village/unlocked-village.component';
+import { MealSummaryComponent } from './meal-summary/meal-summary.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { MealInfoComponent } from './meal-info/meal-info.component';
+import { MealModalComponent } from './meal-modal/meal-modal.component';
+import { ShareResultsComponent } from './share-results/share-results.component';
+import { ShareModalComponent } from './share-modal/share-modal.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +49,15 @@ import { UnlockedVillageComponent } from './village/unlocked-village/unlocked-vi
     LockedVillageComponent,
     ModalConfigComponent,
     UnlockedVillageComponent,
+    MealSummaryComponent,
+    MealModalComponent,
+    MealInfoComponent,
+    ShareResultsComponent,
+    ShareModalComponent
   ],
+  entryComponents: [
+     MealSummaryComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -54,9 +69,15 @@ import { UnlockedVillageComponent } from './village/unlocked-village/unlocked-vi
     MatListModule,
     FormsModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule
   ],
-  providers: [DataService],
+  providers: [
+     DataService,
+     HobbitService,
+     HouseService,
+     FoodItemService
+ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,6 +7,9 @@ const bodyParser = require('body-parser');
 
 // Get our API routes
 const api = require('./server/routes/api');
+const hobbits = require('./server/routes/hobbits');
+const houses = require('./server/routes/houses');
+const fooditems = require('./server/routes/fooditems')
 
 const app = express();
 
@@ -19,6 +22,9 @@ app.use(express.static(path.join(__dirname, 'dist/sugarRush')));
 
 // Set our api routes
 app.use('/api', api);
+app.use('/hobbits', hobbits);
+app.use('/houses', houses);
+app.use('/fooditems', fooditems);
 
 // Catch all other routes and return the index file
 app.get('*', (req, res) => {
