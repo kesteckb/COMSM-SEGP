@@ -197,25 +197,25 @@ function createHobbits(cb) {
 function createMeals(cb) {
     async.series([
         function(callback) {
-            mealCreate('Breakfast', [foods[0], foods[1], foods[2]]);
+            mealCreate('Breakfast', [foods[0], foods[1], foods[2]], callback);
         },
         function(callback) {
-            mealCreate('Second Breakfast', [foods[3], foods[4], foods[5]]);
+            mealCreate('Second Breakfast', [foods[3], foods[4], foods[5]], callback);
         },
         function(callback) {
-            mealCreate('Elevenses', [foods[6], foods[7], foods[8]]);
+            mealCreate('Elevenses', [foods[6], foods[7], foods[8]], callback);
         },
         function(callback) {
-            mealCreate('Luncheon', [foods[9], foods[10], foods[11]]);
+            mealCreate('Luncheon', [foods[9], foods[10], foods[11]], callback);
         },
         function(callback) {
-            mealCreate('Afternoon Tea', [foods[12], foods[13], foods[14]]);
+            mealCreate('Afternoon Tea', [foods[12], foods[13], foods[14]], callback);
         },
         function(callback) {
-            mealCreate('Dinner', [foods[15], foods[16], foods[17]]);
+            mealCreate('Dinner', [foods[15], foods[16], foods[17]], callback);
         },
         function(callback) {
-            mealCreate('Supper', [foods[18], foods[19], foods[20]]);
+            mealCreate('Supper', [foods[18], foods[19], foods[20]], callback);
         }
         ],
         cb);
@@ -247,8 +247,10 @@ function(err, results) {
     }
     else {
         console.log('Hobbits: '+ hobbits);
-        console.log('FoodItems:' + fooditems);
+        console.log('FoodItems:' + foods);
         console.log('Houses:' + houses);
         console.log('Meals: ' + meals);
     }
+    // All done, disconnect from database
+    mongoose.connection.close();
 });
