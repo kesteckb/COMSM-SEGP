@@ -39,6 +39,8 @@ Hobbit.deleteMany({}, function(err) {
 Meal.deleteMany({}, function(err) {
     console.log('collection removed')
 });
+// All done, disconnect from database
+//mongoose.connection.close();
 
 
 /*
