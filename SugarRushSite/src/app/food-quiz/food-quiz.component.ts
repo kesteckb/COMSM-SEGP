@@ -110,9 +110,12 @@ export class FoodQuizComponent implements OnInit {
   }
 
   belowMaxSugar(): boolean{
+    this.hobbitService.setTotalSugar(this.totalSugar);
     if(this.totalSugar < 100){
+      this.hobbitService.setGameWin(true);
       return true;
     }
+    this.hobbitService.setGameWin(false);
     return false;
   }
 

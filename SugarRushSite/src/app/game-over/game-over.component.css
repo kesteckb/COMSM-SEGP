@@ -1,10 +1,10 @@
 .wrapper{
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr 5fr;
    grid-gap: 2%;
-   width: 80%;
+   width: 55%;
+   min-width: 700px;
    margin: auto;
-   border: 2px solid;
 }
 
 .wrapper > section{
@@ -17,11 +17,13 @@
 }
 
 .summaryInfo > div{
-   border: 2px solid;
+   margin: auto;
+   border: 1px solid;
 }
 
 .summaryInfo > h3{
-   border: 2px solid;
+   margin: auto;
+   border: 1px solid;
 }
 
 .summaryText{
@@ -35,5 +37,5 @@
 }
 
 .buttonRow > div{
-   border: 2px solid;
+   border: 1px solid;
 }
