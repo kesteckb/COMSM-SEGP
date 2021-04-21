@@ -4,6 +4,7 @@ import { FoodItemService, IFoodItem } from '../fooditem.service';
 import { ActivatedRoute } from '@angular/router';
 import { HobbitService } from '../hobbit.service';
 
+// TODO: Move to a different file? Some sort of constants file?
 export enum MealTitles {
   BREAKFAST = 'Breakfast',
   SECOND_BREAKFAST = 'Second Breakfast',
