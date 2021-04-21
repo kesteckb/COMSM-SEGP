@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 import { HobbitService } from '../hobbit.service';
 
 // TODO: Move to a different file? Some sort of constants file?
-export enum MealTitles {
+export enum MealTitle {
   BREAKFAST = 'Breakfast',
   SECOND_BREAKFAST = 'Second Breakfast',
   ELEVENSES = 'Elevenses',
@@ -34,13 +34,13 @@ export class FoodQuizComponent implements OnInit {
   // ];
 
    public meals = [
-      {name: MealTitles.BREAKFAST, foodChoices: [0, 1, 2]},
-      {name: MealTitles.SECOND_BREAKFAST, foodChoices: [3, 4, 5]},
-      {name: MealTitles.ELEVENSES, foodChoices: []},
-      {name: MealTitles.LUNCHEON, foodChoices: []},
-      {name: MealTitles.AFTERNOON_TEA, foodChoices: []},
-      {name: MealTitles.DINNER, foodChoices: []},
-      {name: MealTitles.SUPPER, foodChoices: []}
+      {name: MealTitle.BREAKFAST, foodChoices: [0, 1, 2]},
+      {name: MealTitle.SECOND_BREAKFAST, foodChoices: [3, 4, 5]},
+      {name: MealTitle.ELEVENSES, foodChoices: []},
+      {name: MealTitle.LUNCHEON, foodChoices: []},
+      {name: MealTitle.AFTERNOON_TEA, foodChoices: []},
+      {name: MealTitle.DINNER, foodChoices: []},
+      {name: MealTitle.SUPPER, foodChoices: []}
    ];
    public foodItems: IFoodItem[];
    public currentFoodChoices: any = [];
