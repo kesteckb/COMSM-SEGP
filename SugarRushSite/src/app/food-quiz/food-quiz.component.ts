@@ -4,6 +4,16 @@ import { FoodItemService, IFoodItem } from '../fooditem.service';
 import { ActivatedRoute } from '@angular/router';
 import { HobbitService } from '../hobbit.service';
 
+export enum MealTitles {
+  BREAKFAST = 'Breakfast',
+  SECOND_BREAKFAST = 'Second Breakfast',
+  ELEVENSES = 'Elevenses',
+  LUNCHEON = 'Luncheon',
+  AFTERNOON_TEA = 'Afternoon Tea',
+  DINNER = 'Dinner',
+  SUPPER = 'Supper',
+}
+
 @Component({
    selector: 'app-food-quiz',
    templateUrl: './food-quiz.component.html',
@@ -23,13 +33,13 @@ export class FoodQuizComponent implements OnInit {
   // ];
 
    public meals = [
-      {name: 'Breakfast', foodChoices: [0, 1, 2]},
-      {name: 'Second Breakfast', foodChoices: [3, 4, 5]},
-      {name: 'Elevenses', foodChoices: []},
-      {name: 'Luncheon', foodChoices: []},
-      {name: 'Afternoon Tea', foodChoices: []},
-      {name: 'Dinner', foodChoices: []},
-      {name: 'Supper', foodChoices: []}
+      {name: MealTitles.BREAKFAST, foodChoices: [0, 1, 2]},
+      {name: MealTitles.SECOND_BREAKFAST, foodChoices: [3, 4, 5]},
+      {name: MealTitles.ELEVENSES, foodChoices: []},
+      {name: MealTitles.LUNCHEON, foodChoices: []},
+      {name: MealTitles.AFTERNOON_TEA, foodChoices: []},
+      {name: MealTitles.DINNER, foodChoices: []},
+      {name: MealTitles.SUPPER, foodChoices: []}
    ];
    public foodItems: IFoodItem[];
    public currentFoodChoices: any = [];
