@@ -11,6 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 export class GameOverComponent implements OnInit {
    public hobbits: IHobbit[];
    public items: IFoodItem[] = [];
+   public gamewon: boolean;
 
    constructor(private hobbitService: HobbitService, private route: ActivatedRoute) { }
 

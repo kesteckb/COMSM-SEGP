@@ -3,7 +3,7 @@
    <div class = "topright">
      <button mat-flat-button [routerLink]="cond_vall ? ['/game-over'] : []"
      (click)="nextMeal()" color="primary"
-     [disabled]="foods.selectedOptions.selected[0]?.value.sugarAmount == null">
+     [disabled]="foods.$selectedOptions?.selected[0]?.value.sugarAmount == null">
        {{ cond_vall == false ? 'Next Meal' : 'End Game' }}
      </button>
      &nbsp;
@@ -12,10 +12,10 @@
 
   <div class="container center">
     <mat-selection-list #foods [multiple]="false"
-    [disabled]="foods.selectedOptions.selected[0]?.value.sugarAmount != null">
+    [disabled]="foods.$selectedOptions?.selected[0]?.value.sugarAmount != null">
       <mat-list-item>
         <mat-list-option *ngFor="let food of currentFoodChoices" [value]="food"
-        (click)="selectAnswer(foods.selectedOptions.selected[0]?.value)">
+        (click)="selectAnswer(foods.$selectedOptions?.selected[0]?.value)">
           <img class="center-image" width="150" height="150" src="./assets/foodItemPlaceholder.png" >
           <div class = "center">
             <h6>{{food.name}}</h6>

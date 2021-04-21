@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { MealSummaryComponent } from './meal-summary.component';
+import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
 
 describe('MealSummaryComponent', () => {
   let component: MealSummaryComponent;
@@ -8,7 +10,11 @@ describe('MealSummaryComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MealSummaryComponent ]
+      declarations: [ MealSummaryComponent ],
+      imports: [
+         HttpClientModule,
+         RouterModule.forRoot([])
+      ]
     })
     .compileComponents();
   });

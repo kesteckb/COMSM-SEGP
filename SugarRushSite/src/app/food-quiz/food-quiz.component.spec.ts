@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { FoodQuizComponent } from './food-quiz.component';
+import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
 
 describe('FoodQuizComponent', () => {
   let component: FoodQuizComponent;
@@ -8,7 +10,11 @@ describe('FoodQuizComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FoodQuizComponent ]
+      declarations: [ FoodQuizComponent ],
+      imports: [
+         HttpClientModule,
+         RouterModule.forRoot([])
+      ]
     })
     .compileComponents();
   });
