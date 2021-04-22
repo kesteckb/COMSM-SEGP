@@ -1,6 +1,10 @@
 # We use the official image as a parent image.
 FROM node:10-alpine
 
+RUN apk update \
+ && apk add ca-certificates wget \
+ && update-ca-certificates
+
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
 
 # Set the working directory.
