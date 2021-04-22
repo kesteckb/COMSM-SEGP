@@ -3,10 +3,10 @@ FROM node:10-alpine
 
 RUN apk update \
  && apk add ca-certificates wget \
- && update-ca-certificates
+ && update-ca-certificates \
+ && apk add --update dos2unix
 
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
-RUN apk add --update dos2unix
 
 # Set the working directory.
 WORKDIR /home/node/app
