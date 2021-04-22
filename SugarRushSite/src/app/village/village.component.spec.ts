@@ -3,6 +3,7 @@ import { VillageComponent } from './village.component';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { HouseService } from '../house.service';
 
 describe('VillageComponent', () => {
    let component: VillageComponent;
@@ -14,6 +15,9 @@ describe('VillageComponent', () => {
          imports: [
             HttpClientModule,
             RouterModule.forRoot([])
+         ],
+         providers: [
+            HouseService
          ]
       })
       .compileComponents();

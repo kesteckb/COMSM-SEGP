@@ -2,6 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { HobbitService } from './hobbit.service';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
 
 describe('HobbitService', () => {
    let service: HobbitService;
@@ -9,7 +10,8 @@ describe('HobbitService', () => {
    beforeEach(() => {
       TestBed.configureTestingModule({
          imports:[
-            HttpClientModule
+            HttpClientModule,
+            RouterModule.forRoot([])
          ],
          providers: [
             HttpClient

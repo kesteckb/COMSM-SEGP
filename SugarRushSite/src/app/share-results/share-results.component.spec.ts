@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ShareResultsComponent } from './share-results.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 describe('ShareResultsComponent', () => {
   let component: ShareResultsComponent;
@@ -8,7 +8,8 @@ describe('ShareResultsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ShareResultsComponent ]
+      declarations: [ ShareResultsComponent ],
+      imports: [ MatDialogModule ]
     })
     .compileComponents();
   });

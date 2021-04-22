@@ -3,6 +3,7 @@ import { GameOverComponent } from './game-over.component';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { HobbitService } from '../hobbit.service'
 
 describe('GameOverComponent', () => {
   let component: GameOverComponent;
@@ -14,6 +15,9 @@ describe('GameOverComponent', () => {
       imports: [
          HttpClientModule,
          RouterModule.forRoot([])
+      ],
+      providers: [
+         HobbitService
       ]
     })
     .compileComponents();

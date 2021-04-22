@@ -3,6 +3,7 @@ import { MealSummaryComponent } from './meal-summary.component';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
+import { MatDialogModule } from '@angular/material/dialog';
 
 describe('MealSummaryComponent', () => {
   let component: MealSummaryComponent;
@@ -13,7 +14,8 @@ describe('MealSummaryComponent', () => {
       declarations: [ MealSummaryComponent ],
       imports: [
          HttpClientModule,
-         RouterModule.forRoot([])
+         RouterModule.forRoot([]),
+         MatDialogModule
       ]
     })
     .compileComponents();
