@@ -2,6 +2,7 @@
 FROM node:10-alpine
 
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
+RUN apk add --update dos2unix
 
 # Set the working directory.
 WORKDIR /home/node/app
@@ -17,6 +18,8 @@ RUN npm install
 COPY --chown=node:node . .
 RUN wget -O wait-for.sh https://raw.githubusercontent.com/eficode/wait-for/master/wait-for && chmod +x wait-for.sh
 RUN chmod +x on-startup.sh
+RUN dos2unix ./wait-for.sh && dos2unix ./on-startup.sh
+
 
 # Building the website
 RUN ./node_modules/.bin/ng build
