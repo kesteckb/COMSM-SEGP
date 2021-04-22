@@ -27,9 +27,9 @@
                 - Olivia
         - Back End
             - Database (Mongo)
-			          - Angela
-			          - Kyle
-			          - Zack
+            	- Angela
+            	- Kyle
+            	- Zack
             - Node
                 - Angela
                 - Kyle
@@ -56,3 +56,5 @@
     - Talk about bi-weekly main merges
     - Strategy for branches for features
     - Merging into develop, but using pull requests, deleting branches.
+
+![Alternate Name](SugarRushSprint1.pdf)
