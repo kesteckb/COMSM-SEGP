@@ -23,4 +23,10 @@ export class FoodItemService {
      get(params = {}) {
         return this.httpClient.get<IFoodItem[]>(API, { params });
      }
+
+     getValue() { return this.getValue(); }
+
+     checkExists(){
+        return true;
+     }
 }

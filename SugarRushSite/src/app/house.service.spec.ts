@@ -1,23 +1,14 @@
 import { TestBed } from '@angular/core/testing';
 import { HouseService } from './house.service';
-import { HttpClient } from '@angular/common/http';
-import { HttpClientModule } from '@angular/common/http';
-import { RouterModule, Routes } from '@angular/router';
+import { HttpClient, HttpResponse, HttpErrorResponse } from '@angular/common/http';
 
 describe('HouseService', () => {
+   let httpClientSpy: {get: jasmine.Spy};
    let service: HouseService;
 
    beforeEach(() => {
-      TestBed.configureTestingModule({
-         imports:[
-            HttpClientModule,
-            RouterModule.forRoot([])
-         ],
-         providers: [
-            HttpClient
-         ]
-      });
-      service = TestBed.inject(HouseService);
+      httpClientSpy = jasmine.createSpyObj('HttpClient', ['get']);
+      service = new HouseService(httpClientSpy as any);
    });
 
    it('should be created', () => {

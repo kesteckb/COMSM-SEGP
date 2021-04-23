@@ -1,35 +1,30 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { RouterModule } from '@angular/router';
 import { VillageComponent } from './village.component';
-import { HttpClient } from '@angular/common/http';
-import { HttpClientModule } from '@angular/common/http';
-import { RouterModule, Routes } from '@angular/router';
 import { HouseService } from '../house.service';
+import { TestHouseService } from '../testing/test-house.service';
 
 describe('VillageComponent', () => {
    let component: VillageComponent;
-   let fixture: ComponentFixture<VillageComponent>;
+   let houseService: HouseService;
 
-   beforeEach(async () => {
-      await TestBed.configureTestingModule({
-         declarations: [ VillageComponent ],
+   beforeEach(() => {
+      TestBed.configureTestingModule({
          imports: [
-            HttpClientModule,
+            HttpClientTestingModule,
             RouterModule.forRoot([])
          ],
          providers: [
-            HouseService
+            VillageComponent,
+            {provided: HouseService, useClass: TestHouseService}
          ]
       })
-      .compileComponents();
-   });
-
-   beforeEach(() => {
-      fixture = TestBed.createComponent(VillageComponent);
-      component = fixture.componentInstance;
-      fixture.detectChanges();
+      component = TestBed.inject(VillageComponent);
+      houseService = TestBed.inject(HouseService);
    });
 
    it('should create', () => {
-      expect(component).toBeTruthy();
+      expect(component).toBeDefined();
    });
 });

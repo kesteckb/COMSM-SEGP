@@ -1,38 +1,35 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { RouterModule } from '@angular/router';
 import { FoodQuizComponent } from './food-quiz.component';
-import { HttpClient } from '@angular/common/http';
-import { HttpClientModule } from '@angular/common/http';
-import { RouterModule, Routes } from '@angular/router';
-import { FoodItemService, IFoodItem } from '../fooditem.service';
+import { FoodItemService } from '../fooditem.service';
+import { TestFoodItemService } from '../testing/test-fooditem.service';
 import { HobbitService } from '../hobbit.service';
-
+import { TestHobbitService } from '../testing/test-hobbit.service';
 
 describe('FoodQuizComponent', () => {
-  let component: FoodQuizComponent;
-  let fixture: ComponentFixture<FoodQuizComponent>;
+   let component: FoodQuizComponent;
+   let foodItemService: FoodItemService;
+   let hobbitService: HobbitService;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ FoodQuizComponent ],
-      imports: [
-         HttpClientModule,
-         RouterModule.forRoot([])
-      ],
-      // providers: [
-      //    HobbitService,
-      //    FoodItemService
-      // ]
-    })
-    .compileComponents();
-  });
+   beforeEach(() => {
+         TestBed.configureTestingModule({
+            imports: [
+               HttpClientTestingModule,
+               RouterModule.forRoot([])
+            ],
+            providers: [
+               FoodQuizComponent,
+               {provided: FoodItemService, useClass: TestFoodItemService},
+               {provided: HobbitService, useClass: TestHobbitService}
+            ]
+         });
+         component = TestBed.inject(FoodQuizComponent);
+         foodItemService = TestBed.inject(FoodItemService);
+         hobbitService = TestBed.inject(HobbitService);
+   })
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(FoodQuizComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+   it('should create', () => {
+      expect(component).toBeDefined();
+   });
 });
