@@ -57,4 +57,6 @@ export class HobbitService {
       this.quizAnswers = [];
       return this.quizAnswers;
    }
+
+   getValue() { return this.getValue(); }
 }
