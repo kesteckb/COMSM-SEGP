@@ -1,7 +1,67 @@
 ## Conclusion
 
 - Reflect on the working practices of your group, how well they did or did not work, e.g, management of issues, communication, Agile (etc).
+    - Sprints
+        - What worked well about this?
+        - What didn't work so well about this?
+    - Communication
+        - What worked well about this?
+        - What didn't work so well about this?
+    - Issue management
+        - What worked well about this?
+        - What didn't work so well about this?
+    - Group development
+        - What worked well about this?
+        - What didn't work so well about this?
+    - Standups
+        - What worked well about this?
+        - What didn't work so well about this?
 - Reflective discussion of the success of the project. How well did your project fulfil the brief? Were all of your own objectives met
+    - Did we meet all our objectives?
+        - If we didn't meet some of them, why not?
+        - Which objectives did we meet?
+    - Did we successfully create a playful website that addresses a serious topic?
+        - How was it playful?
+        - How was it serious?
 - This is a chance to reflect on how coronavirus has affected your project (remote working practices etc)
+    - What were the benefits of remote working?
+        - Ability to work at on pace
+        - Learning remote ways to interview and do demos with people
+        - Increased opportunity for self-learning
+    - What were the downsides of remote working?
+        - No in-person demos or interviews
+        - Contact with group and TAs
+        - Unable to work physically in groups over a period of time
+        - Various internet capabilities
+        - Various device capabilities
+        - Overall slower progress
 - Discussion of Social and Ethical implications of your work.
+    - Social implications
+    - Ethical implications
+        - Overall ethical verdict based on normative ethics.
+        - Explanation 
+            - Deontic ethics
+                - Did the project follow guidelines?
+                - Does the application follow guidelines?
+                - What series of rules are we talking about?
+            - Virtue ethics
+                - When considering morals, how did the application do?
+                    - The purpose of the application strives to raise awareness of sugar consumption so people can make more informed deitary decisions. This application arms people with the tools to eat healthier and improve their lifestyle. With consideration of virtue ethics, the intentions and applications of this project are morally sound, and therefore, ethical.
+            - Consequentialism
+                - Based on potential consequences of this application, is it ethical?
+                - Are there potential consequences of the app that make it unethical?
+                    - Children thinking crisps are healthier than granola
+                    - People using this as a source of truth for nutritional information
+                    - Increased anxiety around how people eat and make decisions about food.
+                    - Misinterpretation of daily limits of sugar consumption
+                    - Lack of interaction with healthcare provider could lead to distrust of the application
 - Discussion of future work (in terms of design, development and evaluation)
+    - Additional hobbits
+        - How are these designed and developed?
+        - How will this be evaluated?
+    - Use of meals instead of individual food items
+        - How are these designed and developed?
+        - How will this be evaluated?
+    - Site statistics for the quiz
+        - How will this be designed and implemented?
+        - How will it be evaluated?
