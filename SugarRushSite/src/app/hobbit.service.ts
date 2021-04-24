@@ -19,9 +19,9 @@ const API = '/hobbits';
 })
 export class HobbitService {
 
-   quizAnswers: IFoodItem[] = [];
-   gameWin: boolean;
-   totalSugar: number;
+   public quizAnswers: IFoodItem[] = [];
+   public gameWin: boolean;
+   public totalSugar: number;
 
    constructor(private httpClient: HttpClient) { }
 
@@ -33,7 +33,7 @@ export class HobbitService {
       this.quizAnswers.push(foodItem);
    }
 
-   getAnswers() {
+   public getAnswers() {
       return this.quizAnswers;
    }
 
