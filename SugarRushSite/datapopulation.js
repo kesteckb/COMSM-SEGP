@@ -35,8 +35,8 @@ var houses = []
 var hobbits = []
 var meals = []
 
-function foodCreate(name, sugarAmount, meals, cb) {
-  foodDetail = {name:name, sugarAmount:sugarAmount, meals:meals};
+function foodCreate(name, sugarAmount, meals, imagePath, cb) {
+  foodDetail = {name:name, sugarAmount:sugarAmount, meals:meals, imagePath:imagePath};
   var food = new FoodItem(foodDetail);
 
   food.save(function (err) {
@@ -98,67 +98,67 @@ function mealCreate(name, foodChoices, cb) {
 function createFoods(cb) {
     async.parallel([
         function(callback) {
-            foodCreate('Banana', 12.0, [0], callback);
+            foodCreate('Banana', 12.0, [0], 'srBanana', callback);
         },
         function(callback) {
-            foodCreate('Apple', 10.0, [0], callback);
+            foodCreate('Apple', 10.0, [0], 'srApple', callback);
         },
         function(callback) {
-            foodCreate('Protein Shake', 23.0, [0], callback);
+            foodCreate('Protein Shake', 23.0, [0], 'srProtein', callback);
         },
         function(callback) {
-            foodCreate('Bagel', 6.0, [1], callback);
+            foodCreate('Bagel', 6.0, [1], 'srBagel', callback);
         },
         function(callback) {
-            foodCreate('Croissant', 11.0, [1], callback);
+            foodCreate('Croissant', 11.0, [1], 'srCroissant', callback);
         },
         function(callback) {
-            foodCreate('Butter Cookie', 20.0, [1], callback);
+            foodCreate('Butter Cookie', 20.0, [1], 'srBiscuit', callback);
         },
         function(callback) {
-            foodCreate('Orange Juice', 8.0, [2], callback);
+            foodCreate('Orange Juice', 8.0, [2], 'srJuice', callback);
         },
         function(callback) {
-            foodCreate('Peanut Butter', 9.0, [2], callback);
+            foodCreate('Peanut Butter', 9.0, [2], 'srPB', callback);
         },
         function(callback) {
-            foodCreate('Hummus', 0.3, [2], callback);
+            foodCreate('Hummus', 0.3, [2], 'srHummus', callback);
         },
         function(callback) {
-            foodCreate('Pizza', 3.6, [3], callback);
+            foodCreate('Pizza', 3.6, [3], 'srPizza', callback);
         },
         function(callback) {
-            foodCreate('White Bread', 5.0, [3], callback);
+            foodCreate('White Bread', 5.0, [3], 'srWhiteBread', callback);
         },
         function(callback) {
-            foodCreate('Wholewheat Bread', 6.0, [3], callback);
+            foodCreate('Wholewheat Bread', 6.0, [3], 'srGrainBread', callback);
         },
         function(callback) {
-            foodCreate('Milk Chocolate', 52.0, [4], callback);
+            foodCreate('Milk Chocolate', 52.0, [4], 'srChocolate', callback);
         },
         function(callback) {
-            foodCreate('Oats Porridge', 0.0, [4], callback);
+            foodCreate('Oats Porridge', 0.0, [4], 'srPorridge', callback);
         },
         function(callback) {
-            foodCreate('Jam', 49.0, [4], callback);
+            foodCreate('Jam', 49.0, [4], 'srJam', callback);
         },
         function(callback) {
-            foodCreate('Chicken', 0.0, [5], callback);
+            foodCreate('Chicken', 0.0, [5], 'srChicken', callback);
         },
         function(callback) {
-            foodCreate('Salmon', 0.0, [5], callback);
+            foodCreate('Salmon', 0.0, [5], 'srSalmon', callback);
         },
         function(callback) {
-            foodCreate('Egg', 1.1, [5], callback);
+            foodCreate('Egg', 1.1, [5], 'srEggs', callback);
         },
         function(callback) {
-            foodCreate('Crisps', 0.2, [6], callback);
+            foodCreate('Crisps', 0.2, [6], 'srCrisps', callback);
         },
         function(callback) {
-            foodCreate('Granola Bars', 29.0, [6], callback);
+            foodCreate('Granola Bars', 29.0, [6], 'srGranola', callback);
         },
         function(callback) {
-            foodCreate('Decaffinated cola', 11.0, [6], callback);
+            foodCreate('Decaffinated cola', 11.0, [6], 'srCola', callback);
         }
         ],
         cb);
