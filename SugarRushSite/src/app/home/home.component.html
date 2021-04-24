@@ -1,14 +1,28 @@
 <!--include 'style="background:pink !important"' in div to change colour-->
 
 <body>
-  <h1 class="display-4 title center">{{welcomeMessage}}</h1>
-    <div class = "center">
+  <header>
+    <section class="shareIcons">
+      <div>
+         <a [attr.href]="facebookShareLink" class="icon"><img src="./assets/Colour-Facebook.png" alt="Facebook Icon" class="icon"></a>
+      </div>
+      <div>
+         <a [attr.href]="twitterShareLink"><img src="./assets/Colour-Twitter.png" alt="Twitter Icon" class="icon"></a>
+      </div>
+      <div>
+         <a [attr.href]="redditShareLink" class="icon"><img src="./assets/Colour-Reddit.png" alt="Reddit Icon" class="icon"></a>
+      </div>
+      </section>
+    <h1 class="display-4 title center">{{welcomeMessage}}</h1>
+  </header>
+  <section class = "center">
       <button onclick="location.href='./village'" >
-        PLAY
+        Play
       </button>
-    </div>
-    <div class="gameinfo">
-      <p class="lead center">{{aboutMessage}}</p>
-    </div> 
+  </section>
+    <section class="gameinfo">
+      <p class="lead">{{aboutMessage}}</p>
+    </section> 
 </body>
  
+

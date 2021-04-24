@@ -1,4 +1,5 @@
-body { height: 100%; 
+body { height: 100%;
+  background-size: cover;
   background: repeating-linear-gradient(
       to right,
       #FFFFFF,
@@ -14,7 +15,6 @@ body { height: 100%;
     display: inline-block;
     vertical-align: middle;
     border-radius: 100%;
-    outline-color: lawngreen;
     overflow: hidden;
     font-size: 26px;
     font-weight: bold;
@@ -22,6 +22,9 @@ body { height: 100%;
     background-color:#C84630;
     color: ivory;
     margin-bottom: 1em;
+    outline: 0;
+    border: none;
+    font-family: 'Crafty Girls', cursive !important;
 
   }
   
@@ -46,7 +49,7 @@ body { height: 100%;
     font-family: 'Crafty Girls', cursive !important;
     font-weight: bolder;
     text-align: center;
-    padding-top: 1.5em;
+    padding-top: 0.8em;
     padding-bottom: 0.8em;
     font-size: 70px;
     text-shadow: 2px 2px #C84630;
@@ -60,8 +63,23 @@ body { height: 100%;
     border-width: 4px;
     color: #EA9010;
     background-color: #F5F9F1; 
-    position: fixed;
-    bottom: 0;
+    display: flex;
+    margin-right: 20em;
+    margin-left: 20em;
+    margin-top: 2.5em;
+    font-size: 12px;
+  }
+
+  .shareIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0.8em;
+  }
+
+  .icon {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
   }
   
   /* resizing for tablets*/
@@ -79,5 +97,13 @@ body { height: 100%;
       text-align: center;
       padding-top: 7rem;
       font-size: 15px;
+    }
+    .shareIcons {
+      justify-content: center;
+    }
+
+    .gameinfo {
+      margin-right: 17em;
+      margin-left: 17em;
     }
   }
