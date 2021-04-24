@@ -4,11 +4,13 @@
     - Class diagrams
         - Brief description
         - Advantages and disadvantages of our setup
-    - Sequence diagrams and brief description  
+    - Sequence diagrams and brief description
+    ![sequence diagram of our SPA](sequence-diagram.png)
         - Brief description
         - Are there any ways we could have improved this with more time?
 - Back End - MongoDB - database implementation, the data model that you developed your back end from (e.g. entity relationship diagrams).
-    - Entity relationship diagram (below)
+    - Entity relationship diagram
+    - ![entity relationship diagram](er_diagram_sugar_rush_v2.png)
     - Why did we choose this model?
     - What design choices/changes did we make
         - Storing meals in food instead of meals
@@ -26,6 +28,7 @@
         - How did we use node?
         - Why did we use it this way?
 - Front End - Angular. Details of implementation.
+    ![component hierachy diagram](Component_diagram.png)
     - How did we use angular?
     - How were the components organization?
     - Why did we decide to do it this way?
@@ -41,6 +44,3 @@
         - Things we changed in the docker file
         - Ways we used docker
         - Instructions for how to deploy?
-
-### Entity Relationship Diagram  
-![alt text](https://github.com/kesteckb/COMSM-SEGP/blob/c551ecebcf11aa4baa0cb90615177cf59f3e3813/SystemImplementation/er_diagram_sugar_rush.png)
