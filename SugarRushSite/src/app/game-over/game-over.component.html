@@ -1,36 +1,48 @@
 <body>
-   <article class="wrapper">
-      <section class="imageBox">
-         Hobbit Image
-      </section>
-      <section class="summaryInfo">
-         <h3>
-            Game over!
-         </h3>
-         <div>
-            Your score: XX
-         </div>
-         <div class="summaryText">
-            <p>
-               You lost! Try again. See recommended sugar intake information from the NHS
-               <a href="https://www.nhs.uk/live-well/eat-well/how-does-sugar-in-our-diet-affect-our-health/">here</a>.
-            </p>
-            <div *ngFor="let hobbit of hobbits">
-               {{hobbit.name}}
+  <article class="wrapper">
+    <section class="imageBox">
+      <div *ngIf="winStatus == true; else loseImage">
+        <img src="/assets/hobbit_1.png" height="400" width="280">
+      </div>
+      <ng-template #loseImage>
+        <img src="/assets/sick_hobbit_1.png" height="400" width="280">
+      </ng-template>
+    </section>
+    <section class="summaryInfo">
+      <h3>
+        <div *ngIf="winStatus == true; else loseHeading">
+          You win!
+        </div>
+        <ng-template #loseHeading>
+          Better luck next time!
+        </ng-template>
+        </h3>
+          <div>
+            Your score: {{totalSugar}}
+          </div>
+          <div class="summaryText">
+            <div *ngIf="winStatus == true; else loseMessage">
+              Congratulations! Click play again to advance to the next village.
             </div>
+            <ng-template #loseMessage>
+              You lost! Click play again to have another go.
+            </ng-template>
+            See recommended sugar intake information from the NHS
+            <a href="https://www.nhs.uk/live-well/eat-well/how-does-sugar-in-our
+            -diet-affect-our-health/">here</a>.
             <div *ngFor="let item of items">
                {{item.name}}
             </div>
-         </div>
-         <div class="mealSummary">
+          </div>
+          <div class="mealSummary">
             <app-meal-summary></app-meal-summary>
-         </div>
-         <div class="buttonRow">
+          </div>
+          <div class="buttonRow">
             <div>
-               <button mat-button routerLink="/village">Play Again</button>
+              <button mat-button routerLink="/village">Play Again</button>
             </div>
             <div>
-               <app-share-results></app-share-results>
+              <app-share-results></app-share-results>
             </div>
          </div>
       </section>

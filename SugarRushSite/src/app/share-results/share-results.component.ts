@@ -8,6 +8,8 @@ import { ShareModalComponent } from '../share-modal/share-modal.component'
    styleUrls: ['./share-results.component.css']
 })
 export class ShareResultsComponent implements OnInit {
+
+
    constructor(public dialog: MatDialog) { }
 
    openDialog(){
