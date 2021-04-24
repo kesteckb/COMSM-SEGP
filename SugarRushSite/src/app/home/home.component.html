@@ -1,12 +1,14 @@
 <!--include 'style="background:pink !important"' in div to change colour-->
 
-<div class="jumbotron">
-  <h1 class="display-4">{{welcomeMessage}}</h1>
-  <p class="lead">{{aboutMessage}}</p>
-  <hr class="my-4">
+<body>
+  <h1 class="display-4 title center">{{welcomeMessage}}</h1>
     <div class = "center">
-      <a class="btn btn-dark btn-md btn-circle" href="./village" role="button">
-        Play
-      </a>
+      <button onclick="location.href='./village'" >
+        PLAY
+      </button>
     </div>
-</div>
+    <div class="gameinfo">
+      <p class="lead center">{{aboutMessage}}</p>
+    </div> 
+</body>
+ 

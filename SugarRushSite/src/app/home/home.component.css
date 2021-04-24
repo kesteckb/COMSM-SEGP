@@ -1,19 +1,83 @@
-.jumbotron{
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-}
+body { height: 100%; 
+  background: repeating-linear-gradient(
+      to right,
+      #FFFFFF,
+      #FFFFFF 3px,
+      #C9E3AC 3px,
+      #C9E3AC 6px
+      );
+  }
 
-.btn-circle.btn-md {
-  width: 100px;
-  height: 100px;
-  padding: 30px 10px;
-  border-radius: 50px;
-  font-size: 26px;
-  text-align: center;
-}
+ button {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 100%;
+    outline-color: lawngreen;
+    overflow: hidden;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    background-color:#C84630;
+    color: ivory;
+    margin-bottom: 1em;
 
-.center {
-  display: flex;
-  justify-content: center;
-}
+  }
+  
+  button:hover {
+    background-color: #EA9010;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .lead {
+    text-align: center;
+    display: flex;
+    font-size: 17px;
+    color: #034732;
+    font-weight: bold;
+  }
+  
+  .title {
+    font-family: 'Crafty Girls', cursive !important;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 0.8em;
+    font-size: 70px;
+    text-shadow: 2px 2px #C84630;
+    color: #034732;
+    
+  }
+  
+  .gameinfo {
+    background:none;
+    border-style: solid;
+    border-width: 4px;
+    color: #EA9010;
+    background-color: #F5F9F1; 
+    position: fixed;
+    bottom: 0;
+  }
+  
+  /* resizing for tablets*/
+  @media only screen and (max-width: 1023px) {
+    .title {
+      font-size: 60px;
+    }
+    button {
+      width: 85px;
+      height: 85px;
+      font-size: 18px;
+      
+    }
+    .lead {
+      text-align: center;
+      padding-top: 7rem;
+      font-size: 15px;
+    }
+  }

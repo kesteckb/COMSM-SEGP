@@ -33,6 +33,7 @@ import { MealInfoComponent } from './meal-info/meal-info.component';
 import { MealModalComponent } from './meal-modal/meal-modal.component';
 import { ShareResultsComponent } from './share-results/share-results.component';
 import { ShareModalComponent } from './share-modal/share-modal.component';
+import { NgSocialLinksModule } from 'ng-social-links';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { ShareModalComponent } from './share-modal/share-modal.component';
     FormsModule,
     NgbModule,
     HttpClientModule,
-    MatDialogModule
+    MatDialogModule,
+    NgSocialLinksModule.forRoot()
   ],
   providers: [
      DataService,
