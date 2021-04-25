@@ -21,7 +21,7 @@
       <mat-list-item>
         <mat-list-option *ngFor="let food of currentFoodChoices" [value]="food"
         (click)="selectAnswer(foods.selectedOptions?.selected[0]?.value)">
-          <img class="center-image" width="150" height="150" src="./assets/foodItemPlaceholder.png" >
+          <img class="center-image" width="150" height="150" src="./assets/{{food.imagePath}}.png" >
           <div class = "center">
             <h6>{{food.name}}</h6>
           </div>
