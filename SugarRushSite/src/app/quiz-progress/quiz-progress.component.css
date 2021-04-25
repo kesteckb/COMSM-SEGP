@@ -1,0 +1,10 @@
+.emptyIcons {
+   display: inline;
+}
+
+.fullIcons {
+   display: inline-block;
+   width: 50%;
+   overflow: hidden;
+   white-space: nowrap;
+}
