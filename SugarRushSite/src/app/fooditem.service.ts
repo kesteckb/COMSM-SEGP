@@ -26,6 +26,8 @@ export class FoodItemService {
 
      getValue() { return this.getValue(); }
 
+     getName() { return this.getName(); }
+
      checkExists(){
         return true;
      }
