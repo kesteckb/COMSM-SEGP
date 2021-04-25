@@ -15,6 +15,11 @@ export enum MealTitle {
   SUPPER = 'Supper',
 }
 
+export interface IQuizAnswer {
+    selectedFood: IFoodItem,  
+    meal: MealTitle
+}
+
 @Component({
    selector: 'app-food-quiz',
    templateUrl: './food-quiz.component.html',
@@ -103,7 +108,11 @@ export class FoodQuizComponent implements OnInit {
   selectAnswer(//selectedFood: {name: string, sugarAmount: number}
         selectedFood: any) {
       this.answers.push(selectedFood);
-      this.hobbitService.addToAnswers(selectedFood);
+      var quizAnswer: IQuizAnswer = { 
+        selectedFood: selectedFood,
+        meal: this.meals[this.currentMeal].name
+      };
+      this.hobbitService.addToAnswers(quizAnswer);
       this.totalSugar = this.totalSugar + selectedFood.sugarAmount;
   }
 

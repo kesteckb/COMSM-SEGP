@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HobbitService, IHobbit } from '../hobbit.service';
 import { IFoodItem } from '../fooditem.service';
 import { ActivatedRoute } from '@angular/router';
+import { IQuizAnswer } from '../food-quiz/food-quiz.component';
 
 @Component({
   selector: 'app-game-over',
@@ -10,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class GameOverComponent implements OnInit {
    public hobbits: IHobbit[];
-   public items: IFoodItem[] = [];
+   public items: IQuizAnswer[] = [];
    public winStatus: boolean;
    public totalSugar: number;
 

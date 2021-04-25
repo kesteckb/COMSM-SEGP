@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MealTitle } from '../food-quiz/food-quiz.component';
+import { IQuizAnswer, MealTitle } from '../food-quiz/food-quiz.component';
 import { IFoodItem } from '../fooditem.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { IFoodItem } from '../fooditem.service';
 })
 export class MealInfoComponent implements OnInit {
   meal: MealTitle;
-  @Input() item: IFoodItem;
+  @Input() item: IQuizAnswer;
 
   constructor() { }
 
