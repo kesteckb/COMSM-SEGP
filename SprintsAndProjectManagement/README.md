@@ -48,6 +48,7 @@
             - Have a clear team focus for the next sprint
             - Each member knows what they'll be focusing on for the next week
             - Understand how the next week fits in meeting our primary goals
+            - ![image](SprintDiagram.jpg)
     - Sprint 1 overview --> goal: getting started
     - Sprint 2 overview --> goal: wireframe and hardcoded backend
     - Sprint 3 overview --> goal: functioning quiz page and DB connection
