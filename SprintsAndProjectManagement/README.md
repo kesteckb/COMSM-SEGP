@@ -1,4 +1,10 @@
 ## Sprints and Project Management
+Throughout our group project we relied on agile to help divide and plan our project. Our workflow was a slightly modified version of the agile process outlined here: https://www.atlassian.com/agile/project-management/workflow.
+We did not incorporate Epics into our workflow as the entire project could probably be boiled down to one or two Epics. However, we did take advantage of several aspects from agile: standups, sprints, and kanban. We used a backlog as a place to hold all tasks we wanted to achieve during our project. In addition to this, we also created a secondary backlog for features we would like to implement, but weren’t critical to the minimum viable product.   
+	
+Sprints were the primary tool that we used to group our project tasks. Sprint planning was completed on the Friday before sprint, and all user stories were documented in a kanban board (link: https://trello.com/b/ZzT0p21S/site-development) for task management. We met each weekday during our standup to discuss the previous day’s work and that day’s goals. We also used this time to discuss questions, ask for help testing changes, and review design choices. As we worked on the day’s tasks, we primarily communicated by chat, but we also used video calls to discuss complex tasks and take advantage of pair programming.  
+	
+We initially considered using the waterfall project management style for our project, but the flexibility offered by Agile was preferred. In addition, waterfall has some disadvantages which did not work well for our team. For example, waterfall projects tend to focus on one stage of development at a time (https://www.atlassian.com/agile/project-management/program). This would have prevented people from focusing on specific roles throughout the length of the project. Instead, people working on agile or testing would have been limited to working during only a certain period of the project’s timeline. This would result in big bursts of specific development.  
 
 - Group working methods used (for instance did your team choose a particular style of agile? what communication channels did you use?)
     - Standups
