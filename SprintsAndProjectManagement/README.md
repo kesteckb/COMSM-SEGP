@@ -43,6 +43,7 @@ We initially considered using the waterfall project management style for our pro
                 - Zack
                 - Kyle
                 - Angela
+![Image](TeamRoles.png)
 - Documentation of your sprints, including both high level overview, timeline, and selected highlights that were critical points in the project (remember to show the users stories implemented in each sprint). We expect a summary of meeting logs (including for instance apologies for absence etc)
     - Sprint Planning
         - We'll talk about the following:
@@ -63,5 +64,4 @@ We initially considered using the waterfall project management style for our pro
     - Talk about bi-weekly main merges
     - Strategy for branches for features
     - Merging into develop, but using pull requests, deleting branches.
-
-![Alternate Name](SugarRushSprint1.pdf)
+![Image](DevProcess.png)
