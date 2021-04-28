@@ -2,7 +2,7 @@
 
 ## Overview
 
-In our single page application, we chose to use the MEAN stack. MEAM stands for MongoDB, Express, Angular and Node.js. In the MEAN stack, Angular handles the front-end clientside application, MongoDB handles the backend database, and Node.js and Express handle the middle tier server. Specifically, Express handles services and gets data from the database, and node.js provides a runtime environment. 
+In our single page application, we chose to use the MEAN stack. MEAM stands for MongoDB, Express, Angular and Node.js. In the MEAN stack, Angular handles the front-end clientside application, MongoDB handles the backend database, and Node.js and Express handle the middle tier server. Specifically, Express handles services and getting data from the database, and node.js provides a runtime environment. 
 
 ![Structure of a MEAN stack](mean-stack.png)
 
@@ -20,12 +20,16 @@ Below is the initial data model planned for the application:
 
 However, during development, it was decided that for a minimum viable product the meals collection was not necessary and it was thus not implemented.
 
+- the schema for each collection in the database was defined in the model files. 
+
 ## Server
 
 - As stated before, Mongoose is used in our application with the server/middle-tier components to process requests from the front-end and to return the data from the database. 
 - This is accessed through a RESTful API which used HTTP requests to operate data. 
 - All of these is built on the Express framework. 
-(Honestly I'm still very confused about how node.js works with express)
+- Express is configured in the server.js
+- Connection to database is established in server.js through a db.js file.
+- server.js also set up the routing to the APIs
 
 ## Client-side Application
 
@@ -34,7 +38,29 @@ Angular has a couple of uses in developing a web application:
 - a collection of libraries to handle features including routing, forms, client-server communication
 - and a suite of developer tools to help develop, build, test and update the code.
 
+### View
+Using the component-based framework, each of the sections of the application is generated dynamically in the appcomponent. The structure of the components is as below: 
+(Note that a dashed connection indicates that the connected component is a modal component that can be opened up from the parent component.
 ![component hierachy diagram](Component_diagram.png)
+- something about how the html of the pages are generated on the client side
+
+### Routing
+
+## Additional Features
+### Seeding the database
+The database was seeded using a javascript file. The file makes use of mongoose to clear each collection (just to reset it) and then insert the new documents into the collections. This script is ran on start-up of the docker container along with the command to start the express server. This was accomplished by having a bash script that contained both of these commands in the docker-compose.yml file. There will be more details about the deployment of the site in the next section.
+
+### Authentication (or lack thereof)
+- We first considered incorporating authetication before our first user testing session. 
+- But from the results of the user testing, we decided against this
+- (Do we talk about this here or in the user testing session?)
+
+## Deployment
+For our application, Docker is used for deployment to provide a consistent runtime environment. Our application is run on two containers with one container running the node.js environment and one container running the database. 
+
+A Dockerfile is used to build the nodejs container using the official image as a parent image. The database container is just the official image. A script is used to ensure that the nodejs container waits for connection to the database to be established before starting using a start up script mentioned in the previous section. 
+
+In development, we had trouble with the the wait-for.sh script due to line endings being changed by git. As such, we edited the Dockerfile to download the wait-for script from its source each time the image is built.
 
 
 - Stack architecture and system design (e.g. class diagrams, sequence diagrams)
