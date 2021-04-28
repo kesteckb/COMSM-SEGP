@@ -56,4 +56,4 @@ Users stories were used to guide each sprint and the above goals. While the goal
     - Merging into develop, but using pull requests, deleting branches.
 ![Image](DevProcess.png)
 
-[Return to Main Page](../)
+[Return to Main Page](../../../)
