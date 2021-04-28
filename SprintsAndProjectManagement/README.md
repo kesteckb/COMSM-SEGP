@@ -47,13 +47,25 @@ Throughout our project, we had a total of six sprints, each lasting a single wee
 Users stories were used to guide each sprint and the above goals. While the goal was to complete user stories within one sprint, however unforeseen complications and competing priorities sometimes delayed user stories. When a user story was delayed, this was considered for the next sprint so that more manageable tasks were planned.
 ![Image](SprintDiagram.png)
 
+Highlights that were critical
+Documentation of your sprints, including both high level overview, timeline, and selected highlights that were critical points in the project (remember to show the users stories implemented in each sprint). We expect a summary of meeting logs (including for instance apologies for absence etc)
 
+Throughout our project, we used Git to achieve continuous integration. When first starting the projectwe took advantage of git as a tool for continuous integration. Our initial strategy involved having two primary branches: the [main](../../../) branch was used for a demo-ready environment; the [develop](../../../tree/develop) branch was used to implement new features based on our user stories. In order to implement new features for our develop branch, we created individual feature branches from develop. When we completed these features, they were merged into develop. As our application took shape and became more complex, we implemented testing processes to ensure new features did not cause loss of previous functionality.
 
-- Documentation of your sprints, including both high level overview, timeline, and selected highlights that were critical points in the project (remember to show the users stories implemented in each sprint). We expect a summary of meeting logs (including for instance apologies for absence etc)
--  Team use of Git, how your team used continuous integration / continuous deployment. Streamlining of workflow throughout.
-    - Talk about bi-weekly main merges
-    - Strategy for branches for features
-    - Merging into develop, but using pull requests, deleting branches.
+However, as development continued and issues were uncovered, we discovered we needed amore robust process established a more rigorous development schedule: 
 ![Image](DevProcess.png)
 
+For our [process](SugarRushDevCycle.pdf), we made several key decisions. All branches must be made from an up-to-date `develop` branch. In theory, new features could rely on a feature that is in the midst of development. In this situation, it would be possible to branch from a feature branch. However, we decided to plan these tasks sequentially to avoid merge conflicts. After completing the first version of a feature, testing was required. The testing process consisted of round of testing. For complex, integrated changes, two rounds of testing were required, one performed by the developer and one by another team member. Simple changes required one round of testing. A round of testing consisted of following steps:
+  1. Test website in feature branch
+  2. Test website in `develop`
+  3. Merge feature branch into local `develop` branch
+  4. Test website in `develop`
+
+Creating steps 2 and 3 was a critical moment for our team and helped streamline the testing process. Step 2 eleminates ambiguity during testing. If testing fails during this stage, the developer knows there is an existing problem in develop. Step 3 allows for a test merge before pushing the change to the entire team. If testing fails during this stage, the developer knows a problem was introduced by the new feature.
+
+Finally, after features were completed with testing the feature was staged in develop by merging the feature into `develop` via a pull request. Alternatively, we could have pushed the local `develop` merge from testing to the remote repository. However, we viewed this as an unsafe action. A `git push` command has few guardrails and limited documentation compared to the pull request feature in GitHub. This functionality also allows members to delete the remote feature branch during the merge. Merges with conflicts were the exception to this rule. In these situations, the merge had to be handled through Git, and the GitHub pull request could not manually merge the branches nor handle the conflict resolution. 
+
+The final step of our continuous integration cycle was to publish features to our `main` branch by merging `develop` into `main`. This merge occurred biweekly on Fridays at the end of the current sprint. We chose this time frame to allow to incorporate changes from the previous two sprints. As some user stories from the previous sprint may have run over two sprints, this allowed a greater number of features to be included in `main`. If issues were present in `develop`, we were more likely to find them over a two-week period. Therefore, the delay for updating `main` allowed it to remain stable, which was ideal considering its main purpose was for demos.   
+
 [Return to Main Page](../../../)
+ 
