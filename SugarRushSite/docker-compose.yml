@@ -13,13 +13,13 @@ services:
       - MONGO_USERNAME=$MONGO_USERNAME
       - MONGO_PASSWORD=$MONGO_PASSWORD
       - MONGO_HOSTNAME=db
-      - MONGO_PORT=$MONGO_PORT
+      - MONGO_PORT=$MONGO_DOCKER_PORT
       - MONGO_DB=$MONGO_DB
     ports:
       - "3000:3000"
     networks:
       - app-network
-    command: ./wait-for.sh db:27017 -- /home/node/app/node_modules/.bin/nodemon server.js
+    command: ./wait-for.sh db:27017 -- ./on-startup.sh
 
   db:
     image: mongo:4.1.8-xenial
@@ -31,6 +31,8 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=$MONGO_PASSWORD
     volumes:
       - dbdata:/data/db
+    ports:
+      - "27018:27017"
     networks:
       - app-network
 

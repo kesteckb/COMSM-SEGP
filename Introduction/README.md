@@ -8,6 +8,33 @@ We will accomplish this by making a game where players will need to feed a hobbi
 
 - Project Objectives. The high level goals of the project and the contribution towards solving the problem. A checklist against which the team can evaluate their success.  
 ![alt text][objectives]
+    - Why did we pick these goals?
+    - Display sugar levels effectively
+        - What does this mean and how will this raise awareness for sugar overconsumption?
+        - What are the tasks to accomplish this?
+    - Guide behaviour of the user#
+        - What does this mean and how will this raise awareness for sugar overconsumption?
+        - What are the tasks to accomplish this?
+    - Produce a functioning quiz
+        - What does this mean and how will this raise awareness for sugar overconsumption?
+        - What are the tasks to accomplish this?
+    - Design a visually engaging and interactive interface
+        - What does this mean and how will this raise awareness for sugar overconsumption?
+        - What are the tasks to accomplish this?
 - Video. Short (1-2min) demo video to explain your system (think Kickstarter)
+    - Maybe use a tool like OBS to record the demo and do a voiceover separately.
+    - Start on the homescreen and describe the purpose of the website and premise of the game.
+    - "Okay, let's play the game!"
+    - Go to the village screen and describe the different levels of the game.
+        - Different sugar levels based on gender
+        - Levels for different activity levels
+        - Levels for diabetic hobbits
+    - Go to the quiz and complete the quiz
+    - Intentionally eat too much sugar to show the changing hobbit
+    - On the game-over screen, explore the different buttons
+    - Show the meal summary and give an overview of the information available
+    - Show the share button so the user can take part in raising awareness or if they just had fun
+    - Return back to the village -- maybe have a second house unlocked, but don't do the quiz
+    - Wrap up the video with some positive sentiment
 
 [objectives]: https://github.com/kesteckb/COMSM-SEGP/blob/589a88fab268159178cd2475934a3c967123bc37/image.png

@@ -4,17 +4,28 @@ import { FoodItemService, IFoodItem } from '../fooditem.service';
 import { ActivatedRoute } from '@angular/router';
 import { HobbitService } from '../hobbit.service';
 
+// TODO: Move to a different file? Some sort of constants file?
+export enum MealTitle {
+  BREAKFAST = 'Breakfast',
+  SECOND_BREAKFAST = 'Second Breakfast',
+  ELEVENSES = 'Elevenses',
+  LUNCHEON = 'Luncheon',
+  AFTERNOON_TEA = 'Afternoon Tea',
+  DINNER = 'Dinner',
+  SUPPER = 'Supper',
+}
+
 @Component({
-  selector: 'app-food-quiz',
-  templateUrl: './food-quiz.component.html',
-  styleUrls: ['./food-quiz.component.css'],
+   selector: 'app-food-quiz',
+   templateUrl: './food-quiz.component.html',
+   styleUrls: ['./food-quiz.component.css'],
 })
 export class FoodQuizComponent implements OnInit {
 
-  public cond_vall: boolean = false;
-  public totalSugar: number = 0;
-  public answers: any = [];
-  currentMeal: number = 0;
+   public cond_vall: boolean = false;
+   public totalSugar: number = 0;
+   public answers: any = [];
+   currentMeal: number = 0;
 
   // public foodItems = [
   //   {name: 'Banana', sugarAmount: 12.0},
@@ -22,29 +33,29 @@ export class FoodQuizComponent implements OnInit {
   //   {name: 'Protein Shake', sugarAmount: 23.0},
   // ];
 
-  public meals = [
-      {name: 'Breakfast', foodChoices: [0, 1, 2]},
-      {name: 'Second Breakfast', foodChoices: [3, 4, 5]},
-      {name: 'Elevenses', foodChoices: []},
-      {name: 'Luncheon', foodChoices: []},
-      {name: 'Afternoon Tea', foodChoices: []},
-      {name: 'Dinner', foodChoices: []},
-      {name: 'Supper', foodChoices: []}
-  ];
-  public foodItems: IFoodItem[];
-  public currentFoodChoices: any = [];
+   public meals = [
+      {name: MealTitle.BREAKFAST, foodChoices: [0, 1, 2]},
+      {name: MealTitle.SECOND_BREAKFAST, foodChoices: [3, 4, 5]},
+      {name: MealTitle.ELEVENSES, foodChoices: []},
+      {name: MealTitle.LUNCHEON, foodChoices: []},
+      {name: MealTitle.AFTERNOON_TEA, foodChoices: []},
+      {name: MealTitle.DINNER, foodChoices: []},
+      {name: MealTitle.SUPPER, foodChoices: []}
+   ];
+   public foodItems: IFoodItem[];
+   public currentFoodChoices: any = [];
 
   // stats: any = [];
   // currentdata = null;
   // currentIndex = -1;
   // title = '';
 
-  constructor(private foodItemService: FoodItemService, private hobbitService: HobbitService, private route: ActivatedRoute) { }
+   constructor(private foodItemService: FoodItemService, private hobbitService: HobbitService, private route: ActivatedRoute) { }
 
-  ngOnInit() {
-    this.getFoodItems();
-    this.hobbitService.clearAnswers();
-  }
+   ngOnInit() {
+      this.getFoodItems();
+      this.hobbitService.clearAnswers();
+   }
 
   populateFoodChoices() {
       this.currentFoodChoices.length = 0;
@@ -110,9 +121,12 @@ export class FoodQuizComponent implements OnInit {
   }
 
   belowMaxSugar(): boolean{
+    this.hobbitService.setTotalSugar(this.totalSugar);
     if(this.totalSugar < 100){
+      this.hobbitService.setGameWin(true);
       return true;
     }
+    this.hobbitService.setGameWin(false);
     return false;
   }
 

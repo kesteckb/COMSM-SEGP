@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MealModalComponent } from './meal-summary-content.component';
+import { MealModalComponent } from './meal-modal.component';
 
 describe('MealSummaryContentComponent', () => {
   let component: MealModalComponent;

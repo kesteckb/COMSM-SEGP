@@ -20,6 +20,8 @@ const API = '/hobbits';
 export class HobbitService {
 
    quizAnswers: IFoodItem[] = [];
+   gameWin: boolean;
+   totalSugar: number;
 
    constructor(private httpClient: HttpClient) { }
 
@@ -29,16 +31,32 @@ export class HobbitService {
 
    addToAnswers(foodItem) {
       this.quizAnswers.push(foodItem);
-      console.error("tried to add foodItem " + this.quizAnswers.length);
    }
 
    getAnswers() {
-      console.error("tried to retrieve array " + this.quizAnswers.length);
       return this.quizAnswers;
+   }
+
+   setGameWin(currentValue: boolean) {
+     this.gameWin = currentValue;
+   }
+
+   getGameWin() {
+     return this.gameWin;
+   }
+
+   setTotalSugar(currentValue: number) {
+     this.totalSugar = currentValue;
+   }
+
+   getTotalSugar() {
+     return this.totalSugar;
    }
 
    clearAnswers() {
       this.quizAnswers = [];
       return this.quizAnswers;
    }
+
+   getValue() { return this.getValue(); }
 }
