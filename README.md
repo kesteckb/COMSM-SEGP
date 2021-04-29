@@ -23,6 +23,7 @@ We will accomplish this by making a game where players will need to feed a hobbi
 ### Project Objectives
 ![image of objectives][objectives]
 
+## How to Run
 
 ## [Background and Motivation](BackgroundAndMotivation)
 
