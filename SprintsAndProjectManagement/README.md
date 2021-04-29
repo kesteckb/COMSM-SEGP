@@ -1,4 +1,6 @@
 ## Sprints and Project Management
+
+### Team Communication
 Throughout our group project we relied on agile to help divide and plan our project. Our workflow was a slightly modified version of the agile process outlined here: https://www.atlassian.com/agile/project-management/workflow.
 We did not incorporate Epics into our workflow as the entire project could probably be boiled down to one or two Epics. However, we did take advantage of several aspects from agile: standups, sprints, and kanban. We used a backlog as a place to hold all tasks we wanted to achieve during our project. In addition to this, we also created a secondary backlog for features we would like to implement, but weren’t critical to the minimum viable product.   
 	
@@ -15,6 +17,7 @@ In addition to standups and regular meetings our team also used other means of c
 	
 We initially considered using the waterfall project management style for our project, but the flexibility offered by Agile was preferred. In addition, waterfall has some disadvantages which did not work well for our team. For example, waterfall projects tend to focus on one stage of development at a time (https://www.atlassian.com/agile/project-management/program). As a result, this method presented challenges for our team. Because development cycles focus on specific areas of the development stack, team members are working are always working int the same area. While this does lead to a well-rounded developer, it prohibits team-member specialisation. Team member motivation can also be damaged if members are forced to work on areas that they aren't interested. Finally, the planning aspect of waterfall is risky and could be eratic. Phases are large and all-encompassing, making them difficult to plan, and one phase of the project can force every subsequent phase to be delayed. We decided agile worked best for our team because it is more flexible and allows developer specialisation.  
 
+### Team Member Roles
 Our members specialised in areas that initially piqued our interests. We agreed to have multiple people in each area, and if one area was uninteresting or frustrating, members could switch roles to maintain maximum motivation. When determining roles, we initially divided roles between front end and back end. Within front-end roles, members specialised in either Angular development or UX/UI. For back-end roles, members specialised in Mongo, Node, or Express. Members could choose 2-3 roles of their choosing, able to mix and match between the two categories. In addition to these roles, we also assigned a project manager role. While each member did specialise, each also helped with varying development across sprints, allowing general knowledge in multiple areas. An overview of areas and contributions can be found below.  
 ![Image](TeamRoles.png)  
 
@@ -24,6 +27,7 @@ During our project we used one-week sprints to divide our project. The contents 
   - Tasks that help achieve these goals
   - Progress towards overall project goals  
 
+### Sprint Overview
 Throughout our project, we had a total of six sprints, each lasting a single week. The first sprint occurred the week of 29 March 2021. Each sprint focused on a specific subset of tasks: 
   - [Sprint I](SugarRushSprint1.pdf)
       - Have an application that builds successful
@@ -48,6 +52,7 @@ Users stories were used to guide each sprint and the above goals. While the goal
 ![Image](SprintDiagram.png)
 During our sprints, three main features served as highlights for our project. During Sprint III, when we finished the basic functionality for the quiz component we were much closer to accomplishing our minimum viable product. At this stage, we had connected the quiz to our food database and could pull question contents and information from it. The user could also complete a quiz that logged the total amount of sugar from their quiz answers. This was the most critical moment in our project. During Sprint III and IV, we added functionality to allow user state to flow from one component to another via our services. We used this functionality to create a dynamic game-end component that allows users to review quiz results and answers. These features marked another step towards arriving at our minimum viable product. Finally, another highlight was the successful implementation of Docker for all team members. Prior to a functional Docker container, the team had encountered issues due to varying versions of frameworks and Angular modules. Docker implementation also allowed us to seed our database identically and connect our website to expected data. These three accomplishments form the backbone of the current vresion of our product.    
 
+### Continuous Integration
 Throughout our project, we used Git to achieve continuous integration. When first starting the projectwe took advantage of git as a tool for continuous integration. Our initial strategy involved having two primary branches: the [main](../../../) branch was used for a demo-ready environment; the [develop](../../../tree/develop) branch was used to implement new features based on our user stories. In order to implement new features for our `develop` branch, we created individual feature branches from `develop`. When we completed these features, they were merged into `develop`. As our application took shape and became more complex, we implemented testing processes to ensure new features did not cause loss of previous functionality.
 
 However, as development continued and issues were uncovered, we discovered we needed amore robust process established a more rigorous development schedule:  
