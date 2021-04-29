@@ -56,12 +56,41 @@ The database was seeded using a javascript file. The file makes use of mongoose 
 - (Do we talk about this here or in the user testing session?)
 
 ## Deployment
-For our application, Docker is used for deployment to provide a consistent runtime environment. Our application is run on two containers with one container running the node.js environment and one container running the database. 
 
-A Dockerfile is used to build the nodejs container using the official image as a parent image. The database container is just the official image. A script is used to ensure that the nodejs container waits for connection to the database to be established before starting using a start up script mentioned in the previous section. 
+### Docker Implementation
+For our application, Docker is used for deployment to provide a consistent runtime environment. Our application is run on two containers with one container running the node.js environment and one container running the database.
 
-In development, we had trouble with the the wait-for.sh script due to line endings being changed by git. As such, we edited the Dockerfile to download the wait-for script from its source each time the image is built.
+A Dockerfile is used to build the `nodejs` container within an Alpine image.
+  - All packages listed in the project package.json folder are copied to the image
+  - All other relevant project files are copied to the image
+  - All relevant packages are installed using `npm install`
+  - Windows line endings are removed from relevant scripts
+  - The site is built using `ng build`
+  - Port 3000 is exposed and node is run
 
+The publicly availabe mongo:4.1.8-xenial image is used to run an instance of MongoDB in our `db` container.
+
+A docker-compose.yml file is used to run both containers.
+  - Sets relevant environment variables
+  - Exposes ports to the host for both `db` and `nodejs` containers
+  - Executes script to ensure `nodejs` does not run before `db` is running
+  - Executes scrip to seed our database with site data 
+
+### Docker Optimisations
+
+Over the project period, we made several optimisations to improve our experience with Docker. When pulling files from our repository, Git changes the file endings based on someone's git configuration. When these files are copied over to the container, specifically shell scripts, the container can fail to build correctly due to unexpected characters in the file. We addressed this issue in two ways:
+  - We installed the wait-for.sh script when building `nodejs`
+  - We used dos2unix to remove Windows file endings from any scripts we planned to run within our container.
+
+During development and testing, building docker containers required 2-15 minutes of build time, which made testing small site changes burdensome to implement. In order to address these issues, we made changes to improve general usability.
+  - We allowed local connections to `db`. Mongo running on a local device will use port 27017 by default, and this can prevent database connection when running the site on a local host. In order to address this, we needed to do the following:
+      - Add an additional environment variable to specify another port.
+      - Expose a port for local database hosting
+  - We added node_modules to a .dockerignore file. This directory is built when the container is built via `npm install`.
+
+### Continuous Integration
+
+Throughout our project, we achieved continuous integration using Git and GitHub. 
 
 - Stack architecture and system design (e.g. class diagrams, sequence diagrams)
     - Class diagrams
