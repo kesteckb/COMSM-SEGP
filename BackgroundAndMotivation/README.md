@@ -1,9 +1,5 @@
 ## Background and Motivation
 
-- Background literature. Academic research review.
-- State of the art survey. Current industry review.
-- Clear definition of the problem. How does your project relate to the above? We will be marking the ability of your team to identify a worthwhile and important problem and clearly articulate the scope and challenge of the problem.
-
 ### An overview of the problem: background literature
 
 Most adults and children in the UK consume too much sugar, and this poses significant health risks to the population as people are at greater risk of obesity, type 2 diabetes, heart disease, and tooth decay [1]. Table 1 uses data from the NHS [1] and the National Diet and Nutrition Survey (NDNS) [2] to illustrate exactly how much excess sugar is consumed by people in the UK.
