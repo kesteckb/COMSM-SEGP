@@ -1,5 +1,10 @@
-body { height: 100%;
-  background-size: cover;
+.container {
+  max-width: 92%;
+  display: flex;
+  align-items: center;
+}
+.jumbotron { 
+  height: 85vh;
   background: repeating-linear-gradient(
       to right,
       #FFFFFF,
@@ -49,9 +54,9 @@ body { height: 100%;
     font-family: 'Crafty Girls', cursive !important;
     font-weight: bolder;
     text-align: center;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    font-size: 70px;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    font-size: 60px;
     text-shadow: 2px 2px #C84630;
     color: #034732;
     
@@ -70,17 +75,6 @@ body { height: 100%;
     font-size: 12px;
   }
 
-  .shareIcons {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 0.8em;
-  }
-
-  .icon {
-    padding-left: 0.3em;
-    padding-right: 0.3em;
-  }
   
   /* resizing for tablets*/
   @media only screen and (max-width: 1023px) {

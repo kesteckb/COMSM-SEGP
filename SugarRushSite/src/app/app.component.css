@@ -1,0 +1,18 @@
+.shareIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0.8em;
+  }
+
+  .icon {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    width: 85%;
+    height: auto;
+   
+  }
+
+  footer {
+      flex-shrink: 0;
+  }
