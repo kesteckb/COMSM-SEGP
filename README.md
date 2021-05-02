@@ -24,6 +24,11 @@ We will accomplish this by making a game where players will need to feed a hobbi
 ![image of objectives][objectives]
 
 ## How to Run
+  1. Clone or fork this repository
+  2. In your local repository, navigate to the SugarRushSite directory
+  3. Add a .env file with the appropriate environment variables
+  4. Run `docker compose up --build`
+  5. When the site is finished building and you see the successful connection message, navigate to the local host on your device (probably http://localhost:3000/).
 
 ## [Background and Motivation](BackgroundAndMotivation)
 
