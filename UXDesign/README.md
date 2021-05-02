@@ -1,18 +1,41 @@
 ## UX Design
 
 ### Ideation
-To arrive at an idea for our project, we explored problems and potential solutions through the process of design thinking. Our ideation process began with a period of discovery where we discussed ongoing societal problems and game methods. Initially, these two concepts were explored independently, creating these lists independently. However, once each list contained ten items, we created a chart to start discovering playful solutions to these problems. In this chart, one axis contained problems to solve, and the other axis contained game concepts. At the intersection of a problem and game concept, we created a playful method to address the problem. After generating a large selection of solutions, we reviewed and determined the ones we were most interested in through a group vote. We narrowed down to two topics:
+To arrive at an idea for our project, we explored problems and potential solutions through the process of design thinking. Our ideation process began with a period of discovery where we determined ongoing societal problems and various game mechanics. We then created a chart to playful solutions to address these societal problems using the various game mechanics.  
+![Image](IdeationChart.png)
+
+We reviewed each of these solution and determined thse solutions were the most interesting through a group vote:
 - Showing popular news trends around the world
 - Quiz for sugar consumption.  
 
-After we defined potential project topics, we began to develop those ideas and design a potential application to realise our vision. To develop our project ideas, we took time as a group to flesh out and write two project proposals. We used a method of group writing to help create a cohesive direction for our group. When reviewing the completed briefs, we made another group vote to decide on Hobbit Sugar Rush. In the project summary, we outlined the methods by which we would address overconsumption of sugar with initial target users and application design. Here we expressed our goal of having a playful and educational experience. This process also introduced the idea of the hobbit. The hobbit acts as a medium for which the user can take care of the hobbit, providing an empathetic link between them and the player. We also defined the elements of the quiz such that a player would have to feed the hobbit throughout seven different meals, which are representative of the different meals from Tolkien mythology. This element adds further playfulness and added challenge compared to the normal three-meal day. The sugar threshold will be determined by NHS guidelines.
+We began to develop these ideas into a potential application by writing [project proposals for each](../SugarRushProposal.pdf). When writing these proposals, we used group writing to help create a cohesive direction for the project. After completing the two briefs, we used another group vote to decide on the final project idea: Hobbit Sugar Rush. In our proposal, we identified awareness sugar overconsumption as our primary goal and outlined the methods by which we would address it. During this process we made key decisions about the goals of our project.
+  - Create a playful and educational experience
+  - Use hobbits to encourage empathetic connection with sugar consumption
+  - Quiz format of seven different hobbit meals based on Tolkien mythology
+  - Sugar thresholds will be determined by NHS guidelines
 
-Once we completed our project proposal, we created an initial ‘paper’ prototype to represent the vision of the application. For this process, we used Google Slides and used each slide to determine the layout and expected behaviour of the different website pages. This prototype helped us envision the layout of our food quiz, with three food items per question. We also developed how the hobbit would be portrayed during the quiz. They would be present for each question and have reactions, such as a stomach ache. We also added a wizard to the page to provide feedback for each food selection, helping inform the player whether they had picked a food low or high in sugar. Here we also developed the method for showing the sugar level in foods with a graphical representation. Numbers may not mean much to some users, so a graphical representation of sugar in sugar cubes could be more informational. In this prototype, we also outlined initial user registration and ways to review a player's game at the end of a quiz. The initial idea of having different levels with different hobbits was generated here as well.
+Once we completed our project proposal, we created an [initial ‘paper’ prototype](https://docs.google.com/presentation/d/1PUFuL9rSekN_tIJ1nDB9tv86x6KvYPRJFryo8T6m-Vk/edit?usp=sharing) to represent the vision of the application. For this process, we used Google Slides. Each slide represented the layout and expected behaviour of the different website pages and components. 
 
-After we had developed our original idea into our initial prototype and proposal, we collected the thoughts and generated a final proposal and wireframe for the project. Throughout this process, we learned how to come up with an idea and hone in on the specifics to envision our product and how to make it viable. In order to improve our process in the future, we should strive to develop our hypotheses earlier and incorporate them even more into the foundation projects. We determined the following hypotheses will be evaluated for this project: 
+![image](paperPrototypeVillage.png)
+
+This prototype helped us develop further features of the application.
+  - Three food items per question in the food quiz
+  - Hobbit having reactions to sugar content of foods
+  - Wizard provides feedback on quiz answers (not implemented in MVP)
+  - Graphical representation of sugar content, which provides a tangible representation of the amount of sugar in foods (see [Sugar Stacks](http://www.sugarstacks.com/)).
+  - User registration process
+  - Initial quiz review or meal summary
+  - Levels with progressively challenging hobbits that have different dietary needs
+
+After we had developed our original idea into our initial prototype and proposal, we collected the thoughts and generated a final proposal and wireframe for the project.
+![Image](quizWireframe.png)
+
+Following additional discussions, we determined the following hypotheses will be evaluated for this project: 
 - Allowing users to control sugar consumption through the medium of another being would raise more conscious awareness of sugar consumption
 - Allowing users to visualise sugar consumption with images would improve understanding of an amount of sugar in a food item.
 - Playing the game will raise awareness about sugar consumption and the levels of sugar in certain foods.  
+
+Throughout this process, we learned how to come up with an idea and hone in on the specifics to envision our product. However, evaluation became difficult due to lack of hypotheses in the beginning of our project. Developing them later helped further focus our goals and interviews. In order to improve our development in the future, we should strive to develop any hypotheses earlier in the design process, so we can incorporate them even more.
 
 ### User Groups
 Although we had started to identify users during our project proposal, we took more time to define these users to specifically target our project design. We envisioned our app being playable by all, but we focused on users we felt would be more likely to use our application and created these three user groups:
