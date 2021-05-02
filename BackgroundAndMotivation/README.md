@@ -27,4 +27,7 @@ Most participants are not aware that both drinks contain similar levels of sugar
 
 ### Tackling the problem: industry review
 
-Nutrition labelling tries to overcome this issue by providing an overview of the macronutrients present in packaged food. As [6] point out, however, the sugar amounts presented on these labels (often in grams) do not translate into common units such as teaspoons, and therefore individuals struggle to visualise how much sugar they are consuming. These studies evidence the public misconceptions about sugar in processed foods, and demonstrate the need to raise awareness.
+Institutions often influence the behaviour of large groups of people through ‘nudging’. This involves subtly changing one’s choice environment to alter their actions in a predictable way without forbidding any options [5]. Nudging has already been applied to the UK food and drink sector in the form of nutrition labelling [6], where manufacturers are required to list an overview of the macronutrients present in processed food on their packaging. This makes people aware of how much sugar is contained in the food, which enables them to make informed decisions without limiting the options available.
+
+As [7] point out, however, the sugar amounts presented on these labels (often in grams) do not translate into common units such as teaspoons, and therefore individuals struggle to visualise how much sugar they are consuming. 
+
