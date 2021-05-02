@@ -38,7 +38,7 @@ Following additional discussions, we determined the following hypotheses will be
 Throughout this process, we learned how to come up with an idea and hone in on the specifics to envision our product. However, evaluation became difficult due to lack of hypotheses in the beginning of our project. Developing them later helped further focus our goals and interviews. In order to improve our development in the future, we should strive to develop any hypotheses earlier in the design process, so we can incorporate them even more.
 
 ### User Groups
-Although we had started to identify users during our project proposal, we took more time to define these users to specifically target our project design. We envisioned our app being playable by all, but we focused on users we felt would be more likely to use our application and created these three user groups:
+We initially knew our product would be educational, so we had anticipated some of our user groups, such as children. As we developed our ideas and applications, we identified more potential users. In the broadest scope of our poject, we envisioned our application being playable by all. However, we focused on users we felt would be more likely to use our application:
 
 - Children and teenagers
 - University students
@@ -46,20 +46,54 @@ Although we had started to identify users during our project proposal, we took m
 
 Children and teenagers are likely to use the app if parents or schools encourage exploration of educational games, particularly those involving nutrition. This group could also be more likely to engage with social media trends. University students could be likely to engage with the game to learn more about nutrition, enjoy some fantasy references, or simply to explore an application created by other university students. Finally, stable professionals would be likely to engage with the game in their spare time and potentially discuss it with their friends and families, including children.
 
-In addition to potential users, we also defined stakeholders as those who may play the game, but are particularly invested in how the game functions and affects its users. We identified two main stakeholders for our project
+In addition to potential users, we also defined stakeholders as those who may play the game, but are particularly invested in how the game functions and affects its users. The two main stakeholder groups for our project were as follows:
 
 - Parents
 - Healthcare workers  
 
-To appeal to parents, the educational intent of the game will need to be clear and the content will need to be age appropriate. For healthcare workers, we will need to ensure the game displays accurate nutrition info and that the application does not negatively impact the health of those participating.
+To appeal to parents, the educational intent of the game will need to be clear, and the content will need to be age appropriate. For healthcare workers, we will need to ensure the game displays accurate nutrition info and that the application does not negatively impact the health of those participating.
+
+These user groups and stakeholders influenced the user personas and user stories used to power our group's project management.
 
 ### Design Heuristics
-After we determined our users, we needed to define approaches and heuristics by which we would design our application. One of main approaches for designing the software was ensuring a user-focused design. Design decisions needed to incorporate how the user would use them and what would be the clearest and most helpful for them. In order to maintain this focus for our design, we created user personas for our user groups and stakeholders. Finally, after getting the initial foundation for the application completed, future design choices and tasks took the form of user stories.
+As we progressed through the project, we needed to define our design methodology and heuristics. One of the main approaches for designing our software was ensuring a user-focused design. All design decisions needed to incorporate the user's perspective. Initially, we accomplished this by discussing design choices as a group. We eventually, we evolved to using persona-based user stories to accomplish this.
 
-In addition to this design approach, we incorporate several design heuristics, which allowed us to have quick checks to ensure usability of our application. For this project, we derived design heuristics from Jakob Nielsen’s Heuristic Evaluation (source needed). Primarily, we wanted to focus on an aesthetic and minimalistic design. By keeping the website visually appealing and easy to navigate, users could focus on the intended experience we aimed to provide. Achieving consistency and standards between the different web pages would help aid users navigate through the application. Once they are comfortable navigating part of the website, they would be capable of navigating the rest of it, eliminating the need for tutorials on every screen.
+![image](sallyPersona.png)
 
-In addition to these main heuristics, we also focused on several other design heuristics. We wanted users to be able to navigate the website and be able to leave at any time. In the initial wireframe, we carefully designed ways to exit the system whichever way the user wanted to play. In our final design, we ensured a way to return to the site home if necessary. During our design, we also incorporated ways for users to seek help if they needed additional guidance. We do this by ensuring instructions are presented to users when they first open the website and providing different ways to get help on each webpage. Finally, we strived to make sure necessary steps and actions for the user had visuals that matched the real world. When a user clicks on a house, they are taken to that house and its corresponding hobbit. When the user is selecting food, we aimed to have it represent what the user was actually selecting.
+In addition to this design approach, we incorporate several design heuristics, which allowed us to have quick checks to ensure usability of our application. For this project, we derived design heuristics from Jakob Nielsen’s [Ten Usability Heuristics](https://pdfs.semanticscholar.org/5f03/b251093aee730ab9772db2e1a8a7eb8522cb.pdf). 
 
+  - Aesthetic and minimal design
+      - Definition: Content within site dialogue has only necessary information.
+      - By keeping the website visually appealing and easy to navigate, users could focus on the intended experience we aimed to provide.
+          - Minimal text on webpages to streamline user flows
+          - Pictures instead of test where possible
+          - Buttons over links for expected user actions
+  - Consistency and standards
+      - Definition: Site links and actions have similar names if a convention has already been established.
+      - By using standard terminology on the site, users could navigate the website intuitively.
+          - Button labeled 'Play' for players to enter the site
+          - Popup labeled 'Instructions' that explain workflow to users when first opening the application
+          - Button labeled 'Instructions' to help users find help
+          - Button labeled 'Share' to indicate social media sharing
+          - Share icons to indicate social media sharing for different social media platforms
+          - Button labeled 'Close' to close modal windows
+  - User control and freedom
+      - Definition: Users have the option to quit actions they click by mistake or do not wish to complete.
+      - Users would be able to return to the home screen or previous screen at any point in the the workflow.
+          - Modal windows for instructions, meal summary, and sharing can be closed to return to the previous screen
+          - Buttons from the quiz and game-end screens allow user to return to the home page
+          - In the initial wireframe, different exit workflows were available depending on whether a user was logged in or not.
+  - Help and documentation && 
+      - Definition: Necessary help and instructions are easy to find. Any necessary steps are listed discretely and clearly.
+      - During our design, we also incorporated ways for users to seek help if they needed additional guidance. 
+          - Instructions are presented to users when they first enter the website
+          - Instructions are a list of concise, discrete actions
+  - Recognition rather than recall
+      - Definition: Options are visible to the user, and instructions can be easily found.
+      - By favouring interaction with buttons and graphics, users can intuitively understand and select options they desire.
+          - Village and quiz screens have an instructions button to allow users to revisit instructions if they need help
+          - Quiz answers can be selected by clicking either the food name or image
+          - Buttons across the application are labeled with the action they perform rather than icons
 
 ### User Interviews
 In order to further understand our user groups, we created an interview and a walkthrough of our prototype to go through with potential users. For the interview we targeted university students and professionals. Due to the time allotted for this project and the inability to gain ethical approval prior to that time, we were unable to ask any minors for input on the prototype. We had a sample size n = 4, which is the minimum amount of people needed to perform qualitative studies on software design. For the interview, we created a prototype that combined the design in our paper prototype with the structure and behaviour of our wireframe. Following the interviews, these were updated to match the given feedback.
