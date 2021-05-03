@@ -1,41 +1,43 @@
 ## Sprints and Project Management
 
 ### Team Communication
-Throughout our group project we relied on agile to help divide and plan our project. Our workflow was a slightly modified version of the [agile process](https://www.atlassian.com/agile/project-management/workflow).
-We did not incorporate Epics or Initiatives into our workflow as the entire project fit into one or two Epics. However, we did take advantage of several other aspects from agile: standups, sprints, and kanban.   
+Throughout our group project we relied on agile to help divide and plan our project. Our workflow was a slightly modified version of the [agile process](https://www.atlassian.com/agile/project-management/workflow). We did not incorporate Epics or Initiatives into our workflow as the entire project fit into one or two Epics. However, we did take advantage of several other aspects from agile: standups, sprints, and kanban.   
+
+We initially considered using the waterfall project management style for our project. However, waterfall has some disadvantages which did not work well for our team. [Waterfall-style projects](https://www.atlassian.com/agile/project-management/program) inhibit team member specialisation because developers focus on only part of the development stack during each stage. Team member motivation can also be damaged if members are forced to work on uninteresting areas. Finally, the planning aspect of waterfall is risky and could be eratic. Phases are large and all-encompassing, making them difficult to plan, and one phase of the project can force every subsequent phase to be delayed. Agile worked best for our team because it is more flexible and allows developers to specialise in areas they prefer.  
 	
-Sprints were the primary tool that we used to group our project tasks. Each sprint was planned during a special meeting on the Friday before the start of a new sprint. Tasks for the week were planned as user stories and were documented in a [kanban board](https://trello.com/b/ZzT0p21S/site-development). Within this tool, we used a backlog as a place to hold all tasks we needed to achieve for our minimum viable product and a secondary backlog for non-critical features we would like to implement. Following the planning meeting, the sprint would run from the following Monday through Sunday. On each weekday we met for a [standup meeting](https://www.youtube.com/watch?v=er9gntPjTJU) to discuss the following:
-  - Things we've done between the previous meeting and now
-  - Things we're planning to work on today
-  - Review designs for integrated developement
-  - General questions or topics about the project
- 
-The primary goals of these meetings were to assign tasks, balance workload among members, and raise awareness of current tasks. Because standups are intended to be shorter meetings, we tried to keep the meetings between 15-30 minutes. 
-
-![Image](sprintSchedule.png)
-
-In addition to standups and regular meetings our team also used other means of communication. 
+Sprints were the primary tool that we used to group our project tasks and communicate goals. Regular meetings regarding sprints were the bulk of our team's communication. In addition to these meetings our team also used other means of communication. 
   - Instant messaging for one off questions and announcements
   - Video calls for discussing complicated questions and tasks
   - Paired programming for completing challenging development
   - Working sessions to focus on sprint tasks and simulate working concurrently in a computer lab
 
-Working sessions were introduced later in the project to induce certain working conditions. Throughout the project, team memebers felt they were missing the opportunity to work together like we would have without virtual learning. These sessions helped provide the team with an opportunity to ask questions or work individually throughout a set period of timme.
-	
-We initially considered using the waterfall project management style for our project. However, waterfall has some disadvantages which did not work well for our team. [Waterfall-style projects](https://www.atlassian.com/agile/project-management/program) inhibit team member specialisation because developers focus on only part of the development stack during each stage. Team member motivation can also be damaged if members are forced to work on uninteresting areas. Finally, the planning aspect of waterfall is risky and could be eratic. Phases are large and all-encompassing, making them difficult to plan, and one phase of the project can force every subsequent phase to be delayed. Agile worked best for our team because it is more flexible and allows developers to specialise in areas they prefer.  
+Working sessions were introduced later in the project to induce certain working conditions. Throughout the project, team memebers felt they were missing the opportunity to work together like we would have without virtual learning. These sessions helped provide the team with an opportunity to ask questions or work individually throughout a set period of time.
 
 ### Team Member Roles
 Our members specialised in areas that initially piqued our interests. We agreed to have multiple people in each area, and if one area was uninteresting or frustrating, members could switch roles to maintain maximum motivation. When determining roles, we initially divided roles between front end and back end. Within front-end roles, members specialised in either Angular development or UX/UI. For back-end roles, members specialised in Mongo, Node, or Express. Members could choose 2-3 roles of their choosing, able to mix and match between the two categories. In addition to these roles, we also assigned a project manager role. While each member did specialise, each also helped with varying development across sprints, allowing general knowledge in multiple areas. An overview of areas and contributions can be found below.  
 ![Image](TeamRoles.png)  
 
-During our project we used one-week sprints to divide our project. The contents of each sprint were determined during our weekly sprint planning meetings, which took place during our Friday standups. To keep these planning sessions focused, we created goals and guidelines to follow. Our primary goal for sprint planning was to have a clear focus for the next sprint. As part of this, we ensured each member knew the type of tasks they would be accomplishing over the next week and, if possible, the user stories they would be tackling. A seconday goal of these meetings was to see how the next sprint helps the team work towards our primary goals. The agenda included the following:
+### Sprint Overview
+
+During our project we used one-week sprints to plan our work. 
+![Image](sprintSchedule.png)
+
+The contents of each sprint were determined during our weekly sprint planning meetings, which took placen on Friday mornings. To keep these planning sessions focused, we created goals and guidelines to follow. The agenda included the following:
   - Overview of previous sprint's accomplishments
   - Overall team goals for the next sprint
   - Tasks that help achieve these goals
-  - Progress towards overall project goals  
+  - Progress towards overall project objectives 
 
-### Sprint Overview
-Throughout our project, we had a total of six sprints, each lasting a single week. The first sprint occurred the week of 29 March 2021. Each sprint focused on a specific subset of tasks: 
+Tasks for the week were planned in the form of user stories, which were documented in a [kanban board](https://trello.com/b/ZzT0p21S/site-development). Within this tool, we used a backlog as a placeholder for all tasks we needed to produce our minimum viable product. We also had a secondary backlog for non-critical features we would like to implement if time permits. 
+
+Following the planning meeting, the sprint would run the following week from Monday to Sunday. On each weekday we met for a [standup meeting](https://www.youtube.com/watch?v=er9gntPjTJU) to discuss the following:
+  - Things we've done between the previous meeting and now
+  - Things we're planning to work on today
+  - Designs for integrated developement
+  - General questions or topics about the project   
+The primary goals of these meetings were to assign tasks, balance workload among members, and raise awareness of current tasks. Because standups are intended to be shorter meetings, we tried to keep the meetings between 15-30 minutes. 
+
+Throughout our project, we had a total of five sprints, each lasting a single week. The first sprint occurred the week of 29 March 2021. Each sprint focused on a specific subset of tasks: 
   - [Sprint I](SugarRushSprint1.pdf)
       - Have an application that builds successful
       - Basic components and site navigation
@@ -51,16 +53,13 @@ Throughout our project, we had a total of six sprints, each lasting a single wee
   - Sprint V
       - Improve Github documentation
       - Improve sugar indicators throughout application
-  - Sprint VI
-      - Make village funcitonal
-      - Improve Github documentation
 
-Users stories were used to guide each sprint and the above goals. While the goal was to complete user stories within one sprint, however unforeseen complications and competing priorities sometimes delayed user stories. When a user story was delayed, this was considered for the next sprint so that more manageable tasks were planned.
+Users stories were used to guide each sprint and the above goals. While the goal was to complete user stories within one sprint, unforeseen complications and competing priorities sometimes caused delayed. When a user story was delayed, we evaluated the task to determine the root cause of the delay. We then adjusted future sprint planning to prevent similar delays in the future.
 ![Image](SprintDiagram.png)
-During our sprints, three main features served as highlights for our project. During Sprint III, when we finished the basic functionality for the quiz component we were much closer to accomplishing our minimum viable product. At this stage, we had connected the quiz to our food database and could pull question contents and information from it. The user could also complete a quiz that logged the total amount of sugar from their quiz answers. This was the most critical moment in our project. During Sprint III and IV, we added functionality to allow user state to flow from one component to another via our services. We used this functionality to create a dynamic game-end component that allows users to review quiz results and answers. These features marked another step towards arriving at our minimum viable product. Finally, another highlight was the successful implementation of Docker for all team members. Prior to a functional Docker container, the team had encountered issues due to varying versions of frameworks and Angular modules. Docker implementation also allowed us to seed our database identically and connect our website to expected data. These three accomplishments form the backbone of the current vresion of our product.    
+During our sprints, three main features served as highlights for our project. During Sprint III, when we finished the basic functionality for the quiz component we were much closer to accomplishing our minimum viable product. At this stage, we had connected the quiz to our food database and could pull question contents and information from it. The user could also complete a quiz that logged the total amount of sugar from their quiz answers. This was the most critical step in our project. During Sprint III and IV, we added functionality to allow user state to flow from one component to another via our services. We used this functionality to create a dynamic game-end component that allows users to review quiz results and answers. These features marked another step towards arriving at our minimum viable product. Finally, another highlight was the successful implementation of Docker for all team members. Prior to functional Docker configuration, the team had encountered issues building the aplication after pulling changes from the remote repository. Using Docker allowed us to have a standard container for our applicaiton. Docker implementation also allowed us to seed our database identically and connect our website to expected data. These three accomplishments form the backbone of the current vresion of our product.    
 
 ### Continuous Integration
-Throughout our project, we used Git to achieve continuous integration. When first starting the projectwe took advantage of git as a tool for continuous integration. Our initial strategy involved having two primary branches: the [main](../../../) branch was used for a demo-ready environment; the [develop](../../../tree/develop) branch was used to implement new features based on our user stories. In order to implement new features for our `develop` branch, we created individual feature branches from `develop`. When we completed these features, they were merged into `develop`. As our application took shape and became more complex, we implemented testing processes to ensure new features did not cause loss of previous functionality.
+Throughout our project, we used Git to achieve continuous integration. When first starting the projectwe took advantage of git as a tool for continuous integration. Our initial strategy involved having two primary branches: the [main](../../../tree/main) branch was used for a demo-ready environment; the [develop](../../../tree/develop) branch was used to implement new features based on our user stories. In order to implement new features for our `develop` branch, we created individual feature branches from `develop`. When we completed these features, they were merged into `develop`. As our application took shape and became more complex, we implemented testing processes to ensure new features did not cause loss of previous functionality.
 
 However, as development continued and issues were uncovered, we discovered we needed amore robust process established a more rigorous development schedule:  
 ![Image](DevProcess.png)
