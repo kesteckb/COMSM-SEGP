@@ -44,5 +44,5 @@ An alternative approach is to purposely educate people about the sugar content o
     * The game-group play ‘The Kingdom of Taste’ (a board game designed to spark interest in healthy meal composition) during a three week intervention period
     * Each group takes qualitative tests before and after the intervention period, and the authors record a significant positive change in food behaviour in most families 
 
-A review paper by Baranowski et al. (2019) [10] surveys 22 similar studies on dietary education and behaviour change games. They find that all but one of these reported positive changes in eating habits from playing the game. This finding supports the notion that healthy eating may be promoted through game-based nutritional education, suggests that educational games might be an effective way to tackle excess sugar consumption.
+A review paper by Baranowski et al. (2019) [10] surveys 22 similar studies on dietary education and behaviour change games. They find that all but one of these reported positive changes in eating habits from playing the game. This finding supports the notion that healthy eating may be promoted through game-based nutritional education, and suggests that educational games might be an effective way to tackle excess sugar consumption.
 
