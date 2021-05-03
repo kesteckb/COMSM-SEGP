@@ -5,11 +5,10 @@ Throughout our group project we relied on agile to help divide and plan our proj
 We did not incorporate Epics or Initiatives into our workflow as the entire project fit into one or two Epics. However, we did take advantage of several other aspects from agile: standups, sprints, and kanban.   
 	
 Sprints were the primary tool that we used to group our project tasks. Each sprint was planned during a special meeting on the Friday before the start of a new sprint. Tasks for the week were planned as user stories and were documented in a [kanban board](https://trello.com/b/ZzT0p21S/site-development). Within this tool, we used a backlog as a place to hold all tasks we needed to achieve for our minimum viable product and a secondary backlog for non-critical features we would like to implement. Following the planning meeting, the sprint would run from the following Monday through Sunday. On each weekday we met for a [standup meeting](https://www.youtube.com/watch?v=er9gntPjTJU) to discuss the following:
-  - Tasks
-      - Things we've done between the previous meeting and now
-      - Things we're planning to work on today
-      - Review designs for integrated developement
-      - General questions or topics about the project
+  - Things we've done between the previous meeting and now
+  - Things we're planning to work on today
+  - Review designs for integrated developement
+  - General questions or topics about the project
  
 The primary goals of these meetings were to assign tasks, balance workload among members, and raise awareness of current tasks. Because standups are intended to be shorter meetings, we tried to keep the meetings between 15-30 minutes. 
 
