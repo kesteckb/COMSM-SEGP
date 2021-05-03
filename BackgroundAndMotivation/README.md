@@ -14,7 +14,7 @@ It is clear from the data that:
 
 Additional data from the NDNS shows that sugar consumption has decreased over time, roughly by 14.4% for 11 – 18 year olds and 7.6% for 19 – 64 year olds between 2008 and 2016. At this rate, however, it would take over fifty years for actual consumption levels to match those recommended by the NHS. Given the adverse health effects of excess sugar consumption, this is a serious issue and accelerating the decrease in sugar intake would be greatly beneficial for the health of the population.
 
-### Identifying the problem: academic research
+### Identifying the cause: academic research
 
 To address this issue, it is crucial to understand why people are consuming excessive amounts of sugar in the first place. [3] highlights that the main sources of sugar in peoples diets are from processed foods such as cereals, confectionary, and non-alcoholic drinks. This is partly because there is a lack of awareness surrounding the sugar content of these foods. Consider [4]: 
 
@@ -27,7 +27,22 @@ Most participants are not aware that both drinks contain similar levels of sugar
 
 ### Tackling the problem: industry review
 
-Institutions often influence the behaviour of large groups of people through ‘nudging’. This involves subtly changing one’s choice environment to alter their actions in a predictable way without forbidding any options [5]. Nudging has already been applied to the UK food and drink sector in the form of nutrition labelling [6], where manufacturers are required to list an overview of the macronutrients present in processed food on their packaging. This makes people aware of how much sugar is contained in the food, which enables them to make informed decisions without limiting the options available.
+Institutions often influence the behaviour of large groups of people through ‘nudging’. This involves subtly changing one’s choice environment to alter their actions in a predictable way without forbidding any options [5]. Nudging has already been applied to the UK food and drink sector in the form of nutrition labelling [6], where manufacturers are required to list an overview of the macronutrients present in processed food on their packaging. This makes people aware of how much sugar is contained in the food, and enables them to make informed decisions without limiting their options. However, there are several drawbacks of this approach:
 
-As [7] point out, however, the sugar amounts presented on these labels (often in grams) do not translate into common units such as teaspoons, and therefore individuals struggle to visualise how much sugar they are consuming. 
+-	The sugar amounts presented on these labels (often in grams) do not translate into common units such as teaspoons, and therefore individuals may struggle to visualise how much sugar they are actually consuming [7]. 
+-	Nutrition labelling is mandatory, and manufacturers do not have an incentive to educate the people purchasing their products; the labels are often in small print and only those who are intentionally looking for it are likely to see it.
+
+An alternative approach is to purposely educate people about the sugar content of foods outside of any purchasing environment. Several studies have been conducted about the use of serious games to educate and influence the eating habits of children and adults.
+
+1. Sharma et al. (2015) [8]
+    * The study is conducted on a sample of 94 children in fourth and fifth grade (44 in intervention group and 50 in comparison group)
+    * The intervention group play ‘Quest to Lava Mountain’ (a resource-based RPG that shows players the nutritious value of healthy foods) for an average of 4.6 hours across 6 weeks 
+    * The authors report a statistically significant decrease in sugar consumption across children in the intervention group compared with the comparison group. 
+
+2. Skouw et al. (2020) [9]
+    * The study randomises 14 families into a game-group and non-game-group
+    * The game-group play ‘The Kingdom of Taste’ (a board game designed to spark interest in healthy meal composition) during a three week intervention period
+    * Each group takes qualitative tests before and after the intervention period, and the authors record a significant positive change in food behaviour in most families 
+
+A review paper by Baranowski et al. (2019) [10] surveys 22 similar paper on dietary education and behaviour change games. They find that all but one of these reported positive changes in eating habits from playing the game. Although most of these changes were relatively small, this finding supports the notion that healthy eating may be promoted through game-based nutritional education.
 
