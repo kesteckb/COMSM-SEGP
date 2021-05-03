@@ -50,9 +50,9 @@ Various modules were imported from Angular material such as icon, divider, butto
 
 Due to the quiz format of the application, the quiz component needs to change dynamically as the user interacts with it. This is achieved through conditional statements in the template (HTML) and class (typescript). The chart below illustrates the processes in this component:
 
-![flowchart for foodQuizComponent](quiz-flowchart.png)
+(Yellow blocks shows user input, grey blocks show updated display, blue diamonds show conditional statements in the template, and the orange tracks shows how/when the boolean values checked in the conditional statements are updated.)
 
-Yellow blocks shows user input, grey blocks show updated display, purple diamonds show conditional statements in the template, red dotted lines shows how/when the boolean values checked in the conditional statements are updated.
+![flowchart for foodQuizComponent](quiz-flowchart.png)
 
 ### Injectables/Services
 
