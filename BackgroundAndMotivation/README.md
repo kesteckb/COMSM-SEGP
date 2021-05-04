@@ -46,3 +46,11 @@ An alternative approach is to purposely educate people about the sugar content o
 
 A review paper by Baranowski et al. (2019) [10] surveys 22 similar studies on dietary education and behaviour change games. They find that all but one of these reported positive changes in eating habits from playing the game. This finding supports the notion that healthy eating may be promoted through game-based nutritional education, and suggests that educational games might be an effective way to tackle excess sugar consumption.
 
+In light of this, we develop a gamified learning tool in the form of a web application. Players are required to feed a hobbit throughout the day by selecting their food for seven different meals. After they select a food, its sugar content appears, and this is added to the hobbit’s cumulative sugar consumption for the day. The aim of the game is to make it through the day selecting meals without exceeding the maximum sugar threshold for the hobbit. Several features of our quiz align with those identified in [11] for effective game design in promoting a healthy diet:
+
+-	Story/theme: we apply a storyline to the sugar-quiz with the hobbit theme
+-	Rewards: players receive their score at the end of the game based on their performance
+-	Feedback: players can reflect on their performance by viewing their meal summaries at the end of the quiz. 
+-	Levels/progress: we add ‘villages’ to simulate difficulty levels. Levels are made more difficult by reducing the maximum sugar threshold for the hobbit and by selecting foods for which the sugar content is less obvious. 
+
+Based on our background research, we believe this quiz will provide a fun and engaging way for people of all ages to learn more about the sugar content of various foods. In turn, they will be more informed and able to make healthier dietary choices, which may result in a decrease in excess sugar consumption.
