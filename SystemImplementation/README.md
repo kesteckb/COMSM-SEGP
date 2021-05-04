@@ -110,48 +110,36 @@ During development and testing, building docker containers required 2-15 minutes
 
 ### Continuous Integration
 
-Throughout our project, we achieved continuous integration using Git and GitHub. 
+Throughout our project, we achieved continuous integration using Git and GitHub. More information on how continuous integration was used for in combination with sprints, see our [Sprints and Project Management section](/SprintsAndProjectManagement/#continuous-integration). Within our development cycle, continuous integration was used extensively when developing, testing, staging, and publishing our code. Within these stages we used different branches. The `main` branch was primarily used as a production or demo-ready environment. The `develop` branch was primarly used as a staging environment for new code changes. Individual feature branches were used to create and test new changes.
 
+#### Development
+When developing new changes for the website, and individual feature branch was created from an up-to-date `develop` branch. We planned co-dependent tasks sequentially across different sprints to avoid complicated merges. Althernatively, these co-dependent features could be developed in the same sprint by branching from the parent feature over `develop`. We chose our approach for simplicity. 
 
+Branch creation had no set process. Team members could create a branch locally using Git and pushing the branch to the remote repository. When creating a branch locally, members needed to perform a `git pull` command to make sure their local repository matched the remote repository. Members could also create a branch on GitHub. Once a branch was created, it was developed locally with occasional pushes to the remote repository. 
 
-- Stack architecture and system design (e.g. class diagrams, sequence diagrams)
-    - Class diagrams
-        - Brief description
-        - Advantages and disadvantages of our setup
-    - Sequence diagrams and brief description
-        - Brief description
-        - Are there any ways we could have improved this with more time?
-- Back End - MongoDB - database implementation, the data model that you developed your back end from (e.g. entity relationship diagrams).
-    - Entity relationship diagram
-    - Why did we choose this model?
-    - What design choices/changes did we make
-        - Storing meals in food instead of meals
-        - Removing the need of the meal collection
-        - Use of arrays in collections  
-- Middle Tier - Express, Node, the RESTful API
-    - Express
-        - What did we use Express for?
-        - How was it implemented?
-        - Why did we use it this way?
-    - Node
-        - How did we use node?
-        - Wny did we use it this way?
-    - RESTful API
-        - How did we use node?
-        - Why did we use it this way?
-- Front End - Angular. Details of implementation.
-    - How did we use angular?
-    - How were the components organization?
-    - Why did we decide to do it this way?
-- Additional elements and components e.g. authentification. Tell us about any other aspects not covered above!
-    - Why didn't we use user authentication?
-    - What benefit would user authetication have had?
-    - Seeding the database
-    - Quiz techinical overview
-    - Social media sharing (if completed)
-- Deployment details (including Docker), include how you have been achieving continuous integration and deployment.
-    - How have we achieved continuous integration?
-    - Docker
-        - Things we changed in the docker file
-        - Ways we used docker
-        - Instructions for how to deploy?
+While developing features, we tested functionality as we went, but the methods for doing so evolved over the project. As mentioned above, we initially used docker to build our project to test any changes, regardless of complexity. This method took additional time because a Docker image needed to be at least partially built. Once we exposed local ports for the `db` container, we tested all small changes locally.
+
+#### Testing 
+After completing development of a feature, our processes called for more rigorous testing. The testing process was divided into different rounds. Simple changes required one round of testing. Complex, integrated changes required two rounds of testing, one performed by the developer and one by another team member. A round of testing consisted of following steps:
+  1. Test website in feature branch
+  2. Test website in `develop`
+  3. Merge feature branch into local `develop` branch
+  4. Test website in `develop`
+
+Creating steps 2 and 3 was a critical point for our team. If testing fails during step 2, the developer knows there is an existing problem in develop. If testing fails after step 3, the developer knows a problem was introduced by the new feature.
+
+#### Staging
+After new features were successfully tested, they were staged by merging the changes into `develop` via a pull request. In general, we preferred the GitHub pull request over a `git push` terminal command. The `git push` command has few guardrails and limited documentation compared to the pull request feature. Pull requests also allow members to delete the remote feature branch with a single click during the merge. 
+
+In some scenarios, merges could not be automatically completed within a pull request. These situations usually resulted from file conflicts, which would need to be manually resolved. We allowed two methods to complete the merge. The easier of the two methods falls back to simply performing a `git push` from our *local* repository, where conflicts were already resolved during testing. Members also had the option to follow steps GitHub recommended within the pull request. For both methods, Atom was used to resolve file conflicts.
+
+After we staged any change, we performed a quick test to verify the application behaved as expected. Occasionally staging developed created an issue with another part of the webiste. For example, once two different members made changes to the quiz component, and during conflict resolution a variable name was renamed incorrectly. The resulting change prevented sugar content from appearing within the quiz and was missed during testing. When these issues were spotted, they were handled differently depending on their severity. For severe issues, changes were made directly in `develop`. For less severe issues, they were fixed within an existing feature branch and eventually mgerged into `develop`.
+
+#### Publishing
+The final step of our continuous integration cycle was to publish features by merging `develop` into `main` on a biweekly basis. We chose a two-week period because we were more likely to find issues present in `develop` over a two-week period. When publishing changes, another testing process was performed to identify any potential issues discovered during the merge:
+  1. Test website in `develop`
+  2. Test website in `main`
+  3. Merge `develop` into `main` via a GitHub pull request unless conflicts required otherwise.
+  4. Test website in `main`
+
+Although the decision to have a biweekly merge into `main` allowed it to remain stable and demo-ready, it also allowed merges to become complex. Though we never encountered issues with this strategy, a weekly merge could have improved our process by limiting the complexity of these merges.
