@@ -65,21 +65,15 @@ Throughout our project, we used Git to achieve continuous integration. Our initi
 Our [process](SugarRushDevCycle.pdf) focused on key steps for each stage of the development cycle. The beginning of the cycle includes [ideation](../UXDesign) and sprint planning (discussed above). The remaining stages of development form our continuous integration.
 
 #### Development
-All branches must be made from an up-to-date `develop` branch. We planned co-dependent tasks sequentially across different sprints to follow this rule. Althernatively, these co-dependent features could be developed in the same sprint by branching from the parent feature over `develop`. We chose our approach for simplicity. 
+Feature branches were used to develop functionality for user stories. Our process requiered these branches be made from an up-to-date `develop` branch. Some user stories were dependent on functionality from other features. To avoid complicated merges, we planned these dependent tasks sequentially so that they occurred in different sprints.  
 
 #### Testing 
-After completing development of a feature, testing was required. Testing occurred over different rounds. Simple changes required one round of testing. Complex, integrated changes required two rounds of testing, one performed by the developer and one by another team member. A round of testing consisted of following steps:
-  1. Test website in feature branch
-  2. Test website in `develop`
-  3. Merge feature branch into local `develop` branch
-  4. Test website in `develop`
-
-Creating steps 2 and 3 was a critical point for our team. If testing fails during step 2, the developer knows there is an existing problem in develop. If testing fails after step 3, the developer knows a problem was introduced by the new feature.
+Testing was required following completed development of a feature. In general, testing involved testing the application in the staging environment and the feature environment to make sure both had expected behaviour. Depending on the complexity of the change, additional team members performed testing on the change. For sprint planning, tesing time was bundled together with estimated development time.
 
 #### Staging
-After features were successfully tested the feature could be staged by merging the feature into `develop` via a pull request. In general, we preferred the GitHub pull request over a `git push` terminal command. The `git push` command has few guardrails and limited documentation compared to the pull request feature. Pull requests also allow members to delete the remote feature branch with a single click during the merge. When merges could not be manually merged in GitHub, we created the pull request in GitHub, but completed the merge via Git. 
+Following testing, all changes were merged into the remote `develop` branch. Changes within `develop` would then be included in any new branches. This continuous use of completed development while implementing new changes provided frequent use of existing changes, allowing them to become more robust.  
 
 #### Publishing
-The final step of our continuous integration cycle was to publish features to our `main` branch by merging `develop` into `main`. This merge occurred biweekly on Fridays at the end of the current sprint. We chose this time frame to allow changes from the previous two sprints. This choice allowed a greater number of features to be included in `main`, especially if user stories from the previous sprint were delayed. If issues were present in `develop`, we were also more likely to find them over a two-week period. Our choice to delay updating `main` helped it remain stable, which was ideal our team's demos.   
+In order to publish changes, all changes in `develop` were merged into `main` on a biweekly basis, or every two sprints. We chose this schedule arbitrarily, but weliked the idea of incorporating changes from two whole sprints to see more noticeable changes in `main`. This decision allowed us to catch big issues in `develop` before they made it to `main`, which helped it remain stable. Stability in `main` was important for our group as we primarily used this branch for demos.   
 
 [Return to Main Page](../../../)
