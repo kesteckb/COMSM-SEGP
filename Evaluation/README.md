@@ -24,7 +24,7 @@ Unfortunately, for both the interview and the observation, we were unable to int
 
 For more information about what design choices we made based on the results of the interviews/observations, please refer to the [UX Design](/UXDesign#user-interviews) section of our report.
 
-[Click here](Sugar Rush - User Interviews Part 1) to see our user interview script for round 1.
+[Click here](user_interview_round_1.pdf) to see our user interview script for round 1.
 
 #### Focus groups
 
