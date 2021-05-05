@@ -8,25 +8,25 @@
 
 We initially considered having another intermediate testing between the wireframe testing and final testing but did not have time to actualize this. However, we were able to perform a focus group test which was not initially planned. 
 
-Most of our evaluation was performed through a combination of observation and interview.
-
 #### Observations
 
-The type of observation we undertook was direct observation in a controlled environment. For our design (a game-like application played in short sessions), a controlled environment would not be too different from activity in a field. Direct observation was chosen over indirect observation as we found it to be more efficient to note down details during the process rather than capturing the process automatically and analysing for data later. We also did not have the human resources or time to record many tests. 
+The type of observation we undertook was direct observation in a controlled environment. For our design (a game-like application played in short sessions), a controlled environment would not be too different from activity in a field. Direct observation was chosen over indirect observation as we found it to be more efficient to note down details during the process rather than capturing the process automatically and analysing for data later. We also did not have the human resources or time to record many tests. This might have limited our data collection in that some details might have been missed by the observer.
 
-This method of evaluation provides a greater degree of freedom, thus allowing us to gather information we did not think of regarding our design. We were also to note down details in how the users interacted with our wireframe. However, the data collected using this technique is largely qualitative instead of quantitative.
+This method of evaluation was especially useful near the beginning of our sprints, as the open-ended nature of the participant's interaction with our prototype allowed us to gather information we did not previously consider regarding our design. However, the data collected using this technique is largely qualitative instead of quantitative, so the importance of certain design choices may not be exactly as we interpreted (for example, something that bothered one participant might not be as big of a problem to most of our target users).
 
 #### Interviews
 
-Our observations took place after a brief interview with the test users to find out more about their preferences in gaming. This allowed us to cross reference our findings from the observations with personas and thus create focused user stories.
+Our observations took place after a brief interview with the participants to find out more about their preferences in gaming. This allowed us to cross reference our findings from the observations with personas and thus create focused user stories.
 
 Unfortunately, for both the interview and the observation, we were unable to interact with our original main target audience (teens and children) because this required an extra ethics approval, which we submitted but was not able to get in time for the project. This meant we only had data on a limited demographic.
 
-For more information about what design choices we made based on the results of the interviews/observations, please refer to the [UX Design](/UXDesign#user-interviews) section of our report.
-
-[Click here](user_interview_round_1.pdf) to see our user interview script for round 1.
+For more information about what design choices we made based on the results of the inital round of interviews and observations, please refer to the [UX Design](/UXDesign#user-interviews) section of our report. You can also [click here](user_interview_round_1.pdf) to see our user interview script for the initial round.
 
 #### Focus groups
+
+Our focus group had a format similar to the inital observation and interview, with discussions between the observer and multiple participants at the same time. A focus group allowed us to obtain responses from more participants at once. Encouraging discussion between the participants also may result in some form of synergy - i.e. some ideas may arise which would not have during one-on-one discussion with just one participant. 
+
+However, within a focus group, the group dynamic may also affect the discussion negatively, for example, a stronger voice or opinion may overpower everyone else. 
 
 #### Questionnaires
 
