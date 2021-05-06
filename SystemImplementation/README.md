@@ -1,6 +1,20 @@
-# System Implementation  
+## 3. System Implementation 
+* [3.1 Overview](/README.md#overview)
+* [3.2 Database](/README.md#database)
+* [3.3 Server](/README.md#server)
+* [3.4 Client-side Application](/README.md#client-side-application)
+  * [3.4.1 View](/README.md#view)
+  * [3.4.2 Interactions](/README.md#interactions)
+  * [3.4.3 Injectables/Services](/README.md#injectablesservices)
+* [3.5 Additional Features](/README.md#additional-features)
+  * [3.5.1 Seeding the database](/README.md#seeding-the-database)
+  * [3.5.2 Authentication](/README.md#authentication-or-lack-thereof)
+* [3.6 Deployment](/README.md#deployment)
+  * [3.6.1 Docker Implementation](/README.md#docker-implementation)
+  * [3.6.2 Docker Optimisations](/README.md#docker-optimisations)
+  * [3.6.3 Continuous Integration](/README.md#continuous-integration)
 
-## Overview
+### 3.1 Overview
 
 In our single page application, we chose to use the MEAN stack. MEAN stands for MongoDB, Express, Angular and Node.js. In the MEAN stack, Angular handles the front-end clientside application, MongoDB handles the backend database, and Node.js and Express handle the middle tier server. Specifically, Express handles services and getting data from the database, and node.js provides a runtime environment. 
 
@@ -10,7 +24,7 @@ Below is an example sequence diagram for our application which shows in more det
 
 ![Sequence diagram](sequence-diagram.png)
 
-## Database
+### 3.2 Database
 
 MongoDB is a NoSQL database program which uses JSON-like documents. A NoSQL database is more scalable and flexible compared with traditional SQL databases. To make it easier to use data from the database, the Object Data Modeling (ODM) library Mongoose is used.
 
@@ -24,20 +38,20 @@ However, during development, it was decided that for a minimum viable product th
 - API to access each collection was found in ./server/routes/ directory.
 - More details on how the documents are accessed is described in the server section.
 
-## Server
+### 3.3 Server
 
 ![Node setup diagram](node-require-diagram.png)
 - Several RESTful APIs were set up to access each of the collections in the database. Mongoose is used to process these requests and communicate with the database. These were all built on the express framework and setup as illustrated in the diagram above.
 - server.js is the main file used to implement the server-side code for Node.js. In the server.js file, Express is configured, connection to database is established through the db.js file, and routing to the APIs are set up.
 
-## Client-side Application
+### 3.4 Client-side Application
 
 Angular has a couple of uses in developing a web application:
 - a component-based framework
 - a collection of libraries to handle features including routing, forms, client-server communication
 - and a suite of developer tools to help develop, build, test and update the code.
 
-### View
+#### 3.4.1 View
 
 Using the component-based framework, each of the sections of the application is generated dynamically in the appcomponent. The structure of the components is as below: 
 (Note that a dashed connection indicates that the connected component is a modal component that can be opened up from the parent component.)
@@ -46,7 +60,7 @@ Using the component-based framework, each of the sections of the application is 
 
 Various modules were imported from Angular material such as icon, divider, button, progress-bar, list, and dialog and used in the components.
 
-### Interactions
+#### 3.4.2 Interactions
 
 Due to the quiz format of the application, the quiz component needs to change dynamically as the user interacts with it. This is achieved through conditional statements in the template (HTML) and class (typescript). The chart below illustrates the processes in this component:
 
@@ -54,7 +68,7 @@ Due to the quiz format of the application, the quiz component needs to change dy
 
 ![flowchart for foodQuizComponent](quiz-flowchart.png)
 
-### Injectables/Services
+#### 3.4.3 Injectables/Services
 
 ![injectables diagram](injectable.png)
 
@@ -64,20 +78,20 @@ In our application, we need to keep track of the choices made during the quiz, t
 
 Note that in order for the modal components to access a service, we found that the service needed to be first linked to MatDialog module. 
 
-## Additional Features
-### Seeding the database
+### 3.5 Additional Features
+#### 3.5.1 Seeding the database
 The database was seeded using a javascript file. The file makes use of mongoose.
 - each collection is cleared using `delete.many({})` 
 - new documents are initiated and saved into the collection
 
 This script is ran on start-up of the docker container along with the command to start the express server. This was accomplished by having a bash script that contained both of these commands in the docker-compose.yml file. There will be more details about the deployment of the site in the next section.
 
-### Authentication (or lack thereof)
+#### 3.5.2 Authentication (or lack thereof)
 We first considered incorporating authetication before our first user testing session, but from the results of the user testing, we decided against this. User testing found that most did not see the point of ghaving authetication for this type of application and would have found it either confusing or concerning that it is required. 
 
-## Deployment
+### 3.6 Deployment
 
-### Docker Implementation
+#### 3.6.1 Docker Implementation
 For our application, Docker is used for deployment to provide a consistent runtime environment. Our application is run on two containers with one container running the node.js environment and one container running the database.
 
 A Dockerfile is used to build the `nodejs` container within an Alpine image.
@@ -96,7 +110,7 @@ A docker-compose.yml file is used to run both containers.
   - Executes script to ensure `nodejs` does not run before `db` is running
   - Executes scrip to seed our database with site data 
 
-### Docker Optimisations
+#### 3.6.2 Docker Optimisations
 
 Over the project period, we made several optimisations to improve our experience with Docker. When pulling files from our repository, Git changes the file endings based on someone's git configuration. When these files are copied over to the container, specifically shell scripts, the container can fail to build correctly due to unexpected characters in the file. We addressed this issue in two ways:
   - We installed the wait-for.sh script when building `nodejs`
@@ -108,18 +122,18 @@ During development and testing, building docker containers required 2-15 minutes
       - Expose a port for local database hosting
   - We added node_modules to a .dockerignore file. This directory is built when the container is built via `npm install`.
 
-### Continuous Integration
+#### 3.6.3 Continuous Integration
 
 Throughout our project, we achieved continuous integration using Git and GitHub. More information on how continuous integration was used for in combination with sprints, see our [Sprints and Project Management section](/SprintsAndProjectManagement/#continuous-integration). Within our development cycle, continuous integration was used extensively when developing, testing, staging, and publishing our code. Within these stages we used different branches. The `main` branch was primarily used as a production or demo-ready environment. The `develop` branch was primarly used as a staging environment for new code changes. Individual feature branches were used to create and test new changes.
 
-#### Development
+##### Development
 When developing new changes for the website, and individual feature branch was created from an up-to-date `develop` branch. We planned co-dependent tasks sequentially across different sprints to avoid complicated merges. Althernatively, these co-dependent features could be developed in the same sprint by branching from the parent feature over `develop`. We chose our approach for simplicity. 
 
 Branch creation had no set process. Team members could create a branch locally using Git and pushing the branch to the remote repository. When creating a branch locally, members needed to perform a `git pull` command to make sure their local repository matched the remote repository. Members could also create a branch on GitHub. Once a branch was created, it was developed locally with occasional pushes to the remote repository. 
 
 While developing features, we tested functionality as we went, but the methods for doing so evolved over the project. As mentioned above, we initially used docker to build our project to test any changes, regardless of complexity. This method took additional time because a Docker image needed to be at least partially built. Once we exposed local ports for the `db` container, we tested all small changes locally.
 
-#### Testing 
+##### Testing 
 After completing development of a feature, our processes called for more rigorous testing. The testing process was divided into different rounds. Simple changes required one round of testing. Complex, integrated changes required two rounds of testing, one performed by the developer and one by another team member. A round of testing consisted of following steps:
   1. Test website in feature branch
   2. Test website in `develop`
@@ -128,14 +142,14 @@ After completing development of a feature, our processes called for more rigorou
 
 Creating steps 2 and 3 was a critical point for our team. If testing fails during step 2, the developer knows there is an existing problem in develop. If testing fails after step 3, the developer knows a problem was introduced by the new feature.
 
-#### Staging
+##### Staging
 After new features were successfully tested, they were staged by merging the changes into `develop` via a pull request. In general, we preferred the GitHub pull request over a `git push` terminal command. The `git push` command has few guardrails and limited documentation compared to the pull request feature. Pull requests also allow members to delete the remote feature branch with a single click during the merge. 
 
 In some scenarios, merges could not be automatically completed within a pull request. These situations usually resulted from file conflicts, which would need to be manually resolved. We allowed two methods to complete the merge. The easier of the two methods falls back to simply performing a `git push` from our *local* repository, where conflicts were already resolved during testing. Members also had the option to follow steps GitHub recommended within the pull request. For both methods, Atom was used to resolve file conflicts.
 
 After we staged any change, we performed a quick test to verify the application behaved as expected. Occasionally staging developed created an issue with another part of the webiste. For example, once two different members made changes to the quiz component, and during conflict resolution a variable name was renamed incorrectly. The resulting change prevented sugar content from appearing within the quiz and was missed during testing. When these issues were spotted, they were handled differently depending on their severity. For severe issues, changes were made directly in `develop`. For less severe issues, they were fixed within an existing feature branch and eventually mgerged into `develop`.
 
-#### Publishing
+##### Publishing
 The final step of our continuous integration cycle was to publish features by merging `develop` into `main` on a biweekly basis. We chose a two-week period because we were more likely to find issues present in `develop` over a two-week period. When publishing changes, another testing process was performed to identify any potential issues discovered during the merge:
   1. Test website in `develop`
   2. Test website in `main`
@@ -143,3 +157,5 @@ The final step of our continuous integration cycle was to publish features by me
   4. Test website in `main`
 
 Although the decision to have a biweekly merge into `main` allowed it to remain stable and demo-ready, it also allowed merges to become complex. Though we never encountered issues with this strategy, a weekly merge could have improved our process by limiting the complexity of these merges.
+
+[Previous Section](/BackgroundAndMotivation/README.md) | [Next Section](/UXDesign/README.md)
