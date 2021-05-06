@@ -16,7 +16,7 @@
 
 ### 3.1 Overview
 
-In our single page application, we chose to use the MEAN stack. MEAN stands for MongoDB, Express, Angular and Node.js. In the MEAN stack, Angular handles the front-end clientside application, MongoDB handles the backend database, and Node.js and Express handle the middle tier server. Specifically, Express handles services and getting data from the database, and node.js provides a runtime environment. 
+In our single page application, we chose to use the MEAN stack. MEAN stands for MongoDB, Express, Angular and Node.js. In the MEAN stack, Angular[<sup>[1]</sup>](README.md#references) handles the front-end clientside application, MongoDB[<sup>[2]</sup>](README.md#references) handles the backend database, and Node.js[<sup>[3]</sup>](README.md#references) and Express[<sup>[4]</sup>](README.md#references) handle the middle tier server. Specifically, Express handles services and getting data from the database, and node.js provides a runtime environment. 
 
 ![Structure of a MEAN stack](mean-stack.png)
 
@@ -26,7 +26,7 @@ Below is an example sequence diagram for our application which shows in more det
 
 ### 3.2 Database
 
-MongoDB is a NoSQL database program which uses JSON-like documents. A NoSQL database is more scalable and flexible compared with traditional SQL databases. To make it easier to use data from the database, the Object Data Modeling (ODM) library Mongoose is used.
+MongoDB is a NoSQL database program which uses JSON-like documents. A NoSQL database is more scalable and flexible compared with traditional SQL databases. To make it easier to use data from the database, the Object Data Modeling (ODM) library Mongoose[<sup>[5]</sup>](README.md#references) is used.
 
 Below is the initial data model planned for the application:
 
@@ -58,7 +58,7 @@ Using the component-based framework, each of the sections of the application is 
 
 ![component hierachy diagram](Component_diagram.png)
 
-Various modules were imported from Angular material such as icon, divider, button, progress-bar, list, and dialog and used in the components.
+Various modules were imported from Angular material[<sup>[6]</sup>](README.md#references) such as icon, divider, button, progress-bar, list, and dialog and used in the components.
 
 #### 3.4.2 Interactions
 
@@ -84,7 +84,7 @@ The database was seeded using a javascript file. The file makes use of mongoose.
 - each collection is cleared using `delete.many({})` 
 - new documents are initiated and saved into the collection
 
-This script is ran on start-up of the docker container along with the command to start the express server. This was accomplished by having a bash script that contained both of these commands in the docker-compose.yml file. There will be more details about the deployment of the site in the next section.
+This script is ran on start-up of the docker container along with the command to start the express server. This was accomplished by having a bash script that contained both of these commands in the docker-compose.yml file. There will be more details about the deployment of the site in the [deployment](README.md#deployment) subsection.
 
 #### 3.5.2 Authentication (or lack thereof)
 We first considered incorporating authetication before our first user testing session, but from the results of the user testing, we decided against this. User testing found that most did not see the point of ghaving authetication for this type of application and would have found it either confusing or concerning that it is required. 
@@ -92,7 +92,7 @@ We first considered incorporating authetication before our first user testing se
 ### 3.6 Deployment
 
 #### 3.6.1 Docker Implementation
-For our application, Docker is used for deployment to provide a consistent runtime environment. Our application is run on two containers with one container running the node.js environment and one container running the database.
+For our application, Docker[<sup>[7]</sup>](README.md#references) is used for deployment to provide a consistent runtime environment. Our application is run on two containers with one container running the node.js environment and one container running the database.
 
 A Dockerfile is used to build the `nodejs` container within an Alpine image.
   - All packages listed in the project package.json folder are copied to the image
@@ -157,5 +157,14 @@ The final step of our continuous integration cycle was to publish features by me
   4. Test website in `main`
 
 Although the decision to have a biweekly merge into `main` allowed it to remain stable and demo-ready, it also allowed merges to become complex. Though we never encountered issues with this strategy, a weekly merge could have improved our process by limiting the complexity of these merges.
+
+### References:
+1. Angular - https://angular.io/
+2. MongoDB - https://www.mongodb.com/
+3. Node.js - https://nodejs.org/en/
+4. Express - Node.js web application framework - https://expressjs.com/
+5. Mongoose ODM v5.12.7 - https://mongoosejs.com/
+6. Angular Material UI component library - https://material.angular.io/
+7. Docker: Empowering App Development for Developers - https://www.docker.com/
 
 [Previous Section](/BackgroundAndMotivation/README.md) | [Next Section](/UXDesign/README.md)
