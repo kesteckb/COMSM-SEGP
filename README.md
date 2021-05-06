@@ -23,14 +23,38 @@ We will accomplish this by making a game where players will need to feed a hobbi
 ### Project Objectives
 ![image of objectives][objectives]
 
+## How to Run
+  1. Clone or fork this repository
+  2. In your local repository, navigate to the SugarRushSite directory
+  3. Add a .env file with the appropriate environment variables
+  4. Run `docker compose up --build`
+  5. When the site is finished building and you see the successful connection message, navigate to the local host on your device (probably http://localhost:3000/).
 
 ## [Background and Motivation](BackgroundAndMotivation)
+  - [An overview of the problem: background literature](/BackgroundAndMotivation#an-overview-of-the-problem-background-literature)
+  - [Identifying the cause: academic research](/BackgroundAndMotivation#identifying-the-cause-academic-research)
+  - [Tackling the problem: industry review](/BackgroundAndMotivation#tackling-the-problem-industry-review)
 
 ## [System Implementation](SystemImplementation)
+  - [Overview](/SystemImplementation#overview)
+  - [Database](/SystemImplementation#database)
+  - [Server](/SystemImplementation#server)
+  - [Client-side Application](/SystemImplementation#client-side-application)
+  - [Additional Features](/SystemImplementation#additional-features)
+  - [Deployment](/SystemImplementation#deployment)
 
 ## [UX Design](UXDesign)
+  - [Ideation](/UXDesign#ideation)
+  - [User Groups](/UXDesign#user-groups)
+  - [Design Heuristics](/UXDesign#design-heuristics)
+  - [User Interviews](/UXDesign#user-interviews)
+  - [Impact of Design](/UXDesign#impact-of-design)
 
 ## [Sprints & Project Management](SprintsAndProjectManagement)
+  - [Team Communication](/SprintsAndProjectManagement#team-communication)
+  - [Team Member Roles](/SprintsAndProjectManagement#team-member-roles)
+  - [Sprint Overview](/SprintsAndProjectManagement#sprint-overview)
+  - [Continuous Integration](/SprintsAndProjectManagement#continuous-integration)
 
 ## [Evaluation](Evaluation)
 
