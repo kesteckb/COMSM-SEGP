@@ -4,15 +4,15 @@
 
 ## Team
 
-* Kyle
-* Zack
-* Zain
-* Olivia
-* Angela
+* [Zack Turman](https://github.com/zkturman)
+* [Zain Ansari](https://github.com/zainansarii)
+* [Olivia Green](https://github.com/livigreen)
+* [Kyle Steckbauer](https://github.com/kesteckb)
+* [Angela Liu](https://github.com/angelaliuyl)
 
  [View our team notes!](https://1drv.ms/u/s!ArK70JvM660kiJU316Riv8bJ639P4A)
 
-## [Introduction](Introduction)
+## 1. Introduction
 
 ![image](./SugarRushSite/src/assets/homepage-prototype.JPG)
 
@@ -23,41 +23,43 @@ We will accomplish this by making a game where players will need to feed a hobbi
 ### Project Objectives
 ![image of objectives][objectives]
 
-## How to Run
+### How to Run
   1. Clone or fork this repository
   2. In your local repository, navigate to the SugarRushSite directory
   3. Add a .env file with the appropriate environment variables
   4. Run `docker compose up --build`
   5. When the site is finished building and you see the successful connection message, navigate to the local host on your device (probably http://localhost:3000/).
 
-## [Background and Motivation](BackgroundAndMotivation)
-  - [An overview of the problem: background literature](/BackgroundAndMotivation#an-overview-of-the-problem-background-literature)
-  - [Identifying the cause: academic research](/BackgroundAndMotivation#identifying-the-cause-academic-research)
-  - [Tackling the problem: industry review](/BackgroundAndMotivation#tackling-the-problem-industry-review)
+## [2. Background and Motivation](BackgroundAndMotivation/README.md)
+  - [2.1 An overview of the problem: background literature](/BackgroundAndMotivation/README.md#an-overview-of-the-problem-background-literature)
+  - [2.2 Identifying the cause: academic research](/BackgroundAndMotivation/README.md#identifying-the-cause-academic-research)
+  - [2.3 Tackling the problem: industry review](/BackgroundAndMotivation/README.md#tackling-the-problem-industry-review)
 
-## [System Implementation](SystemImplementation)
-  - [Overview](/SystemImplementation#overview)
-  - [Database](/SystemImplementation#database)
-  - [Server](/SystemImplementation#server)
-  - [Client-side Application](/SystemImplementation#client-side-application)
-  - [Additional Features](/SystemImplementation#additional-features)
-  - [Deployment](/SystemImplementation#deployment)
+## [3. System Implementation](SystemImplementation/README.md)
+  - [3.1 Overview](/SystemImplementation/README.md#overview)
+  - [3.2 Database](/SystemImplementation/README.md#database)
+  - [3.3 Server](/SystemImplementation/README.md#server)
+  - [3.4 Client-side Application](/SystemImplementation/README.md#client-side-application)
+  - [3.5 Additional Features](/SystemImplementation/README.md#additional-features)
+  - [3.6 Deployment](/SystemImplementation/README.md#deployment)
 
-## [UX Design](UXDesign)
-  - [Ideation](/UXDesign#ideation)
-  - [User Groups](/UXDesign#user-groups)
-  - [Design Heuristics](/UXDesign#design-heuristics)
-  - [User Interviews](/UXDesign#user-interviews)
-  - [Impact of Design](/UXDesign#impact-of-design)
+## [4. UX Design](UXDesign/README.md)
+  - [4.1 Ideation](/UXDesign/README.md#ideation)
+  - [4.2 User Groups](/UXDesign/README.md#user-groups)
+  - [4.3 Design Heuristics](/UXDesign/README.md#design-heuristics)
+  - [4.4 User Interviews](/UXDesign/README.md#user-interviews)
+  - [4.5 Impact of Design](/UXDesign/README.md#impact-of-design)
 
-## [Sprints & Project Management](SprintsAndProjectManagement)
-  - [Team Communication](/SprintsAndProjectManagement#team-communication)
-  - [Team Member Roles](/SprintsAndProjectManagement#team-member-roles)
-  - [Sprint Overview](/SprintsAndProjectManagement#sprint-overview)
-  - [Continuous Integration](/SprintsAndProjectManagement#continuous-integration)
+## [5. Sprints & Project Management](SprintsAndProjectManagement/README.md)
+  - [5.1 Team Communication](/SprintsAndProjectManagement/README.md#team-communication)
+  - [5.2 Team Member Roles](/SprintsAndProjectManagement/README.md#team-member-roles)
+  - [5.3 Sprint Overview](/SprintsAndProjectManagement/README.md#sprint-overview)
+  - [5.5 Continuous Integration](/SprintsAndProjectManagement/README.md#continuous-integration)
 
-## [Evaluation](Evaluation)
+## [6. Evaluation](Evaluation/README.md)
+  - [6.1 Evaluation Techniques](/Evaluation#evaluation-techniques)
 
-## [Conclusion](Conclusion)
+
+## [7. Conclusion](Conclusion)
 
 [objectives]: https://github.com/kesteckb/COMSM-SEGP/blob/589a88fab268159178cd2475934a3c967123bc37/image.png
