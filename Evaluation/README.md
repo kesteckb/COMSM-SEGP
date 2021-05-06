@@ -24,14 +24,17 @@ For more information about what design choices we made based on the results of t
 
 #### Focus groups
 
-Our focus group had a format similar to the inital observation and interview, with discussions between the observer and multiple participants at the same time. A focus group allowed us to obtain responses from more participants at once. Encouraging discussion between the participants also may result in some form of synergy - i.e. some ideas may arise which would not have during one-on-one discussion with just one participant. 
+Our focus group had a format similar to the inital observation and interview, with discussions between the observer and multiple participants at the same time. A focus group allowed us to obtain responses from more participants at once. However, because there were multiple participants, the navigation of the application was controlled by the interviewer, and he would ask the participants to instruct the next steps. Because this evaluation was closer to the end of the build process, we were also more clear of our design intentions and asked more pointed questions about certain design choices we made to get feedback on them. There was sometimes unprompted discussion or brainstorm about certain features of the application, which allowed us to see how our application was interpreted compared to our intentions, much like in the first round of evaluation. Encouraging discussion between the participants also may have resulted in some form of synergy - i.e. some ideas may arise which would not have during one-on-one discussion with just one participant.  
 
-However, within a focus group, the group dynamic may also affect the discussion negatively, for example, a stronger voice or opinion may overpower everyone else. 
+However, within a focus group, the group dynamic may have also affected the discussion negatively, for example, a stronger voice or opinion may overpower everyone else, or people may have been more inclined to voice an opinion in agreement. With a larger group of people, it was also sometimes more difficult to guide the discussion which meant that there were more (perhaps less helpful) tangental discussions. Also, the interviewer noted that the focus group was comprised of his own friends which could have resulted in biased opinion.
 
 #### Questionnaires
 
+We did not use questionnaires for our first evaluation because we wanted to record how the participants interacted with our prototype which would not be possible (or at least not very easy to accomplish) with a questionnaire. However, we recognised that some form of evaluation in the form of questionnaires might have been useful in allowing us to collect more quantitative data (which we currently lack), and may allow us to collect a larger quantity of responses overall. This may also be better suited for a final evaluation to identify how successful we were at achieving our overall goals and objectives.
+
 #### Ethnography
 
+Given that our application was a relatively straightforward game format, we felt that performing an ethnography would not be worth the amount of time and resource that would have needed to go into it. We also believe that none of us are qualified to extract accurate and useful data from this form of evaluation. As such, this was not a method that we considered.
 
 *  Details of how you evaluated your designs (techniques used & awareness of their limitations). Description of  techniques suitable for your particular design. A timeline of evaluation of your design.  
     * Techniques to evaluate
