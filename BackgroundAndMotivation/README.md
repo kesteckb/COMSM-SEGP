@@ -58,4 +58,4 @@ In light of this, we develop a gamified learning tool in the form of a web appli
 
 Based on our background research, we believe this quiz will provide a fun and engaging way for people of all ages to learn more about the sugar content of various foods. In turn, they will be more informed and able to make healthier dietary choices, which may result in a decrease in excess sugar consumption.
 
-[Home](../) | [Next Section](/SystemImplementation/README.md)
+[Home](../README.md) | [Next Section](/SystemImplementation/README.md)
