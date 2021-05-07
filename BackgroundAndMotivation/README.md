@@ -1,7 +1,7 @@
 ## 2 Background and Motivation
-  * [2.1 An overview of the problem: background literature](/README.md#an-overview-of-the-problem-background-literature)
-  * [2.2 Identifying the cause: academic research](/README.md#identifying-the-cause-academic-research)
-  * [2.3 Tackling the problem: industry review](/README.md#tackling-the-problem-industry-review)
+  * [2.1 An overview of the problem: background literature](README.md#21-an-overview-of-the-problem-background-literature)
+  * [2.2 Identifying the cause: academic research](README.md#22-identifying-the-cause-academic-research)
+  * [2.3 Tackling the problem: industry review](README.md#23-tackling-the-problem-industry-review)
 
 ### 2.1 An overview of the problem: background literature
 

@@ -1,12 +1,12 @@
 ## 5. Sprints and Project Management
-* [5.1 Team Communication](README.md#team-communication)
-* [5.2 Team Member Roles](README.md#team-member-roles)
-* [5.3 Sprint Overview](README.md#sprint-overview)
-* [5.4 Continuous Integration](README.md#continuous-integration)
-	* [5.4.1 Development](README.md#development)
-	* [5.4.2 Testing](README.md#testing)
-	* [5.4.3 Staging](README.md#staging)
-	* [5.4.4 Publishing](README.md#publishing)
+* [5.1 Team Communication](README.md#51-team-communication)
+* [5.2 Team Member Roles](README.md#52-team-member-roles)
+* [5.3 Sprint Overview](README.md#53-sprint-overview)
+* [5.4 Continuous Integration](README.md#54-continuous-integration)
+	* [5.4.1 Development](README.md#541-development)
+	* [5.4.2 Testing](README.md#542-testing)
+	* [5.4.3 Staging](README.md#543-staging)
+	* [5.4.4 Publishing](README.md#544-publishing)
 
 ### 5.1 Team Communication
 Throughout our group project we relied on agile to help divide and plan our project. Our workflow was a slightly modified version of the [agile process](https://www.atlassian.com/agile/project-management/workflow). We did not incorporate Epics or Initiatives into our workflow as the entire project fit into one or two Epics. However, we did take advantage of several other aspects from agile: standups, sprints, and kanban.   

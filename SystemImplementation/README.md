@@ -1,18 +1,18 @@
 ## 3. System Implementation 
-* [3.1 Overview](/README.md#overview)
-* [3.2 Database](/README.md#database)
-* [3.3 Server](/README.md#server)
-* [3.4 Client-side Application](/README.md#client-side-application)
-  * [3.4.1 View](/README.md#view)
-  * [3.4.2 Interactions](/README.md#interactions)
-  * [3.4.3 Injectables/Services](/README.md#injectablesservices)
-* [3.5 Additional Features](/README.md#additional-features)
-  * [3.5.1 Seeding the database](/README.md#seeding-the-database)
-  * [3.5.2 Authentication](/README.md#authentication-or-lack-thereof)
-* [3.6 Deployment](/README.md#deployment)
-  * [3.6.1 Docker Implementation](/README.md#docker-implementation)
-  * [3.6.2 Docker Optimisations](/README.md#docker-optimisations)
-  * [3.6.3 Continuous Integration](/README.md#continuous-integration)
+* [3.1 Overview](README.md#31-overview)
+* [3.2 Database](README.md#32-database)
+* [3.3 Server](README.md#33-server)
+* [3.4 Client-side Application](README.md#34-client-side-application)
+  * [3.4.1 View](README.md#341-view)
+  * [3.4.2 Interactions](README.md#342-interactions)
+  * [3.4.3 Injectables/Services](README.md#343-injectablesservices)
+* [3.5 Additional Features](README.md#35-additional-features)
+  * [3.5.1 Seeding the database](README.md#351-seeding-the-database)
+  * [3.5.2 Authentication](README.md#352-authentication-or-lack-thereof)
+* [3.6 Deployment](README.md#36-deployment)
+  * [3.6.1 Docker Implementation](README.md#361-docker-implementation)
+  * [3.6.2 Docker Optimisations](README.md#362-docker-optimisations)
+  * [3.6.3 Continuous Integration](README.md#363continuous-integration)
 
 ### 3.1 Overview
 
@@ -167,4 +167,4 @@ Although the decision to have a biweekly merge into `main` allowed it to remain 
 6. Angular Material UI component library - https://material.angular.io/
 7. Docker: Empowering App Development for Developers - https://www.docker.com/
 
-[Previous Section](/BackgroundAndMotivation/README.md) | [Next Section](/UXDesign/README.md)
+[Previous Section](/BackgroundAndMotivation/README.md) | [Home](../README.md) | [Next Section](/UXDesign/README.md)

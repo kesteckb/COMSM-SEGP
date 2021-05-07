@@ -1,10 +1,10 @@
 ## 4. UX Design
 
-* [4.1 Ideation](/README.md#ideation)
-* [4.2 User Groups](/README.md#user-groups)
-* [4.3 Design Heuristics](/README.md#design-heuristics)
-* [4.4 User Interviews](/README.md#user-interviews)
-* [4.5 Impact of Design](/README.md#impact-of-design)
+* [4.1 Ideation](README.md#41-ideation)
+* [4.2 User Groups](README.md#42-user-groups)
+* [4.3 Design Heuristics](README.md#43-design-heuristics)
+* [4.4 User Interviews](README.md#44-user-interviews)
+* [4.5 Impact of Design](README.md#45-impact-of-design)
 
 ### 4.1 Ideation
 To arrive at an idea for our project, we explored problems and potential solutions through the process of design thinking. Our ideation process began with a period of discovery where we determined ongoing societal problems and various game mechanics. We then created a chart to playful solutions to address these societal problems using the various game mechanics.  
