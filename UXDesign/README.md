@@ -1,6 +1,12 @@
-## UX Design
+## 4. UX Design
 
-### Ideation
+* [4.1 Ideation](/README.md#ideation)
+* [4.2 User Groups](/README.md#user-groups)
+* [4.3 Design Heuristics](/README.md#design-heuristics)
+* [4.4 User Interviews](/README.md#user-interviews)
+* [4.5 Impact of Design](/README.md#impact-of-design)
+
+### 4.1 Ideation
 To arrive at an idea for our project, we explored problems and potential solutions through the process of design thinking. Our ideation process began with a period of discovery where we determined ongoing societal problems and various game mechanics. We then created a chart to playful solutions to address these societal problems using the various game mechanics.  
 ![Image](IdeationChart.png)
 
@@ -37,7 +43,7 @@ Following additional discussions, we determined the following hypotheses will be
 
 Throughout this process, we learned how to come up with an idea and hone in on the specifics to envision our product. However, evaluation became difficult due to lack of hypotheses in the beginning of our project. Developing them later helped further focus our goals and interviews. In order to improve our development in the future, we should strive to develop any hypotheses earlier in the design process, so we can incorporate them even more.
 
-### User Groups
+### 4.2 User Groups
 We initially knew our product would be educational, so we had anticipated some of our user groups, such as children. As we developed our ideas and applications, we identified more potential users. In the broadest scope of our poject, we envisioned our application being playable by all. However, we focused on users we felt would be more likely to use our application:
 
 - Children and teenagers
@@ -55,7 +61,7 @@ To appeal to parents, the educational intent of the game will need to be clear, 
 
 These user groups and stakeholders influenced the user personas and user stories used to power our group's project management.
 
-### Design Heuristics
+### 4.3 Design Heuristics
 As we progressed through the project, we needed to define our design methodology and heuristics. One of the main approaches for designing our software was ensuring a user-focused design. All design decisions needed to incorporate the user's perspective. Initially, we accomplished this by discussing design choices as a group. We eventually, we evolved to using persona-based user stories to accomplish this.
 
 ![image](sallyPersona.png)
@@ -95,7 +101,7 @@ In addition to this design approach, we incorporate several design heuristics, w
           - Quiz answers can be selected by clicking either the food name or image
           - Buttons across the application are labeled with the action they perform rather than icons
 
-### User Interviews
+### 4.4 User Interviews
 In order to further understand our user groups, we created an interview and a walkthrough of our prototype. For the interview we targeted university students and professionals. Due to the time allotted for this project and the inability to gain ethical approval prior to that time, we were unable to ask any minors for input on the prototype. We had a sample size n = 4, which is the minimum amount of people needed to perform [in-depth interviews and usability studies](https://www.gov.uk/service-manual/user-research/plan-user-research-for-your-service). 
 
 For the interview, we created a prototype that combined the design in our paper prototype with the structure and behaviour of our wireframe. The interview allowed us to gain insight into how users would use our application. It also gave us the opportunity to update our prototype to match these key pieces of feedback:
@@ -106,8 +112,9 @@ For the interview, we created a prototype that combined the design in our paper 
 
 Originally we included registration so users' progress through different levels could be stored persistently. Now, we have chosen to remove user registration and rely on website cookies to track a user’s progress. We also changed the delivery of instructions in the game. Automatic modal instructions appear when a user first accesses the site. Instructions are delivered via an optional modal window during the quiz. In the final version of the product, instructions will be provided via hobbit dialogue during the quiz. Buttons that provide instructions have been re-labeled to 'Instructions' to increase clarity of the button’s function. Finally, users were interested in learning more about the sugar content of food, so we have changed the sugar-cube icons to teaspoons to better represent sugar content. Originally, we planned to show the sugar content only for the selected food items. However, this choice masks the potential educational capabilities of the application. Now, we also will show the sugar content for all food items after each question. 
 
-### Impact of Design
+### 4.5 Impact of Design
 Following our interviews with potential users, we were able to solidify the product we would develop. We created a [final prototype](WireframeForUserTestingFinal.pptx) that will be used for front-end development and guide any design choices. We created a [final wireframe](SEGPWireframe) that will serve as a guide to website behaviour and layout. The wireframe will help guide front-end and back-end development. Finally, using information we gathered from the interviews, we created a corresponding user flow diagram to guide how a user will step through the website. This tool helped guide website navigation and back-end development.
 
 ![Image](userFlowDiagram.png)
 
+[Previous Section](/SystemImplementation/README.md) | [Home](../README.md) | [Next Section](/SprintsAndProjectManagement/README.md)
