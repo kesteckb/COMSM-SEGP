@@ -2,10 +2,22 @@
    text-align: center;
    border: 2px solid;
 }
+
+.mealImage > img{
+   height: 50%;
+   width: 50%;
+}
+
 .mealTitle{
    text-align: center;
    border: 2px solid;
 }
+
+.mealFood{
+   text-align: center;
+   border: 2px solid;
+}
+
 .nutritionInfo{
    text-align: center;
    border: 2px solid;

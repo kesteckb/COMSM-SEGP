@@ -1,19 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 //import { DataService } from '../data.service';
-import { FoodItemService, IFoodItem } from '../fooditem.service';
+import { FoodItemService, IFoodItem, MealTitle } from '../fooditem.service';
 import { ActivatedRoute } from '@angular/router';
 import { HobbitService } from '../hobbit.service';
-
-// TODO: Move to a different file? Some sort of constants file?
-export enum MealTitle {
-  BREAKFAST = 'Breakfast',
-  SECOND_BREAKFAST = 'Second Breakfast',
-  ELEVENSES = 'Elevenses',
-  LUNCHEON = 'Luncheon',
-  AFTERNOON_TEA = 'Afternoon Tea',
-  DINNER = 'Dinner',
-  SUPPER = 'Supper',
-}
 
 @Component({
    selector: 'app-food-quiz',
