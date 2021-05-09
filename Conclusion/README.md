@@ -1,67 +1,19 @@
 ## Conclusion
 
-- Reflect on the working practices of your group, how well they did or did not work, e.g, management of issues, communication, Agile (etc).
-    - Sprints
-        - What worked well about this?
-        - What didn't work so well about this?
-    - Communication
-        - What worked well about this?
-        - What didn't work so well about this?
-    - Issue management
-        - What worked well about this?
-        - What didn't work so well about this?
-    - Group development
-        - What worked well about this?
-        - What didn't work so well about this?
-    - Standups
-        - What worked well about this?
-        - What didn't work so well about this?
-- Reflective discussion of the success of the project. How well did your project fulfil the brief? Were all of your own objectives met
-    - Did we meet all our objectives?
-        - If we didn't meet some of them, why not?
-        - Which objectives did we meet?
-    - Did we successfully create a playful website that addresses a serious topic?
-        - How was it playful?
-        - How was it serious?
-- This is a chance to reflect on how coronavirus has affected your project (remote working practices etc)
-    - What were the benefits of remote working?
-        - Ability to work at on pace
-        - Learning remote ways to interview and do demos with people
-        - Increased opportunity for self-learning
-    - What were the downsides of remote working?
-        - No in-person demos or interviews
-        - Contact with group and TAs
-        - Unable to work physically in groups over a period of time
-        - Various internet capabilities
-        - Various device capabilities
-        - Overall slower progress
-- Discussion of Social and Ethical implications of your work.
-    - Social implications
-    - Ethical implications
-        - Overall ethical verdict based on normative ethics.
-        - Explanation 
-            - Deontic ethics
-                - Did the project follow guidelines?
-                - Does the application follow guidelines?
-                - What series of rules are we talking about?
-            - Virtue ethics
-                - When considering morals, how did the application do?
-                    - The purpose of the application strives to raise awareness of sugar consumption so people can make more informed deitary decisions. This application arms people with the tools to eat healthier and improve their lifestyle. With consideration of virtue ethics, the intentions and applications of this project are morally sound, and therefore, ethical.
-            - Consequentialism
-                - Based on potential consequences of this application, is it ethical?
-                - Are there potential consequences of the app that make it unethical?
-                    - Children thinking crisps are healthier than granola
-                    - People using this as a source of truth for nutritional information
-                    - Increased anxiety around how people eat and make decisions about food.
-                    - Misinterpretation of daily limits of sugar consumption
-                    - Lack of interaction with healthcare provider could lead to distrust of the application
-- Discussion of future work (in terms of design, development and evaluation)
-    - Additional hobbits
-        - How are these designed and developed?
-        - How will this be evaluated?
-    - Use of meals instead of individual food items
-        - How are these designed and developed?
-        - How will this be evaluated?
-    - Site statistics for the quiz
-        - How will this be designed and implemented?
-        - How will it be evaluated?
+Our group took an Agile development approach towards our project which was focused around maintaining and building upon a functional codebase, and developing the application through a series of sprints. Initially, a git repository was established to support the foundational Angular framework, and a paper prototype was developed as an outline for the application. We then began holding daily standups where the focus was for each member of the team to communicate what they had worked on, what roadblocks they were experiencing, and which task they would be working on going forward. This time was also used to identify the primary project goals for the week, and to determine where each team member could best contribute. Overall, this approach had a positive impact on the project, as without the daily standups team members could have been more inclined to procrastinate on their tasks, and isolate themselves from the group. The group sprint planning also helped to unify a vision for the project for all team members by establishing the most important features throughout different stages of development. This process wasn’t without its challenges, however. A lot of the managerial tasks fell on the scrum master, and there were other assignments and classes that people were focusing on at times, causing project progress and standup attendance to sometimes dip.
+
+We were able to meet many of the objectives that we set out to accomplish, however with more development, we feel there are several improvements which could be made. Our application meets our requirements for a minimum viable product with the following features:
+
+    - Create a "Start" screen to welcome players, link to instructions, and allow a player to begin the food quiz
+    - Develop a food quiz game which would populate food choices from a database for the player to select from
+    - Keep track of total sugar consumption throughout the quiz, and display it to the player relative to a maximum sugar level
+    - Populate a 'meal summary' at the end of the quiz which lists the player's food choice and their sugar content
+
+One of the objectives that we set early on was to have a village of several hobbit homes with different hobbits in them. These would act as levels in the game, where different hobbits could have varying nutrional needs of various difficulty for the player. Long term health problems which can stem from excessive sugar consumption can be very significant, and for this reason we feel this application addresses a serious topic. We think that the use of Tolkien iconography makes the game more playful and fun for those who use the application, and that the mechanic of feeding the hobbit is more engaging than simply quizing a player on sugar in different foods.
+
+The coronavirus pandemic has certainly had a significant impact on the way groups work together. In a typical school year, students on the MSc course would have been attending classes together, and getting to know each other in and out of the classroom. These experiences allow for bonding and rapport building which creates a foundation for team learning and cooperation. Those personal relationships aren’t developed when students aren’t meeting each other and working together in person, limiting their ability to communicate and work together remotely. Working together separately and remotely increases the impact of small roadblocks and technical issues. When people are meeting on campus in a computer lab, there is a greater focus on what is to be worked on during that time, and less inclination to be distracted by other coursework or outside distractions. There is also the psychological impact of the lockdowns, where people are not able to participate in social gatherings, or to simply go out and pursue their normal lives. Much is still unknown about the effects of this, but certainly many people are struggling with being isolated at home.
+
+The purpose of the application strives to raise awareness of sugar consumption so people can make more informed dietary decisions. This application arms people with the tools to eat healthier and improve their lifestyle. With consideration of virtue ethics, the intentions and applications of this project are morally sound, and therefore, ethical. Concerns regarding the consequential ethics generally center around the application being used beyond its scope. We would not, for example, recommend that our application be used as the sole resource for dietary guidance. Nutritional needs can vary greatly for individuals, and sugar consumption is only one aspect of that. 
+
+Though we were able to meet many of the goals we had set out to achieve, there are certainly many aspects which could be further improved. The gameplay elements of our application are very simple, and would benefit from more complexity. Currently, the food items populated in the quiz are limited, and we would like to expand those options. We would also want to further integrate the outside nutrition API, so that there could be much more variability in the options presented to the players. With more time, it would be fun to add more original artwork to the application, as well as some simple animation.
+
