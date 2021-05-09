@@ -10,8 +10,8 @@ import { NgSocialLinksService } from 'ng-social-links';
 export class HomeComponent implements OnInit {
 
 
-  welcomeMessage = 'Welcome to SugarRush!'
-  aboutMessage = 'This is a game which tracks the sugar consumption of a hobbit. The purpose of this game is to help you understand the amount of sugar in everyday foods and encourage healthier eating patterns.'
+  welcomeMessage = 'SugarRush!'
+  aboutMessage = 'Set out on an adventure to the pantry! Feed your hobbit, track his sugar.'
   facebookShareLink: String;
   twitterShareLink: String;
   redditShareLink: String;

@@ -7,6 +7,7 @@ import { NgbModalConfig, NgbModal } from '@ng-bootstrap/ng-bootstrap';
   // add NgbModalConfig and NgbModal to the component providers
   providers: [NgbModalConfig, NgbModal]
 })
+
 export class ModalConfigComponent {
   constructor(config: NgbModalConfig, private modalService: NgbModal) {
     // customize default values of modals used by this component tree

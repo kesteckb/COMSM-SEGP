@@ -1,9 +1,12 @@
-.special-card {
-  background-color: rgba(245, 245, 245, 1);
-  opacity: .40;
+.card {
+  width: 180px;
+  height: auto;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  margin-bottom: 2em;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
+.card-text {
+  text-align: center;
 }
+

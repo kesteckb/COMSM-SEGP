@@ -1,9 +1,6 @@
 
-<button onclick="location.href='./game-over'" >
-  Next
-</button>
 
-<div class="jumbotron">
+<div class="container">
    <h1 class="display-4 center">{{meals[currentMeal].name}}</h1>
    <div class = "topright">
      <button mat-flat-button [routerLink]="cond_vall ? ['/game-over'] : []"
@@ -49,6 +46,7 @@
       </li>
     </ul>
 
+    
     <div class="bottomright">
       <div *ngIf="belowMaxSugar(); else sickHobbit">
         <img src="/assets/hobbit_1.png" height="400" width="280">

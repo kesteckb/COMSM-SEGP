@@ -1,3 +1,4 @@
+
 .wrapper{
    display: grid;
    grid-template-columns: 1fr 5fr;
@@ -8,7 +9,6 @@
 }
 
 .wrapper > section{
-   border: 2px solid;
    text-align: center;
 }
 
@@ -18,16 +18,21 @@
 
 .summaryInfo > div{
    margin: auto;
-   border: 1px solid;
+  
 }
 
-.summaryInfo > h3{
+h3 {
    margin: auto;
-   border: 1px solid;
+   font-family: 'Crafty Girls', cursive !important;
+   font-weight: bolder;
+   font-size: xx-large;
+   padding: 1rem;
+   color: #034732;
 }
 
 .summaryText{
-   text-align: left;
+   text-align: center;
+   padding: 1rem;
 }
 
 .buttonRow{
@@ -37,5 +42,12 @@
 }
 
 .buttonRow > div{
-   border: 1px solid;
+   
 }
+
+@media only screen and (max-width: 800px) {
+   .imageBox {
+      display: none;
+   }
+}
+

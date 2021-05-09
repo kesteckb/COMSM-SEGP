@@ -1,80 +1,73 @@
-.container {
-  max-width: 92%;
-  display: flex;
-  align-items: center;
+
+
+.container   {
+display: inline-flex;
+justify-content: space-evenly;
+align-items: center;
+padding-top: 5rem;
+padding-left: 12em;
 }
-.jumbotron { 
-  height: 85vh;
-  background: repeating-linear-gradient(
-      to right,
-      #FFFFFF,
-      #FFFFFF 3px,
-      #C9E3AC 3px,
-      #C9E3AC 6px
-      );
-  }
 
- button {
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-    vertical-align: middle;
-    border-radius: 100%;
-    overflow: hidden;
-    font-size: 26px;
-    font-weight: bold;
-    text-align: center;
-    background-color:#C84630;
-    color: ivory;
-    margin-bottom: 1em;
-    outline: 0;
-    border: none;
-    font-family: 'Crafty Girls', cursive !important;
+.infoAndButton {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
 
-  }
-  
-  button:hover {
-    background-color: #EA9010;
-  }
-  
-  .center {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .lead {
-    text-align: center;
-    display: flex;
-    font-size: 17px;
-    color: #034732;
-    font-weight: bold;
-  }
-  
-  .title {
-    font-family: 'Crafty Girls', cursive !important;
+.Button {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+
+  #upperText {
+    color: white;
     font-weight: bolder;
-    text-align: center;
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
-    font-size: 60px;
-    text-shadow: 2px 2px #C84630;
-    color: #034732;
-    
+    font-size: 36px;
   }
-  
+
+  #lowerText {
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
+  }
+
   .gameinfo {
     background:none;
-    border-style: solid;
-    border-width: 4px;
-    color: #EA9010;
-    background-color: #F5F9F1; 
     display: flex;
-    margin-right: 20em;
-    margin-left: 20em;
-    margin-top: 2.5em;
+    flex-flow: column;
+    justify-content: space-around;
     font-size: 12px;
+    color: tomato;
   }
 
+
+
+  .shareIcons {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .icon {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    width: 85%;
+    height: auto;
+  }
+
+  .HobbitImage {
+    display: flex;
+    justify-content: flex-end;
+    vertical-align: middle;
+    
+  }
+
+  
   
   /* resizing for tablets*/
   @media only screen and (max-width: 1023px) {
@@ -96,8 +89,4 @@
       justify-content: center;
     }
 
-    .gameinfo {
-      margin-right: 17em;
-      margin-left: 17em;
-    }
   }

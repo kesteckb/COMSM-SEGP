@@ -1,20 +1,42 @@
 <!--include 'style="background:pink !important"' in div to change colour-->
+<body>
+  
+
+<nav class="py-0">
+  <section class="shareIcons">
+      <div>
+         <a [attr.href]="facebookShareLink"><img src="./assets/facebook.png" alt="Facebook Icon" class="icon img-fluid"></a>
+      </div>
+      <div>
+         <a [attr.href]="twitterShareLink"><img src="./assets/twitter.png" alt="Twitter Icon" class="icon"></a>
+      </div>
+      <div>
+         <a [attr.href]="redditShareLink" ><img src="./assets/reddit.png" alt="Reddit Icon" class="icon"></a>
+      </div>
+      </section>
+    </nav>
+
 <div class="container">
-  <div class="row-lg-12" >
-  <div class="jumbotron">
-  <header>
-    <h1 class="title center">{{welcomeMessage}}</h1>
-  </header>
-  <section class = "center">
-      <button onclick="location.href='./village'" >
-        Play
-      </button>
-  </section>
+  <div class="infoAndButton">
     <section class="gameinfo">
-      <p class="lead">{{aboutMessage}}</p>
+      <p id="upperText">Set out on adventure to the pantry</p>
+      <p id="lowerText">Feed your hobbit. 
+        Track his sugar. Unlock new levels and learn as you go about all the fun stuff that you can do.
+      </p>
     </section> 
+    <section class="Button">
+      <a class="btn btn-primary" href="./village" role="button">Let's Play!</a>  
+    </section>
   </div>
+   <div>
+    <section class="HobbitImage">
+      <img src="./assets/HobbitHomePage.png" alt="Hobbit Artwork">
+    </section>
+   </div>
   </div>
-  </div>
+  </body>
+ 
+
+ 
  
 

@@ -3,12 +3,6 @@
   justify-content: center;
 }
 
-.jumbotron{
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-}
-
 .container {
   left: 1500px;
   padding-top: 80px;
@@ -36,11 +30,13 @@
 }
 
 .bottomright {
-  position: absolute;
-  left: 65%;
-  margin-right: auto;
-  top: 540px;
+  display: flex;
+  justify-content: flex-end;
+}
 
+img {
+  width: 100px;
+  height: auto;
 }
 
 .list-width {
