@@ -2,7 +2,6 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { HobbitService } from '../hobbit.service';
 import { IFoodItem, MealTitle } from '../fooditem.service';
-import { IQuizAnswer } from '../food-quiz/food-quiz.component';
 
 @Component({
    selector: 'app-meal-modal',

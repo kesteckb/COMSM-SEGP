@@ -4,14 +4,6 @@ import { FoodItemService, IFoodItem, MealTitle } from '../fooditem.service';
 import { ActivatedRoute } from '@angular/router';
 import { HobbitService } from '../hobbit.service';
 
-// TODO: Move to a different file? Some sort of constants file?
-
-
-export interface IQuizAnswer {
-    selectedFood: IFoodItem,
-    meal: MealTitle
-}
-
 @Component({
    selector: 'app-food-quiz',
    templateUrl: './food-quiz.component.html',
