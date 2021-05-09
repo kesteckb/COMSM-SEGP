@@ -4,7 +4,6 @@ import { Observable, throwError } from 'rxjs';
 import { IFoodItem } from './fooditem.service'
 import { catchError, retry } from 'rxjs/operators';
 import { map, filter, switchMap } from 'rxjs/operators';
-import { IQuizAnswer} from './food-quiz/food-quiz.component'
 
 export interface IHobbit {
       _id ?: string;
@@ -20,7 +19,7 @@ const API = '/hobbits';
 })
 export class HobbitService {
 
-   public quizAnswers: IQuizAnswer[] = [];
+   public quizAnswers: IFoodItem[] = [];
    public gameWin: boolean;
    public totalSugar: number;
 
@@ -30,7 +29,7 @@ export class HobbitService {
       return this.httpClient.get<IHobbit[]>(API, { params });
    }
 
-   addToAnswers(quizAnswer: IQuizAnswer) {
+   addToAnswers(quizAnswer: IFoodItem) {
       this.quizAnswers.push(quizAnswer);
    }
 

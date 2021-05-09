@@ -1,22 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 //import { DataService } from '../data.service';
-import { FoodItemService, IFoodItem } from '../fooditem.service';
+import { FoodItemService, IFoodItem, MealTitle } from '../fooditem.service';
 import { ActivatedRoute } from '@angular/router';
 import { HobbitService } from '../hobbit.service';
 
 // TODO: Move to a different file? Some sort of constants file?
-export enum MealTitle {
-  BREAKFAST = 'Breakfast',
-  SECOND_BREAKFAST = 'Second Breakfast',
-  ELEVENSES = 'Elevenses',
-  LUNCHEON = 'Luncheon',
-  AFTERNOON_TEA = 'Afternoon Tea',
-  DINNER = 'Dinner',
-  SUPPER = 'Supper',
-}
+
 
 export interface IQuizAnswer {
-    selectedFood: IFoodItem,  
+    selectedFood: IFoodItem,
     meal: MealTitle
 }
 
@@ -108,11 +100,7 @@ export class FoodQuizComponent implements OnInit {
   selectAnswer(//selectedFood: {name: string, sugarAmount: number}
         selectedFood: any) {
       this.answers.push(selectedFood);
-      var quizAnswer: IQuizAnswer = { 
-        selectedFood: selectedFood,
-        meal: this.meals[this.currentMeal].name
-      };
-      this.hobbitService.addToAnswers(quizAnswer);
+      this.hobbitService.addToAnswers(selectedFood);
       this.totalSugar = this.totalSugar + selectedFood.sugarAmount;
   }
 

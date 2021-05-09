@@ -13,6 +13,16 @@ export interface IFoodItem {
 
 const API = '/fooditems';
 
+export enum MealTitle {
+  BREAKFAST = 'Breakfast',
+  SECOND_BREAKFAST = 'Second Breakfast',
+  ELEVENSES = 'Elevenses',
+  LUNCHEON = 'Luncheon',
+  AFTERNOON_TEA = 'Afternoon Tea',
+  DINNER = 'Dinner',
+  SUPPER = 'Supper',
+}
+
 @Injectable({
   providedIn: 'root'
 })

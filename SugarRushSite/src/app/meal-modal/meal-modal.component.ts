@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { HobbitService } from '../hobbit.service';
-import { IFoodItem } from '../fooditem.service';
+import { IFoodItem, MealTitle } from '../fooditem.service';
 import { IQuizAnswer } from '../food-quiz/food-quiz.component';
 
 @Component({
@@ -10,12 +10,12 @@ import { IQuizAnswer } from '../food-quiz/food-quiz.component';
    styleUrls: ['./meal-modal.component.css']
 })
 export class MealModalComponent implements OnInit {
-   items: IQuizAnswer[] = [];
+   meals: IFoodItem[] = [];
 
    constructor(@Inject(MAT_DIALOG_DATA) public data: {hobbitService: HobbitService}) { }
 
    ngOnInit(): void {
-      this.items = this.data.hobbitService.getAnswers();
+      this.meals = this.data.hobbitService.getAnswers();
    };
 
 }
