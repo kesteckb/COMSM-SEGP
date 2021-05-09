@@ -1,7 +1,7 @@
 <body>
    <article class="wrapper">
       <section class="meal" *ngFor="let meal of meals; index as i">
-         <app-meal-info [mealTitle]="i" [mealFood]="meal"></app-meal-info>
+         <app-meal-info [mealIndex]="i" [mealFood]="meal"></app-meal-info>
       </section>
    </article>
    <div class="closeButton">

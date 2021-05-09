@@ -9,6 +9,7 @@ export interface IFoodItem {
       name : string;
       sugarAmount : number;
       meals : number[];
+      imagePath : string;
 }
 
 const API = '/fooditems';

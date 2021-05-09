@@ -7,10 +7,13 @@ import { IFoodItem, MealTitle } from '../../fooditem.service';
    styleUrls: ['./meal-info.component.css']
 })
 export class MealInfoComponent implements OnInit {
-   @Input() mealTitle: MealTitle;
+   @Input() mealIndex: number;
    @Input() mealFood: IFoodItem;
+   mealTitle: string;
+
    constructor() { }
 
    ngOnInit(): void {
+      this.mealTitle = Object.values(MealTitle)[this.mealIndex];
    }
 }
