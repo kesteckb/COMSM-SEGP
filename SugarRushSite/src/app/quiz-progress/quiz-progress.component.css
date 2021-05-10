@@ -1,10 +1,23 @@
-.emptyIcons {
-   display: inline;
+.progressBar{
+   position: relative;
+   align-content: center;
 }
 
-.fullIcons {
+.iconWrapper{
    display: inline-block;
+   position: absolute;
+}
+
+.emptyIcons span{
+   font-size: xxx-large;
+}
+
+.fullIcons{
    width: 50%;
    overflow: hidden;
    white-space: nowrap;
+}
+
+.fullIcons span{
+   font-size: xxx-large;
 }
