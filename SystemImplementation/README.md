@@ -58,7 +58,12 @@ Using the component-based framework, each of the sections of the application is 
 
 ![component hierachy diagram](Component_diagram.png)
 
-Various modules were imported from Angular material[<sup>[6]</sup>](README.md#references) such as icon, divider, button, progress-bar, list, and dialog and used in the components.
+We utilised CSS/UI frameworks by importing various modules from Angular Material[<sup>[6]</sup>](README.md#references) and Bootstrap. Some examples include:
+- Angular Material selection list to display clickable food options in the food-quiz component
+- Angular Material progress bar to show cumulative sugar consumption in the food-quiz component
+- Angular Material button for navigation and selection throughout the site
+- Bootstrap modal to display instructions on page-load in the village component
+- Bootstrap 'jumbotron' to wrap content in the village and food-quiz components
 
 #### 3.4.2 Interactions
 
