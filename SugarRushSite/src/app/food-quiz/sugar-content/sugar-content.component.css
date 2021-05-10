@@ -1,0 +1,15 @@
+.iconWrapper{
+   visibility: hidden;
+}
+.spoonIcons{
+   display: inline-block;
+}
+
+.spoonRemainder{
+   display: inline-grid;
+}
+
+.spoonRemainder span{
+   overflow: hidden;
+   white-space: nowrap;
+}

@@ -20,6 +20,7 @@
           <div class = "center">
             <h6>{{food.name}}</h6>
           </div>
+          <app-sugar-content [foodItem]="food" [showAnswer]="foods.selectedOptions?.selected[0]?.value.sugarAmount != null"></app-sugar-content>
         </mat-list-option>
       </mat-list-item>
     </mat-selection-list>
@@ -29,7 +30,6 @@
   <div id="wrapper">
 
   Sugar level:
-  <mat-progress-bar mode="determinate" value="{{totalSugar}}"></mat-progress-bar>
   <app-quiz-progress [hobbit]="hobbit" [sugarLevel]="totalSugar"></app-quiz-progress>
     <hr class="my-4">
     <ul class="list-group list-width" *ngFor="let answer of answers">

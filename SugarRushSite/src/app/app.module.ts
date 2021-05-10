@@ -34,8 +34,8 @@ import { MealModalComponent } from './meal-modal/meal-modal.component';
 import { ShareResultsComponent } from './share-results/share-results.component';
 import { ShareModalComponent } from './share-modal/share-modal.component';
 import { NgSocialLinksModule } from 'ng-social-links';
-import { QuizProgressComponent } from './quiz-progress/quiz-progress.component';
-import { SugarContentComponent } from './sugar-content/sugar-content.component';
+import { QuizProgressComponent } from './food-quiz/quiz-progress/quiz-progress.component';
+import { SugarContentComponent } from './food-quiz/sugar-content/sugar-content.component';
 
 @NgModule({
   declarations: [
