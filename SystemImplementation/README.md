@@ -95,7 +95,7 @@ This script is ran on start-up of the docker container along with the command to
 We first considered incorporating user authentication (i.e., a login page) on the web app. During our first user testing session, however, we found that most people did not see the point of having authentication for this type of application and would have found it either confusing or concerning that it is required. As a result, we chose not to include in our design. 
 
 #### 3.5.3 404 error page
-We implemented a 404 error page by adding a PageNotFound component to our Angular project and setting up a wildcard path in the app-routing module. This presents users with an error message when they try to visit a page that cannot be found. For example, they may have typed in a URL wrong or the page may have been moved and not redirected properly.  
+We implemented a 404 error page by adding a PageNotFound component to our Angular project and setting up a wildcard path in the app-routing module. This presents users with an error message when they try to visit a page that cannot be found. For example, if they type in a URL wrong or if the page has been moved and not redirected properly.  
 
 ### 3.6 Deployment
 
@@ -112,11 +112,11 @@ A Dockerfile is used to build the `nodejs` container within an Alpine image.
 
 The publicly availabe mongo:4.1.8-xenial image is used to run an instance of MongoDB in our `db` container.
 
-A docker-compose.yml file is used to run both containers.
+A docker-compose.yml file is used to run both containers. It:
   - Sets relevant environment variables
   - Exposes ports to the host for both `db` and `nodejs` containers
   - Executes script to ensure `nodejs` does not run before `db` is running
-  - Executes scrip to seed our database with site data 
+  - Executes script to seed our database with site data 
 
 #### 3.6.2 Docker Optimisations
 
@@ -132,12 +132,15 @@ During development and testing, building docker containers required 2-15 minutes
 
 #### 3.6.3 Continuous Integration
 
-Throughout our project, we achieved continuous integration using Git and GitHub. More information on how continuous integration was used for in combination with sprints, see our [Sprints and Project Management section](/SprintsAndProjectManagement/#continuous-integration). Within our development cycle, continuous integration was used extensively when developing, testing, staging, and publishing our code. Within these stages we used different branches. The `main` branch was primarily used as a production or demo-ready environment. The `develop` branch was primarly used as a staging environment for new code changes. Individual feature branches were used to create and test new changes.
+Throughout our project, we achieved continuous integration using Git and GitHub. For more information on how continuous integration was used for in combination with sprints, see our [Sprints and Project Management section](/SprintsAndProjectManagement/#continuous-integration). Within our development cycle, continuous integration was used extensively when developing, testing, staging, and publishing our code. Within these stages we used different branches:
+- The `main` branch was primarily used as a production or demo-ready environment. 
+- The `develop` branch was primarly used as a staging environment for new code changes. 
+- Individual feature branches were used to create and test new changes.
 
 ##### Development
-When developing new changes for the website, and individual feature branch was created from an up-to-date `develop` branch. We planned co-dependent tasks sequentially across different sprints to avoid complicated merges. Althernatively, these co-dependent features could be developed in the same sprint by branching from the parent feature over `develop`. We chose our approach for simplicity. 
+When developing a new change for the website, an individual feature branch would be created from an up-to-date version of the `develop` branch. We planned co-dependent tasks sequentially across different sprints to avoid complicated merges. Althernatively, these co-dependent features could be developed in the same sprint by branching from the parent feature over `develop`. We chose this approach for simplicity. 
 
-Branch creation had no set process. Team members could create a branch locally using Git and pushing the branch to the remote repository. When creating a branch locally, members needed to perform a `git pull` command to make sure their local repository matched the remote repository. Members could also create a branch on GitHub. Once a branch was created, it was developed locally with occasional pushes to the remote repository. 
+Branch creation had no set process. Team members could create a branch locally using Git and push the branch to the remote repository. When creating a branch locally, members needed to perform a `git pull` command to make sure their local repository matched the remote repository. Members could also create a branch on GitHub. Once a branch was created, it was developed locally with frequent commits and pushes to the remote repository. 
 
 While developing features, we tested functionality as we went, but the methods for doing so evolved over the project. As mentioned above, we initially used docker to build our project to test any changes, regardless of complexity. This method took additional time because a Docker image needed to be at least partially built. Once we exposed local ports for the `db` container, we tested all small changes locally.
 
@@ -148,17 +151,17 @@ After completing development of a feature, our processes called for more rigorou
   3. Merge feature branch into local `develop` branch
   4. Test website in `develop`
 
-Creating steps 2 and 3 was a critical point for our team. If testing fails during step 2, the developer knows there is an existing problem in develop. If testing fails after step 3, the developer knows a problem was introduced by the new feature.
+Implementing steps 2 and 3 was extremely valuable to us. If testing fails during step 2, the developer knows there is an existing problem in develop. If testing fails after step 3, the developer knows a problem was introduced by the new feature.
 
 ##### Staging
 After new features were successfully tested, they were staged by merging the changes into `develop` via a pull request. In general, we preferred the GitHub pull request over a `git push` terminal command. The `git push` command has few guardrails and limited documentation compared to the pull request feature. Pull requests also allow members to delete the remote feature branch with a single click during the merge. 
 
-In some scenarios, merges could not be automatically completed within a pull request. These situations usually resulted from file conflicts, which would need to be manually resolved. We allowed two methods to complete the merge. The easier of the two methods falls back to simply performing a `git push` from our *local* repository, where conflicts were already resolved during testing. Members also had the option to follow steps GitHub recommended within the pull request. For both methods, Atom was used to resolve file conflicts.
+In some scenarios, merges could not be automatically completed within a pull request. These situations usually resulted from file conflicts, which would need to be manually resolved. We allowed two methods to complete the merge. The easier of the two methods involved simply performing a `git push` from our *local* repository, where conflicts were already resolved during testing. Members also had the option to follow steps GitHub recommended within the pull request. For both methods, Atom was used to resolve file conflicts.
 
-After we staged any change, we performed a quick test to verify the application behaved as expected. Occasionally staging developed created an issue with another part of the webiste. For example, once two different members made changes to the quiz component, and during conflict resolution a variable name was renamed incorrectly. The resulting change prevented sugar content from appearing within the quiz and was missed during testing. When these issues were spotted, they were handled differently depending on their severity. For severe issues, changes were made directly in `develop`. For less severe issues, they were fixed within an existing feature branch and eventually mgerged into `develop`.
+After we staged any change, we performed a quick test to verify the application behaved as expected. Occasionally, staging `develop` created an issue with another part of the webiste. For example, once two different members made changes to the quiz component, and during conflict resolution a variable name was renamed incorrectly. The resulting change prevented sugar content from appearing within the quiz and was missed during testing. When these issues were spotted, they were handled differently depending on their severity. For severe issues, changes were made directly in `develop`. For less severe issues, they were fixed within an existing feature branch and eventually mgerged into `develop`.
 
 ##### Publishing
-The final step of our continuous integration cycle was to publish features by merging `develop` into `main` on a biweekly basis. We chose a two-week period because we were more likely to find issues present in `develop` over a two-week period. When publishing changes, another testing process was performed to identify any potential issues discovered during the merge:
+The final step of our continuous integration cycle was to publish features by merging `develop` into `main`. We chose to do this on a biweekly basis because we were more likely to find issues present in `develop` over a two-week period. When publishing changes, another testing process was performed to identify any potential issues discovered during the merge:
   1. Test website in `develop`
   2. Test website in `main`
   3. Merge `develop` into `main` via a GitHub pull request unless conflicts required otherwise.
