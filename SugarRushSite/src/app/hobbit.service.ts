@@ -43,11 +43,11 @@ export class HobbitService {
       return this.allHobbits[index];
    }
 
-   addToAnswers(foodItem) {
-      this.quizAnswers.push(foodItem);
+   addToAnswers(quizAnswer: IFoodItem) {
+      this.quizAnswers.push(quizAnswer);
    }
 
-   getAnswers() {
+   public getAnswers() {
       return this.quizAnswers;
    }
 

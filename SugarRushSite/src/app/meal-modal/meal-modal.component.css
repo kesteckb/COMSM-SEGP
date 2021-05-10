@@ -1,7 +1,7 @@
 .wrapper{
    display: grid;
    grid-template-rows: 1fr;
-   grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+   grid-auto-flow: column;
    border: 2px solid;
    grid-gap: 10px;
    text-align: center;

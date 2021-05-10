@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\food-quiz",
+    "\\src\\app\\game-over",
+    "\\src\\app\\meal-modal",
+    "\\src\\app\\meal-modal\\meal-info"
+  ],
+  "SelectedNode": "\\src\\app\\meal-modal\\meal-modal.component.html",
+  "PreviewInSolutionExplorer": false
+}

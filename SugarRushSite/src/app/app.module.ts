@@ -29,7 +29,7 @@ import { ModalConfigComponent } from './village/modal-config/modal-config.compon
 import { UnlockedVillageComponent } from './village/unlocked-village/unlocked-village.component';
 import { MealSummaryComponent } from './meal-summary/meal-summary.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { MealInfoComponent } from './meal-info/meal-info.component';
+import { MealInfoComponent } from './meal-modal/meal-info/meal-info.component';
 import { MealModalComponent } from './meal-modal/meal-modal.component';
 import { ShareResultsComponent } from './share-results/share-results.component';
 import { ShareModalComponent } from './share-modal/share-modal.component';
