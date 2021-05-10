@@ -92,7 +92,10 @@ The database was seeded using a javascript file. The file makes use of mongoose.
 This script is ran on start-up of the docker container along with the command to start the express server. This was accomplished by having a bash script that contained both of these commands in the docker-compose.yml file. There will be more details about the deployment of the site in the [deployment](README.md#deployment) subsection.
 
 #### 3.5.2 Authentication (or lack thereof)
-We first considered incorporating authetication before our first user testing session, but from the results of the user testing, we decided against this. User testing found that most did not see the point of ghaving authetication for this type of application and would have found it either confusing or concerning that it is required. 
+We first considered incorporating user authentication (i.e., a login page) on the web app. During our first user testing session, however, we found that most people did not see the point of having authentication for this type of application and would have found it either confusing or concerning that it is required. As a result, we chose not to include in our design. 
+
+#### 3.5.3 404 error page
+We implemented a 404 error page by adding a PageNotFound component to our Angular project and setting up a wildcard path in the app-routing module. This presents users with an error message when they try to visit a page that cannot be found. For example, they may have typed in a URL wrong or the page may have been moved and not redirected properly.  
 
 ### 3.6 Deployment
 
