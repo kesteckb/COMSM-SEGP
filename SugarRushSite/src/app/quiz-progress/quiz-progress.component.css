@@ -8,16 +8,19 @@
    position: absolute;
 }
 
-.emptyIcons span{
+.iconWrapper span{
    font-size: xxx-large;
-}
-
-.fullIcons{
-   width: 50%;
-   overflow: hidden;
-   white-space: nowrap;
 }
 
 .fullIcons span{
    font-size: xxx-large;
+}
+
+.spoonRemainder{
+   display: inline-grid;
+}
+
+.spoonRemainder span{
+   overflow: hidden;
+   white-space: nowrap;
 }

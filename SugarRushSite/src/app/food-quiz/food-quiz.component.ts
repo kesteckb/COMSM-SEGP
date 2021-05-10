@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 //import { DataService } from '../data.service';
 import { FoodItemService, IFoodItem } from '../fooditem.service';
 import { ActivatedRoute } from '@angular/router';
-import { HobbitService } from '../hobbit.service';
+import { HobbitService, IHobbit } from '../hobbit.service';
 
 // TODO: Move to a different file? Some sort of constants file?
 export enum MealTitle {
@@ -21,20 +21,20 @@ export enum MealTitle {
    styleUrls: ['./food-quiz.component.css'],
 })
 export class FoodQuizComponent implements OnInit {
-
+   public hobbit: IHobbit;
    public cond_vall: boolean = false;
    public totalSugar: number = 0;
    public answers: any = [];
    currentMeal: number = 0;
 
    public meals = [
-      {name: MealTitle.BREAKFAST, foodChoices: [0, 1, 2]},
-      {name: MealTitle.SECOND_BREAKFAST, foodChoices: [3, 4, 5]},
-      {name: MealTitle.ELEVENSES, foodChoices: []},
-      {name: MealTitle.LUNCHEON, foodChoices: []},
-      {name: MealTitle.AFTERNOON_TEA, foodChoices: []},
-      {name: MealTitle.DINNER, foodChoices: []},
-      {name: MealTitle.SUPPER, foodChoices: []}
+      {name: MealTitle.BREAKFAST},
+      {name: MealTitle.SECOND_BREAKFAST},
+      {name: MealTitle.ELEVENSES},
+      {name: MealTitle.LUNCHEON},
+      {name: MealTitle.AFTERNOON_TEA},
+      {name: MealTitle.DINNER},
+      {name: MealTitle.SUPPER}
    ];
    public foodItems: IFoodItem[];
    public currentFoodChoices: any = [];
@@ -44,12 +44,13 @@ export class FoodQuizComponent implements OnInit {
    ngOnInit() {
       this.getFoodItems();
       this.hobbitService.clearAnswers();
+      this.hobbit = this.hobbitService.getHobbit(0);
+      console.log("This hobbit's name is " + this.hobbit.name);
    }
 
-  populateFoodChoices() {
+   populateFoodChoices() {
       this.currentFoodChoices.length = 0;
       for (let food of this.foodItems) {
-          //var food = this.foodItems[i];
           if (food.meals.includes(this.currentMeal)) {
               this.currentFoodChoices.push(food);
           }
@@ -66,8 +67,6 @@ export class FoodQuizComponent implements OnInit {
             this.foodItems = foodItems;
             this.populateFoodChoices();
       });
-      console.error(this.foodItems);
-      console.error(this.currentFoodChoices);
   }
 
   selectAnswer(selectedFood: any) {
