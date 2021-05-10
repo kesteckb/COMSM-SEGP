@@ -1,5 +1,6 @@
 .card-text {
   text-align: center;
+  color: #073b4c;
 }
 
 .card {
@@ -8,6 +9,7 @@
   margin-bottom: 1em;
   margin-left: 0.1em;
   margin-right: 0.1em;
+  background-color: #06d6a0;
 }
 
 

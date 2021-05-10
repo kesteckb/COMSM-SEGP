@@ -4,15 +4,16 @@
 }
 
 .sugar-cubes {
-    width: 80px;
+    width: 60px;
     height: auto;
     
 }
 h1 {
-    padding-top: 0.1em;
+    padding-top: 0.3em;
+    font-size: xx-large;
     font-family: 'Caveat Brush', cursive !important;
     float: right; 
-    color: #f13d86;
+    color: #ef476f;
     position: relative;
     letter-spacing: 0.051em;
 }

@@ -2,10 +2,10 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 html, body { height: 100%; 
-    background: #a1ca5a;
+    background: #073b4c;
     font-size: 17px;
 }
 body { margin: 0; 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Itim', cursive;
     
      }

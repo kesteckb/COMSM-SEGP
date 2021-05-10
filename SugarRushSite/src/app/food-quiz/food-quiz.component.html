@@ -1,37 +1,45 @@
 
 
 <div class="container">
-   <h1 class="display-4 center">{{meals[currentMeal].name}}</h1>
-   <div class = "topright">
+  <div class="topComponent">
+    <h1 class="title center">{{meals[currentMeal].name}}</h1>
+   <div class = "buttons">
      <button mat-flat-button [routerLink]="cond_vall ? ['/game-over'] : []"
      (click)="nextMeal()" color="primary"
      [disabled]="foods.selectedOptions?.selected[0]?.value.sugarAmount == null">
        {{ cond_vall == false ? 'Next Meal' : 'End Game' }}
      </button>
      &nbsp;
-     <button mat-flat-button onclick="./app/village/modal-config">Help</button>
+     <button mat-flat-button onclick="/app/village/modal-config">Help</button>
    </div>
+   </div>
+  </div>
 
-  <div class="container center">
+  <div class="container">
+    <div class="foodList">
     <mat-selection-list #foods [multiple]="false"
     [disabled]="foods.selectedOptions?.selected[0]?.value.sugarAmount != null">
       <mat-list-item>
-        <mat-list-option *ngFor="let food of currentFoodChoices" [value]="food"
+        <mat-list-option [disableRipple]="true" *ngFor="let food of currentFoodChoices" [value]="food"
         (click)="selectAnswer(foods.selectedOptions?.selected[0]?.value)">
-          <img class="center-image" width="150" height="150" src="./assets/{{food.imagePath}}.png" >
+        <div class="foodStuff">
+          <img src="./assets/{{food.imagePath}}.png" >
           <div class = "center">
             <h6>{{food.name}}</h6>
           </div>
+        </div>
         </mat-list-option>
       </mat-list-item>
     </mat-selection-list>
   </div>
+  </div>
 
+  <div class="container">
   <p></p>
   <div id="wrapper">
-
-  Sugar level:
+    <p>Sugar Level:</p>
   <mat-progress-bar mode="determinate" value="{{totalSugar}}"></mat-progress-bar>
+</div>
 
     <hr class="my-4">
     <ul class="list-group list-width" *ngFor="let answer of answers">
@@ -45,17 +53,8 @@
         </span>
       </li>
     </ul>
-
-    
-    <div class="bottomright">
-      <div *ngIf="belowMaxSugar(); else sickHobbit">
-        <img src="/assets/hobbit_1.png" height="400" width="280">
-      </div>
-      <ng-template #sickHobbit>
-        <img src="/assets/sick_hobbit_1.png" height="400" width="280">
-      </ng-template>
     </div>
-  </div>
-</div>
+
+  
 
 
