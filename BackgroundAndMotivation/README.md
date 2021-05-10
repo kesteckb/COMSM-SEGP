@@ -7,7 +7,11 @@
 
 Most adults and children in the UK consume too much sugar, and this poses significant health risks to the population as people are at greater risk of obesity, type 2 diabetes, heart disease, and tooth decay [1]. Table 1 uses data from the NHS [1] and the National Diet and Nutrition Survey (NDNS) [2] to illustrate exactly how much excess sugar is consumed by people in the UK.
 
-![Alt text](NDNS_sugar_table.PNG)
+| Age Range | Recommended daily sugar allowance (grams) | Mean daily sugar intake (grams) between 2015-2016 | Difference between recommended intake and actual intake |
+| :---: | :---: | :---: | :---: |
+| 7 - 10 | 24 | 52.2 | +117.5% |
+| 11 - 18 | 30 | 67.1 | +123.7% |
+| 19 - 64 | 30 | 57.1 | +90.3% |
 
 It is clear from the data that:
 -	On average, each demographic consumes more than their recommended daily allowance
@@ -15,18 +19,18 @@ It is clear from the data that:
 -	All children and young adults consume over double their allowance 
 -	Adults consume less excess sugar than other age groups but still a significant amount more than their recommended daily allowance
 
-Additional data from the NDNS shows that sugar consumption has decreased over time, roughly by 14.4% for 11 – 18 year olds and 7.6% for 19 – 64 year olds between 2008 and 2016. At this rate, however, it would take over fifty years for actual consumption levels to match those recommended by the NHS. Given the adverse health effects of excess sugar consumption, this is a serious issue and accelerating the decrease in sugar intake would be greatly beneficial for the health of the population.
+Additional data from the NDNS shows that sugar consumption has decreased over time, roughly by 14.4% for 11 – 18 year olds and 7.6% for 19 – 64 year olds between 2008 and 2016. At this rate, however, it would take over fifty years for actual consumption levels to match those recommended by the NHS. Given the adverse health effects of excess sugar consumption, it is a serious issue, and accelerating the decrease in sugar intake would be greatly beneficial for the health of the population.
 
 ### 2.2 Identifying the cause: academic research
 
-To address this issue, it is crucial to understand why people are consuming excessive amounts of sugar in the first place. [3] highlights that the main sources of sugar in peoples diets are from processed foods such as cereals, confectionary, and non-alcoholic drinks. This is partly because there is a lack of awareness surrounding the sugar content of these foods. Consider [4]: 
+Understanding why people consume excessive amounts of sugar is crucial for addressing this behaviour. The main sources of sugar in people's diets are processed foods, such as cereals, confectionary, and non-alcoholic drinks [3]. A lack of awareness surrounding the sugar content of these foods could lead to unintended sugar consumption. In one study [4] surveying over 2000 adults, participants are shown images of non-alcoholoic drinks and asked to estimate their sugar content. Juice and carbonated drinks contain similar amounts of sugar (approximately 26g/250ml), but particpants misjudge the content in each:
 
--	The authors conduct a survey of over 2000 adults, in which participants are shown images of non-alcoholic drinks and asked to estimate the amount of sugar contained in them
--	Both fruit juices and carbonated drinks contain roughly 26g/250ml of sugar 
--	Participants underestimate the sugar content of fruit juices by 48%
--	Participants overestimate the sugar content carbonated drinks by 12%
+-	They underestimate the sugar content of fruit juices by 48%
+-	They overestimate the sugar content carbonated drinks by 12%
 
-Most participants are not aware that both drinks contain similar levels of sugar, and they perceive the juice be a healthier alternative. If people were properly informed about the sugar content of soft drinks and other processed foods, they would likely make healthier choices in the real world when deciding what to consume. So how can we raise awareness about excess sugar consumption and educate people on the quantities of sugar in foods?
+Most participants are not aware that both drinks contain similar levels of sugar, and they perceive juice as a healthier alternative. 
+
+If people were aware of the sugar content of soft drinks and other processed foods, they could make informed, healthier choices when deciding what to consume. To address this problem, we seek to raise awareness about excess sugar consumption by educating people on the sugar content of food.
 
 ### 2.3 Tackling the problem: industry review
 
