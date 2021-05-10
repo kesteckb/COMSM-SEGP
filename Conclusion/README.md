@@ -1,7 +1,14 @@
-## Conclusion
+## 7. Conclusion
+* [7.1 Group Work Reflection](README.md#71-group-work-reflection)
+* [7.2 Success Reflection](README.md#72-success-reflection)
+* [7.3 Impact of Pandemic](README.md#73-impact-of-pandemic)
+* [7.4 Social and Ethical Impact](README.md#74-social-and-ethical-impact)
+* [7.5 Future Work](README.md#75-future-work)
 
+### 7.1 Group Work Reflection
 Our group took an Agile development approach towards our project which was focused around maintaining and building upon a functional codebase, and developing the application through a series of sprints. Initially, a git repository was established to support the foundational Angular framework, and a paper prototype was developed as an outline for the application. We then began holding daily standups where the focus was for each member of the team to communicate what they had worked on, what roadblocks they were experiencing, and which task they would be working on going forward. This time was also used to identify the primary project goals for the week, and to determine where each team member could best contribute. Overall, this approach had a positive impact on the project, as without the daily standups team members could have been more inclined to procrastinate on their tasks, and isolate themselves from the group. The group sprint planning also helped to unify a vision for the project for all team members by establishing the most important features throughout different stages of development. This process wasn’t without its challenges, however. A lot of the managerial tasks fell on the scrum master, and there were other assignments and classes that people were focusing on at times, causing project progress and standup attendance to sometimes dip.
 
+### 7.2 Success Reflection
 We were able to meet many of the objectives that we set out to accomplish, however with more development, we feel there are several improvements which could be made. Our application meets our requirements for a minimum viable product with the following features:
 
     - Create a "Start" screen to welcome players, link to instructions, and allow a player to begin the food quiz
@@ -11,9 +18,13 @@ We were able to meet many of the objectives that we set out to accomplish, howev
 
 One of the objectives that we set early on was to have a village of several hobbit homes with different hobbits in them. These would act as levels in the game, where different hobbits could have varying nutrional needs of various difficulty for the player. Long term health problems which can stem from excessive sugar consumption can be very significant, and for this reason we feel this application addresses a serious topic. We think that the use of Tolkien iconography makes the game more playful and fun for those who use the application, and that the mechanic of feeding the hobbit is more engaging than simply quizing a player on sugar in different foods.
 
+### 7.3 Impact of Pandemic
+
 The coronavirus pandemic has certainly had a significant impact on the way groups work together. In a typical school year, students on the MSc course would have been attending classes together, and getting to know each other in and out of the classroom. These experiences allow for bonding and rapport building which creates a foundation for team learning and cooperation. Those personal relationships aren’t developed when students aren’t meeting each other and working together in person, limiting their ability to communicate and work together remotely. Working together separately and remotely increases the impact of small roadblocks and technical issues. When people are meeting on campus in a computer lab, there is a greater focus on what is to be worked on during that time, and less inclination to be distracted by other coursework or outside distractions. There is also the psychological impact of the lockdowns, where people are not able to participate in social gatherings, or to simply go out and pursue their normal lives. Much is still unknown about the effects of this, but certainly many people are struggling with being isolated at home.
 
+### 7.4 Social and Ethical Impact
 The purpose of the application strives to raise awareness of sugar consumption so people can make more informed dietary decisions. This application arms people with the tools to eat healthier and improve their lifestyle. With consideration of virtue ethics, the intentions and applications of this project are morally sound, and therefore, ethical. Concerns regarding the consequential ethics generally center around the application being used beyond its scope. We would not, for example, recommend that our application be used as the sole resource for dietary guidance. Nutritional needs can vary greatly for individuals, and sugar consumption is only one aspect of that. 
 
+### 7.5 Future Work
 Though we were able to meet many of the goals we had set out to achieve, there are certainly many aspects which could be further improved. The gameplay elements of our application are very simple, and would benefit from more complexity. Currently, the food items populated in the quiz are limited, and we would like to expand those options. We would also want to further integrate the outside nutrition API, so that there could be much more variability in the options presented to the players. With more time, it would be fun to add more original artwork to the application, as well as some simple animation.
 
