@@ -1,5 +1,5 @@
 <div class="jumbotron">
-   <h1 class="display-4 center">{{meals[currentMeal].name}}</h1>
+   <h1 class="display-4 center">{{getCurrentMealName(currentMeal)}}</h1>
    <div class = "topright">
      <button mat-flat-button [routerLink]="cond_vall ? ['/game-over'] : []"
      (click)="nextMeal()" color="primary"

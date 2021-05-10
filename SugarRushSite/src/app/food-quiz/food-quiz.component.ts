@@ -16,15 +16,6 @@ export class FoodQuizComponent implements OnInit {
    public answers: any = [];
    currentMeal: number = 0;
 
-   public meals = [
-      {name: MealTitle.BREAKFAST},
-      {name: MealTitle.SECOND_BREAKFAST},
-      {name: MealTitle.ELEVENSES},
-      {name: MealTitle.LUNCHEON},
-      {name: MealTitle.AFTERNOON_TEA},
-      {name: MealTitle.DINNER},
-      {name: MealTitle.SUPPER}
-   ];
    public foodItems: IFoodItem[];
    public currentFoodChoices: any = [];
 
@@ -76,7 +67,7 @@ export class FoodQuizComponent implements OnInit {
 
   belowMaxSugar(): boolean{
     this.hobbitService.setTotalSugar(this.totalSugar);
-    if(this.totalSugar < 100){
+    if(this.totalSugar < this.hobbit.sugarTolerance){
       this.hobbitService.setGameWin(true);
       return true;
     }
@@ -90,4 +81,8 @@ export class FoodQuizComponent implements OnInit {
         this.populateFoodChoices();
     }
   }
+
+  getCurrentMealName(mealIndex: number){
+     return Object.values(MealTitle)[mealIndex];
+ }
 }
