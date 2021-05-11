@@ -36,6 +36,11 @@ We did not use questionnaires for our first evaluation because we wanted to reco
 
 Given that our application was a relatively straightforward game format, we felt that performing an ethnography would not be worth the amount of time and resource that would have needed to go into it. We also believe that none of us are qualified to extract accurate and useful data from this form of evaluation. As such, this was not a method that we considered.
 
+### User Acceptance Testing
+
+[interview script](uat_interview_script.pdf)
+
+
 *  Details of how you evaluated your designs (techniques used & awareness of their limitations). Description of  techniques suitable for your particular design. A timeline of evaluation of your design.  
     * Techniques to evaluate
         * Hypotheses driven --> these have been outlined in the design stage
