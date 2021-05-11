@@ -101,6 +101,10 @@ In addition to this design approach, we incorporate several design heuristics, w
           - Quiz answers can be selected by clicking either the food name or image
           - Buttons across the application are labeled with the action they perform rather than icons
 
+Another element of design that we considered was the application’s responsiveness across multiple devices, such as mobile, laptop and tablet. This was driven by our desire for both clean aesthetics and accessibility - as our application’s target user base was broad, we felt that it was important to take into account a wide range of possible device preferences for gameplay. 
+
+To implement responsiveness, we relied heavily on tools such as flexbox and bootstrap, taking advantage of their auto-alignment and scaling properties. Where possible, we also opted for em and percentage measurements for content in preference to pixels. This ensured that responsiveness was as inherent as possible in the application’s layout. Where appropriate, we also made use of a limited number of supporting media queries.
+
 ### 4.4 User Interviews
 In order to further understand our user groups, we created an interview and a walkthrough of our prototype. For the interview we targeted university students and professionals. Due to the time allotted for this project and the inability to gain ethical approval prior to that time, we were unable to ask any minors for input on the prototype. We had a sample size n = 4, which is the minimum amount of people needed to perform [in-depth interviews and usability studies](https://www.gov.uk/service-manual/user-research/plan-user-research-for-your-service). 
 
