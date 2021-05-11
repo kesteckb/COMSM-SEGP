@@ -3,7 +3,7 @@ import { SugarContentComponent } from './sugar-content.component';
 import {DebugElement} from '@angular/core';
 import {By} from '@angular/platform-browser';
 
-fdescribe('SugarContentComponent', () => {
+describe('SugarContentComponent', () => {
    let component: SugarContentComponent;
    let fixture: ComponentFixture<SugarContentComponent>;
    let html: DebugElement;
