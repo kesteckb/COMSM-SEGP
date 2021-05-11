@@ -61,4 +61,18 @@ In light of this, we developed a gamified learning tool in the form of a web app
 
 Based on our background research, we believe this quiz will provide a fun and engaging way for people of all ages to learn more about the sugar content of various foods. In turn, they will be more informed and able to make healthier dietary choices, which may result in a decrease in excess sugar consumption.
 
+###References
+
+[1] nhs.uk. 2021. Sugar: the facts. [online] Available at: <https://www.nhs.uk/live-well/eat-well/how-does-sugar-in-our-diet-affect-our-health/> [Accessed 7 May 2021].
+[2] GOV.UK. 2021. NDNS: results from years 7 and 8 (combined). [online] Available at: <https://www.gov.uk/government/statistics/ndns-results-from-years-7-and-8-combined> [Accessed 5 May 2021].
+[3] McDowell, D. and Bunn, S., 2021. Sugar and Health. [online] POST. Available at: <https://post.parliament.uk/research-briefings/post-pn-0493/> [Accessed 6 May 2021].
+[4] Gill, J. and Sattar, N., 2014. Fruit juice: just another sugary drink?. The Lancet Diabetes & Endocrinology, 2(6), pp.444-446.
+[5] Thaler, R. and Sunstein, C., 2008. Nudge. New Haven: Yale University Press, p.6.
+[6] Soraghan, C., Thomson, E. and Ensor, J., 2016. Using food labels to evaluate the practice of nudging in a social marketing context. Social Business, 6(3), pp.249-265.
+[7] Merillat, B. and González-Vallejo, C., 2020. How Much Sugar is in My Drink? The Power of Visual Cues. Nutrients, 12(2), p.394.
+[8] Sharma, S., Shegog, R., Chow, J., Finley, C., Pomeroy, M., Smith, C. and Hoelscher, D., 2015. Effects of the Quest to Lava Mountain Computer Game on Dietary and Physical Activity Behaviors of Elementary School Children: A Pilot Group-Randomized Controlled Trial. Journal of the Academy of Nutrition and Dietetics, 115(8), pp.1260-1271.
+[9] Skouw, S., Suldrup, A. and Olsen, A., 2020. A Serious Game Approach to Improve Food Behavior in Families—A Pilot Study. Nutrients, 12(5), p.1415.
+[10] Baranowski, T., Ryan, C., Hoyos-Cespedes, A. and Lu, A., 2019. Nutrition Education and Dietary Behavior Change Games: A Scoping Review. Games for Health Journal, 8(3), pp.153-176.
+[11] Chow, C., Riantiningtyas, R., Kanstrup, M., Papavasileiou, M., Liem, G. and Olsen, A., 2020. Can games change children’s eating behaviour? A review of gamification and serious games. Food Quality and Preference, 80, p.103823.
+
 [Home](../README.md) | [Next Section](/SystemImplementation/README.md)
