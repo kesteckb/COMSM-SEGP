@@ -38,8 +38,19 @@ Given that our application was a relatively straightforward game format, we felt
 
 ### User Acceptance Testing
 
-[interview script](uat_interview_script.pdf)
+#### Strategy
 
+We conduct another round of interviews using this [script](uat_interview_script.pdf). These interviews are split into two key sections each with their own objectives.
+
+1) Test cases
+- To test the functional requirements of the web-app
+- te test the usability and accessibility of the web-app
+- To uncover any remaining bugs 
+
+2) Browsing and feedback
+- To verify that our design is visually engaging and interactice (or suggest how it could be improved)
+- To ensure that we have a functioning quiz and that our product is ready for launch
+- To determine whether our web-app is able to increase awareness of sugar consumption and influence dietary behaviour
 
 *  Details of how you evaluated your designs (techniques used & awareness of their limitations). Description of  techniques suitable for your particular design. A timeline of evaluation of your design.  
     * Techniques to evaluate
