@@ -6,6 +6,7 @@ import { DataService } from './data.service';
 import { HobbitService } from './hobbit.service';
 import { FoodItemService } from './fooditem.service';
 import { HouseService } from './house.service';
+import { NgSocialLinksService } from 'ng-social-links';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -20,7 +21,8 @@ describe('AppComponent', () => {
          DataService,
          HobbitService,
          FoodItemService,
-         HouseService
+         HouseService,
+         {provide: NgSocialLinksService, useValue: ""}
       ]
     }).compileComponents();
   });
