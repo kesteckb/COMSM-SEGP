@@ -28,6 +28,7 @@
             <h6>{{food.name}}</h6>
           </div>
           <app-sugar-content [foodItem]="food" [showAnswer]="foods.selectedOptions?.selected[0]?.value.sugarAmount != null"></app-sugar-content>
+        </div>
         </mat-list-option>
       </mat-list-item>
     </mat-selection-list>
@@ -38,7 +39,7 @@
   <p></p>
   <div id="wrapper">
 
-  Sugar level:
+  <p>Sugar level:</p>
   <app-quiz-progress [hobbit]="hobbit" [sugarLevel]="totalSugar"></app-quiz-progress>
     <hr class="my-4">
     <ul class="list-group list-width" *ngFor="let answer of answers">
@@ -53,6 +54,17 @@
       </li>
     </ul>
     </div>
+    </div>
+
+    <div class="bottomright">
+      <div *ngIf="belowMaxSugar(); else sickHobbit">
+        <img src="/assets/hobbit_1.png" height="400" width="280">
+      </div>
+      <ng-template #sickHobbit>
+        <img src="/assets/sick_hobbit_1.png" height="400" width="280">
+      </ng-template>
+    </div>
+  
 
   
 
