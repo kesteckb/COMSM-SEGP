@@ -18,20 +18,20 @@ fdescribe('FoodQuizComponent', () => {
 
    beforeEach(async () => {
          await TestBed.configureTestingModule({
+            declarations: [
+               FoodQuizComponent
+            ],
             imports: [
                HttpClientTestingModule,
                RouterModule.forRoot([])
             ],
             providers: [
-               FoodQuizComponent,
+               // FoodQuizComponent,
                {provide: FoodItemService, useClass: TestFoodItemService},
                {provide: HobbitService, useClass: TestHobbitService}
             ]
          })
          .compileComponents();
-         // component = TestBed.inject(FoodQuizComponent);
-         // foodItemService = TestBed.inject(FoodItemService);
-         // hobbitService = TestBed.inject(HobbitService);
    })
 
    beforeEach(() => {
@@ -42,6 +42,7 @@ fdescribe('FoodQuizComponent', () => {
          sugarTolerance: 42,
          sugarIntake: 0
       }
+      html = fixture.debugElement;
       fixture.detectChanges();
    });
 
@@ -49,7 +50,26 @@ fdescribe('FoodQuizComponent', () => {
       expect(component).toBeDefined();
    });
 
-   it('should not be able to click next meal button', () => {
-
+   it('should see next meal button', () => {
+      let buttonName = html.query(By.css('.buttons button')).nativeElement.textContent;
+      expect(buttonName).toContain("Next Meal");
    })
+
+   describe('End Game Button Logic', () => {
+      it('should see end game when quiz is finished', () => {
+         component.cond_vall = true;
+         fixture.detectChanges();
+         let buttonName = html.query(By.css('.buttons button')).nativeElement.textContent;
+         expect(buttonName).toContain("End Game");
+
+      })
+      it('should be able to navigate to game end when enabled', () =>{
+         component.cond_vall = true;
+         fixture.detectChanges();
+         let buttonElement = html.query(By.css('.buttons button')).attributes;
+         console.log(buttonElement);
+         expect(buttonElement["ng-reflect-router-link"]).toContain("/game-over");
+      })
+   })
+
 });
