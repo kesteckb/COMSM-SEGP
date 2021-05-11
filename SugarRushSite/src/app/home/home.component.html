@@ -1,15 +1,5 @@
 <!--include 'style="background:pink !important"' in div to change colour-->
-      <section class="shareIcons">
-          <div>
-             <a [attr.href]="facebookShareLink"><img src="./assets/facebook.png" alt="Facebook Icon" class="icon img-fluid"></a>
-          </div>
-          <div>
-             <a [attr.href]="twitterShareLink"><img src="./assets/twitter.png" alt="Twitter Icon" class="icon"></a>
-          </div>
-          <div>
-             <a [attr.href]="redditShareLink" ><img src="./assets/reddit.png" alt="Reddit Icon" class="icon"></a>
-          </div>
-          </section>
+  
             <h2 id="upperText">Set out on adventure to the pantry</h2>
             <div class="HobbitImage">
               <img src="./assets/HobbitHomePage.png" alt="Hobbit Artwork">
@@ -27,11 +17,25 @@
                 <li></li>
                 <li></li>
               </ul>
-              <div class="Button">
+              <div style="position: absolute; left: 50%; bottom: 10%;">
+              <div style="position: relative; left: -50%; bottom: -10%">
                 <a href="./village"><button type="button" class="btn btn-outline-primary">Let's Play</button></a>
                 </div>
               </div>
+              <section class="shareIcons">
+                <div>
+                   <a [attr.href]="facebookShareLink"><img src="./assets/facebook.png" alt="Facebook Icon" class="icon img-fluid"></a>
+                </div>
+                <div>
+                   <a [attr.href]="twitterShareLink"><img src="./assets/twitter.png" alt="Twitter Icon" class="icon"></a>
+                </div>
+                <div>
+                   <a [attr.href]="redditShareLink" ><img src="./assets/reddit.png" alt="Reddit Icon" class="icon"></a>
+                </div>
+                </section>
+            </div>
           
+            
  
 
  

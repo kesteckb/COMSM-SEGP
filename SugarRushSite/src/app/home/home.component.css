@@ -109,19 +109,10 @@ img {
   width: auto;
 }
 
-
-.Button {
-  position: absolute;
- bottom: 0;
- margin-bottom: 6%;
- left: 0;
- margin-left: 46.3%;
-}
-
-Button {
+.btn-outline-primary {
   color: #06d6a0;
-  border-color: #ef476f;
 }
+
 
   #upperText {
     color: #118ab2;
@@ -165,19 +156,12 @@ Button {
   
   
   /* resizing for tablets*/
-  @media only screen and (max-width: 1023px) {
-    .title {
-      font-size: 60px;
+  @media only screen and (max-height: 500px) {
+    img {
+      height: 180px;
+      width: auto;
     }
-   
-    }
-    .lead {
-      text-align: center;
-      padding-top: 7rem;
-      font-size: 15px;
-    }
-    .shareIcons {
-      justify-content: center;
+
     }
 
   
