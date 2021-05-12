@@ -16,6 +16,12 @@ describe('MealInfoComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(MealInfoComponent);
     component = fixture.componentInstance;
+    component.mealFood = {
+      name: "test",
+      sugarAmount: 50,
+      meals: [],
+      imagePath: "srApple"
+   }
     fixture.detectChanges();
   });
 

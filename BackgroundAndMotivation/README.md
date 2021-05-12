@@ -34,11 +34,11 @@ If people were aware of the sugar content of soft drinks and other processed foo
 
 ### 2.3 Tackling the problem: industry review
 
-Institutions often influence the behaviour of large groups of people through ‘nudging’. This involves subtly changing one’s choice environment to alter their actions in a predictable way without forbidding any options [5]. Nudging has already been applied to the UK food and drink sector in the form of nutrition labelling [6], where manufacturers are required to list an overview of the macronutrients present in processed food on their packaging. These labels makes people aware of how much sugar is contained in the food, and enables them to make informed decisions without limiting their options. However, consumers still may not recognise the amount of sugar in products for two reasons:
+Institutions often influence the behaviour of large groups of people through ‘nudging’. This involves subtly changing one’s choice environment to alter their actions in a predictable way without forbidding any options [5]. Nudging has already been applied to the UK food and drink sector in the form of nutrition labelling [6], where manufacturers are required to list an overview of the macronutrients present in processed food on their packaging. These labels make people aware of how much sugar is contained in the food, and enables them to make informed decisions without limiting their options. However, consumers still may not recognise the amount of sugar in products for two reasons:
   - The numerical representation of the amount of sugar in a product
   - The appearance of sugar content on the packaging
   
-The sugar amounts presented on these labels (often in grams) do not translate into common units such as teaspoons. Therefore, individuals may struggle to visualise how much sugar they are actually consuming [7]. Nutrition labelling is mandatory, but manufacturers do not have an incentive to educate the people purchasing their products. As a result, the labels are often in small print, and only those who are intentionally looking for it are likely to see it.
+The sugar amounts presented on these labels (often in grams) do not translate into practical units of measurement such as teaspoons [7]. Therefore, individuals may struggle to visualise how much sugar they are actually consuming. Also, nutrition labelling is mandatory and manufacturers do not have an incentive to educate the people purchasing their products. As a result, the labels are often in small print, and only those who are intentionally looking for it are likely to see it.
 
 Purposely educating people about the sugar content of foods outside any purchasing environment may better raise awareness of sugar content. Several studies have been conducted about the use of serious games to educate and influence the eating habits of children and adults.
 
@@ -60,5 +60,19 @@ In light of this, we developed a gamified learning tool in the form of a web app
 ![Image](gameDesign.png)
 
 Based on our background research, we believe this quiz will provide a fun and engaging way for people of all ages to learn more about the sugar content of various foods. In turn, they will be more informed and able to make healthier dietary choices, which may result in a decrease in excess sugar consumption.
+
+### References
+
+- [1] nhs.uk. 2021. Sugar: the facts. [online] Available at: <https://www.nhs.uk/live-well/eat-well/how-does-sugar-in-our-diet-affect-our-health/> [Accessed 7 May 2021].
+- [2] GOV.UK. 2021. NDNS: results from years 7 and 8 (combined). [online] Available at: <https://www.gov.uk/government/statistics/ndns-results-from-years-7-and-8-combined> [Accessed 5 May 2021].
+- [3] McDowell, D. and Bunn, S., 2021. Sugar and Health. [online] POST. Available at: <https://post.parliament.uk/research-briefings/post-pn-0493/> [Accessed 6 May 2021].
+- [4] Gill, J. and Sattar, N., 2014. Fruit juice: just another sugary drink?. The Lancet Diabetes & Endocrinology, 2(6), pp.444-446.
+- [5] Thaler, R. and Sunstein, C., 2008. Nudge. New Haven: Yale University Press, p.6.
+- [6] Soraghan, C., Thomson, E. and Ensor, J., 2016. Using food labels to evaluate the practice of nudging in a social marketing context. Social Business, 6(3), pp.249-265.
+- [7] Merillat, B. and González-Vallejo, C., 2020. How Much Sugar is in My Drink? The Power of Visual Cues. Nutrients, 12(2), p.394.
+- [8] Sharma, S., Shegog, R., Chow, J., Finley, C., Pomeroy, M., Smith, C. and Hoelscher, D., 2015. Effects of the Quest to Lava Mountain Computer Game on Dietary and Physical Activity Behaviors of Elementary School Children: A Pilot Group-Randomized Controlled Trial. Journal of the Academy of Nutrition and Dietetics, 115(8), pp.1260-1271.
+- [9] Skouw, S., Suldrup, A. and Olsen, A., 2020. A Serious Game Approach to Improve Food Behavior in Families—A Pilot Study. Nutrients, 12(5), p.1415.
+- [10] Baranowski, T., Ryan, C., Hoyos-Cespedes, A. and Lu, A., 2019. Nutrition Education and Dietary Behavior Change Games: A Scoping Review. Games for Health Journal, 8(3), pp.153-176.
+- [11] Chow, C., Riantiningtyas, R., Kanstrup, M., Papavasileiou, M., Liem, G. and Olsen, A., 2020. Can games change children’s eating behaviour? A review of gamification and serious games. Food Quality and Preference, 80, p.103823.
 
 [Home](../README.md) | [Next Section](/SystemImplementation/README.md)

@@ -36,6 +36,89 @@ We did not use questionnaires for our first evaluation because we wanted to reco
 
 Given that our application was a relatively straightforward game format, we felt that performing an ethnography would not be worth the amount of time and resource that would have needed to go into it. We also believe that none of us are qualified to extract accurate and useful data from this form of evaluation. As such, this was not a method that we considered.
 
+### Unit testing
+
+We used unit testing to evaluate behaviour of our application through a series of automated tests. Our unit testing strategy uses the Jasmine Test Framework [1], which is incorportaed into Angular during install. After the creation of a component or unit test, a `spec.ts` file is create alongside the `html`, `css`, and `ts` files of the component. 
+
+For our project, all components and services run at least one unit test to show that it can be created. To complete this test, some components require the use of mock services.
+
+```javascript
+providers: [
+   MealSummaryComponent,
+   {provided: HobbitService, useClass: TestHobbitService}
+]
+```
+
+Services and most components were not tested further than this. However, our more complex components have additional unit tests:
+  - AppComponent
+    - Check component has title 'sugarRush'
+  - FoodQuizComponent
+    - Check Next Meal button appears by default
+    - Check End Game button replaces Next Meal button at end of quiz
+    - Check End Game button routes to game-end component
+  - QuizProgressComponent
+    - Check hobbit has sugar tolerance
+    - Check sugar threshold matches tolerance
+    - Check initialised sugar teaspoon count is zero
+    - Check teaspoon count increases with changed sugar level
+  - SugarContentComponent
+    - Check teaspoon representation of sugar exists
+    - Check sugar content is only visible after selecting a food
+  - GameOverComponent
+    - Check correct end game message
+    - Check correct score is visible
+ 
+The unit tests for these components focus on ensuring dynamic HTML elements appear as expected under appriate conditions. Components that rely on input, like the QuizProgressComponent, needed mock input to function:
+
+```javascript
+beforeEach(() => {
+   fixture = TestBed.createComponent(QuizProgressComponent);
+   component = fixture.componentInstance;
+   component.hobbit = {
+      name: "Test Hobbit",
+      sugarTolerance: 42,
+      sugarIntake: 0
+   }
+   component.sugarLevel = 0;
+   fixture.detectChanges();
+});
+```
+
+Use of the testing framework's `TestBed` and `ComponentFixture` allowed us to test the dynamic changes. After making changes to properties within a component, we could update its HTML by using a `detectChanges()` method. From here we could gather information about the element based on CSS classes and verify it contains the right information. We can use this strategy to check things like whether a component is visible:
+
+```javascript
+it('should show icon only when food selected', () => {
+   let visibleValue = html.query(By.css('.iconWrapper'))
+      .styles.visibility;
+   expect(visibleValue === "hidden").toBeTrue();
+   component.showAnswer = true;
+   fixture.detectChanges();
+   visibleValue = html.query(By.css('.iconWrapper'))
+      .styles.visibility;
+   expect(visibleValue === "visible").toBeTrue();
+});
+```
+
+A complete list of unit tests can be reviewed [here](unitTests.png). To further improve our unit testing, we would add tests for the quiz that better mock food selection and the corresponding HTML changes, such as presence of the correct images and icons. In order to implement these changes, further research and understanding of the Jasmine testing framework is required.
+
+### User Acceptance Testing
+
+#### Strategy
+
+We conduct another round of interviews using this [script](uat_interview_script.pdf). These interviews are split into two key sections each with their own objectives.
+
+1) Test cases
+- To test the functional requirements of the web-app
+- te test the usability and accessibility of the web-app
+- To uncover any remaining bugs 
+
+2) Browsing and feedback
+- To verify that our design is visually engaging and interactice (or suggest how it could be improved)
+- To ensure that we have a functioning quiz and that our product is ready for launch
+- To determine whether our web-app is able to increase awareness of sugar consumption and influence dietary behaviour
+
+[1] [Jasmine Testing Framework](https://jasmine.github.io/) 
+
 *  Details of how you evaluated your designs (techniques used & awareness of their limitations). Description of  techniques suitable for your particular design. A timeline of evaluation of your design.  
     * Techniques to evaluate
         * Hypotheses driven --> these have been outlined in the design stage

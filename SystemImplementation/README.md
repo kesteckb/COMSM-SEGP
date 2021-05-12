@@ -9,6 +9,8 @@
 * [3.5 Additional Features](README.md#35-additional-features)
   * [3.5.1 Seeding the database](README.md#351-seeding-the-database)
   * [3.5.2 Authentication](README.md#352-authentication-or-lack-thereof)
+  * [3.5.3 404 error page](README.md#353-404-error-page)
+  * [3.5.4 Responsiveness](README.md#354-responsiveness)
 * [3.6 Deployment](README.md#36-deployment)
   * [3.6.1 Docker Implementation](README.md#361-docker-implementation)
   * [3.6.2 Docker Optimisations](README.md#362-docker-optimisations)
@@ -96,6 +98,9 @@ We first considered incorporating user authentication (i.e., a login page) on th
 
 #### 3.5.3 404 error page
 We implemented a 404 error page by adding a PageNotFound component to our Angular project and setting up a wildcard path in the app-routing module. This presents users with an error message when they try to visit a page that cannot be found. For example, if they type in a URL wrong or if the page has been moved and not redirected properly.  
+
+#### 3.5.4 Responsiveness
+To implement responsiveness, we relied heavily on tools such as flexbox and bootstrap, taking advantage of their auto-alignment and scaling properties. Where possible, we also opted for em and percentage measurements for content in preference to pixels. This ensured that responsiveness was as inherent as possible in the application’s layout. Where appropriate, we also made use of a limited number of supporting media queries.
 
 ### 3.6 Deployment
 
