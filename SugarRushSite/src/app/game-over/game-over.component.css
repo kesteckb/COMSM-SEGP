@@ -16,6 +16,9 @@
    margin: auto;
 }
 
+.link {
+   color: #ef476f;
+}
 .summaryInfo > div{
    margin: auto;
 }
@@ -29,7 +32,7 @@ h3 {
 }
 
 .Score {
-   color: #06d6a0;
+   color: #ef476f;
 }
 
 .summaryText{
@@ -43,6 +46,16 @@ h3 {
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-gap: 2%;
+}
+
+Button {
+   color: #ffd166;
+   border: 2px solid #ef476f;
+   margin-top: 0.5em;
+}
+
+Button:hover {
+   background-color: #ef476f;
 }
 
 

@@ -8,10 +8,26 @@
   margin-top: 1.5rem;
   color: #ef476f;
  }
- 
-.container {
- display: block;
+
+ .blockdisplay {
+  display: block;
+ }
+
+ .colourBackground {
+   background-color: lightyellow;
+   margin-top: .5em;
+   margin-bottom: 1em;
+   max-width: 750px;
+ }
+
+ .rounded {
+  border-radius:.50rem!important; 
 }
+
+ .inlinedisplay {
+   display: inline-flex;
+ }
+
 
 .foodList {
   padding: 4rem;
@@ -19,6 +35,9 @@
   justify-content: center;
 }
 
+.rowdisplay {
+  flex-direction: row;
+}
 #wrapper {
   color:#ef476f;
 }
@@ -36,15 +55,7 @@
   mix-blend-mode: darken!important;
 } 
 
-/deep/ .mat-progress-bar-fill::after {
-  background-color: #06d6a0;
-}
-
-/deep/ .mat-progress-bar-buffer {
-  background: #E4E8EB;
-}
-
- img {
+ .foodImage {
   width: 130px;
   height: auto;
  }
@@ -53,6 +64,10 @@
   opacity: 0.3;
 }
 
+.sugarLevel {
+  font-weight: bolder;
+  padding-left: 0.2em;
+}
 
 .buttons {
   display: flex;
@@ -67,3 +82,17 @@
    margin-bottom: 10px;
 }
 
+.bottomright{
+  position: absolute; 
+  top: 540px;
+  left: 65%; 
+  margin-right: auto;
+}
+
+.container {
+  padding: 1em;
+}
+
+li {
+  background-color: #118ab2;
+}

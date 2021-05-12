@@ -1,6 +1,8 @@
 .progressBar{
    position: relative;
    align-content: center;
+   padding-top: 0.1em;
+   padding-bottom: 1.5em;
 }
 
 .iconWrapper{
