@@ -21,6 +21,7 @@ export class QuizProgressComponent implements OnInit {
    ngOnInit(): void {
       this.sugarLimit = this.hobbit.sugarTolerance;
       this.setSpoonGoal();
+      this.setCurrentSpoons();
    }
 
    ngOnChanges(): void {

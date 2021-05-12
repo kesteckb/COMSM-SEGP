@@ -25,11 +25,7 @@ export class GameOverComponent implements OnInit {
      }
 
    getHobbits() {
-      this.hobbitService
-         .get()
-         .subscribe((hobbits: IHobbit[]) => {
-            this.hobbits = hobbits;
-         });
+      this.hobbitService.getHobbits();
    }
 
    getMeals() {

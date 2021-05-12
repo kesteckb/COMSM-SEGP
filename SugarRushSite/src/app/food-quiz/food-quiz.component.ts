@@ -24,7 +24,6 @@ export class FoodQuizComponent implements OnInit {
       this.getFoodItems();
       this.hobbitService.clearAnswers();
       this.hobbit = this.hobbitService.getHobbit(0);
-      console.log("This hobbit's name is " + this.hobbit.name);
    }
 
    populateFoodChoices() {
@@ -40,12 +39,12 @@ export class FoodQuizComponent implements OnInit {
   }
 
   getFoodItems() {
-      this.foodItemService
-        .get()
-        .subscribe((foodItems: IFoodItem[]) => {
-            this.foodItems = foodItems;
-            this.populateFoodChoices();
-      });
+     this.foodItemService
+      .get()
+      .subscribe((foodItems: IFoodItem[]) => {
+           this.foodItems = foodItems;
+           this.populateFoodChoices();
+     });
   }
 
   selectAnswer(selectedFood: any) {
