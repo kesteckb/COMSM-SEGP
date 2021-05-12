@@ -26,7 +26,6 @@ describe('FoodQuizComponent', () => {
                RouterModule.forRoot([])
             ],
             providers: [
-               // FoodQuizComponent,
                {provide: FoodItemService, useClass: TestFoodItemService},
                {provide: HobbitService, useClass: TestHobbitService}
             ]

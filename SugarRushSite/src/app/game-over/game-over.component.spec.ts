@@ -23,13 +23,10 @@ describe('GameOverComponent', () => {
             RouterModule.forRoot([])
          ],
          providers: [
-            // GameOverComponent,
             {provided: HobbitService, useClass: TestHobbitService}
          ]
       })
       .compileComponents();
-      // component = TestBed.inject(GameOverComponent);
-      // hobbitService = TestBed.inject(HobbitService);
    });
 
    beforeEach(() => {

@@ -39,8 +39,12 @@ export class FoodQuizComponent implements OnInit {
   }
 
   getFoodItems() {
-     this.foodItems = this.foodItemService.getFoodItems();
-     this.populateFoodChoices();
+     this.foodItemService
+      .get()
+      .subscribe((foodItems: IFoodItem[]) => {
+           this.foodItems = foodItems;
+           this.populateFoodChoices();
+     });
   }
 
   selectAnswer(selectedFood: any) {

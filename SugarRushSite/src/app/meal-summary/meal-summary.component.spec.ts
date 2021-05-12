@@ -9,9 +9,7 @@ import { TestHobbitService } from '../testing/test-hobbit.service';
 describe('MealSummaryComponent', () => {
    let component: MealSummaryComponent;
    let hobbitService: HobbitService;
-
-  let fixture: ComponentFixture<MealSummaryComponent>;
-
+   let fixture: ComponentFixture<MealSummaryComponent>;
 
    beforeEach(() => {
       TestBed.configureTestingModule({
@@ -28,12 +26,6 @@ describe('MealSummaryComponent', () => {
       component = TestBed.inject(MealSummaryComponent);
       hobbitService = TestBed.inject(HobbitService);
    })
-
-   // beforeEach(() => {
-   //   fixture = TestBed.createComponent(MealSummaryComponent);
-   //   component = fixture.componentInstance;
-   //   fixture.detectChanges();
-   // });
 
    it('should create', () => {
       expect(component).toBeDefined();

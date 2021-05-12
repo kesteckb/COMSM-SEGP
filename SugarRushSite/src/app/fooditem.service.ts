@@ -37,15 +37,6 @@ export class FoodItemService {
         return this.httpClient.get<IFoodItem[]>(API, { params });
      }
 
-     getFoodItems(){
-         this
-            .get()
-            .subscribe((foodItems: IFoodItem[]) => {
-               this.allFoodItems = foodItems;
-            });
-         return this.allFoodItems;
-     }
-
      getValue() { return this.getValue(); }
 
      getName() { return this.getName(); }

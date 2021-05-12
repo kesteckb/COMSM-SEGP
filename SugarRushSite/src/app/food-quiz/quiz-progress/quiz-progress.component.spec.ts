@@ -4,8 +4,6 @@ import { RouterModule } from '@angular/router';
 import { QuizProgressComponent } from './quiz-progress.component';
 import { HobbitService } from '../../hobbit.service';
 import { TestHobbitService } from '../../testing/test-hobbit.service';
-// import { SimpleChanges } from '@angular/core';
-// import { SimpleChange } from '@angular/core';
 
 describe('QuizProgressComponent', () => {
    let component: QuizProgressComponent;
@@ -24,8 +22,6 @@ describe('QuizProgressComponent', () => {
          ]
       })
       .compileComponents();
-      // component = TestBed.inject(QuizProgressComponent);
-      // hobbitService = TestBed.inject(HobbitService);
    })
 
    beforeEach(() => {
