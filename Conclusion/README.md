@@ -1,26 +1,66 @@
 ## 7. Conclusion
 * [7.1 Group Work Reflection](README.md#71-group-work-reflection)
+	* [7.1.1 Agile Development](README.md#711-agile-development)
+	* [7.1.2 Communication](README.md#712-communication)
 * [7.2 Success Reflection](README.md#72-success-reflection)
 * [7.3 Impact of Pandemic](README.md#73-impact-of-pandemic)
 * [7.4 Social and Ethical Impact](README.md#74-social-and-ethical-impact)
 * [7.5 Future Work](README.md#75-future-work)
 
 ### 7.1 Group Work Reflection
-Our group took an Agile development approach towards our project which was focused around maintaining and building upon a functional codebase, and developing the application through a series of sprints. Initially, a git repository was established to support the foundational Angular framework, and a paper prototype was developed as an outline for the application. We then began holding daily standups where the focus was for each member of the team to communicate what they had worked on, what roadblocks they were experiencing, and which task they would be working on going forward. This time was also used to identify the primary project goals for the week, and to determine where each team member could best contribute. Overall, this approach had a positive impact on the project, as without the daily standups team members could have been more inclined to procrastinate on their tasks, and isolate themselves from the group. The group sprint planning also helped to unify a vision for the project for all team members by establishing the most important features throughout different stages of development. This process wasn’t without its challenges, however. A lot of the managerial tasks fell on the scrum master, and there were other assignments and classes that people were focusing on at times, causing project progress and standup attendance to sometimes dip.
+
+#### 7.1.1 Agile Development
+Our group took an Agile development approach towards our project which was focused around maintaining and building upon a functional codebase, and developing the application through a series of sprints. 
+
+Initially, a git repository was established to support the foundational Angular framework, and a paper prototype was developed as an outline for the application. We then began holding daily standups where the focus was for each member of the team to communicate what they had worked on, what roadblocks they were experiencing, and which task they would be working on going forward. This time was also used to identify the primary project goals for the week, and to determine where each team member could best contribute. 
+
+Our group found the daily standup meetings especially helpful. When facing difficulties with allocated tasks, the standups were an opportunity to voice this and get help or to redistribute the workload. The standups also encouraged accountability for the tasks each of us said we were going to perform. We also found that our Kanban board helped us keep track of tasks and supported discussions.
+
+Overall, this approach had a positive impact on the project, as without the daily standups team members could have been more inclined to procrastinate on their tasks, and isolate themselves from the group. The group sprint planning also helped to unify a vision for the project for all team members by establishing the most important features throughout different stages of development. 
+
+This process wasn’t without its challenges, however. A lot of the managerial tasks fell on the scrum master, and there were other assignments and classes that people were focusing on at times, causing project progress and standup attendance to sometimes dip. 
+
+For weekly sprint plannings, sometimes it was difficult to estimate how long tasks might take and plan out the entire week, but we note that this was already made easier by the agile methods we employed if we compare it to more traditional project planning methods.
+
+Moreover, even though specialization made performing tasks more efficient in some aspects, some members of the group found that when needing to help out with other parts or to connect different parts of the application, it can take a while to figure out how the other parts worked which may hinder progress.
+
+#### 7.1.2 Communication
+
+Most of the problems we had to team communication are very closely related to [the pandemic situation](README.md#73-impact-of-pandemic) we find ourselves in. It can be difficult to get in contact with people remotely, although we tried to work around this by having a team chat which allowed messages throughout the day. Many of our members also found online meetings to be more tiring than in person meetings and that we would lose focus more quickly. Not being able to meet in person also meant we missed out on potentially helpful group work techniques such as pair programming, although we did also try to replicate this through video chat and screen sharing. 
+
+Overall, we were fortunate in that most group members were flexible with their times and we managed to conduct a good amount of communication through both meetings and the team chat channel.
 
 ### 7.2 Success Reflection
-We were able to meet many of the objectives that we set out to accomplish, however with more development, we feel there are several improvements which could be made. Our application meets our requirements for a minimum viable product with the following features:
+
+We felt that we were largely able to fulfill the brief of ‘design and build a web app that is based around the concept of “serious play”’. 
+
+We have designed our website with a colourful palette and a playful style, and included many game mechanisms such as a theme (with the hobbits), rewards (a score at the end of the quiz), and feedback (with the meal summary at the end of the game).  We think that the use of Tolkien iconography makes the game more playful and fun for those who use the application, and that the mechanic of feeding the hobbit is more engaging than simply quizzing a player on sugar in different foods.
+
+Regarding the serious issue our website tackles, long term health problems which can stem from excessive sugar consumption can be very significant, and for this reason we feel this application addresses a serious topic. We have at least produced a prototype that gives a general sense of relative amounts of sugar in certain types of foods. For our application we chose to focus more on producing a functioning application which meets our requirements for a minimum viable product:
 
     - Create a "Start" screen to welcome players, link to instructions, and allow a player to begin the food quiz
     - Develop a food quiz game which would populate food choices from a database for the player to select from
     - Keep track of total sugar consumption throughout the quiz, and display it to the player relative to a maximum sugar level
     - Populate a 'meal summary' at the end of the quiz which lists the player's food choice and their sugar content
 
-One of the objectives that we set early on was to have a village of several hobbit homes with different hobbits in them. These would act as levels in the game, where different hobbits could have varying nutrional needs of various difficulty for the player. Long term health problems which can stem from excessive sugar consumption can be very significant, and for this reason we feel this application addresses a serious topic. We think that the use of Tolkien iconography makes the game more playful and fun for those who use the application, and that the mechanic of feeding the hobbit is more engaging than simply quizing a player on sugar in different foods.
+However, there were some missed opportunities with both design and technical implementation:
+- Did not link to an external food API which would have given us more up to date and accurate food nutrition information
+- Did not manage to get score sharing to work on our game end screen (although we did manage to enable sharing the website, given an actual domain name).
+- Were not able to evaluate our product against children, who statistically consumes the most excess sugar (due to issues with getting ethics approval).
+- Chose not to put more thought into designing the quiz questions and not to take into account portion sizes and such.
+
+Due to the above, overall we felt that we were able to fulfill most of our initial objectives outlined in the [introduction](../README.md), with the exception of connecting to an external API, and a score sharing function.
 
 ### 7.3 Impact of Pandemic
 
-The coronavirus pandemic has certainly had a significant impact on the way groups work together. In a typical school year, students on the MSc course would have been attending classes together, and getting to know each other in and out of the classroom. These experiences allow for bonding and rapport building which creates a foundation for team learning and cooperation. Those personal relationships aren’t developed when students aren’t meeting each other and working together in person, limiting their ability to communicate and work together remotely. Working together separately and remotely increases the impact of small roadblocks and technical issues. When people are meeting on campus in a computer lab, there is a greater focus on what is to be worked on during that time, and less inclination to be distracted by other coursework or outside distractions. There is also the psychological impact of the lockdowns, where people are not able to participate in social gatherings, or to simply go out and pursue their normal lives. Much is still unknown about the effects of this, but certainly many people are struggling with being isolated at home.
+The coronavirus pandemic has certainly had a significant impact on the way groups work together. 
+
+In a typical school year, students on the MSc course would have been attending classes together, and getting to know each other in and out of the classroom. These experiences allow for bonding and rapport building which creates a foundation for team learning and cooperation. Those personal relationships aren’t developed when students aren’t meeting each other and working together in person, limiting their ability to communicate and work together remotely. Working together separately and remotely increases the impact of small roadblocks and technical issues. 
+
+When people are meeting on campus in a computer lab, there is a greater focus on what is to be worked on during that time, and less inclination to be distracted by other coursework or outside distractions. Some members have also reflected that they found the delivery of lectures to not have been super effective. Although they thought the recorded lectures and walkthroughs were good quality, they found them easy to miss/not know what’s important.
+
+There is also the psychological impact of the lockdowns, where people are not able to participate in social gatherings, or to simply go out and pursue their normal lives. With all your coursemates working from home, it is difficult to tell how everyone else is doing (e.g. if people are also struggling with the workload), which can be a big mental strain. Much is still unknown about the effects of this, but certainly many people are struggling with being isolated at home.
+
 
 ### 7.4 Social and Ethical Impact
 The purpose of the application strives to raise awareness of sugar consumption so people can make more informed dietary decisions. This application arms people with the tools to eat healthier and improve their lifestyle. With consideration of virtue ethics, the intentions and applications of this project are morally sound, and therefore, ethical. Concerns regarding the consequential ethics generally center around the application being used beyond its scope. We would not, for example, recommend that our application be used as the sole resource for dietary guidance. Nutritional needs can vary greatly for individuals, and sugar consumption is only one aspect of that. 
