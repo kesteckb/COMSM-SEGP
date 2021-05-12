@@ -26,5 +26,55 @@ The coronavirus pandemic has certainly had a significant impact on the way group
 The purpose of the application strives to raise awareness of sugar consumption so people can make more informed dietary decisions. This application arms people with the tools to eat healthier and improve their lifestyle. With consideration of virtue ethics, the intentions and applications of this project are morally sound, and therefore, ethical. Concerns regarding the consequential ethics generally center around the application being used beyond its scope. We would not, for example, recommend that our application be used as the sole resource for dietary guidance. Nutritional needs can vary greatly for individuals, and sugar consumption is only one aspect of that. 
 
 ### 7.5 Future Work
-Though we were able to meet many of the goals we had set out to achieve, there are certainly many aspects which could be further improved. The gameplay elements of our application are very simple, and would benefit from more complexity. Currently, the food items populated in the quiz are limited, and we would like to expand those options. We would also want to further integrate the outside nutrition API, so that there could be much more variability in the options presented to the players. With more time, it would be fun to add more original artwork to the application, as well as some simple animation.
 
+During our project implemented a basic prototype of our future vision. Current users can select a single food item for a hobbit meal, and afterwards, users see how much sugar was in the food. However, we could improve our product through a variety of facets.
+
+#### Food Options
+
+Currently, all food items in the quiz are fixed, and each time a player plays the quiz, they see the same options. Because we also reveal the sugar content of all food as the player progresses through the quiz, a small and fixed dataset reduces playability. 
+
+In future versions, we would seek to improve this limitation. First, we would increase the size of our dataset to incorporate more food items. We would take advantage of public food APIs, such as FoodData Central [1] to maintain the data more easily. Though we would still need to generate a list of foods for the quiz, the nutrition information itself would be populated via API. Additionally, the API could make our nutrition data more robust. Common foods (e.g., chocolate) have many API results, and we could take an average of the nutrition information to generalise it. After increasing the size of our database, we would improve the variety of the quiz by making each meal contain a random subset of food items to enhance our application's playability.
+
+#### Relevant Portion Sizes
+
+In our prototype product, sugar content for each food iteam is generated based on a serving size of 100g. We can make the quiz more realistic by incorporating realistic serving sizes. To accomplish this, we would add an extra field to our food item schema to maintain portion sizes in our database.
+
+#### Food Combos
+
+In real life, meals consist of combinations of foods, not just singular food items. In future versions of the application, we would develop the quiz so that each meal option is a randomised subset of food items. Using these food combos adds several improvements to the game: 
+  - Increased variability
+  - Increased difficulty
+  - More realistic experience
+  - More educational opportunity for players
+
+#### Hobbit Village
+
+Our current product only features one version of the quiz, where the players choose meals for one hobbit. In the future vision of our product, we want to incoporate different levels of the quiz. Each level would feature a different hobbit with different dietary needs with increasing difficulty. Subsequent levels would be unlocked as a player completes the previous one. 
+
+As discovered in our user interviews, people do not want to register an account for our application. To implement these changes, we would need to rely on another method to track a user's progress, such as website cookies.
+
+#### Result Sharing
+
+The share functionality of our prototype can only share the URL of the application. From our focus group session, we learned some players like the competitive aspect of the game and want to share the game's score. To satisfy this user group, we should implement additional sharing functionality on the End Game page.
+
+#### Other Nutrition Data
+
+Visualising sugar has proven informing and entertaining to interviewees as well as our team members. We believe we could extend our product to provide even more nutritional education. Because our product establishes a foundation for exploring nutrition data in foods, similar quizes could look at other information, such as protein or sodium. Our product could then allow users to focus on the education for nutritional data they desire.
+
+#### Users Interviews
+
+During our project, we initially planned three interviews with different purposes.
+  - Interview 1 for initial design feedback.
+  - Interview 2 for design implementation and website styling feedback
+  - Interview 3 for user acceptance testing
+Unfortunately, we were only able to conduct Interview 1. Though we did perform a focus group to get some feedback for the website, we weren't able to get individual feedback on any of our actual development. 
+
+In order to gain this feedback for the website, we would perform Interview 2 to target our stylistic choices and measure any improvements from the first interview. After incorporating any necessary changes from Interview 2, we would then perform user acceptance testing.
+
+#### Performance and Security Testing
+
+To evaluate the quality of our application, we performed a series of unit and functional tests. However, there are other ways to evaluate a website.  Performance testing would ensure the website loads and responds well under heavy workloads. Security testing would help reveal and minimize our application's security vulnerabilities. To ensure our application maintains high quality, we should included processes for performance and security testing.
+
+Overall, we were able to meet many of the goals we sought to achieve when first starting the Sugar Rush project. We have learned how to work together using agile practices and communicate as a team while working remotely. Through our accomplishments and setbacks, we were able to learn how to make this project come together, creating a prototype application using aspects of serious play.  
+
+[1] [FoodData Central](https://fdc.nal.usda.gov/)
