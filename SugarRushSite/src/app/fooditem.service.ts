@@ -29,6 +29,8 @@ export enum MealTitle {
 })
 export class FoodItemService {
 
+   allFoodItems: IFoodItem[] = [];
+
     constructor(private httpClient: HttpClient) { }
 
      get(params = {}) {
