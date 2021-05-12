@@ -9,7 +9,7 @@ import { TestHobbitService } from '../testing/test-hobbit.service';
 import {DebugElement} from '@angular/core';
 import {By} from '@angular/platform-browser';
 
-fdescribe('FoodQuizComponent', () => {
+describe('FoodQuizComponent', () => {
    let component: FoodQuizComponent;
    let foodItemService: FoodItemService;
    let hobbitService: HobbitService;
@@ -59,7 +59,8 @@ fdescribe('FoodQuizComponent', () => {
       it('should see end game when quiz is finished', () => {
          component.cond_vall = true;
          fixture.detectChanges();
-         let buttonName = html.query(By.css('.buttons button')).nativeElement.textContent;
+         let buttonName = html.query(By.css('.buttons button'))
+            .nativeElement.textContent;
          expect(buttonName).toContain("End Game");
 
       })

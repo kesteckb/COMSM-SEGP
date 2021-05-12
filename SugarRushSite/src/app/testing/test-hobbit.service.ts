@@ -11,12 +11,20 @@ export class TestHobbitService{
    }
 
    setTotalSugar(value: number){
-
    }
 
    clearAnswers(){}
 
+   getTotalSugar(){
+   }
+
    setGameWin(value: boolean){
       this.gameWin = value;
+   }
+
+   getGameWin(){
+   }
+
+   getAnswers(){
    }
 }
