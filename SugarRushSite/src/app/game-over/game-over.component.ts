@@ -37,6 +37,6 @@ export class GameOverComponent implements OnInit {
    }
 
    getTotalSugar() {
-     this.totalSugar = this.hobbitService.getTotalSugar();
+     this.totalSugar = Math.round(this.hobbitService.getTotalSugar());
    }
 }
