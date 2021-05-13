@@ -1,5 +1,6 @@
 .iconWrapper{
    visibility: hidden;
+   display: inline-block;
 }
 .spoonIcons{
    display: inline-block;

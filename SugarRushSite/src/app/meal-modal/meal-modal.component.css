@@ -2,7 +2,6 @@
    display: grid;
    grid-template-rows: 1fr;
    grid-auto-flow: column;
-   border: 2px solid;
    grid-gap: 10px;
    text-align: center;
 }
@@ -13,4 +12,5 @@
 
 .closeButton{
    text-align: center;
+   color: #ffd166;
 }

@@ -1,6 +1,6 @@
 .mealImage{
    text-align: center;
-   border: 2px solid;
+   border: 2px transparent;
 }
 
 .mealImage > img{
@@ -10,15 +10,18 @@
 
 .mealTitle{
    text-align: center;
-   border: 2px solid;
+   border: 2px transparent;
+   color: #ef476f;
 }
 
 .mealFood{
    text-align: center;
-   border: 2px solid;
+   border: 2px transparent;
+   color: #ffd166;
 }
 
 .nutritionInfo{
    text-align: center;
-   border: 2px solid;
+   border: 2px transparent;
+   color: #ffd166;
 }

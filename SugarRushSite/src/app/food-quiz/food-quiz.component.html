@@ -1,6 +1,6 @@
 
 
-<div class="container">
+<div class="container blockdisplay">
   <div class="topComponent">
     <h1 class="title center">{{getCurrentMealName(currentMeal)}}</h1>
    <div class = "buttons">
@@ -15,7 +15,7 @@
    </div>
   </div>
 
-  <div class="container">
+  <div class="container blockdisplay colourBackground rounded">
     <div class="foodList">
     <mat-selection-list #foods [multiple]="false"
     [disabled]="foods.selectedOptions?.selected[0]?.value.sugarAmount != null">
@@ -23,7 +23,7 @@
         <mat-list-option [disableRipple]="true" *ngFor="let food of currentFoodChoices" [value]="food"
         (click)="selectAnswer(foods.selectedOptions?.selected[0]?.value)">
         <div class="foodStuff">
-          <img src="./assets/{{food.imagePath}}.png" >
+          <img src="./assets/{{food.imagePath}}.png" class="foodImage">
           <div class = "center">
             <h6>{{food.name}}</h6>
           </div>
@@ -36,14 +36,18 @@
   </div>
 
   <div class="container">
-  <p></p>
   <div id="wrapper">
-
-  <p>Sugar level:</p>
+  <p class="sugarLevel">Sugar level:</p>
+  <div class="rowdisplay">
   <app-quiz-progress [hobbit]="hobbit" [sugarLevel]="totalSugar"></app-quiz-progress>
+  </div>
+  </div>
+  </div>
+
+  <div class="container">
     <hr class="my-4">
     <ul class="list-group list-width" *ngFor="let answer of answers">
-      <li class="bg-dark list-group-item d-flex justify-content-between
+      <li class="list-group-item d-flex justify-content-between
       align-items-center list-spacing" style= "height: 3rem">
         <p class="h6 mt-2 text-light">{{answer.name}}</p>
         <span class="badge bg-light rounded-pill w-50" style="height: 2rem;">
@@ -53,9 +57,9 @@
         </span>
       </li>
     </ul>
-    </div>
-    </div>
-
+  </div>
+    
+  
     <div class="bottomright">
       <div *ngIf="belowMaxSugar(); else sickHobbit">
         <img src="/assets/hobbit_1.png" height="400" width="280">
@@ -64,6 +68,10 @@
         <img src="/assets/sick_hobbit_1.png" height="400" width="280">
       </ng-template>
     </div>
+    
+  
+
+ 
   
 
   
