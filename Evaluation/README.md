@@ -10,7 +10,7 @@ We initially considered having another intermediate testing between the wirefram
 
 #### Observations
 
-The type of observation we undertook was direct observation in a controlled environment. For our design (a game-like application played in short sessions), a controlled environment would not be too different from activity in a field. Direct observation was chosen over indirect observation as we found it to be more efficient to note down details during the process rather than capturing the process automatically and analysing for data later. We also did not have the human resources or time to record many tests. This might have limited our data collection in that some details might have been missed by the observer.
+The type of observation we undertook was direct observation in a controlled environment. For our design (a game-like application played in short sessions), a controlled environment would not be too different from activity in the field. Direct observation was chosen over indirect observation as we found it to be more efficient to note down details during the process rather than capturing the process automatically and analysing for data later. We also did not have the human resources or time to record many tests. This might have limited our data collection in that some details might have been missed by the observer.
 
 This method of evaluation was especially useful near the beginning of our sprints, as the open-ended nature of the participant's interaction with our prototype allowed us to gather information we did not previously consider regarding our design. However, the data collected using this technique is largely qualitative instead of quantitative, so the importance of certain design choices may not be exactly as we interpreted (for example, something that bothered one participant might not be as big of a problem to most of our target users).
 
@@ -18,7 +18,7 @@ This method of evaluation was especially useful near the beginning of our sprint
 
 Our observations took place after a brief interview with the participants to find out more about their preferences in gaming. This allowed us to cross reference our findings from the observations with personas and thus create focused user stories.
 
-Unfortunately, for both the interview and the observation, we were unable to interact with our original main target audience (teens and children) because this required an extra ethics approval, which we submitted but was not able to get in time for the project. This meant we only had data on a limited demographic.
+Unfortunately, for both the interview and the observation, we were unable to interact with our original main target audience (teens and children) because this required an extra ethics approval, which we submitted but were not able to get in time for the project. This meant we only had data on a limited demographic.
 
 For more information about what design choices we made based on the results of the inital round of interviews and observations, please refer to the [UX Design](/UXDesign#user-interviews) section of our report. You can also [click here](user_interview_round_1.pdf) to see our user interview script for the initial round.
 
@@ -26,15 +26,15 @@ For more information about what design choices we made based on the results of t
 
 Our focus group had a format similar to the inital observation and interview, with discussions between the observer and multiple participants at the same time. A focus group allowed us to obtain responses from more participants at once. However, because there were multiple participants, the navigation of the application was controlled by the interviewer, and he would ask the participants to instruct the next steps. Because this evaluation was closer to the end of the build process, we were also more clear of our design intentions and asked more pointed questions about certain design choices we made to get feedback on them. There was sometimes unprompted discussion or brainstorm about certain features of the application, which allowed us to see how our application was interpreted compared to our intentions, much like in the first round of evaluation. Encouraging discussion between the participants also may have resulted in some form of synergy - i.e. some ideas may arise which would not have during one-on-one discussion with just one participant.  
 
-However, within a focus group, the group dynamic may have also affected the discussion negatively, for example, a stronger voice or opinion may overpower everyone else, or people may have been more inclined to voice an opinion in agreement. With a larger group of people, it was also sometimes more difficult to guide the discussion which meant that there were more (perhaps less helpful) tangental discussions. Also, the interviewer noted that the focus group was comprised of his own friends which could have resulted in biased opinion.
+However, within a focus group, the group dynamic may have also affected the discussion negatively. For example, a stronger voice or opinion may overpower everyone else, or people may have been more inclined to voice an opinion in agreement. With a larger group of people, it was also sometimes more difficult to guide the discussion which meant that there were more (perhaps less helpful) tangental discussions. Also, the interviewer noted that the focus group was comprised of his own friends which could have resulted in biased opinion.
 
 #### Questionnaires
 
-We did not use questionnaires for our first evaluation because we wanted to record how the participants interacted with our prototype which would not be possible (or at least not very easy to accomplish) with a questionnaire. However, we recognised that some form of evaluation in the form of questionnaires might have been useful in allowing us to collect more quantitative data (which we currently lack), and may allow us to collect a larger quantity of responses overall. This may also be better suited for a final evaluation to identify how successful we were at achieving our overall goals and objectives.
+We did not use questionnaires for our first evaluation because we wanted to record how the participants interacted with our prototype which would not be possible (or more difficult) with a questionnaire. We recognised, however, that some evaluation in the form of questionnaires might have been useful in allowing us to collect more quantitative data, and may have allowed us to collect a larger quantity of responses overall. This may have also been better suited for a final evaluation to identify how successful we were at achieving our overall goals and objectives.
 
 #### Ethnography
 
-Given that our application was a relatively straightforward game format, we felt that performing an ethnography would not be worth the amount of time and resource that would have needed to go into it. We also believe that none of us are qualified to extract accurate and useful data from this form of evaluation. As such, this was not a method that we considered.
+Given that our application was a relatively straightforward game format, we felt that performing an ethnography would not be worth the amount of time and resources that would have needed to go into it. We also believe that none of us are qualified to extract accurate and useful data from this form of evaluation. As such, this was not a method that we considered.
 
 ### Unit testing
 
@@ -49,7 +49,7 @@ providers: [
 ]
 ```
 
-Services and most components were not tested further than this. However, our more complex components have additional unit tests:
+Services and most components were not tested further than this, however, our more complex components have additional unit tests:
   - AppComponent
     - Check component has title 'sugarRush'
   - FoodQuizComponent
@@ -68,7 +68,7 @@ Services and most components were not tested further than this. However, our mor
     - Check correct end game message
     - Check correct score is visible
  
-The unit tests for these components focus on ensuring dynamic HTML elements appear as expected under appriate conditions. Components that rely on input, like the QuizProgressComponent, needed mock input to function:
+The unit tests for these components focus on ensuring dynamic HTML elements appear as expected under appropriate conditions. Components that rely on input, like the QuizProgressComponent, needed mock input to function:
 
 ```javascript
 beforeEach(() => {
