@@ -16,7 +16,7 @@ Initially, a git repository was established to support the foundational Angular 
 
 Our group found the daily standup meetings especially helpful. They provided an opportunity for us to voice any difficulties we were facing and to get help or redistribute the workload. The standups also encouraged accountability for the tasks each of us said we were going to perform. Without these, team members could have been more inclined to procrastinate on their work and isolate themselves from the group. Meanwhile, the group sprint planning helped to unify a vision for the project for all team members by establishing the most important features throughout different stages of development. We found that our Kanban board helped us to fulfil this vision by keeping track of tasks and managing our workflow. 
 
-The Agile development process wasn’t without its challenges, however. A lot of the managerial tasks fell on the scrum master, and there were other assignments and classes that people were focusing on at times, causing project progress and standup attendance to sometimes dip. For weekly sprint plannings, sometimes it was difficult to estimate how long tasks might take and plan out the entire week, but we note that this was already made easier by the agile methods we employed if we compare it to more traditional project planning methods. With each team member specialising in specific areas, they were able to perform tasks more efficiently, but some members of the group found this to be a limitation when having to connect different parts of the application or review each others work. 
+The Agile development process wasn’t without its challenges, however. A lot of the managerial tasks fell on the scrum master, and there were other assignments and classes that people were focusing on at times, causing project progress and standup attendance to sometimes dip. For weekly sprint plannings, sometimes it was difficult to estimate how long tasks might take and plan out the entire week, but we note that this was already made easier by the agile methods we employed if we compare it to more traditional project planning methods. With each team member specialising in specific areas, we were able to perform tasks more efficiently, but some members of the group found this to be a limitation when having to connect different parts of the application or review each others work. 
 
 #### 7.1.2 Communication
 
@@ -28,9 +28,9 @@ Overall, we were fortunate in that most group members were flexible with their t
 
 We felt that we were largely able to fulfill the brief of ‘design and build a web app that is based around the concept of “serious play”’. 
 
-We have designed our website with a colourful palette and a playful style, and included many game mechanisms such as a theme (with the hobbits), rewards (a score at the end of the quiz), and feedback (with the meal summary at the end of the game).  We think that the use of Tolkien iconography makes the game more playful and fun for those who use the application, and that the mechanic of feeding the hobbit is more engaging than simply quizzing a player on sugar in different foods.
+We designed our website with a colourful palette and a playful style, and included many game mechanisms such as a theme (with the hobbits), rewards (a score at the end of the quiz), and feedback (with the meal summary at the end of the game). We think that the use of Tolkien iconography makes the application more playful, and that the mechanic of feeding the hobbit is more engaging than simply quizzing a player on sugar in different foods.
 
-Regarding the serious issue our website tackles, long term health problems which can stem from excessive sugar consumption can be very significant, and for this reason we feel this application addresses a serious topic. We have at least produced a prototype that gives a general sense of relative amounts of sugar in certain types of foods. For our application we chose to focus more on producing a functioning application which meets our requirements for a minimum viable product:
+Regarding the serious issue our website tackles, long term health problems which can stem from excessive sugar consumption can be very significant, and for this reason we feel this application addresses a serious topic. We designed a prototype that gives a general sense of relative amounts of sugar in certain types of foods, and based on this we produced an application which meets the following requirements for a minimum viable product:
 
     - Create a "Start" screen to welcome players, link to instructions, and allow a player to begin the food quiz
     - Develop a food quiz game which would populate food choices from a database for the player to select from
@@ -38,10 +38,10 @@ Regarding the serious issue our website tackles, long term health problems which
     - Populate a 'meal summary' at the end of the quiz which lists the player's food choice and their sugar content
 
 However, there were some missed opportunities with both design and technical implementation:
-- Did not link to an external food API which would have given us more up to date and accurate food nutrition information
-- Did not manage to get score sharing to work on our game end screen (although we did manage to enable sharing the website, given an actual domain name).
-- Were not able to evaluate our product against children, who statistically consumes the most excess sugar (due to issues with getting ethics approval).
-- Chose not to put more thought into designing the quiz questions and not to take into account portion sizes and such.
+- Link to an external food API (which would have given us more up to date and accurate food nutrition information).
+- Score sharing on game end screen (although we did manage to enable sharing the website, given an actual domain name).
+- Evaluatation of our product against the 11-18 age range, who statistically consumes the most excess sugar (issues with getting ethics approval).
+- Attention to detail regarding meal combinations and portion sizes in the quiz questions.
 
 Due to the above, overall we felt that we were able to fulfill most of our initial objectives outlined in the [introduction](../README.md), with the exception of connecting to an external API, and a score sharing function.
 
