@@ -27,9 +27,6 @@ Additionally, we held three key meetings of note:
 | 29 March, 2021 | Angela, Kyle, Olivia, Zack, Zain | This session was used to review users feedback on our initial design plans and make critical design adjustments. | [UX Design - User Interviews](../UXDesign/README.md#44-user-interviews) |
 | 12 April, 2021 |  Angela, Kyle, Zack | This session was used to connect the backend to our frontend. During this meeting, these three members worked together using paired-programming to implement services into Angular. | [System Implementation - Injectables/Services](../SystemImplementation/README.md#343-injectablesservices) |
 | 10 May, 2021 |  Angela, Kyle, Olivia, Zack, Zain | This session was used to collaboratively outline the conclusion for our write up. This time was used as a reflection to talk about our processes and explore how the project went. | [Conclusion](../Conclusion/README.md) |
-  
-  - On 12 April, 2021, Angela, Kyle, and Zack met to connect the backend to our frontend. During this meeting, these three members worked together using paired-programming to implement services into Angular (). 
-  - On 10 May, 2021, all team members met to 
 
 In addition to these meetings our team also used other means of communication: 
   - Instant messaging for one off questions and announcements
