@@ -51,7 +51,8 @@ To get users to engage with our application, it is important that our quiz funct
 To increase the playability of the application, we believe the website needs to be visually appealing. Clean aesthetics can lead to a better user experience that will encourage people to visit the website and share it with others.
 
 ### Demo Video
-[![Image](https://img.youtube.com/vi/utXcI3FqzeM/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+https://user-images.githubusercontent.com/74046447/118156491-521ce080-b411-11eb-8ad1-a568fdd9d4b0.mp4
 
 ### How to Run
   1. Clone or fork this repository
