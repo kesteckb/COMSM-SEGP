@@ -18,7 +18,18 @@ We initially considered using the waterfall project management style for our pro
 
 Agile worked best for our team because it is more flexible and allows developers to specialise in areas they prefer. You can find out more about the specialization [in a section below](README.md#52-team-member-roles).
 	
-[Sprints](README.md#53-sprint-overview) were the primary tool that we used to group our project tasks and communicate goals. Regular meetings regarding sprints were the bulk of our team's communication. 
+[Sprints](README.md#53-sprint-overview) were the primary tool that we used to group our project tasks and communicate goals. Regular meetings regarding sprints were the bulk of our team's communication. Notes from all meetings were recorded in OneNote ([click here to view a PDF version](allMeetingNotes.pdf)).
+
+Additionally, we held three key meetings of note:
+
+| Date | Members | Summary | Documentation |
+| :---: | :---: | :--- | :---: |
+| 29 March, 2021 | Angela, Kyle, Olivia, Zack, Zain | This session was used to review users feedback on our initial design plans and make critical design adjustments. | [UX Design - User Interviews](../UXDesign/README.md#44-user-interviews) |
+| 12 April, 2021 |  Angela, Kyle, Zack | This session was used to connect the backend to our frontend. During this meeting, these three members worked together using paired-programming to implement services into Angular. | [System Implementation - Injectables/Services](../SystemImplementation/README.md#343-injectablesservices) |
+| 10 May, 2021 |  Angela, Kyle, Olivia, Zack, Zain | This session was used to collaboratively outline the conclusion for our write up. This time was used as a reflection to talk about our processes and explore how the project went. | [Conclusion](../Conclusion/README.md) |
+  
+  - On 12 April, 2021, Angela, Kyle, and Zack met to connect the backend to our frontend. During this meeting, these three members worked together using paired-programming to implement services into Angular (). 
+  - On 10 May, 2021, all team members met to 
 
 In addition to these meetings our team also used other means of communication: 
   - Instant messaging for one off questions and announcements
@@ -82,7 +93,7 @@ During our sprints, three main features served as highlights for our project:
 2. During Sprint III and IV, we added functionality to allow user state to flow from one component to another via our services. We used this functionality to create a dynamic game-end component that allows users to review quiz results and answers. These features marked another step towards arriving at our minimum viable product.
 3. Finally, another highlight was the successful implementation of Docker for all team members. Prior to functional Docker configuration, the team had encountered issues building the aplication after pulling changes from the remote repository. Using Docker allowed us to have a standard container for our applicaiton. Docker implementation also allowed us to seed our database identically and connect our website to expected data. 
 
-These three accomplishments form the backbone of the current vresion of our product.    
+These three accomplishments form the backbone of the current version of our product.
 
 ### 5.4 Continuous Integration
 Throughout our project, we used Git to achieve continuous integration. Our initial strategy involved having two primary branches: the [main](../../../tree/main) branch was used as a demo-ready environment; the [develop](../../../tree/develop) branch was used to stage new development. When completing new development, we started by creating user-story-based branches from `develop`. After completing the feature, we merged the changes back into `develop`. As our application took shape and became more complex, we implemented more rigorous processes to ensure changes did not cause loss of functionality.
