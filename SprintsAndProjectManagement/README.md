@@ -65,9 +65,14 @@ Throughout our project, we had a total of five sprints, each lasting a single we
   - [Sprint IV](SugarRushSprint4.pdf)
       - Make game end dynamic depending on quiz
       - Improve Github documentation
-  - Sprint V
+  - [Sprint V](SugarRushSprint5.pdf)
       - Improve Github documentation
       - Improve sugar indicators throughout application
+   - [Sprint VI](SugarRushSprint6.pdf)
+      - Add icons and colours to indicate sugar content
+      - Add a meal summary to review quiz selections
+      - Improve the colour scheme and graphics
+      - Start incorporating responsive website design
 
 Users stories were used to guide each sprint and the above goals. While the goal was to complete user stories within one sprint, unforeseen complications and competing priorities sometimes caused delayed. When a user story was delayed, we evaluated the task to determine the root cause of the delay. We then adjusted future sprint planning to prevent similar delays in the future.
 ![Image](SprintDiagram.png)
