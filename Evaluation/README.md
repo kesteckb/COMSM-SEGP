@@ -24,7 +24,7 @@ Our observations took place after a brief interview with the participants to fin
 
 Unfortunately, for both the interview and the observation, we were unable to interact with our original main target audience (teens and children) because this required an extra ethics approval, which we submitted but were not able to get in time for the project. This meant we only had data on a limited demographic.
 
-For more information about what design choices we made based on the results of the inital round of interviews and observations, please refer to the [UX Design](/UXDesign#user-interviews) section of our report. You can also [click here](user_interview_round_1.pdf) to see our user interview script for the initial round.
+For more information about what design choices we made based on the results of the inital round of interviews and observations, please refer to the [UX Design](/UXDesign/README.md#44-user-interviews) section of our report. You can also [click here](user_interview_round_1.pdf) to see our user interview script for the initial round.
 
 #### Focus groups
 
@@ -42,7 +42,7 @@ Given that our application was a relatively straightforward game format, we felt
 
 ### 6.2 Unit Testing
 
-We used unit testing to evaluate behaviour of our application through a series of automated tests. Our unit testing strategy uses the Jasmine Test Framework[<sup>[1]</sup>](https://jasmine.github.io/), which is incorportaed into Angular during install. After the creation of a component or service, a `spec.ts` file is create alongside the `html`, `css`, and `ts` files. 
+We used unit testing to evaluate behaviour of our application through a series of automated tests. Our unit testing strategy uses the Jasmine Test Framework[<sup>[1]</sup>](README.md#references), which is incorportaed into Angular during install. After the creation of a component or service, a `spec.ts` file is create alongside the `html`, `css`, and `ts` files. 
 
 For our project, all components and services run at least one unit test to show that it can be created. To complete this test, some components require the use of mock services.
 
@@ -132,6 +132,12 @@ We plan to conduct another round of interviews using this [script](uat_interview
 - To determine whether our web-app is able to increase awareness of sugar consumption and influence dietary behaviour
 
 (Note that this section will be covered in more detail by our member Olivia in her extension)
+
+### Appendix
+1. [User interview round 1 script](user_interview_round_1.pdf)
+2. [List of unit tests](unitTests.png)
+3. [Functional test cases](Functional_Test_Cases_PDF.pdf)
+4. [User acceptance testing script](uat_interview_script.pdf)
 
 ### References
 1. Jasmine Tesing Framework - https://jasmine.github.io/
