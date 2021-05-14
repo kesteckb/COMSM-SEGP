@@ -10,7 +10,7 @@
 To arrive at an idea for our project, we explored problems and potential solutions through the process of design thinking. Our ideation process began with a period of discovery where we determined ongoing societal problems and various game mechanics. We then created a chart to playful solutions to address these societal problems using the various game mechanics.  
 ![Image](IdeationChart.png)
 
-We reviewed each of these solution and determined these solutions were the most interesting through a group vote:
+We reviewed each of these solutions and determined these solutions were the most interesting through a group vote:
 - Showing popular news trends around the world
 - Quiz for sugar consumption.  
 
