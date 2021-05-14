@@ -49,19 +49,53 @@ Due to the above, overall we felt that we were able to fulfill most of our initi
 
 The coronavirus pandemic has certainly had a significant impact on the way groups work together. 
 
-In a typical school year, students on the MSc course would have been attending classes together, and getting to know each other in and out of the classroom. These experiences allow for bonding and rapport building which creates a foundation for team learning and cooperation. Those personal relationships aren’t developed when students aren’t meeting each other and working together in person, limiting their ability to communicate and work together remotely. Working together separately and remotely increases the impact of small roadblocks and technical issues. 
+In a typical school year, students on the MSc course would have been attending classes together and getting to know each other in and out of the classroom. These experiences allow for bonding and rapport building which creates a foundation for team learning and cooperation. Those personal relationships aren’t developed when students aren’t meeting each other and working together in person, thus limiting their ability to communicate and work together remotely. This increases the impact of small roadblocks and technical issues. Individuals are also more likely to be distracted by other coursework and outside distractions when working remotely.
 
-When people are meeting on campus in a computer lab, there is a greater focus on what is to be worked on during that time, and less inclination to be distracted by other coursework or outside distractions. Some members have also reflected that they found the delivery of lectures to not have been super effective. Although they thought the recorded lectures and walkthroughs were good quality, they found them easy to miss/not know what’s important.
+Some team members felt that the delivery of lectures could have been improved upon. Although the recorded lectures and walkthroughs were good quality, they were easy to miss and it was often unclear what was important.
 
-There is also the psychological impact of the lockdowns, where people are not able to participate in social gatherings, or to simply go out and pursue their normal lives. With all your coursemates working from home, it is difficult to tell how everyone else is doing (e.g. if people are also struggling with the workload), which can be a big mental strain. Much is still unknown about the effects of this, but certainly many people are struggling with being isolated at home.
-
+There was also the psychological impact of the lockdowns, where people are not able to participate in social gatherings, or to simply go out and pursue their normal lives. With all your coursemates working from home, it is difficult to tell how everyone else is doing (e.g. if people are also struggling with the workload), which can be a big mental strain. Much is still unknown about the effects of this, but certainly many people are struggling with being isolated at home.
 
 ### 7.4 Social and Ethical Impact
-The purpose of the application strives to raise awareness of sugar consumption so people can make more informed dietary decisions. This application arms people with the tools to eat healthier and improve their lifestyle. With consideration of virtue ethics, the intentions and applications of this project are morally sound, and therefore, ethical. Concerns regarding the consequential ethics generally center around the application being used beyond its scope. We would not, for example, recommend that our application be used as the sole resource for dietary guidance. Nutritional needs can vary greatly for individuals, and sugar consumption is only one aspect of that. 
+
+#### Product Ethicality
+
+The purpose of our application is to raise awareness of sugar consumption so people can make more informed dietary decisions. This application arms people with the tools to eat healthier and improve their lifestyle. 
+
+With consideration of virtue ethics, the intentions and deliverables of this project are ethical because they aim to improve the health of others. Likewise, from a consequentialist persepective, our application seeks to positively affect dietary behaviour and would thus be considered ethical. In addition, the privacy of our users are protected as no information about them is stored or requested when using our application. Through this decision, we have circumvented potential security and privacy breaches.
+
+However, our application’s biggest ethical uncertainties can also be identified through consequentialism. For one, the mental and dietary consequences of our application are unknown because we did not receive guidance from healthcare or psychological professionals during development. Additionally, our application is solely targeted on sugar consumption and ignores other dietary factors (e.g. fat). This could inadvertantly encourage unhealthy eating behaviours for our players.
+
+For our prototype, we mainly focused on its functionality and only incorporated a small subset of test foods. These food choices lack diversity and are heavily focused on Western food. These limited food choices could exclude certain populations from our product. For example, knowing the sugar content of different types of pastries might not be helpful for people who don’t usually include this type of food in their diet.
+
+One target group of our application is children. During development, we were not able to interview children and learn how they would interact with our system. We also did not get input from child psychologists to verify our game design is viable for this age group. One potential consequence of this is that children will want to collect more icons, i.e. consume more sugar in the game. If children react this way, we could influence poor eating habits. 
+
+Another concern is the addictive property of games [<sub>X</sub>](D. King, E. Koster, and J. Billieux, “Study what makes games addictive.,”Nature, vol. 573, no. 7774, p. 346, 2019.). The final version of our game features a finite story that involves helping a fixed number of hobbits. However, this final version also incorporates competition and random food selections. This combination of features is meant to encourage replayability. Because the intention of these features is to improve dietary education of players, it is ethical with consideration of virtue ethics. However, in regards to consequentialism, these features may be unethical if they cause addictive behaviour.
+
+Based on deontic ethics, following university ethical guidelines for user interviews improved the ethicality of our product. We accomplished this by limiting our interviews to people from non-vulnerable populations as indicated by our course’s ethics guidance. To get approval to interview minors, additional ethical review was requested, but not received during the timespan of this project.
+
+When examining the “make IT for everyone” section of the BCS Code of Conduct[<sup>[x]</sup>](https://www.bcs.org/membership/become-a-member/bcs-code-of-conduct/), our project was unable to attain a high level of accessibility. We discussed implementing high-contrast colours and semantic HTML during our design phase, but we were unable to achieve proper development of these features during our time constraints. As a result, this aspect of our project could be considered unethical according to these guidelines.
+
+#### Opportunities
+
+Overall, considering the intentions of our projects, the potential benefits of our application, and our obeisance of university guidelines, our project is ethical. However, unknown consequences of our application and unfinished accessibility development hinder the ethicality of our project. To improve these areas of our project, the following steps should be implemented:
+
+- To ensure we are providing proper dietary education to our users, we should seek nutritional advice from healthcare professionals.
+- To include a more diverse population for our application, we should implement a more diverse subset of foods and potentially include different localisation so populations see foods relevant to them.
+- To verify our game design is effective for children, we should consult child psychology workers.
+- To minimise the risk of addiction playing our game, we should carefully review the application’s design and remove features that encourage addictive behaviour. 
+- To provide support for screen readers, we should fully implement high-contrast colours and incorporate semantic HTML.
+
+#### Potential for Misuse
+
+While our application has good intentions, its core ideas and functionality could be extended for potentially unethical purposes.
+
+Our existing product could be adapted to a website for commercial purposes. It could be modified to include in-page advertisements that collect user data. This change could introduce privacy and security concerns for the application, which could be considered unethical based on consequentialism. Additionally, the website’s food choices could be updated to specific products and become focused on advertising over dietary education. As a result, the site could become less ethical from the lens of virtue ethics.
+
+As mentioned above, our product has a risk of becoming addictive. Further implementations of similar products could exacerbate the addictiveness of the through dark design patterns [<sup>X</sup>](https://www.darkpattern.games/). For example, an endless amount of levels could be implemented, or players could be required to feed the hobbit at different times throughout the day. In combination with in-game advertisements or purchases, the focus of the game could switch to profit over education. Consequentialism and virtue ethics both indicate that this implementation of our ideas would be unethical due to its health impact on players.
 
 ### 7.5 Future Work
 
-During our project implemented a basic prototype of our future vision. Current users can select a single food item for a hobbit meal, and afterwards, users see how much sugar was in the food. However, we could improve our product through a variety of facets.
+During our project we implemented a basic prototype of our future vision. Current users can select a single food item for a hobbit meal, and afterwards, users see how much sugar was in the food. However, we could improve our product through a variety of facets.
 
 #### Food Options
 
