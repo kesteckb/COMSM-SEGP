@@ -1,0 +1,34 @@
+<mxfile host="app.diagrams.net" modified="2021-05-11T07:43:19.106Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="h7FJCB9SAqhB2pv6CUHx" version="14.6.6" type="github">
+  <diagram id="G2rBkmL8vjkf9qeWlwPB" name="Page-1">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vQwCsltPgEDsJymCtNPJ-1" value="Story &lt;br&gt;and &lt;br&gt;Theme" style="rhombus;whiteSpace=wrap;html=1;sketch=1;fillStyle=solid;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontFamily=Courier New;" parent="1" vertex="1">
+          <mxGeometry x="80" y="120" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vQwCsltPgEDsJymCtNPJ-2" value="Levels &lt;br style=&quot;font-size: 12px;&quot;&gt;and &lt;br style=&quot;font-size: 12px;&quot;&gt;Progress" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Courier New;fontStyle=1;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;sketch=1;fillStyle=solid;" parent="1" vertex="1">
+          <mxGeometry x="80" y="390" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vQwCsltPgEDsJymCtNPJ-3" value="Feedback" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Courier New;fontStyle=1;fontSize=12;fillColor=#e1d5e7;strokeColor=#9673a6;sketch=1;fillStyle=solid;" parent="1" vertex="1">
+          <mxGeometry x="80" y="300" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vQwCsltPgEDsJymCtNPJ-4" value="Rewards" style="rhombus;whiteSpace=wrap;html=1;fontFamily=Courier New;fontStyle=1;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;sketch=1;fillStyle=solid;" parent="1" vertex="1">
+          <mxGeometry x="80" y="210" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vQwCsltPgEDsJymCtNPJ-5" value="We apply a storyline to the sugar quiz through hobbits. By selecting meals, you can follow the hobbits throughout a day.&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontFamily=Courier New;fontSize=12;fillStyle=solid;align=left;" parent="1" vertex="1">
+          <mxGeometry x="210" y="120" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vQwCsltPgEDsJymCtNPJ-6" value="Players receive a score at the end of the quiz to inform them of their performance." style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontFamily=Courier New;fontSize=12;fillStyle=solid;align=left;" parent="1" vertex="1">
+          <mxGeometry x="210" y="210" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vQwCsltPgEDsJymCtNPJ-7" value="Players can review their answers at the end of the quiz to reflect on their performance." style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontFamily=Courier New;fontSize=12;fillStyle=solid;align=left;" parent="1" vertex="1">
+          <mxGeometry x="210" y="300" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vQwCsltPgEDsJymCtNPJ-8" value="Houses simulate levels. Each contains a hobbit with progressively challenging sugar thresholds. Meal choices also become less obvious. &lt;br&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;span&gt;&lt;b&gt;Note: currently not implemented&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;fontFamily=Courier New;fontSize=12;fillStyle=solid;align=left;" parent="1" vertex="1">
+          <mxGeometry x="210" y="390" width="310" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

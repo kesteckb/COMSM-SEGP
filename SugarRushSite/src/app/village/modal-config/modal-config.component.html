@@ -1,16 +1,22 @@
 <ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-custom">
   <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">How to play</h4>
+    <h4 class="modal-title" style="color: #073b4c;">How do I play?</h4>
     <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
-  <div class="modal-body">
-    <p>*insert text here*</p>
+  <div class="modal-body" style="color: #073b4c;">
+    <ul>
+      <li>Click on the first house</li>
+      <li>Try and feed your hobbit the food with the lowest sugar content to win the game</li>
+      <li>Unlock new houses with each level you pass</li>
+    </ul>
   </div>
   <div class="modal-footer">
     <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Close</button>
   </div>
+</div>
 </ng-template>
 
-<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Instuctions</button>
+<button class="btn btn-lg btn-outline-light" (click)="open(content)" style="color: #ef476f;">Instructions</button>

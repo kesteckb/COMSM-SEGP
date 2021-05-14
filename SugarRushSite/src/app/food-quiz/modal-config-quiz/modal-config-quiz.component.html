@@ -1,0 +1,23 @@
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-custom">
+  <div class="modal-header">
+    <h4 class="modal-title" style="color: #073b4c;">What do I do?</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="color: #073b4c;">
+    <ul>
+      <li>Select one of the available foods to feed your hobbit.</li>
+      <li>Try to pick foods to keep his daily sugar consumption low.</li>
+      <li>After picking a food, click the Next Meal button to progess.</li>
+      <li>When you've completed the quiz, click the End Game button to see your results!</li>
+    </ul>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Close</button>
+  </div>
+</div>
+</ng-template>
+
+<button class="btn btn-lg btn-outline-light" (click)="open(content)" style="color: #ef476f;">Instructions</button>

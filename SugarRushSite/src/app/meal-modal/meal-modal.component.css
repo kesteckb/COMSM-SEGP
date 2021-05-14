@@ -1,8 +1,7 @@
 .wrapper{
    display: grid;
    grid-template-rows: 1fr;
-   grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
-   border: 2px solid;
+   grid-auto-flow: column;
    grid-gap: 10px;
    text-align: center;
 }
@@ -13,4 +12,5 @@
 
 .closeButton{
    text-align: center;
+   color: #ffd166;
 }

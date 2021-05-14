@@ -1,0 +1,28 @@
+.progressBar{
+   position: relative;
+   align-content: center;
+   padding-top: 0.1em;
+   padding-bottom: 1.5em;
+}
+
+.iconWrapper{
+   display: inline-block;
+   position: absolute;
+}
+
+.iconWrapper span{
+   font-size: xxx-large;
+}
+
+.fullIcons span{
+   font-size: xxx-large;
+}
+
+.spoonRemainder{
+   display: inline-grid;
+}
+
+.spoonRemainder span{
+   overflow: hidden;
+   white-space: nowrap;
+}

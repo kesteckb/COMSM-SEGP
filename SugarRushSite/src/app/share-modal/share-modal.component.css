@@ -1,29 +1,48 @@
 .shareMain{
    text-align: center;
-   border: 2px solid;
+   border: 2px transparent;
 }
 
 .shareMain > h3{
    text-align: center;
-   border: 2px solid;
+   border: 2px transparent;
+   color: #ffd166;
+   padding-top: 0.5em;
+   padding-bottom: 0.2em;
 }
 
 .shareMain > section{
    text-align: center;
-   border: 2px solid;
+   border: 2px transparent;
+   color: #ffd166;
 }
 
 .shareIcons{
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    grid-gap: 10px;
-   border: 2px solid;
+   border: 2px transparent;
+   margin-top: 0.5em;
 }
 
+a {
+   color: #06d6a0;
+}
 .shareIcons > div{
-   border: 2px solid;
+   border: 2px transparent;
 }
 
 .closeButton{
    text-align: center;
 }
+
+Button {
+   color: #ffd166;
+   margin: 1em;
+   border: 2px solid;
+}
+
+Button:hover {
+   background-color: #ef476f;
+}
+

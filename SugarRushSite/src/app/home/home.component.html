@@ -1,12 +1,36 @@
 <!--include 'style="background:pink !important"' in div to change colour-->
 
-<div class="jumbotron">
-  <h1 class="display-4">{{welcomeMessage}}</h1>
-  <p class="lead">{{aboutMessage}}</p>
-  <hr class="my-4">
-    <div class = "center">
-      <a class="btn btn-dark btn-md btn-circle" href="./village" role="button">
-        Play
-      </a>
-    </div>
-</div>
+            <h2 id="upperText">Set out on adventure to the pantry</h2>
+            <div class="HobbitImage">
+              <img src="./assets/HobbitHomePage.png" alt="Hobbit Artwork">
+            </div>
+            <div class="circles">
+              <ul class="">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div style="position: absolute; left: 50%; bottom: 10%;">
+              <div style="position: relative; left: -50%; bottom: -10%">
+                <a href="./village"><button type="button" class="btn btn-outline-primary">Let's Play</button></a>
+                </div>
+              </div>
+              <section class="shareIcons">
+                <div>
+                   <a [attr.href]="facebookShareLink" target="_blank"><img src="./assets/facebook.png" alt="Facebook Icon" class="icon img-fluid"></a>
+                </div>
+                <div>
+                   <a [attr.href]="twitterShareLink" target="_blank"><img src="./assets/twitter.png" alt="Twitter Icon" class="icon"></a>
+                </div>
+                <div>
+                   <a [attr.href]="redditShareLink" target="_blank"><img src="./assets/reddit.png" alt="Reddit Icon" class="icon"></a>
+                </div>
+                </section>
+            </div>

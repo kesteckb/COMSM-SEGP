@@ -4,6 +4,7 @@ import { DataService } from './data.service';
 import { HobbitService } from './hobbit.service';
 import { FoodItemService } from './fooditem.service';
 import { HouseService } from './house.service';
+import { NgSocialLinksService } from 'ng-social-links';
 
 @Component({
    selector: 'app-root',
@@ -22,4 +23,19 @@ export class AppComponent {
   openModal() {
     this.modal.open();
   }
+
+  facebookShareLink: String;
+  twitterShareLink: String;
+  redditShareLink: String;
+
+  constructor(private socialLinks: NgSocialLinksService) { 
+  }
+
+  ngOnInit(): void {
+    this.facebookShareLink = this.socialLinks.getShareLink('fb');
+     this.twitterShareLink = this.socialLinks.getShareLink('tw');
+     this.redditShareLink = this.socialLinks.getShareLink('re');
+  }
 }
+
+

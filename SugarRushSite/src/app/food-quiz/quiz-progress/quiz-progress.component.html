@@ -1,0 +1,17 @@
+<div class="progressBar">
+   <div class="iconWrapper">
+      <span *ngFor="let tsp of goalTeaspoons" class="material-icons" style="color: darkgray">
+         icecream
+      </span>
+   </div>
+   <div class="iconWrapper" [ngStyle]="{'color': getStatusColour()}">
+      <span *ngFor="let tsp of currentTeaspoons" class="material-icons">
+         icecream
+      </span>
+      <span class="spoonRemainder">
+         <span class="material-icons" [ngStyle]="{'width': getRemainPercentage()}">
+            icecream
+         </span>
+      </span>
+   </div>
+</div>

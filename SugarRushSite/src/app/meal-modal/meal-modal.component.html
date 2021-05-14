@@ -1,35 +1,7 @@
 <body>
    <article class="wrapper">
-      <section class="meal1">
-         <app-meal-info></app-meal-info>
-      </section>
-      <section class="meal2">
-         <app-meal-info></app-meal-info>
-      </section>
-      <section class="meal3">
-         <div>
-            <app-meal-info></app-meal-info>
-         </div>
-      </section>
-      <section class="meal4">
-         <div>
-            <app-meal-info></app-meal-info>
-         </div>
-      </section>
-      <section class="meal5">
-         <div>
-            <app-meal-info></app-meal-info>
-         </div>
-      </section>
-      <section class="meal6">
-         <div>
-            <app-meal-info></app-meal-info>
-         </div>
-      </section>
-      <section class="meal7">
-         <div>
-            <app-meal-info></app-meal-info>
-         </div>
+      <section class="meal" *ngFor="let meal of meals; index as i">
+         <app-meal-info [mealIndex]="i" [mealFood]="meal"></app-meal-info>
       </section>
    </article>
    <div class="closeButton">

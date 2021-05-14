@@ -1,3 +1,4 @@
+
 .wrapper{
    display: grid;
    grid-template-columns: 1fr 5fr;
@@ -8,7 +9,6 @@
 }
 
 .wrapper > section{
-   border: 2px solid;
    text-align: center;
 }
 
@@ -16,18 +16,30 @@
    margin: auto;
 }
 
+.link {
+   color: #ef476f;
+}
 .summaryInfo > div{
    margin: auto;
-   border: 1px solid;
 }
 
-.summaryInfo > h3{
+h3 {
    margin: auto;
-   border: 1px solid;
+   font-weight: bolder;
+   font-size: xx-large;
+   padding: 1rem;
+   color: #ffd166; 
+}
+
+.Score {
+   color: #ef476f;
 }
 
 .summaryText{
-   text-align: left;
+   text-align: center;
+   padding: 1rem;
+   color: #ffd166;
+
 }
 
 .buttonRow{
@@ -36,6 +48,20 @@
    grid-gap: 2%;
 }
 
-.buttonRow > div{
-   border: 1px solid;
+Button {
+   color: #ffd166;
+   border: 2px solid #ef476f;
+   margin-top: 0.5em;
 }
+
+Button:hover {
+   background-color: #ef476f;
+}
+
+
+@media only screen and (max-width: 800px) {
+   .imageBox {
+      display: none;
+   }
+}
+

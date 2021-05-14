@@ -25,11 +25,7 @@ export class GameOverComponent implements OnInit {
      }
 
    getHobbits() {
-      this.hobbitService
-         .get()
-         .subscribe((hobbits: IHobbit[]) => {
-            this.hobbits = hobbits;
-         });
+      this.hobbitService.getHobbits();
    }
 
    getMeals() {
@@ -41,6 +37,6 @@ export class GameOverComponent implements OnInit {
    }
 
    getTotalSugar() {
-     this.totalSugar = this.hobbitService.getTotalSugar();
+     this.totalSugar = Math.round(this.hobbitService.getTotalSugar());
    }
 }

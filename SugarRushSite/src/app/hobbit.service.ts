@@ -10,6 +10,7 @@ export interface IHobbit {
       name : string;
       sugarTolerance : number;
       house ?: number;
+      sugarIntake: number;
 }
 
 const API = '/hobbits';
@@ -19,6 +20,7 @@ const API = '/hobbits';
 })
 export class HobbitService {
 
+   allHobbits: IHobbit[] = [];
    quizAnswers: IFoodItem[] = [];
    gameWin: boolean;
    totalSugar: number;
@@ -29,11 +31,23 @@ export class HobbitService {
       return this.httpClient.get<IHobbit[]>(API, { params });
    }
 
-   addToAnswers(foodItem) {
-      this.quizAnswers.push(foodItem);
+   getHobbits(){
+      return this
+         .get()
+         .subscribe((hobbits: IHobbit[]) => {
+            this.allHobbits = hobbits;
+         });
    }
 
-   getAnswers() {
+   getHobbit(index: number){
+      return this.allHobbits[index];
+   }
+
+   addToAnswers(quizAnswer: IFoodItem) {
+      this.quizAnswers.push(quizAnswer);
+   }
+
+   public getAnswers() {
       return this.quizAnswers;
    }
 

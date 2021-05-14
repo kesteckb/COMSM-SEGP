@@ -1,3 +1,5 @@
+
+
 <body>
   <article class="wrapper">
     <section class="imageBox">
@@ -17,7 +19,7 @@
           Better luck next time!
         </ng-template>
         </h3>
-          <div>
+          <div class="Score">
             Your score: {{totalSugar}}
           </div>
           <div class="summaryText">
@@ -28,11 +30,7 @@
               You lost! Click play again to have another go.
             </ng-template>
             See recommended sugar intake information from the NHS
-            <a href="https://www.nhs.uk/live-well/eat-well/how-does-sugar-in-our
-            -diet-affect-our-health/">here</a>.
-            <div *ngFor="let item of items">
-               {{item.name}}
-            </div>
+            <a href="https://www.nhs.uk/live-well/eat-well/how-does-sugar-in-our-diet-affect-our-health/" class="link" target="_blank">here</a>.
           </div>
           <div class="mealSummary">
             <app-meal-summary></app-meal-summary>

@@ -26,14 +26,17 @@ import { VillageComponent } from './village/village.component';
 import { LockedVillageComponent } from './village/locked-village/locked-village.component'
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ModalConfigComponent } from './village/modal-config/modal-config.component';
+import { ModalConfigQuizComponent } from './food-quiz/modal-config-quiz/modal-config-quiz.component';
 import { UnlockedVillageComponent } from './village/unlocked-village/unlocked-village.component';
 import { MealSummaryComponent } from './meal-summary/meal-summary.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import { MealInfoComponent } from './meal-info/meal-info.component';
+import { MealInfoComponent } from './meal-modal/meal-info/meal-info.component';
 import { MealModalComponent } from './meal-modal/meal-modal.component';
 import { ShareResultsComponent } from './share-results/share-results.component';
 import { ShareModalComponent } from './share-modal/share-modal.component';
 import { NgSocialLinksModule } from 'ng-social-links';
+import { QuizProgressComponent } from './food-quiz/quiz-progress/quiz-progress.component';
+import { SugarContentComponent } from './food-quiz/sugar-content/sugar-content.component';
 
 @NgModule({
   declarations: [
@@ -49,12 +52,15 @@ import { NgSocialLinksModule } from 'ng-social-links';
     VillageComponent,
     LockedVillageComponent,
     ModalConfigComponent,
+    ModalConfigQuizComponent,
     UnlockedVillageComponent,
     MealSummaryComponent,
     MealModalComponent,
     MealInfoComponent,
     ShareResultsComponent,
-    ShareModalComponent
+    ShareModalComponent,
+    QuizProgressComponent,
+    SugarContentComponent
   ],
   entryComponents: [
      MealSummaryComponent

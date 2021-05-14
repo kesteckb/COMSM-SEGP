@@ -1,0 +1,27 @@
+.mealImage{
+   text-align: center;
+   border: 2px transparent;
+}
+
+.mealImage > img{
+   height: 50%;
+   width: 50%;
+}
+
+.mealTitle{
+   text-align: center;
+   border: 2px transparent;
+   color: #ef476f;
+}
+
+.mealFood{
+   text-align: center;
+   border: 2px transparent;
+   color: #ffd166;
+}
+
+.nutritionInfo{
+   text-align: center;
+   border: 2px transparent;
+   color: #ffd166;
+}

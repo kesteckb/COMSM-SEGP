@@ -1,0 +1,21 @@
+.logo {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.sugar-cubes {
+    width: 60px;
+    height: auto;
+    
+}
+h1 {
+    padding-top: 0.3em;
+    font-size: xx-large;
+    font-family: 'Caveat Brush', cursive !important;
+    float: right; 
+    color: #ef476f;
+    position: relative;
+    letter-spacing: 0.051em;
+}
+
+ 
