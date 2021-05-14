@@ -42,7 +42,7 @@ Given that our application was a relatively straightforward game format, we felt
 
 ### 6.2 Unit Testing
 
-We used unit testing to evaluate behaviour of our application through a series of automated tests. Our unit testing strategy uses the Jasmine Test Framework[<sup>[1]</sup>](https://jasmine.github.io/), which is incorportaed into Angular during install. After the creation of a component or unit test, a `spec.ts` file is create alongside the `html`, `css`, and `ts` files of the component. 
+We used unit testing to evaluate behaviour of our application through a series of automated tests. Our unit testing strategy uses the Jasmine Test Framework[<sup>[1]</sup>](https://jasmine.github.io/), which is incorportaed into Angular during install. After the creation of a component or service, a `spec.ts` file is create alongside the `html`, `css`, and `ts` files. 
 
 For our project, all components and services run at least one unit test to show that it can be created. To complete this test, some components require the use of mock services.
 
@@ -113,7 +113,7 @@ To test the functionality of our system, we opted for manual, scenario based tes
 
 The advantage to this method, in comparison to more technically complex alternatives such as automated testing, was its upfront time efficiency. As our application is currently a minimum viable product, the path through the application is relatively simple and user interactions with the site are not complex. We were therefore able to rapidly develop and use these test cases.
 
-However, there were some disadvantages to this approach. The manual nature of our testing approach reduced the overall efficiency and agility of our development process, and exposed us to a certain level of risk around human error in the testing process. As previously stated, while our application is not yet of a sufficient size for this to have seriously hindered our progress, we would look to implement supplementary automated testing methods in future development work, as our application grows in size and scope. 
+However, there were some disadvantages to this approach. The manual nature of our testing approach reduced the overall efficiency and agility of our development process. It also exposed us to a certain level of risk around human error in the testing process. As previously stated, while our application is not yet of a sufficient size for this to have seriously hindered our progress, we would look to implement supplementary automated testing methods in future development work, as our application grows in size and scope. 
 
 ### 6.4 User Acceptance Testing
 
