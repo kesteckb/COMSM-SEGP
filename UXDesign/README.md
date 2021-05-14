@@ -10,19 +10,19 @@
 To arrive at an idea for our project, we explored problems and potential solutions through the process of design thinking. Our ideation process began with a period of discovery where we determined ongoing societal problems and various game mechanics. We then created a chart to playful solutions to address these societal problems using the various game mechanics.  
 ![Image](IdeationChart.png)
 
-We reviewed each of these solutions and determined these solutions were the most interesting through a group vote:
+We reviewed each of these solutions and determined which of these solutions were the most interesting through a group vote:
 - Showing popular news trends around the world
 - Quiz for sugar consumption.  
 
 We began to develop these ideas into a potential application by writing project proposals for each [(click here to view)](../SugarRushProposal.pdf). When writing these proposals, we used group writing to help create a cohesive direction for the project. After completing the two briefs, we used another group vote to decide on the final project idea: Hobbit Sugar Rush. 
 
-In our proposal, we identified awareness sugar overconsumption as our primary goal and outlined the methods by which we would address it. During this process we made key decisions about the goals of our project.
+In our proposal, we identified awareness of sugar overconsumption as our primary goal and outlined the methods by which we would address it. During this process we made key decisions about the goals of our project:
   - Create a playful and educational experience
   - Use hobbits to encourage empathetic connection with sugar consumption
   - Quiz format of seven different hobbit meals based on Tolkien mythology
   - Sugar thresholds will be determined by NHS guidelines
 
-Once we completed our project proposal, we created an initial ‘paper’ prototype [(click here to view)](https://docs.google.com/presentation/d/1PUFuL9rSekN_tIJ1nDB9tv86x6KvYPRJFryo8T6m-Vk/edit?usp=sharing) to represent the vision of the application. For this process, we used Google Slides. Each slide represented the layout and expected behaviour of the different website pages and components. 
+Once we completed our project proposal, we created an initial ‘paper’ prototype [(click here to view)](https://docs.google.com/presentation/d/1PUFuL9rSekN_tIJ1nDB9tv86x6KvYPRJFryo8T6m-Vk/edit?usp=sharing) to represent the vision for the application. For this process, we used Google Slides. Each slide represented the layout and expected behaviour of the different website pages and components. 
 
 ![image](paperPrototypeVillage.png)
 
@@ -35,11 +35,11 @@ This prototype helped us develop further features of the application.
   - Initial quiz review or meal summary
   - Levels with progressively challenging hobbits that have different dietary needs
 
-After we had developed our original idea into our initial prototype and proposal, we collected the thoughts and generated a final proposal and wireframe for the project.
+After we had developed our original idea into our initial prototype and proposal, we collected our thoughts and generated a final proposal and wireframe for the project.
 ![Image](quizWireframe.png)
 
 Following additional discussions, we determined the following hypotheses will be evaluated for this project: 
-- Allowing users to control sugar consumption through the medium of another being would raise more conscious awareness of sugar consumption
+- Allowing users to control sugar consumption through the medium of another being would raise more conscious awareness of sugar consumption.
 - Allowing users to visualise sugar consumption with images would improve understanding of an amount of sugar in a food item.
 - Playing the game will raise awareness about sugar consumption and the levels of sugar in certain foods.  
 
@@ -83,7 +83,7 @@ In addition to this design approach, we incorporate several design heuristics, w
       - By using standard terminology on the site, users could navigate the website intuitively.
           - Button labeled 'Play' for players to enter the site
           - Popup labeled 'Instructions' that explain workflow to users when first opening the application
-          - Button labeled 'Instructions' to help users find help
+          - Button labeled 'Help' to help users find help
           - Button labeled 'Share' to indicate social media sharing
           - Share icons to indicate social media sharing for different social media platforms
           - Button labeled 'Close' to close modal windows
@@ -91,7 +91,7 @@ In addition to this design approach, we incorporate several design heuristics, w
       - Definition: Users have the option to quit actions they click by mistake or do not wish to complete.
       - Users would be able to return to the home screen or previous screen at any point in the the workflow.
           - Modal windows for instructions, meal summary, and sharing can be closed to return to the previous screen
-          - Buttons from the quiz and game-end screens allow user to return to the home page
+          - Buttons from the quiz and game-end screens allow user to return to the home page (partially implemented)
           - In the initial wireframe, different exit workflows were available depending on whether a user was logged in or not.
   - Help and documentation 
       - Definition: Necessary help and instructions are easy to find. Any necessary steps are listed discretely and clearly.
