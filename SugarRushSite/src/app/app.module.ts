@@ -26,6 +26,7 @@ import { VillageComponent } from './village/village.component';
 import { LockedVillageComponent } from './village/locked-village/locked-village.component'
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ModalConfigComponent } from './village/modal-config/modal-config.component';
+import { ModalConfigQuizComponent } from './food-quiz/modal-config-quiz/modal-config-quiz.component';
 import { UnlockedVillageComponent } from './village/unlocked-village/unlocked-village.component';
 import { MealSummaryComponent } from './meal-summary/meal-summary.component';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -51,6 +52,7 @@ import { SugarContentComponent } from './food-quiz/sugar-content/sugar-content.c
     VillageComponent,
     LockedVillageComponent,
     ModalConfigComponent,
+    ModalConfigQuizComponent,
     UnlockedVillageComponent,
     MealSummaryComponent,
     MealModalComponent,
