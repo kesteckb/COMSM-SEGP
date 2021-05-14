@@ -1,6 +1,6 @@
 # Sugar Rush
 
-*set out on an adventure to the pantry!*
+*Set out on an adventure to the pantry!*
 
 ## Team
 
@@ -12,7 +12,7 @@
 
  [View our team notes!](https://1drv.ms/u/s!ArK70JvM660kiJU316Riv8bJ639P4A)
 
-## 1. Introduction
+## 1 Introduction
 
 ![image](./SugarRushSite/src/assets/homepage-prototype.JPG)
 
@@ -30,7 +30,7 @@ In this project, we create a game targeted at people of all ages that offers an 
 
 For each of these meals, the player will be presented with a selection of various foods. Each selected food then contributes to the hobbit's daily sugar consumption, so players are encouraged to select the foods they perceive have the least sugar. Because the point of the game is to educate the players on sugar content, we show the amounts of sugar in each food choice after the players make their selection. Intead of showing the sugar content numerically, as is done on nutrition labels, we show sugar amounts through representative icons, such as a teaspoons or sugar-cubes. Through this graphical representation, users can gain a more intuitive understanding of sugar content. 
 
-In order to win the game, users need to make it through all seven meals without consuming more than the daily recommended amount of sugar for human adults [1]. Following the completion of the quiz, players will be able to share the site with others in order to help educate more people. 
+In order to win the game, users need to make it through all seven meals without consuming more than the daily recommended amount of sugar for human adults[<sup>[1]</sup>](https://www.nhs.uk/live-well/eat-well/how-does-sugar-in-our-diet-affect-our-health). Following the completion of the quiz, players will be able to share the site with others in order to help educate more people. 
 
 ### Project Objectives
 
@@ -61,12 +61,12 @@ https://user-images.githubusercontent.com/74046447/118156491-521ce080-b411-11eb-
   4. Run `docker compose up --build`
   5. When the site is finished building and you see the successful connection message, navigate to the local host on your device (probably http://localhost:3000/).
 
-## [2. Background and Motivation](BackgroundAndMotivation/README.md)
+## [2 Background and Motivation](BackgroundAndMotivation/README.md)
   - [2.1 An overview of the problem: background literature](/BackgroundAndMotivation/README.md#21-an-overview-of-the-problem-background-literature)
   - [2.2 Identifying the cause: academic research](/BackgroundAndMotivation/README.md#22-identifying-the-cause-academic-research)
   - [2.3 Tackling the problem: industry review](/BackgroundAndMotivation/README.md#23-tackling-the-problem-industry-review)
 
-## [3. System Implementation](SystemImplementation/README.md)
+## [3 System Implementation](SystemImplementation/README.md)
   - [3.1 Overview](/SystemImplementation/README.md#31-overview)
   - [3.2 Database](/SystemImplementation/README.md#32-database)
   - [3.3 Server](/SystemImplementation/README.md#33-server)
@@ -74,28 +74,30 @@ https://user-images.githubusercontent.com/74046447/118156491-521ce080-b411-11eb-
   - [3.5 Additional Features](/SystemImplementation/README.md#35-additional-features)
   - [3.6 Deployment](/SystemImplementation/README.md#36-deployment)
 
-## [4. UX Design](UXDesign/README.md)
+## [4 UX Design](UXDesign/README.md)
   - [4.1 Ideation](/UXDesign/README.md#41-ideation)
   - [4.2 User Groups](/UXDesign/README.md#42-user-groups)
   - [4.3 Design Heuristics](/UXDesign/README.md#43-design-heuristics)
   - [4.4 User Interviews](/UXDesign/README.md#44-user-interviews)
   - [4.5 Impact of Design](/UXDesign/README.md#45-impact-of-design)
 
-## [5. Sprints & Project Management](SprintsAndProjectManagement/README.md)
+## [5 Sprints & Project Management](SprintsAndProjectManagement/README.md)
   - [5.1 Team Communication](/SprintsAndProjectManagement/README.md#51-team-communication)
   - [5.2 Team Member Roles](/SprintsAndProjectManagement/README.md#52-team-member-roles)
   - [5.3 Sprint Overview](/SprintsAndProjectManagement/README.md#53-sprint-overview)
   - [5.5 Continuous Integration](/SprintsAndProjectManagement/README.md#54-continuous-integration)
 
-## [6. Evaluation](Evaluation/README.md)
+## [6 Evaluation](Evaluation/README.md)
   - [6.1 Evaluation Techniques](/Evaluation/README.md#61-evaluation-techniques)
+  - [6.2 Unit Testing](/Evaluation/README.md#62-unit-testing)
+  - [6.3 Functional Testing](/Evaluation/README.md#63-functional-testing)
+  - [6.4 User Acceptance Testing](/Evaluation/README.md#64-user-acceptance-testing)
 
-
-## [7. Conclusion](Conclusion/README.md)
+## [7 Conclusion](Conclusion/README.md)
   - [7.1 Group Work Reflection](/Conclusion/README.md#71-group-work-reflection)
   - [7.2 Success Reflection](/Conclusion/README.md#72-success-reflection)
   - [7.3 Impact of Pandemic](/Conclusion/README.md#73-impact-of-pandemic)
   - [7.4 Social and Ethical Impact](/Conclusion/README.md#74-social-and-ethical-impact)
   - [7.5 Future Work](/Conclusion/README.md#75-future-work)
 
-[1] [Sugar: the facts](https://www.nhs.uk/live-well/eat-well/how-does-sugar-in-our-diet-affect-our-health)
+1. Sugar: the facts - NHS - https://www.nhs.uk/live-well/eat-well/how-does-sugar-in-our-diet-affect-our-health
