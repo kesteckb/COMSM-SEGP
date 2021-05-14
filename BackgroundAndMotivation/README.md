@@ -23,7 +23,7 @@ Additional data from the NDNS shows that sugar consumption has decreased over ti
 
 ### 2.2 Identifying the cause: academic research
 
-Understanding why people consume excessive amounts of sugar is crucial for addressing the behaviour. The main sources of sugar in people's diets are processed foods, such as cereals, confectionary, and non-alcoholic drinks[<sup>[3]</sup>](README.md#references). A lack of awareness surrounding the sugar content of these foods could lead to unintended sugar consumption. In one study[<sup>[4]</sup>](README.md#references) surveying over 2000 adults, participants are shown images of non-alcoholoic drinks and asked to estimate their sugar content. Juice and carbonated drinks contain similar amounts of sugar (approximately 26g/250ml), but particpants misjudge the content in each:
+Understanding why people consume excessive amounts of sugar is crucial for addressing this behaviour. The main sources of sugar in people's diets are processed foods, such as cereals, confectionary, and non-alcoholic drinks[<sup>[3]</sup>](README.md#references). A lack of awareness surrounding the sugar content of these foods could lead to unintended sugar consumption. In one study[<sup>[4]</sup>](README.md#references) surveying over 2000 adults, participants are shown images of non-alcoholoic drinks and asked to estimate their sugar content. Juice and carbonated drinks contain similar amounts of sugar (approximately 26g/250ml), but particpants misjudge the content in each:
 
 -	They underestimate the sugar content of fruit juices by 48%.
 -	They overestimate the sugar content carbonated drinks by 12%.
@@ -44,7 +44,7 @@ Purposely educating people about the sugar content of foods outside any purchasi
 
 #### 'Quest for Lava Mountain'[<sup>[8]</sup>](README.md#references)
 
-This first study was conducted on a sample of 94 children in fourth and fifth grade (44 in intervention group and 50 in comparison group). The intervention group play a resource-based RPG that shows players the nutritious value of healthy foods (‘Quest to Lava Mountain’) for an average of 4.6 hours across 6 weeks. The authors report a statistically significant decrease in sugar consumption across children in the intervention group compared with the comparison group. 
+This first study was conducted on a sample of 94 children in fourth and fifth grade (44 in intervention group and 50 in comparison group). The intervention group played a resource-based RPG that shows players the nutritious value of healthy foods (‘Quest to Lava Mountain’) for an average of 4.6 hours across 6 weeks. The authors report a statistically significant decrease in sugar consumption across children in the intervention group compared with the comparison group. 
 
 #### 'The Kingdom of Taste'[<sup>[9]</sup>](README.md#references)
 
