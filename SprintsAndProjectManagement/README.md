@@ -9,7 +9,7 @@
 	* [5.4.4 Publishing](README.md#544-publishing)
 
 ### 5.1 Team Communication
-Throughout our group project we relied on agile to help divide and plan our project. Our workflow was a slightly modified version of the agile process[<sup>[1]</sup>](https://www.atlassian.com/agile/project-management/workflow). We did not incorporate Epics or Initiatives into our workflow as the entire project fit into one or two Epics. However, we did take advantage of several other aspects from agile: standups, sprints, and kanban.   
+Throughout our group project we relied on Agile to help divide and plan our project. Our workflow was a slightly modified version of the Agile process[<sup>[1]</sup>](https://www.atlassian.com/agile/project-management/workflow). We did not incorporate Epics or Initiatives into our workflow as the entire project fit into one or two Epics. However, we did take advantage of several other aspects from Agile, namely: standups, sprints, and kanban.   
 
 We initially considered using the waterfall project management style for our project. However, waterfall has some disadvantages which did not work well for our team[<sup>[2]</sup>](https://www.atlassian.com/agile/project-management/program):
 * Waterfall-style projects inhibit team member specialisation because developers focus on only one part of the development stack during each stage. 
@@ -32,12 +32,13 @@ In addition to these meetings our team also used other means of communication:
   - Instant messaging for one off questions and announcements
   - Video calls for discussing complicated questions and tasks
   - Paired programming for completing challenging development
-  - Working sessions to focus on sprint tasks and simulate working concurrently in a computer lab
+  - 'Group study' sessions to focus on sprint tasks and simulate working concurrently in a computer lab
 
-Working sessions were introduced later in the project to induce certain working conditions. Throughout the project, team memebers felt they were missing the opportunity to work together like we would have without virtual learning. These sessions helped provide the team with an opportunity to ask questions or work individually throughout a set period of time.
+'Group study' sessions were introduced later in the project to induce certain working conditions. Throughout the project, team memebers felt they were missing the opportunity to work together like we would have without virtual learning. These sessions helped provide the team with an opportunity to ask questions or work individually throughout a set period of time.
 
 ### 5.2 Team Member Roles
-Our members specialised in areas that initially piqued our interests. We agreed to have multiple people in each area, and if one area was uninteresting or frustrating, members could switch roles to maintain maximum motivation. When determining roles, we initially divided roles between front end and back end. Within front-end roles, members specialised in either Angular development or UX/UI. For back-end roles, members specialised in Mongo, Node, or Express. Members could choose 2-3 roles of their choosing, able to mix and match between the two categories. In addition to these roles, we also assigned a project manager role. While each member did specialise, each also helped with varying development across sprints, allowing general knowledge in multiple areas. An overview of areas and contributions can be found below.  
+Our members specialised in areas that initially piqued our interests. We agreed to have multiple people in each area, and if one area was uninteresting or frustrating, members could switch roles to maintain maximum motivation. When determining roles, we initially divided roles between front end and back end. Within front-end roles, members specialised in either Angular development or UX/UI. For back-end roles, members specialised in Mongo, Node, or Express. Members could choose 2-3 roles, and were able to mix and match between the two categories. In addition to these roles, we also assigned a project manager role. While we each specialized in a particular area, we also helped with other aspects of development, allowing for general knowledge in multiple areas. An overview of areas and contributions can be found below.
+
 ![Image](TeamRoles.png)  
 
 ### 5.3 Sprint Overview
@@ -45,7 +46,7 @@ Our members specialised in areas that initially piqued our interests. We agreed 
 During our project we used one-week sprints to plan our work. 
 ![Image](sprintSchedule.png)
 
-The contents of each sprint were determined during our weekly sprint planning meetings, which took place on Friday mornings. To keep these planning sessions focused, we created goals and guidelines to follow. The agenda included the following:
+The contents of each sprint were determined during our weekly sprint planning meetings, which took place on Friday mornings. To keep these planning sessions productive, we created goals and guidelines to follow. The agenda included the following:
   - Overview of previous sprint's accomplishments
   - Overall team goals for the next sprint
   - Tasks that help achieve these goals
@@ -62,11 +63,11 @@ The primary goals of these meetings were to assign tasks, balance workload among
 
 Throughout our project, we had a total of five sprints, each lasting a single week. The first sprint occurred the week of 29 March 2021. Each sprint focused on a specific subset of tasks (you can click on each of the sprints to see more details about our plans): 
   - [Sprint I](SugarRushSprint1.pdf)
-      - Have an application that builds successful
-      - Basic components and site navigation
+      - Have an application that builds successfuly
+      - Implement components and site navigation
   - [Sprint II](SugarRushSprint2.pdf)
       - Convert components to match wireframe
-      - Hardcoded data for a mock backend
+      - Hardcode data for a mock backend
   - [Sprint III](SugarRushSprint3.pdf)
       - Create a functional quiz page
       - Connect application with database
@@ -82,8 +83,10 @@ Throughout our project, we had a total of five sprints, each lasting a single we
       - Improve the colour scheme and graphics
       - Start incorporating responsive website design
 
-Users stories were used to guide each sprint and the above goals. While the goal was to complete user stories within one sprint, unforeseen complications and competing priorities sometimes caused delayed. When a user story was delayed, we evaluated the task to determine the root cause of the delay. We then adjusted future sprint planning to prevent similar delays in the future.
+Users stories were used to guide each sprint and the above goals. While the goal was to complete user stories within one sprint, unforeseen complications and competing priorities sometimes caused delays. When a user story was delayed, we evaluated the task to determine the root cause of the delay. We then adjusted future sprint planning to prevent similar delays in the future.
+
 ![Image](SprintDiagram.png)
+
 During our sprints, three main features served as highlights for our project:
 
 1. During Sprint III, when we finished the basic functionality for the quiz component we were much closer to accomplishing our minimum viable product. At this stage, we had connected the quiz to our food database and could pull question contents and information from it. The user could also complete a quiz that logged the total amount of sugar from their quiz answers. This was the most critical step in our project. 
@@ -93,7 +96,8 @@ During our sprints, three main features served as highlights for our project:
 These three accomplishments form the backbone of the current version of our product.
 
 ### 5.4 Continuous Integration
-Throughout our project, we used Git to achieve continuous integration. Our initial strategy involved having two primary branches: the [main](../../../tree/main) branch was used as a demo-ready environment; the [develop](../../../tree/develop) branch was used to stage new development. When completing new development, we started by creating user-story-based branches from `develop`. After completing the feature, we merged the changes back into `develop`. As our application took shape and became more complex, we implemented more rigorous processes to ensure changes did not cause loss of functionality.
+Throughout our project, we used Git with a Gitflow[<sup>[4]</sup>](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) style workflow to achieve continuous integration. Our initial strategy involved having two primary branches: the [main](../../../tree/main) branch was used as a demo-ready environment; the [develop](../../../tree/develop) branch was used to stage new development. When completing new developments, we started by creating user-story-based branches from `develop`. After completing the feature, we merged the changes back into `develop`. As our application took shape and became more complex, we implemented more rigorous processes to ensure changes did not cause loss of functionality.
+
 ![Image](DevProcess.png)
 
 [Click here](SugarRushDevCycle.pdf) to see a more detailed plan of our process, which focused on key steps for each stage of the development cycle. The beginning of the cycle includes [ideation](../UXDesign/README.md) and sprint planning [(as discussed above)](README.md#53-sprint-overview). The remaining stages of development form our continuous integration.
@@ -114,5 +118,6 @@ In order to publish changes, all changes in `develop` were merged into `main` on
 1. Get started building an agile workflow | Atlassian - https://www.atlassian.com/agile/project-management/workflow
 2. Waterfall vs agile: how to manage agile programs | Atlassian - https://www.atlassian.com/agile/project-management/program
 3. Daily Standups: How to Run Them - Agile Coach (2019) - Youtube - https://www.youtube.com/watch?v=er9gntPjTJU
+4. Gitflow workflow | Atlassian - https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 
 [Previous Section](/UXDesign/README.md) | [Home](../README.md) | [Next Section](/Evaluation/README.md)
