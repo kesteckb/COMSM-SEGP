@@ -40,7 +40,6 @@ In order to win the game, users need to make it through all seven meals without 
 Our project is split into two overarching goals, one dedicated to tackling our serious problem and the other focused on creating a playful applcation. For each overarching goal, we created two primary goals for our project, which were then broken into necessary objectives. 
 
 ![Image](/projectObjectives.png)
-![noun_Hobbit_82766 (1)](https://user-images.githubusercontent.com/74046447/118246989-91434400-b49a-11eb-8840-ce664d851a32.png)
 
 #### Display food sugar levels effectively
 Because we want people to learn more about the sugar content in foods, our application needs to provide this type of information to the user. In order to achieve this goal, players need to be able to see the amount of sugar that has been consumed by their hobbit. Players should be able to see this information during the quiz and be able to review it afterwards.
