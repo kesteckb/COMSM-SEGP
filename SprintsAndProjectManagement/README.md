@@ -9,9 +9,9 @@
 	* [5.4.4 Publishing](README.md#544-publishing)
 
 ### 5.1 Team Communication
-Throughout our group project we relied on Agile to help divide and plan our project. Our workflow was a slightly modified version of the Agile process[<sup>[1]</sup>](https://www.atlassian.com/agile/project-management/workflow). We did not incorporate Epics or Initiatives into our workflow as the entire project fit into one or two Epics. However, we did take advantage of several other aspects from Agile, namely: standups, sprints, and kanban.   
+Throughout our group project we relied on Agile to help divide and plan our project. Our workflow was a slightly modified version of the Agile process[<sup>[1]</sup>](README.md#references). We did not incorporate Epics or Initiatives into our workflow as the entire project fit into one or two Epics. However, we did take advantage of several other aspects from Agile, namely: standups, sprints, and kanban.   
 
-We initially considered using the waterfall project management style for our project. However, waterfall has some disadvantages which did not work well for our team[<sup>[2]</sup>](https://www.atlassian.com/agile/project-management/program):
+We initially considered using the waterfall project management style for our project. However, waterfall has some disadvantages which did not work well for our team[<sup>[2]</sup>](README.md#references):
 * Waterfall-style projects inhibit team member specialisation because developers focus on only one part of the development stack during each stage. 
 * Team member motivation can also be damaged if members are forced to work on uninteresting areas. 
 * The planning aspect of waterfall is risky and could be eratic. Phases are large and all-encompassing, making them difficult to plan, and one phase of the project can force every subsequent phase to be delayed. 
@@ -54,7 +54,7 @@ The contents of each sprint were determined during our weekly sprint planning me
 
 Tasks for the week were planned in the form of user stories, which were documented in a kanban board [(click here to view)](https://trello.com/b/ZzT0p21S/site-development). Within this tool, we used a backlog as a placeholder for all tasks we needed to produce our minimum viable product. We also had a secondary backlog for non-critical features we would like to implement if time permits. 
 
-Following the planning meeting, the sprint would run the following week from Monday to Sunday. On each weekday we met for a standup meeting[<sup>[3]</sup>](https://www.youtube.com/watch?v=er9gntPjTJU) to discuss the following:
+Following the planning meeting, the sprint would run the following week from Monday to Sunday. On each weekday we met for a standup meeting[<sup>[3]</sup>](README.md#references) to discuss the following:
   - Things we've done between the previous meeting and now
   - Things we're planning to work on today
   - Designs for integrated developement
@@ -77,7 +77,7 @@ Throughout our project, we had a total of five sprints, each lasting a single we
   - [Sprint V](SugarRushSprint5.pdf)
       - Improve Github documentation
       - Improve sugar indicators throughout application
-   - [Sprint VI](SugarRushSprint6.pdf)
+  - [Sprint VI](SugarRushSprint6.pdf)
       - Add icons and colours to indicate sugar content
       - Add a meal summary to review quiz selections
       - Improve the colour scheme and graphics
@@ -85,7 +85,7 @@ Throughout our project, we had a total of five sprints, each lasting a single we
 
 Users stories were used to guide each sprint and the above goals. While the goal was to complete user stories within one sprint, unforeseen complications and competing priorities sometimes caused delays. When a user story was delayed, we evaluated the task to determine the root cause of the delay. We then adjusted future sprint planning to prevent similar delays in the future.
 
-![Image](SprintDiagram.png)
+![Sprint Diagram](SprintDiagram.png)
 
 During our sprints, three main features served as highlights for our project:
 
@@ -96,7 +96,7 @@ During our sprints, three main features served as highlights for our project:
 These three accomplishments form the backbone of the current version of our product.
 
 ### 5.4 Continuous Integration
-Throughout our project, we used Git with a Gitflow[<sup>[4]</sup>](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) style workflow to achieve continuous integration. Our initial strategy involved having two primary branches: the [main](../../../tree/main) branch was used as a demo-ready environment; the [develop](../../../tree/develop) branch was used to stage new development. When completing new developments, we started by creating user-story-based branches from `develop`. After completing the feature, we merged the changes back into `develop`. As our application took shape and became more complex, we implemented more rigorous processes to ensure changes did not cause loss of functionality.
+Throughout our project, we used Git with a Gitflow[<sup>[4]</sup>](README.md#references) style workflow to achieve continuous integration. Our initial strategy involved having two primary branches: the [main](../../../tree/main) branch was used as a demo-ready environment; the [develop](../../../tree/develop) branch was used to stage new development. When completing new developments, we started by creating user-story-based branches from `develop`. After completing the feature, we merged the changes back into `develop`. As our application took shape and became more complex, we implemented more rigorous processes to ensure changes did not cause loss of functionality.
 
 ![Image](DevProcess.png)
 
@@ -113,6 +113,17 @@ Following testing, all changes were merged into the remote `develop` branch. Cha
 
 #### 5.4.4 Publishing
 In order to publish changes, all changes in `develop` were merged into `main` on a biweekly basis, or every two sprints. We chose this schedule arbitrarily, but we liked the idea of incorporating changes from two whole sprints to see more noticeable changes in `main`. This decision allowed us to catch big issues in `develop` before they made it to `main`, which helped it remain stable. Stability in `main` was important for our group as we primarily used this branch for demos.
+
+### Appendix
+1. [Complete meeting notes](allMeetingNotes.pdf)
+2. [Kanban board](https://trello.com/b/ZzT0p21S/site-development)
+3. [Sprint I plan](SugarRushSprint1.pdf)
+4. [Sprint II plan](SugarRushSprint2.pdf)
+5. [Sprint III plan](SugarRushSprint3.pdf)
+6. [Sprint IV plan](SugarRushSprint4.pdf)
+7. [Sprint V plan](SugarRushSprint5.pdf)
+8. [Sprint VI plan](SugarRushSprint6.pdf)
+9. [Detailed development cycle plan](SugarRushDevCycle.pdf)
 
 ### References
 1. Get started building an agile workflow | Atlassian - https://www.atlassian.com/agile/project-management/workflow
