@@ -30,7 +30,7 @@ This prototype helped us develop further features of the application.
   - Three food items per question in the food quiz
   - Hobbit having reactions to sugar content of foods
   - Wizard provides feedback on quiz answers (not implemented in MVP)
-  - Graphical representation of sugar content, which provides a tangible representation of the amount of sugar in foods (see Sugar Stacks[<sup>[1]</sup>](http://www.sugarstacks.com/)).
+  - Graphical representation of sugar content, which provides a tangible representation of the amount of sugar in foods (see Sugar Stacks[<sup>[1]</sup>](README.md#references)).
   - User registration process
   - Initial quiz review or meal summary
   - Levels with progressively challenging hobbits that have different dietary needs
@@ -70,7 +70,7 @@ As we progressed through the project, we needed to define our design methodology
 
 [Click here](personas.pdf) to see all of the personas we developed.
 
-In addition to this design approach, we incorporate several design heuristics, which allowed us to have quick checks to ensure usability of our application. For this project, we derived design heuristics from Jakob Nielsen’s Ten Usability Heuristics[<sup>[2]</sup>](https://pdfs.semanticscholar.org/5f03/b251093aee730ab9772db2e1a8a7eb8522cb.pdf). 
+In addition to this design approach, we incorporate several design heuristics, which allowed us to have quick checks to ensure usability of our application. For this project, we derived design heuristics from Jakob Nielsen’s Ten Usability Heuristics[<sup>[2]</sup>](README.md#references). 
 
   - Aesthetic and minimal design
       - Definition: Content within site dialogue has only necessary information.
@@ -108,7 +108,7 @@ In addition to this design approach, we incorporate several design heuristics, w
 Another element of design that we considered was the application’s responsiveness across multiple devices, such as mobile, laptop and tablet. This was driven by our desire for both clean aesthetics and accessibility - as our application’s target user base was broad, we felt that it was important to take into account a wide range of possible device preferences for gameplay. 
 
 ### 4.4 User Interviews
-In order to further understand our user groups, we created an interview and a walkthrough of our prototype. For the interview we targeted university students and professionals. Due to the time allotted for this project and the inability to gain ethical approval prior to that time, we were unable to ask any minors for input on the prototype. We had a sample size n = 4, which is the minimum amount of people needed to perform in-depth interviews and usability studies[<sup>[3]</sup>](https://www.gov.uk/service-manual/user-research/plan-user-research-for-your-service). 
+In order to further understand our user groups, we created an interview and a walkthrough of our prototype. For the interview we targeted university students and professionals. Due to the time allotted for this project and the inability to gain ethical approval prior to that time, we were unable to ask any minors for input on the prototype. We had a sample size n = 4, which is the minimum amount of people needed to perform in-depth interviews and usability studies[<sup>[3]</sup>](README.md#references). 
 
 For the interview, we created a prototype that combined the design in our paper prototype with the structure and behaviour of our wireframe. The interview allowed us to gain insight into how users would use our application. It also gave us the opportunity to update our prototype to match these key pieces of feedback:
   - Users were not interested in registering user accounts for this type of application
