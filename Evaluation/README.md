@@ -1,6 +1,10 @@
-## Evaluation
+## 6 Evaluation
+* [6.1 Evaluation Techniques](README.md#61-evaluation-techniques)
+* [6.2 Unit Testing](README.md#62-unit-testing)
+* [6.3 Functional Testing](README.md#63-functional-testing)
+* [6.4 User Acceptance Testing](README.md#64-user-acceptance-testing)
 
-### Evaluation Techniques
+### 6.1 Evaluation Techniques
 
 #### Timeline of Evaluation
 
@@ -36,9 +40,9 @@ We did not use questionnaires for our first evaluation because we wanted to reco
 
 Given that our application was a relatively straightforward game format, we felt that performing an ethnography would not be worth the amount of time and resources that would have needed to go into it. We also believe that none of us are qualified to extract accurate and useful data from this form of evaluation. As such, this was not a method that we considered.
 
-### Unit testing
+### 6.2 Unit Testing
 
-We used unit testing to evaluate behaviour of our application through a series of automated tests. Our unit testing strategy uses the Jasmine Test Framework [1], which is incorportaed into Angular during install. After the creation of a component or unit test, a `spec.ts` file is create alongside the `html`, `css`, and `ts` files of the component. 
+We used unit testing to evaluate behaviour of our application through a series of automated tests. Our unit testing strategy uses the Jasmine Test Framework[<sup>[1]</sup>](https://jasmine.github.io/), which is incorportaed into Angular during install. After the creation of a component or unit test, a `spec.ts` file is create alongside the `html`, `css`, and `ts` files of the component. 
 
 For our project, all components and services run at least one unit test to show that it can be created. To complete this test, some components require the use of mock services.
 
@@ -101,7 +105,7 @@ it('should show icon only when food selected', () => {
 
 A complete list of unit tests can be reviewed [here](unitTests.png). To further improve our unit testing, we would add tests for the quiz that better mock food selection and the corresponding HTML changes, such as presence of the correct images and icons. In order to implement these changes, further research and understanding of the Jasmine testing framework is required.
 
-### Functional Testing
+### 6.3 Functional Testing
 
 To test the functionality of our system, we opted for manual, scenario based testing. We conducted this testing through a series of test cases, where we documented specific scenarios for each user interaction with our application.
 
@@ -111,12 +115,11 @@ The advantage to this method, in comparison to more technically complex alternat
 
 However, there were some disadvantages to this approach. The manual nature of our testing approach reduced the overall efficiency and agility of our development process, and exposed us to a certain level of risk around human error in the testing process. As previously stated, while our application is not yet of a sufficient size for this to have seriously hindered our progress, we would look to implement supplementary automated testing methods in future development work, as our application grows in size and scope. 
 
-
-### User Acceptance Testing
+### 6.4 User Acceptance Testing
 
 #### Strategy
 
-We conduct another round of interviews using this [script](uat_interview_script.pdf). These interviews are split into two key sections each with their own objectives.
+We plan to conduct another round of interviews using this [script](uat_interview_script.pdf). These interviews will be split into two key sections each with their own objectives.
 
 1) Test cases
 - To test the functional requirements of the web-app
@@ -128,61 +131,7 @@ We conduct another round of interviews using this [script](uat_interview_script.
 - To ensure that we have a functioning quiz and that our product is ready for launch
 - To determine whether our web-app is able to increase awareness of sugar consumption and influence dietary behaviour
 
-[1] [Jasmine Testing Framework](https://jasmine.github.io/) 
+(This section will be covered in more detail by our member Olivia in her extension)
 
-*  Details of how you evaluated your designs (techniques used & awareness of their limitations). Description of  techniques suitable for your particular design. A timeline of evaluation of your design.  
-    * Techniques to evaluate
-        * Hypotheses driven --> these have been outlined in the design stage
-        * What other methods did we use? Check out Interaction Design  5th edition for extra info
-    * Limitations of techniques --> These are in the powerpoint for the HCI evaluation lecture. Reference these in a way that shows we understand, not just copy and pasted.
-    * Description of techniques suitable to our design
-        * Questionnaires
-            * evaluate designs and ideas and get demographic info
-            * feasible number of questions
-            * How is this suitable to our design?
-            * What limitations did this have?
-        * Observations
-            * Observe a user using the product, but record what you see without leading them
-            * Are the products used as intended
-            * Used throughout development
-            * How is this suitable to our design?
-            * What limitations did this have?
-        * Interviews
-            *  one to one interactions with stakeholders and end users
-            *  How is this suitable to our design?
-            *  What limitations did this have?
-        * Focus Groups
-            * group interviews to capture feelings and eperiences
-            * We'll skip this one.
-        * Ethnography
-            * shadowing users or method acting and training to become an end user
-            * Get a fine-grained understanding of user context (political, social, etc)
-            * We can try this, but it might be difficult.
-    * Timeline of evaluation
-        * How often and when did we do the above methods?
-*  Unit testing / Functional testing.
-    * Unit testing
-        * What methods did we use for Unit testing?
-        * This is how we tested different components.
-        * Which components did we test?
-        * How did we test them?
-        * What could have been better and or what was a limitation of the method we used?  
-    * Functional testing 
-        * What methods did we use?
-        * This is a form of black-box texting.
-        * What could have been better or what was a limitation of this method?
-*  User acceptance testing. Evaluation of your design with users – methods undertaken, findings, implications.
-    * User acceptance testing
-        * Different from the user interviews, but the final round of user interviews and verifiying the 
-    * Evaluation of design with users
-        * Methods
-            * Can user interviews go here? We can move that from the design section to here if so, and that is already drafted.
-            * We can also do observations for this as well
-        * Findings
-            * Not just findings, but how did this align with our hypotheses?
-            * How did we ask questions that were not leading questions?
-            * Check out HCI evaluations PowerPoint on this as well. 
-        * Implications
-            * Did our methods work?
-            * Could we expand from sugar to other types of nutritional information?
-            * Can we use this method to raise awareness of quantity of sugar in food items?
+### References
+1. Jasmine Tesing Framework - https://jasmine.github.io/
