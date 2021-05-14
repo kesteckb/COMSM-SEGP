@@ -128,6 +128,11 @@ As discovered in our user interviews, people do not want to register an account 
 
 The share functionality of our prototype can only share the URL of the application. From our focus group session, we learned some players like the competitive aspect of the game and want to share the game's score. To satisfy this user group, we should implement additional sharing functionality on the End Game page.
 
+### Responsiveness
+
+While we were able to meet some of our goals relating to the responsiveness of our website, we ran out of time to implement full scale responsiveness in our site – particularly in relation to our application’s display on mobile sites, with certain pages not fit for use. In future work, we would look to implement responsiveness across a broader range of devices to ensure our application is accessible to as broad a range of users as possible. 
+
+
 #### Other Nutrition Data
 
 Visualising sugar has proven informing and entertaining to interviewees as well as our team members. We believe we could extend our product to provide even more nutritional education. Because our product establishes a foundation for exploring nutrition data in foods, similar quizes could look at other information, such as protein or sodium. Our product could then allow users to focus on the education for nutritional data they desire.
