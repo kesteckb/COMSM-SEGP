@@ -107,7 +107,7 @@ A complete list of unit tests can be reviewed [here](unitTests.png). To further 
 
 ### 6.3 Functional Testing
 
-To test the functionality of our system, we opted for manual, scenario based testing. We conducted this testing through a series of test cases, where we documented specific scenarios for each user interaction with our application.
+To test the functionality of our system, we opted for manual, scenario based testing. We conducted this testing through a series of test cases, where we documented specific scenarios for each user interaction with our application. You can [click here](Sugar Rush - Functional Test Cases PDF.pdf) to view our full test case log. 
 
 ![Functional Test Cases](SugarRushFunctionalTestCases.png)
 
