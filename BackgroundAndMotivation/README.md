@@ -5,7 +5,7 @@
 
 ### 2.1 An overview of the problem: background literature
 
-Most adults and children in the UK consume too much sugar, and this poses significant health risks to the population as people are at greater risk of obesity, type 2 diabetes, heart disease, and tooth decay [1]. Table 1 uses data from the NHS [1] and the National Diet and Nutrition Survey (NDNS) [2] to illustrate exactly how much excess sugar is consumed by people in the UK.
+Most adults and children in the UK consume too much sugar, and this poses significant health risks to the population as people are at greater risk of obesity, type 2 diabetes, heart disease, and tooth decay[<sup>[1]</sup>](README.md#references). Table 1 uses data from the NHS[<sup>[1]</sup>](README.md#references) and the National Diet and Nutrition Survey (NDNS)[<sup>[2]</sup>](README.md#references) to illustrate exactly how much excess sugar is consumed by people in the UK.
 
 | Age Range | Recommended daily sugar allowance (grams) | Mean daily sugar intake (grams) between 2015-2016 | Difference between recommended intake and actual intake |
 | :---: | :---: | :---: | :---: |
@@ -23,7 +23,7 @@ Additional data from the NDNS shows that sugar consumption has decreased over ti
 
 ### 2.2 Identifying the cause: academic research
 
-Understanding why people consume excessive amounts of sugar is crucial for addressing the behaviour. The main sources of sugar in people's diets are processed foods, such as cereals, confectionary, and non-alcoholic drinks [3]. A lack of awareness surrounding the sugar content of these foods could lead to unintended sugar consumption. In one study [4] surveying over 2000 adults, participants are shown images of non-alcoholoic drinks and asked to estimate their sugar content. Juice and carbonated drinks contain similar amounts of sugar (approximately 26g/250ml), but particpants misjudge the content in each:
+Understanding why people consume excessive amounts of sugar is crucial for addressing this behaviour. The main sources of sugar in people's diets are processed foods, such as cereals, confectionary, and non-alcoholic drinks[<sup>[3]</sup>](README.md#references). A lack of awareness surrounding the sugar content of these foods could lead to unintended sugar consumption. In one study[<sup>[4]</sup>](README.md#references) surveying over 2000 adults, participants are shown images of non-alcoholoic drinks and asked to estimate their sugar content. Juice and carbonated drinks contain similar amounts of sugar (approximately 26g/250ml), but particpants misjudge the content in each:
 
 -	They underestimate the sugar content of fruit juices by 48%.
 -	They overestimate the sugar content carbonated drinks by 12%.
@@ -34,28 +34,28 @@ If people were aware of the sugar content of soft drinks and other processed foo
 
 ### 2.3 Tackling the problem: industry review
 
-Institutions often influence the behaviour of large groups of people through ‘nudging’. This involves subtly changing one’s choice environment to alter their actions in a predictable way without forbidding any options [5]. Nudging has already been applied to the UK food and drink sector in the form of nutrition labelling [6], where manufacturers are required to list an overview of the macronutrients present in processed food on their packaging. These labels make people aware of how much sugar is contained in the food, and enables them to make informed decisions without limiting their options. However, consumers still may not recognise the amount of sugar in products for two reasons:
+Institutions often influence the behaviour of large groups of people through ‘nudging’. This involves subtly changing one’s choice environment to alter their actions in a predictable way without forbidding any options[<sup>[5]</sup>](README.md#references). Nudging has already been applied to the UK food and drink sector in the form of nutrition labelling[<sup>[6]</sup>](README.md#references), where manufacturers are required to list an overview of the macronutrients present in processed food on their packaging. These labels make people aware of how much sugar is contained in the food, and enables them to make informed decisions without limiting their options. However, consumers still may not recognise the amount of sugar in products for two reasons:
   - The numerical representation of the amount of sugar in a product
   - The appearance of sugar content on the packaging
   
-The sugar amounts presented on these labels (often in grams) do not translate into practical units of measurement such as teaspoons [7]. Therefore, individuals may struggle to visualise how much sugar they are actually consuming. Also, nutrition labelling is mandatory and manufacturers do not have an incentive to educate the people purchasing their products. As a result, the labels are often in small print, and only those who are intentionally looking for it are likely to see it.
+The sugar amounts presented on these labels (often in grams) do not translate into practical units of measurement such as teaspoons[<sup>[7]</sup>](README.md#references). Therefore, individuals may struggle to visualise how much sugar they are actually consuming. Also, nutrition labelling is mandatory and manufacturers do not have an incentive to educate the people purchasing their products. As a result, the labels are often in small print, and only those who are intentionally looking for it are likely to see it.
 
 Purposely educating people about the sugar content of foods outside any purchasing environment may better raise awareness of sugar content. Several studies have been conducted about the use of serious games to educate and influence the eating habits of children and adults.
 
-#### 'Quest for Lava Mountain' [8]
+#### 'Quest for Lava Mountain'[<sup>[8]</sup>](README.md#references)
 
-This first study was conducted on a sample of 94 children in fourth and fifth grade (44 in intervention group and 50 in comparison group). The intervention group play a resource-based RPG that shows players the nutritious value of healthy foods (‘Quest to Lava Mountain’) for an average of 4.6 hours across 6 weeks. The authors report a statistically significant decrease in sugar consumption across children in the intervention group compared with the comparison group. 
+This first study was conducted on a sample of 94 children in fourth and fifth grade (44 in intervention group and 50 in comparison group). The intervention group played a resource-based RPG that shows players the nutritious value of healthy foods (‘Quest to Lava Mountain’) for an average of 4.6 hours across 6 weeks. The authors report a statistically significant decrease in sugar consumption across children in the intervention group compared with the comparison group. 
 
-#### 'The Kingdom of Taste' [9]
+#### 'The Kingdom of Taste'[<sup>[9]</sup>](README.md#references)
 
 This study randomised 14 families into two groups: a game-group and non-game-group. The game-group played a board game designed to spark interest in healthy meal composition (‘The Kingdom of Taste’) during a three-week intervention period. Each group took qualitative tests before and after the intervention period, and the authors recorded a significant positive change in food behaviour in most families from the game group. 
 
-#### Review of Behaviour-Changing Games [10]
+#### Review of Behaviour-Changing Games[<sup>[10]</sup>](README.md#references)
 A review surveyed 22 similar studies on dietary education and behaviour change games. They found that all but one of these studies reported positive change in eating habits after playing games. 
 
 These findings support the notion that healthy eating may be promoted through game-based nutritional education. Therefore, educational games might be an effective way to tackle excess sugar consumption.
 
-In light of this, we developed a gamified learning tool in the form of a web application. Players are required to select meals for a hobbit over the course of an in-game day, for a total of seven meals. These seven meals represent the fictitious hobbit meals from Tolkien mythology. After players select a food, its sugar content appears and increases the hobbit’s cumulative sugar consumption for the day. Players must select all seven meals without exceeding the hobbit's sugar threshold, which is based on the human recommendation provided by the NHS [12]. Several features of our quiz align with those considered effective game design for promoting a healthy diet [11]:
+In light of this, we developed a gamified learning tool in the form of a web application. Players are required to select meals for a hobbit over the course of an in-game day, for a total of seven meals. These seven meals represent the fictitious hobbit meals from Tolkien mythology. After players select a food, its sugar content appears and increases the hobbit’s cumulative sugar consumption for the day. Players must select all seven meals without exceeding the hobbit's sugar threshold, which is based on the human recommendation provided by the NHS[<sup>[1]</sup>](README.md#references). Several features of our quiz align with those considered effective game design for promoting a healthy diet[<sup>[11]</sup>](README.md#references):
 
 ![Image](gameDesign.png)
 

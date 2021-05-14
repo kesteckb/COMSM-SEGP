@@ -1,4 +1,4 @@
-## 4. UX Design
+## 4 UX Design
 
 * [4.1 Ideation](README.md#41-ideation)
 * [4.2 User Groups](README.md#42-user-groups)
@@ -10,19 +10,19 @@
 To arrive at an idea for our project, we explored problems and potential solutions through the process of design thinking. Our ideation process began with a period of discovery where we determined ongoing societal problems and various game mechanics. We then created a chart to playful solutions to address these societal problems using the various game mechanics.  
 ![Image](IdeationChart.png)
 
-We reviewed each of these solution and determined these solutions were the most interesting through a group vote:
+We reviewed each of these solutions and determined which of these solutions were the most interesting through a group vote:
 - Showing popular news trends around the world
 - Quiz for sugar consumption.  
 
 We began to develop these ideas into a potential application by writing project proposals for each [(click here to view)](../SugarRushProposal.pdf). When writing these proposals, we used group writing to help create a cohesive direction for the project. After completing the two briefs, we used another group vote to decide on the final project idea: Hobbit Sugar Rush. 
 
-In our proposal, we identified awareness sugar overconsumption as our primary goal and outlined the methods by which we would address it. During this process we made key decisions about the goals of our project.
+In our proposal, we identified awareness of sugar overconsumption as our primary goal and outlined the methods by which we would address it. During this process we made key decisions about the goals of our project:
   - Create a playful and educational experience
   - Use hobbits to encourage empathetic connection with sugar consumption
   - Quiz format of seven different hobbit meals based on Tolkien mythology
   - Sugar thresholds will be determined by NHS guidelines
 
-Once we completed our project proposal, we created an initial ‘paper’ prototype [(click here to view)](https://docs.google.com/presentation/d/1PUFuL9rSekN_tIJ1nDB9tv86x6KvYPRJFryo8T6m-Vk/edit?usp=sharing) to represent the vision of the application. For this process, we used Google Slides. Each slide represented the layout and expected behaviour of the different website pages and components. 
+Once we completed our project proposal, we created an initial ‘paper’ prototype [(click here to view)](https://docs.google.com/presentation/d/1PUFuL9rSekN_tIJ1nDB9tv86x6KvYPRJFryo8T6m-Vk/edit?usp=sharing) to represent the vision for the application. For this process, we used Google Slides. Each slide represented the layout and expected behaviour of the different website pages and components. 
 
 ![image](paperPrototypeVillage.png)
 
@@ -30,16 +30,16 @@ This prototype helped us develop further features of the application.
   - Three food items per question in the food quiz
   - Hobbit having reactions to sugar content of foods
   - Wizard provides feedback on quiz answers (not implemented in MVP)
-  - Graphical representation of sugar content, which provides a tangible representation of the amount of sugar in foods (see Sugar Stacks[<sup>[1]</sup>](http://www.sugarstacks.com/)).
+  - Graphical representation of sugar content, which provides a tangible representation of the amount of sugar in foods (see Sugar Stacks[<sup>[1]</sup>](README.md#references)).
   - User registration process
   - Initial quiz review or meal summary
   - Levels with progressively challenging hobbits that have different dietary needs
 
-After we had developed our original idea into our initial prototype and proposal, we collected the thoughts and generated a final proposal and wireframe for the project.
+After we had developed our original idea into our initial prototype and proposal, we collected our thoughts and generated a final proposal and wireframe for the project.
 ![Image](quizWireframe.png)
 
 Following additional discussions, we determined the following hypotheses will be evaluated for this project: 
-- Allowing users to control sugar consumption through the medium of another being would raise more conscious awareness of sugar consumption
+- Allowing users to control sugar consumption through the medium of another being would raise more conscious awareness of sugar consumption.
 - Allowing users to visualise sugar consumption with images would improve understanding of an amount of sugar in a food item.
 - Playing the game will raise awareness about sugar consumption and the levels of sugar in certain foods.  
 
@@ -70,7 +70,7 @@ As we progressed through the project, we needed to define our design methodology
 
 [Click here](personas.pdf) to see all of the personas we developed.
 
-In addition to this design approach, we incorporate several design heuristics, which allowed us to have quick checks to ensure usability of our application. For this project, we derived design heuristics from Jakob Nielsen’s Ten Usability Heuristics[<sup>[2]</sup>](https://pdfs.semanticscholar.org/5f03/b251093aee730ab9772db2e1a8a7eb8522cb.pdf). 
+In addition to this design approach, we incorporate several design heuristics, which allowed us to have quick checks to ensure usability of our application. For this project, we derived design heuristics from Jakob Nielsen’s Ten Usability Heuristics[<sup>[2]</sup>](README.md#references). 
 
   - Aesthetic and minimal design
       - Definition: Content within site dialogue has only necessary information.
@@ -83,7 +83,7 @@ In addition to this design approach, we incorporate several design heuristics, w
       - By using standard terminology on the site, users could navigate the website intuitively.
           - Button labeled 'Play' for players to enter the site
           - Popup labeled 'Instructions' that explain workflow to users when first opening the application
-          - Button labeled 'Instructions' to help users find help
+          - Button labeled 'Help' to help users find help
           - Button labeled 'Share' to indicate social media sharing
           - Share icons to indicate social media sharing for different social media platforms
           - Button labeled 'Close' to close modal windows
@@ -91,7 +91,7 @@ In addition to this design approach, we incorporate several design heuristics, w
       - Definition: Users have the option to quit actions they click by mistake or do not wish to complete.
       - Users would be able to return to the home screen or previous screen at any point in the the workflow.
           - Modal windows for instructions, meal summary, and sharing can be closed to return to the previous screen
-          - Buttons from the quiz and game-end screens allow user to return to the home page
+          - Buttons from the quiz and game-end screens allow user to return to the home page (partially implemented)
           - In the initial wireframe, different exit workflows were available depending on whether a user was logged in or not.
   - Help and documentation 
       - Definition: Necessary help and instructions are easy to find. Any necessary steps are listed discretely and clearly.
@@ -108,7 +108,7 @@ In addition to this design approach, we incorporate several design heuristics, w
 Another element of design that we considered was the application’s responsiveness across multiple devices, such as mobile, laptop and tablet. This was driven by our desire for both clean aesthetics and accessibility - as our application’s target user base was broad, we felt that it was important to take into account a wide range of possible device preferences for gameplay. 
 
 ### 4.4 User Interviews
-In order to further understand our user groups, we created an interview and a walkthrough of our prototype. For the interview we targeted university students and professionals. Due to the time allotted for this project and the inability to gain ethical approval prior to that time, we were unable to ask any minors for input on the prototype. We had a sample size n = 4, which is the minimum amount of people needed to perform in-depth interviews and usability studies[<sup>[3]</sup>](https://www.gov.uk/service-manual/user-research/plan-user-research-for-your-service). 
+In order to further understand our user groups, we created an interview and a walkthrough of our prototype. For the interview we targeted university students and professionals. Due to the time allotted for this project and the inability to gain ethical approval prior to that time, we were unable to ask any minors for input on the prototype. We had a sample size n = 4, which is the minimum amount of people needed to perform in-depth interviews and usability studies[<sup>[3]</sup>](README.md#references). 
 
 For the interview, we created a prototype that combined the design in our paper prototype with the structure and behaviour of our wireframe. The interview allowed us to gain insight into how users would use our application. It also gave us the opportunity to update our prototype to match these key pieces of feedback:
   - Users were not interested in registering user accounts for this type of application
