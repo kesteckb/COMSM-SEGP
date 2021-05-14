@@ -101,6 +101,15 @@ it('should show icon only when food selected', () => {
 
 A complete list of unit tests can be reviewed [here](unitTests.png). To further improve our unit testing, we would add tests for the quiz that better mock food selection and the corresponding HTML changes, such as presence of the correct images and icons. In order to implement these changes, further research and understanding of the Jasmine testing framework is required.
 
+### Functional Testing
+
+To test the functionality of our system, we opted for manual, scenario based testing. We conducted this testing through a series of test cases, where we documented specific scenarios for each user interaction with our application. 
+
+The advantage to this method, in comparison to more technically complex alternatives such as automated testing, was its upfront time efficiency. As our application is currently a minimum viable product, the path through the application is relatively simple and user interactions with the site are not complex. We were therefore able to rapidly develop and use these test cases.
+
+However, there were some disadvantages to this approach. The manual nature of our testing approach reduced the overall efficiency and agility of our development process, and exposed us to a certain level of risk around human error in the testing process. As previously stated, while our application is not yet of a sufficient size for this to have seriously hindered our progress, we would look to implement supplementary automated testing methods in future development work, as our application grows in size and scope. 
+
+
 ### User Acceptance Testing
 
 #### Strategy
