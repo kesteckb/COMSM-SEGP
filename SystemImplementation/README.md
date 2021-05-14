@@ -34,7 +34,7 @@ Below is the initial data model planned for the application:
 
 ![Entity relationship diagram](er_diagram_sugar_rush_v2.png)
 
-However, during development, it was decided that for a minimum viable product the meals collection was not necessary and it was thus not implemented.
+It was decided during development that the meals collection was not necessary for a minimum viable product and was thus not implemented.
 
 - Schema for each collection in the database was defined in the model files in the ./models/ directory.
 - API to access each collection was found in ./server/routes/ directory.

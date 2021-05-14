@@ -35,10 +35,10 @@ We designed our website with a colourful palette and a playful style, and includ
 
 Regarding the serious issue our website tackles, long term health problems which can stem from excessive sugar consumption can be very significant, and for this reason we feel this application addresses a serious topic. We designed a prototype that gives a general sense of relative amounts of sugar in certain types of foods, and based on this we produced an application which meets the following requirements for a minimum viable product:
 
-    - Create a "Start" screen to welcome players, link to instructions, and allow a player to begin the food quiz
-    - Develop a food quiz game which would populate food choices from a database for the player to select from
-    - Keep track of total sugar consumption throughout the quiz, and display it to the player relative to a maximum sugar level
-    - Populate a 'meal summary' at the end of the quiz which lists the player's food choice and their sugar content
+  - Create a "Start" screen to welcome players, link to instructions, and allow a player to begin the food quiz
+  - Develop a food quiz game which would populate food choices from a database for the player to select from
+  - Keep track of total sugar consumption throughout the quiz, and display it to the player relative to a maximum sugar level
+  - Populate a 'meal summary' at the end of the quiz which lists the player's food choice and their sugar content
 
 However, there were some missed opportunities with both design and technical implementation:
 - Link to an external food API (which would have given us more up to date and accurate food nutrition information).
