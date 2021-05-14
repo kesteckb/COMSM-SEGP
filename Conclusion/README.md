@@ -153,3 +153,5 @@ Overall, we were able to meet many of the goals we sought to achieve when first 
 2. D. King, E. Koster, and J. Billieux, “Study what makes games addictive.,” Nature, vol. 573, no. 7774, p. 346, 2019. - https://doi.org/10.1038/d41586-019-02776-1
 3. BCS Code of Conduct | BSC - https://www.bcs.org/membership/become-a-member/bcs-code-of-conduct/
 4. DarkPattern.game » Healthy Gaming « Avoid addictive gaming dark patterns - https://www.darkpattern.games/
+
+[Previous Section](/Evaluation/README.md) | [Home](../README.md)

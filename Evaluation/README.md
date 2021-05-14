@@ -131,7 +131,9 @@ We plan to conduct another round of interviews using this [script](uat_interview
 - To ensure that we have a functioning quiz and that our product is ready for launch
 - To determine whether our web-app is able to increase awareness of sugar consumption and influence dietary behaviour
 
-(This section will be covered in more detail by our member Olivia in her extension)
+(Note that this section will be covered in more detail by our member Olivia in her extension)
 
 ### References
 1. Jasmine Tesing Framework - https://jasmine.github.io/
+
+[Previous Section](/UXDesign/README.md) | [Home](../README.md) | [Next Section](/Conclusion/README.md)

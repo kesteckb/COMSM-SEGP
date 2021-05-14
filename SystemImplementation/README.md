@@ -1,4 +1,4 @@
-## 3. System Implementation 
+## 3 System Implementation 
 * [3.1 Overview](README.md#31-overview)
 * [3.2 Database](README.md#32-database)
 * [3.3 Server](README.md#33-server)

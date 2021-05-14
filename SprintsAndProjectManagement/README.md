@@ -1,4 +1,4 @@
-## 5. Sprints and Project Management
+## 5 Sprints and Project Management
 * [5.1 Team Communication](README.md#51-team-communication)
 * [5.2 Team Member Roles](README.md#52-team-member-roles)
 * [5.3 Sprint Overview](README.md#53-sprint-overview)

@@ -1,4 +1,4 @@
-## 4. UX Design
+## 4 UX Design
 
 * [4.1 Ideation](README.md#41-ideation)
 * [4.2 User Groups](README.md#42-user-groups)
