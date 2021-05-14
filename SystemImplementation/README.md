@@ -60,7 +60,7 @@ Using the component-based framework, each of the sections of the application is 
 
 ![component hierachy diagram](Component_diagram.png)
 
-We utilised CSS/UI frameworks by importing various modules from Angular Material[<sup>[6]</sup>](README.md#references) and Bootstrap. Some examples include:
+We utilised CSS/UI frameworks by importing various modules from Angular Material[<sup>[6]</sup>](README.md#references) and Bootstrap[<sup>[8]</sup>]. Some examples include:
 - Angular Material selection list to display clickable food options in the food-quiz component
 - Angular Material progress bar to show cumulative sugar consumption in the food-quiz component
 - Angular Material button for navigation and selection throughout the site
@@ -182,5 +182,6 @@ Although the decision to have a biweekly merge into `main` allowed it to remain 
 5. Mongoose ODM v5.12.7 - https://mongoosejs.com/
 6. Angular Material UI component library - https://material.angular.io/
 7. Docker: Empowering App Development for Developers - https://www.docker.com/
+8. Bootstap · The most popular HTML, CSS and JS library in thr world. - https://getbootstrap.com/
 
 [Previous Section](/BackgroundAndMotivation/README.md) | [Home](../README.md) | [Next Section](/UXDesign/README.md)
