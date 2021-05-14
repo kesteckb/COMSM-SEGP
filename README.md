@@ -17,7 +17,7 @@
 
 ## 1 Introduction
 
-![image](./SugarRushSite/src/assets/homepage-prototype.JPG)
+![image](homepageImage.png)
 
 ### Abstract
 Eating too much sugar can contribute to a variety of negative health conditions. Currently, there is a lack of awareness surrounding sugar content in various foods, and people may unintentionally consume higher than recommended amounts. We want to help raise awareness around sugar content in food to help empower people to make more conscious dietary choices. To accomplish our goal, we set out to create a web application using serious play.
