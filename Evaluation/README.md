@@ -103,7 +103,9 @@ A complete list of unit tests can be reviewed [here](unitTests.png). To further 
 
 ### Functional Testing
 
-To test the functionality of our system, we opted for manual, scenario based testing. We conducted this testing through a series of test cases, where we documented specific scenarios for each user interaction with our application. 
+To test the functionality of our system, we opted for manual, scenario based testing. We conducted this testing through a series of test cases, where we documented specific scenarios for each user interaction with our application.
+
+![Functional Test Cases](SugarRushFunctionalTestCases.png)
 
 The advantage to this method, in comparison to more technically complex alternatives such as automated testing, was its upfront time efficiency. As our application is currently a minimum viable product, the path through the application is relatively simple and user interactions with the site are not complex. We were therefore able to rapidly develop and use these test cases.
 
