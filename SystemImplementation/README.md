@@ -60,7 +60,7 @@ Using the component-based framework, each of the sections of the application is 
 
 ![component hierachy diagram](Component_diagram.png)
 
-We utilised CSS/UI frameworks by importing various modules from Angular Material[<sup>[6]</sup>](README.md#references) and Bootstrap[<sup>[8]</sup>]. Some examples include:
+We utilised CSS/UI frameworks by importing various modules from Angular Material[<sup>[6]</sup>](README.md#references) and Bootstrap[<sup>[8]</sup>](README.md#references). Some examples include:
 - Angular Material selection list to display clickable food options in the food-quiz component
 - Angular Material progress bar to show cumulative sugar consumption in the food-quiz component
 - Angular Material button for navigation and selection throughout the site
@@ -91,7 +91,7 @@ The database was seeded using a javascript file. The file makes use of mongoose.
 - each collection is cleared using `delete.many({})` 
 - new documents are initiated and saved into the collection
 
-This script is ran on start-up of the docker container along with the command to start the express server. This was accomplished by having a bash script that contained both of these commands in the docker-compose.yml file. There will be more details about the deployment of the site in the [deployment](README.md#deployment) subsection.
+This script is ran on start-up of the docker container along with the command to start the express server. This was accomplished by having a bash script that contained both of these commands in the docker-compose.yml file. There will be more details about the deployment of the site in the [deployment](README.md#36-deployment) subsection.
 
 #### 3.5.2 Authentication (or lack thereof)
 We first considered incorporating user authentication (i.e., a login page) on the web app. During our first user testing session, however, we found that most people did not see the point of having authentication for this type of application and would have found it either confusing or concerning that it is required. As a result, we chose not to include in our design. 
@@ -137,7 +137,7 @@ During development and testing, building docker containers required 2-15 minutes
 
 #### 3.6.3 Continuous Integration
 
-Throughout our project, we achieved continuous integration using Git and GitHub. For more information on how continuous integration was used for in combination with sprints, see our [Sprints and Project Management section](/SprintsAndProjectManagement/#continuous-integration). Within our development cycle, continuous integration was used extensively when developing, testing, staging, and publishing our code. Within these stages we used different branches:
+Throughout our project, we achieved continuous integration using Git and GitHub. For more information on how continuous integration was used for in combination with sprints, see our [Sprints and Project Management section](/SprintsAndProjectManagement/README.md#54-continuous-integration). Within our development cycle, continuous integration was used extensively when developing, testing, staging, and publishing our code. Within these stages we used different branches:
 - The `main` branch was primarily used as a production or demo-ready environment. 
 - The `develop` branch was primarly used as a staging environment for new code changes. 
 - Individual feature branches were used to create and test new changes.
