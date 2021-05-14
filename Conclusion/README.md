@@ -106,6 +106,10 @@ Currently, all food items in the quiz are fixed, and each time a player plays th
 
 In future versions, we would seek to improve this limitation. First, we would increase the size of our dataset to incorporate more food items. We would take advantage of public food APIs, such as FoodData Central[<sup>[1]</sup>](https://fdc.nal.usda.gov/) to maintain the data more easily. Though we would still need to generate a list of foods for the quiz, the nutrition information itself would be populated via API. Additionally, the API could make our nutrition data more robust. Common foods (e.g., chocolate) have many API results, and we could take an average of the nutrition information to generalise it. After increasing the size of our database, we would improve the variety of the quiz by making each meal contain a random subset of food items to enhance our application's playability.
 
+#### Application Navigation
+
+To improve user navigation through our website in line with our design heuristics, we would like to implement functionality to allow the user to return to the home page from any point during the game's flow.
+
 #### Relevant Portion Sizes
 
 In our prototype product, sugar content for each food iteam is generated based on a serving size of 100g. We can make the quiz more realistic by incorporating realistic serving sizes. To accomplish this, we would add an extra field to our food item schema to maintain portion sizes in our database.
