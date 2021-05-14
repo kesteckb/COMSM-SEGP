@@ -1,10 +1,13 @@
-## 7. Conclusion
+## 7 Conclusion
 * [7.1 Group Work Reflection](README.md#71-group-work-reflection)
 	* [7.1.1 Agile Development](README.md#711-agile-development)
 	* [7.1.2 Communication](README.md#712-communication)
 * [7.2 Success Reflection](README.md#72-success-reflection)
 * [7.3 Impact of Pandemic](README.md#73-impact-of-pandemic)
 * [7.4 Social and Ethical Impact](README.md#74-social-and-ethical-impact)
+	* [7.4.1 Product Ethicality](README.md#741-product-ethicality)
+	* [7.4.2 Opportunities](README.md#742-oppotunities)
+	* [7.4.3 Potential for Misuse](README.md#743-potential-for-misuse)
 * [7.5 Future Work](README.md#75-future-work)
 
 ### 7.1 Group Work Reflection
@@ -57,7 +60,7 @@ There was also the psychological impact of the lockdowns, where people are not a
 
 ### 7.4 Social and Ethical Impact
 
-#### Product Ethicality
+#### 7.4.1 Product Ethicality
 
 The purpose of our application is to raise awareness of sugar consumption so people can make more informed dietary decisions. This application arms people with the tools to eat healthier and improve their lifestyle. 
 
@@ -69,13 +72,13 @@ For our prototype, we mainly focused on its functionality and only incorporated 
 
 One target group of our application is children. During development, we were not able to interview children and learn how they would interact with our system. We also did not get input from child psychologists to verify our game design is viable for this age group. One potential consequence of this is that children will want to collect more icons, i.e. consume more sugar in the game. If children react this way, we could influence poor eating habits. 
 
-Another concern is the addictive property of games [<sub>X</sub>](D. King, E. Koster, and J. Billieux, “Study what makes games addictive.,”Nature, vol. 573, no. 7774, p. 346, 2019.). The final version of our game features a finite story that involves helping a fixed number of hobbits. However, this final version also incorporates competition and random food selections. This combination of features is meant to encourage replayability. Because the intention of these features is to improve dietary education of players, it is ethical with consideration of virtue ethics. However, in regards to consequentialism, these features may be unethical if they cause addictive behaviour.
+Another concern is the addictive property of games[<sup>[2]</sup>](README.md#references). The final version of our game features a finite story that involves helping a fixed number of hobbits. However, this final version also incorporates competition and random food selections. This combination of features is meant to encourage replayability. Because the intention of these features is to improve dietary education of players, it is ethical with consideration of virtue ethics. However, in regards to consequentialism, these features may be unethical if they cause addictive behaviour.
 
 Based on deontic ethics, following university ethical guidelines for user interviews improved the ethicality of our product. We accomplished this by limiting our interviews to people from non-vulnerable populations as indicated by our course’s ethics guidance. To get approval to interview minors, additional ethical review was requested, but not received during the timespan of this project.
 
-When examining the “make IT for everyone” section of the BCS Code of Conduct[<sup>[x]</sup>](https://www.bcs.org/membership/become-a-member/bcs-code-of-conduct/), our project was unable to attain a high level of accessibility. We discussed implementing high-contrast colours and semantic HTML during our design phase, but we were unable to achieve proper development of these features during our time constraints. As a result, this aspect of our project could be considered unethical according to these guidelines.
+When examining the “make IT for everyone” section of the BCS Code of Conduct[<sup>[3]</sup>](https://www.bcs.org/membership/become-a-member/bcs-code-of-conduct/), our project was unable to attain a high level of accessibility. We discussed implementing high-contrast colours and semantic HTML during our design phase, but we were unable to achieve proper development of these features during our time constraints. As a result, this aspect of our project could be considered unethical according to these guidelines.
 
-#### Opportunities
+#### 7.4.2 Opportunities
 
 Overall, considering the intentions of our projects, the potential benefits of our application, and our obeisance of university guidelines, our project is ethical. However, unknown consequences of our application and unfinished accessibility development hinder the ethicality of our project. To improve these areas of our project, the following steps should be implemented:
 
@@ -85,13 +88,13 @@ Overall, considering the intentions of our projects, the potential benefits of o
 - To minimise the risk of addiction playing our game, we should carefully review the application’s design and remove features that encourage addictive behaviour. 
 - To provide support for screen readers, we should fully implement high-contrast colours and incorporate semantic HTML.
 
-#### Potential for Misuse
+#### 7.4.3 Potential for Misuse
 
 While our application has good intentions, its core ideas and functionality could be extended for potentially unethical purposes.
 
 Our existing product could be adapted to a website for commercial purposes. It could be modified to include in-page advertisements that collect user data. This change could introduce privacy and security concerns for the application, which could be considered unethical based on consequentialism. Additionally, the website’s food choices could be updated to specific products and become focused on advertising over dietary education. As a result, the site could become less ethical from the lens of virtue ethics.
 
-As mentioned above, our product has a risk of becoming addictive. Further implementations of similar products could exacerbate the addictiveness of the through dark design patterns [<sup>X</sup>](https://www.darkpattern.games/). For example, an endless amount of levels could be implemented, or players could be required to feed the hobbit at different times throughout the day. In combination with in-game advertisements or purchases, the focus of the game could switch to profit over education. Consequentialism and virtue ethics both indicate that this implementation of our ideas would be unethical due to its health impact on players.
+As mentioned above, our product has a risk of becoming addictive. Further implementations of similar products could exacerbate the addictiveness of the through dark design patterns[<sup>[4]</sup>](https://www.darkpattern.games/). For example, an endless amount of levels could be implemented, or players could be required to feed the hobbit at different times throughout the day. In combination with in-game advertisements or purchases, the focus of the game could switch to profit over education. Consequentialism and virtue ethics both indicate that this implementation of our ideas would be unethical due to its health impact on players.
 
 ### 7.5 Future Work
 
@@ -101,7 +104,7 @@ During our project we implemented a basic prototype of our future vision. Curren
 
 Currently, all food items in the quiz are fixed, and each time a player plays the quiz, they see the same options. Because we also reveal the sugar content of all food as the player progresses through the quiz, a small and fixed dataset reduces playability. 
 
-In future versions, we would seek to improve this limitation. First, we would increase the size of our dataset to incorporate more food items. We would take advantage of public food APIs, such as FoodData Central [1] to maintain the data more easily. Though we would still need to generate a list of foods for the quiz, the nutrition information itself would be populated via API. Additionally, the API could make our nutrition data more robust. Common foods (e.g., chocolate) have many API results, and we could take an average of the nutrition information to generalise it. After increasing the size of our database, we would improve the variety of the quiz by making each meal contain a random subset of food items to enhance our application's playability.
+In future versions, we would seek to improve this limitation. First, we would increase the size of our dataset to incorporate more food items. We would take advantage of public food APIs, such as FoodData Central[<sup>[1]</sup>](https://fdc.nal.usda.gov/) to maintain the data more easily. Though we would still need to generate a list of foods for the quiz, the nutrition information itself would be populated via API. Additionally, the API could make our nutrition data more robust. Common foods (e.g., chocolate) have many API results, and we could take an average of the nutrition information to generalise it. After increasing the size of our database, we would improve the variety of the quiz by making each meal contain a random subset of food items to enhance our application's playability.
 
 #### Relevant Portion Sizes
 
@@ -145,4 +148,8 @@ To evaluate the quality of our application, we performed a series of unit and fu
 
 Overall, we were able to meet many of the goals we sought to achieve when first starting the Sugar Rush project. We have learned how to work together using agile practices and communicate as a team while working remotely. Through our accomplishments and setbacks, we were able to learn how to make this project come together, creating a prototype application using aspects of serious play.  
 
-[1] [FoodData Central](https://fdc.nal.usda.gov/)
+### References
+1. FoodData Central - https://fdc.nal.usda.gov/
+2. D. King, E. Koster, and J. Billieux, “Study what makes games addictive.,” Nature, vol. 573, no. 7774, p. 346, 2019. - https://doi.org/10.1038/d41586-019-02776-1
+3. BCS Code of Conduct | BSC - https://www.bcs.org/membership/become-a-member/bcs-code-of-conduct/
+4. DarkPattern.game » Healthy Gaming « Avoid addictive gaming dark patterns - https://www.darkpattern.games/
