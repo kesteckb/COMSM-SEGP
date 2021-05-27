@@ -138,7 +138,7 @@ To reflect these objectives and ensure we gathered appropriate feedback, our int
 
 #### User Group and Interviews 
 
-We gathered a sample size of n = 5, in the range of recommended to perform usability studies (4 – 8).  Efforts were also made to gather a mix of genders and age groups to reflect the diversity of our target user base. As previously stated, we were unfortunately not able to interview any children as part of UAT, due to the fact that we did not receive ethical approval in time. 
+We gathered a sample size of n = 5, in the range of recommended to perform usability studies (4 – 8)[<sup>[2]</sup>](README.md#references).  Efforts were also made to gather a mix of genders and age groups to reflect the diversity of our target user base. As previously stated, we were unfortunately not able to interview any children as part of UAT, due to the fact that we did not receive ethical approval in time. 
 
 The detailed write up and outcome of each interview can be viewed here:
 
@@ -160,5 +160,6 @@ Due to Covid-19 limitations, these interviews were mostly held remotely, using M
 
 ### References
 1. Jasmine Tesing Framework - https://jasmine.github.io/
+2. Plan user research for your service - Service Manual - GOV.UK - https://www.gov.uk/service-manual/user-research/plan-user-research-for-your-service
 
 [Previous Section](/UXDesign/README.md) | [Home](../README.md) | [Next Section](/Conclusion/README.md)
