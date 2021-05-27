@@ -141,15 +141,16 @@ To reflect these objectives and ensure we gathered appropriate feedback, our int
 We gathered a sample size of n = 5, in the range of recommended to perform usability studies (4 – 8).  Efforts were also made to gather a mix of genders and age groups to reflect the diversity of our target user base. As previously stated, we were unfortunately not able to interview any children as part of UAT, due to the fact that we did not receive ethical approval in time. 
 
 The detailed write up and outcome of each interview can be viewed here:
-•	Male, 34
-•	Female, 60
-•	Female, 29
-•	Female, 27
-•	Male, 19
+
+ - [Male, 34]
+ - [Female, 60]
+ - [Female, 29]
+ - [Female, 27](Evaluation/Sugar Rush - User Interviews 27F.docx)
+ - [Male, 19]
 
 Due to Covid-19 limitations, these interviews were mostly held remotely, using Microsoft Teams’ screen control functionality. This was not ideal, as the user’s engagement with the application was not entirely natural. However, it was not obstructive to the process, and we were still able to gather sufficient quality feedback to be able to perform an evaluation of our application. 
 
-
+#### Findings 
 
 ### Appendix
 1. [User interview round 1 script](user_interview_round_1.pdf)
