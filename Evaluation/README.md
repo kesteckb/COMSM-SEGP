@@ -162,6 +162,16 @@ Most users felt that the game was straightforward and easily navigable; it was d
 
 2. _Usability_
 
+This was an area of mixed success. All users had positive feedback about the colour scheme of the application, reporting that it was “easy on the eyes”, “game appropriate” and “readable”. However, some noted that it was not fully consistent throughout the whole application – certain buttons and the hobbit on the quiz and game over pages were not “on theme” and thus stuck out. 
+
+The hobbit theme itself was an area of contention for users. All users commented that it was not particularly apparent during gameplay. Some users, when prompted, expressed a liking for it, but those who did were more likely to have described themselves as avid gamers who regularly played a wide variety of games. More casual gamers, or those who expressed little interest in gaming were more likely to feel ambivalent about it. Those who did like it also acknowledged that it might be a more niche area of interest (“I liked it, but that’s maybe because I’m a geek”). Therefore, while the hobbit theme did not actively detract from the users’ engagement with the game, it did not significantly enhance it either. 
+
+While all users enjoyed the core concept of the quiz – trying to guess the item with the lowest sugar – some described it as “too easy” and expressed concern that it could become repetitive quite quickly. Some also noted that some of the meal choices seemed odd or “overly simplistic” to them – for example, jam and peanut butter – and that they would have preferred more realistic meals. As an improvement on these issues, multiple users suggested that it would be more fun to pick a combination of items from a range to create a meal. 
+
+Another area of contention was the scrolling on the quiz page; some users found this annoying, and reported that it detracted from their engagement with the game. 
+
+3. _Information_
+
 
 ### Appendix
 1. [User interview round 1 script](user_interview_round_1.pdf)
