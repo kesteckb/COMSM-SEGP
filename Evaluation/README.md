@@ -125,16 +125,16 @@ To complete testing and perform a final evaluation of our web application, we co
 
 We measured the success of our application against the four key objectives originally outlined in the introduction:
 
-1.	**Functionality** – confirming that the application was functional
-2.	**Usability** – verifying that our design was visually engaging and interactive
-3.	**Information** – determining whether our application displayed sugar levels appropriately and effectively
-4.	**Education** – determining whether the game increased awareness of sugar consumption and influenced dietary behaviour
+1.	_Functionality_ – confirming that the application was functional
+2.	_Usability_ – verifying that our design was visually engaging and interactive
+3.	_Information_ – determining whether our application displayed sugar levels appropriately and effectively
+4.	_Education_ – determining whether the game increased awareness of sugar consumption and influenced dietary behaviour
 
 To reflect these objectives and ensure we gathered appropriate feedback, our interview was split into three key sections: 
 
-1.	**Contextual information** – collecting gaming preferences and background information about the user
-2.	**Functional test cases** – a series of tasks to confirm the user was able to navigate through the application as expected and to uncover any remaining bugs
-3.	**Free browsing** – allowing the user to explore the application as they wished, and gathering feedback on the application’s usability and informational/educational aspects. 
+1.	_Contextual information_ – collecting gaming preferences and background information about the user
+2.	_Functional test cases_ – a series of tasks to confirm the user was able to navigate through the application as expected and to uncover any remaining bugs
+3.	_Free browsing_ – allowing the user to explore the application as they wished, and gathering feedback on the application’s usability and informational/educational aspects. 
 
 #### User Group and Interviews 
 
@@ -151,6 +151,17 @@ The detailed write up and outcome of each interview can be viewed here:
 Due to Covid-19 limitations, these interviews were mostly held remotely, using Microsoft Teams’ screen control functionality. This was not ideal, as the user’s engagement with the application was not entirely natural. However, it was not obstructive to the process, and we were still able to gather sufficient quality feedback to be able to perform an evaluation of our application. 
 
 #### Findings 
+
+1. _Functionality_
+
+This area of evaluation was largely successful. All users were able to successfully complete the tasks assigned during the test case phase of the interview without guidance, and no bugs in the application were identified. 
+
+Most users felt that the game was straightforward and easily navigable; it was described as “smooth”, “pretty common sense” and “self-explanatory”. Minor issues were noted with the scrolling required during the quiz stage of the app - one user did not immediately notice it, and this caused some temporary confusion during gameplay. 
+
+4 out of 5 users attempted the game more than once, either to experiment with different answers or to ensure that they won the game. All of those who attempted the game more than once were able to remembered their answers from their previous attempt, which affected their gameplay. 
+
+2. _Usability_
+
 
 ### Appendix
 1. [User interview round 1 script](user_interview_round_1.pdf)
