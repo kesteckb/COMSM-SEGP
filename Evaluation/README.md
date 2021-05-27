@@ -145,7 +145,7 @@ The detailed write up and outcome of each interview can be viewed here:
  - [Male, 34]
  - [Female, 60]
  - [Female, 29]
- - [Female, 27](Evaluation/Sugar Rush - User Interviews 27F.docx)
+ - [Female, 27](Sugar%20Rush%20-%20User%20Interviews%2027F.docx)
  - [Male, 19]
 
 Due to Covid-19 limitations, these interviews were mostly held remotely, using Microsoft Teams’ screen control functionality. This was not ideal, as the user’s engagement with the application was not entirely natural. However, it was not obstructive to the process, and we were still able to gather sufficient quality feedback to be able to perform an evaluation of our application. 
