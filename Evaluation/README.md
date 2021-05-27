@@ -136,7 +136,19 @@ To reflect these objectives and ensure we gathered appropriate feedback, our int
 2.	**Functional test cases** – a series of tasks to confirm the user was able to navigate through the application as expected and to uncover any remaining bugs
 3.	**Free browsing** – allowing the user to explore the application as they wished, and gathering feedback on the application’s usability and informational/educational aspects. 
 
-#### User Group
+#### User Group and Interviews 
+
+We gathered a sample size of n = 5, in the range of recommended to perform usability studies (4 – 8).  Efforts were also made to gather a mix of genders and age groups to reflect the diversity of our target user base. As previously stated, we were unfortunately not able to interview any children as part of UAT, due to the fact that we did not receive ethical approval in time. 
+
+The detailed write up and outcome of each interview can be viewed here:
+•	Male, 34
+•	Female, 60
+•	Female, 29
+•	Female, 27
+•	Male, 19
+
+Due to Covid-19 limitations, these interviews were mostly held remotely, using Microsoft Teams’ screen control functionality. This was not ideal, as the user’s engagement with the application was not entirely natural. However, it was not obstructive to the process, and we were still able to gather sufficient quality feedback to be able to perform an evaluation of our application. 
+
 
 
 ### Appendix
