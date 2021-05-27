@@ -172,6 +172,11 @@ Another area of contention was the scrolling on the quiz page; some users found 
 
 3. _Information_
 
+This was also an area of mixed success. All users understood what the ice cream cones were meant to represent, which indicates that sugar levels were displayed effectively to a degree. However, many commented that they would have preferred a different graphic to represent sugar (for example, sugar cubes). One user commented that they did not understand what the three different colours (red, orange and green) of ice cream cone were meant to represent, and noted that they initially struggled to see the difference between the orange and red, highlighting an accessibility issue. 
+
+All users were actively interested in reviewing the information on grams of sugar contained in their food choices. However, one user distrusted the amounts displayed for certain items and questioned the source of the data. Another commented that would have liked more context on why sugar consumption was health concern, as they felt that providing grams per item was not sufficiently meaningful on its own. 
+
+4. _Education_
 
 ### Appendix
 1. [User interview round 1 script](user_interview_round_1.pdf)
