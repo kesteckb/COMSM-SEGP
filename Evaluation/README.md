@@ -115,23 +115,29 @@ The advantage to this method, in comparison to more technically complex alternat
 
 However, there were some disadvantages to this approach. The manual nature of our testing approach reduced the overall efficiency and agility of our development process. It also exposed us to a certain level of risk around human error in the testing process. As previously stated, while our application is not yet of a sufficient size for this to have seriously hindered our progress, we would look to implement supplementary automated testing methods in future development work, as our application grows in size and scope. 
 
+THIS SECTION BELOW WAS COMPLETED AS THE PROJECT EXTENSION
+
 ### 6.4 User Acceptance Testing
 
-#### Strategy
+#### Introduction and Method
 
-We plan to conduct another round of interviews using this [script](uat_interview_script.pdf). These interviews will be split into two key sections each with their own objectives.
+To complete testing and perform a final evaluation of our web application, we conducted an additional round of user interviews using this [script](uat_interview_script.pdf). 
 
-1) Test cases
-- To test the functional requirements of the web-app
-- te test the usability and accessibility of the web-app
-- To uncover any remaining bugs 
+We measured the success of our application against the four key objectives originally outlined in the introduction:
 
-2) Browsing and feedback
-- To verify that our design is visually engaging and interactice (or suggest how it could be improved)
-- To ensure that we have a functioning quiz and that our product is ready for launch
-- To determine whether our web-app is able to increase awareness of sugar consumption and influence dietary behaviour
+1.	**Functionality** – confirming that the application was functional
+2.	**Usability** – verifying that our design was visually engaging and interactive
+3.	**Information** – determining whether our application displayed sugar levels appropriately and effectively
+4.	**Education** – determining whether the game increased awareness of sugar consumption and influenced dietary behaviour
 
-(Note that this section will be covered in more detail by our member Olivia in her extension)
+To reflect these objectives and ensure we gathered appropriate feedback, our interview was split into three key sections: 
+
+1.	**Contextual information** – collecting gaming preferences and background information about the user
+2.	**Functional test cases** – a series of tasks to confirm the user was able to navigate through the application as expected and to uncover any remaining bugs
+3.	**Free browsing** – allowing the user to explore the application as they wished, and gathering feedback on the application’s usability and informational/educational aspects. 
+
+#### User Group
+
 
 ### Appendix
 1. [User interview round 1 script](user_interview_round_1.pdf)
