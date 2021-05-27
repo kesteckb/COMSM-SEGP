@@ -178,6 +178,12 @@ All users were actively interested in reviewing the information on grams of suga
 
 4. _Education_
 
+This was an area of mixed success. The sugar content of wholemeal bread was a particular surprise for a majority of users, indicating that game had served an informative purpose for them. Despite that, those users who described themselves as health conscious reported that the game was unlikely to change their behaviour, given that they already factored in a low-sugar approach to their diets. Other users, however, were more positive, with one noting that “I think it’ll prompt me to read the labels on food a bit more!”. 
+
+4 out of 5 users stated that they would recommend the game, but 3 of those added that they would recommend it for children specifically, as they felt that particular demographic would get the most out of the game. 
+
+#### Implications 
+
 ### Appendix
 1. [User interview round 1 script](user_interview_round_1.pdf)
 2. [List of unit tests](unitTests.png)
