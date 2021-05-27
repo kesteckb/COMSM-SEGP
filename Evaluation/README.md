@@ -184,11 +184,23 @@ This was an area of mixed success. The sugar content of wholemeal bread was a pa
 
 #### Implications 
 
+The biggest area of success was in the application’s functionality – the game worked smoothly, and was intuitive for users. The other objectives – usability, information and education – were all met to some extent, but the need for further refinement in these areas is apparent.
+
+Certain key areas which future development activity would need to address stood out. First, if we want the application to have universal appeal, as originally proposed, user feedback indicates that additional features and more complexity might be required to achieve this to successfully engage an adult audience.  Alternatively, the target user base could be refined to children only, which would keep the application closer to its current form. 
+
+Second, the hobbit theme may need some reconsideration. It only positively impacted a limited number of users, suggesting that it may be more niche than originally envisaged. Given that the current proposition is to design an application with universal appeal, this is potentially problematic. Additionally, should the target user base be refined, the preferences of any particular demographics would need to be considered (for example, young children may not be familiar with the Hobbit). 
+
+
 ### Appendix
 1. [User interview round 1 script](user_interview_round_1.pdf)
 2. [List of unit tests](unitTests.png)
 3. [Functional test cases](Functional_Test_Cases_PDF.pdf)
 4. [User acceptance testing script](uat_interview_script.pdf)
+5. [UAT Interview 29F](Sugar%20Rush%20-%20User%20Interviews%2029F.docx)
+6. [UAT Interview 34M](Sugar%20Rush%20-%20User%20Interviews%2034M.docx) 
+7. [UAT Interview 19M](Sugar%20Rush%20-%20User%20Interviews%2019M.docx)
+8. [UAT Interview 27F](Sugar%20Rush%20-%20User%20Interviews%2027F.docx)
+9. [UAT Interview 60F](Sugar%20Rush%20-%20User%20Interviews%2060F.docx)
 
 ### References
 1. Jasmine Tesing Framework - https://jasmine.github.io/
