@@ -186,11 +186,11 @@ This was an area of reasonable success. The sugar content of wholemeal bread was
 
 #### Implications 
 
-The biggest area of success was in the application’s functionality – the game worked smoothly, and was intuitive for users. The other objectives – usability, information and education – were all met to some extent, but the need for further refinement in these areas is apparent.
+The strongest area of success was in the application’s functionality – the game worked smoothly, and was intuitive for users. The other objectives – usability, information and education – were all met to some extent, but the need for further refinement in these areas is apparent.
 
-Certain key areas which future development activity would need to address stood out. First, if we want the application to have universal appeal, as originally proposed, user feedback indicates that additional features and more complexity might be required to achieve this to successfully engage an adult audience.  Alternatively, the target user base could be refined to children only, which would keep the application closer to its current form. 
+Certain key areas stood out. First, we originally proposed that the game should have largely universal appeal, and could be played and enjoyed by anyone. However, user feedback indicates that to successfully engage an adult audience, more complexity in the game might be required. However, it may also be worth revisiting our original proposal, and considering whether we should refine our target user base to children only (as suggested by the majority of our users). This would allow us to keep the application closer to its current form, and give us a narrower focus for future development work. 
 
-Second, the hobbit theme may need some reconsideration. It only positively impacted a limited number of users, suggesting that it may be more niche than originally envisaged. Given that the current proposition is to design an application with universal appeal, this is potentially problematic. Additionally, should the target user base be refined, the preferences of any particular demographics would need to be considered (for example, young children may not be familiar with the Hobbit). 
+Second, the hobbit theme may need reconsideration. It only positively impacted a limited number of users, suggesting that its appeal may be more niche than originally envisaged. This is potentially problematic – as stated above, we had set out to make a game with universal appeal. Therefore reconsideration of the core theme is required – either to something with more conventional appeal, or something demographic specific (should we refine the target user base). 
 
 
 ### Appendix
