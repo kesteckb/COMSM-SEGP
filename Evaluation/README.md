@@ -140,7 +140,7 @@ To reflect these objectives and ensure we gathered appropriate feedback, our int
 
 #### User Group and Interviews 
 
-We gathered a sample size of n = 5, in the range of recommended to perform usability studies (4 – 8)[<sup>[2]</sup>](README.md#references).  Efforts were also made to gather a mix of genders and age groups to reflect the diversity of our target user base. As previously stated, we were unfortunately not able to interview any children as part of UAT, due to the fact that we did not receive ethical approval in time. 
+We gathered a sample size of n = 5, in the recommended range to perform usability studies (4 – 8)[<sup>[2]</sup>](README.md#references).  Efforts were also made to gather a mix of genders and age groups to reflect the diversity of our target user base. As previously stated, we were unfortunately not able to interview any children as part of UAT, due to the fact that we did not receive ethical approval in time. 
 
 The detailed write up and outcome of each interview can be viewed here:
 
@@ -176,7 +176,7 @@ Finally, the scrolling on the quiz page was problematic. Some users found this a
 
 This was also an area of mixed success. All users understood what the ice cream cones were meant to represent and some commented that they were visually helpful, which indicates that sugar levels were displayed effectively to a degree. However, many commented that they would have preferred different graphics to represent sugar (for example, sugar cubes). One user commented that they did not understand what the three different colours (red, orange and green) of ice cream cone were meant to represent, and noted that they initially struggled to see the difference between the orange and red, highlighting an accessibility issue. 
 
-During gameplay, all users were actively interested in reviewing the information on grams of sugar per food item, confirming our design choice to include this information. However, one user distrusted the amounts displayed for certain items and questioned the source of the data. Another commented that would have liked more context on why sugar consumption was health concern, as they felt that providing grams per item was not sufficiently meaningful on its own. 
+During gameplay, all users were actively interested in reviewing the information on grams of sugar per food item, confirming our design choice to include this information. However, one user distrusted the amounts displayed for certain items and questioned the source of the data. Another commented that would have liked more context on why sugar consumption was a health concern, as they felt that only providing grams per item was not sufficiently meaningful on its own. 
 
 4. _Education_
 
