@@ -186,12 +186,13 @@ This was an area of reasonable success. The sugar content of wholemeal bread was
 
 #### Implications 
 
-The strongest area of success was in the application’s functionality – the game worked smoothly, and was intuitive for users. The other objectives – usability, information and education – were all met to some extent, but the need for further refinement in these areas is apparent.
+The strongest area of success was in the application’s functionality – the game worked smoothly, and was intuitive for users. The other objectives – usability, information and education – were all met to some extent: the colour scheme was well-received and users enjoyed the core premise of the game; sugar content was displayed in a way that users understood; the majority of users would recommend the game and believed that it had value as an educational tool. 
 
-Certain key areas stood out. First, we originally proposed that the game should have largely universal appeal, and could be played and enjoyed by anyone. However, user feedback indicates that to successfully engage an adult audience, more complexity in the game might be required. However, it may also be worth revisiting our original proposal, and considering whether we should refine our target user base to children only (as suggested by the majority of our users). This would allow us to keep the application closer to its current form, and give us a narrower focus for future development work. 
+Certain key areas stood out. First, we originally proposed that the game should have largely universal appeal, and could be played and enjoyed by anyone. However, user feedback indicates that to successfully engage an adult audience, more complexity in the game might be required (for example, creating "meals" out of a number of food items). However, it may also be worth revisiting our original proposal, and considering whether we should refine our target user base to children only (as suggested by the majority of our users). This would allow us to keep the application closer to its current form, and give us a narrower focus for future development work. 
 
 Second, the hobbit theme may need reconsideration. It only positively impacted a limited number of users, suggesting that its appeal may be more niche than originally envisaged. This is potentially problematic – as stated above, we had set out to make a game with universal appeal. Therefore reconsideration of the core theme is required – either to something with more conventional appeal, or something demographic specific (should we refine the target user base). 
 
+Finally, certain stylistic changes are required to make the application more engaging and accessible. Key priorities for future development work would include cleaning up elements that do not fit the colour scheme, replacing the ice cream cones in the progress bar on the quiz page, and consolidating the information on the quiz page so that it fits into the viewport without the need for scrolling. 
 
 ### Appendix
 1. [User interview round 1 script](user_interview_round_1.pdf)
