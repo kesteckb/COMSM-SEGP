@@ -121,11 +121,13 @@ THIS SECTION BELOW WAS COMPLETED AS THE PROJECT EXTENSION
 
 #### Introduction and Method
 
-To complete testing and perform a final evaluation of our web application, we conducted an additional round of user interviews using this [script](uat_interview_script.pdf). 
+To perform a final evaluation of our web application and to measure its effectiveness, we conducted a UAT phase post development. 
+
+We carried this out via a series of in depth user interviews, using this [script](uat_interview_script.pdf). We felt that this approach – in preference to a lighter touch method like a survey – would enable us to gather the required level of detail to judge our application appropriately.  
 
 We measured the success of our application against the four key objectives originally outlined in the introduction:
 
-1.	_Functionality_ – confirming that the application was functional
+1.	_Functionality_ – confirming that the application was functional and ran as expected
 2.	_Usability_ – verifying that our design was visually engaging and interactive
 3.	_Information_ – determining whether our application displayed sugar levels appropriately and effectively
 4.	_Education_ – determining whether the game increased awareness of sugar consumption and influenced dietary behaviour
@@ -148,7 +150,7 @@ The detailed write up and outcome of each interview can be viewed here:
  - [Female, 27](Sugar%20Rush%20-%20User%20Interviews%2027F.docx)
  - [Male, 19](Sugar%20Rush%20-%20User%20Interviews%2019M.docx)
 
-Due to Covid-19 limitations, these interviews were mostly held remotely, using Microsoft Teams’ screen control functionality. This was not ideal, as the user’s engagement with the application was not entirely natural. However, it was not obstructive to the process, and we were still able to gather sufficient quality feedback to be able to perform an evaluation of our application. 
+Due to Covid-19 limitations, these interviews were held remotely, using Microsoft Teams’ remote screen control functionality. This was not ideal, as the user’s engagement with the application was not entirely natural. However, it was not obstructive to the process, and we were still able to gather sufficient quality feedback to be able to perform an evaluation of our application. 
 
 #### Findings 
 
